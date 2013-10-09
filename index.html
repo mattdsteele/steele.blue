@@ -4,6 +4,11 @@ title: Your New Jekyll Site
 ---
 
 <div id="home">
+
+  <h1>Latest post</h1>
+  {% assign page = site.posts.first %}
+  {% include post_detail.html %}
+
   <h1>Blog Posts</h1>
   <ul class="posts">
     {% for post in site.posts %}
