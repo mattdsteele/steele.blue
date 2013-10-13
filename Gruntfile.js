@@ -32,13 +32,20 @@ module.exports = function(grunt) {
           base: '_site'
         }
       }
+    },
+    less: {
+      assets: {
+        files: {
+          'css/main.css' : 'css/*.less'
+        }
+      }
     }
   });
 
   // These plugins provide necessary tasks.
   // Default task.
   grunt.registerTask('default', []);
-  grunt.registerTask('content', ['shell:jekyll']);
+  grunt.registerTask('content', ['less:assets', 'shell:jekyll']);
   grunt.registerTask('dev', ['connect:server', 'watch']);
 
 };
