@@ -1,0 +1,15 @@
+{
+  "name": "matthew-steele",
+  "version": "0.0.0",
+  "description": "matthew-steele",
+  "repository": "",
+  "author": "",
+  "license": "BSD",
+  "dependencies": {},
+  "devDependencies": {
+    "matchdep": "~0.3.0",
+    "grunt-shell": "~0.5.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-connect": "~0.5.0"
+  }
+}
