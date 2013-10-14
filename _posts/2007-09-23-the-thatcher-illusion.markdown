@@ -25,4 +25,4 @@ This is the best example of the <a href="http://en.wikipedia.org/wiki/Thatcher_e
 
 This reminds me of my favorite facial optical illusion:
 
-[youtube=http://www.youtube.com/watch?v=QbKw0_v2clo]
+{% youtube QbKw0_v2clo %}

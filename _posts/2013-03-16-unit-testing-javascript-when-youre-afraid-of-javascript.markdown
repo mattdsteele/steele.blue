@@ -20,4 +20,4 @@ Turns out, unit testing JavaScript is different than other languages, and doing 
 
 <strong>Slides + Audio</strong>
 
-[vimeo http://www.vimeo.com/62004647 w=500&h=375]
+{% vimeo 62004647 %}

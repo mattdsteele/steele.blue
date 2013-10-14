@@ -20,8 +20,8 @@ I was coming down from an NES Zelda bender, and I think it shows.
 <strong><a href="https://speakerdeck.com/mattdsteele/what-zelda-taught-me-about-front-end-engineering">Slides</a></strong>
 
 Slides + Audio:
-[vimeo http://vimeo.com/54993676/]
+{% vimeo 54993676 %}
 
 Video:
 
-[youtube=http://www.youtube.com/watch?v=2whBsRpkt4Q]
+{% youtube 2whBsRpkt4Q %}
