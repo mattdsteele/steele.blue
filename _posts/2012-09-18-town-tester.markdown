@@ -14,7 +14,7 @@ meta:
 ---
 In my talk <a href="https://vimeo.com/49092644/">Zen and the Art of TDD</a>, I included a slide that showed only 43% of all Github repositories from Omaha developers included unit tests:
 
-<a href="http://matthewsteele.files.wordpress.com/2012/09/languages1.png"><img class="aligncenter size-full wp-image-191" title="languages" src="http://matthewsteele.files.wordpress.com/2012/09/languages1.png" alt="" width="830" height="442" /></a>
+<a href="http://matthewsteele.files.wordpress.com/2012/09/languages1.png"><img class="aligncenter size-full wp-image-191" title="languages" src="http://matthewsteele.files.wordpress.com/2012/09/languages1.png" alt="" /></a>
 
 Today I'm releasing the code I used to obtain this data: a script called Town Tester.
 

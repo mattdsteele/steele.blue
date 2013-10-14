@@ -32,7 +32,7 @@ But not:
 </ul>
 Adding this check to our build immediately caught 13 instances where we performed this nefarious deed.  Using a continuous integration build like Hudson, it was easy to identify and track how we were progressing in removing these from the build:
 
-<a href="http://matthewsteele.files.wordpress.com/2011/05/png.png"><img class="aligncenter size-full wp-image-135" title="png" src="http://matthewsteele.files.wordpress.com/2011/05/png.png" alt="" width="500" height="200" /></a>
+<a href="http://matthewsteele.files.wordpress.com/2011/05/png.png"><img class="aligncenter size-full wp-image-135" title="png" src="http://matthewsteele.files.wordpress.com/2011/05/png.png" alt="" /></a>
 
 Of course, there a number of issues with this approach:
 <ul>
