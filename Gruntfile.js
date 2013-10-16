@@ -39,13 +39,19 @@ module.exports = function(grunt) {
           'css/main.css' : 'css/*.less'
         }
       }
+    },
+    autoprefixer: {
+      generated: {
+        src: 'css/main.css',
+        dest: 'css/main.css'
+      }
     }
   });
 
   // These plugins provide necessary tasks.
   // Default task.
   grunt.registerTask('default', []);
-  grunt.registerTask('content', ['less:assets', 'shell:jekyll']);
+  grunt.registerTask('content', ['less:assets', 'autoprefixer', 'shell:jekyll']);
   grunt.registerTask('dev', ['connect:server', 'watch']);
 
 };

@@ -1,19 +1,25 @@
 /* Basic resets */
+
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 img {
   width: 100%;
 }
+
 /* Post formatting */
+
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
   /* 16:9 */
-
   padding-top: 25px;
   height: 0;
 }
+
 .video-wrapper iframe {
   position: absolute;
   top: 0;
@@ -21,25 +27,54 @@ img {
   width: 100%;
   height: 100%;
 }
+
 /* Blog structure */
+
 .posts {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
+
 .posts a {
   display: block;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   text-decoration: none;
 }
+
 .posts a:hover {
   background: #e6e6e6;
 }
+
 .posts .blog-date {
   font-family: monospace;
   color: #808080;
 }
+
 .posts .blog-date:before {
   content: " - ";
+}
+
+.iliveinomaha {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 15em;
+}
+
+.iliveinomaha a {
+  text-decoration: none;
+}
+
+.iliveinomaha span {
+  -webkit-transform: translateY(2.5em) translateX(3em) rotate(45deg);
+  -ms-transform: translateY(2.5em) translateX(3em) rotate(45deg);
+  transform: translateY(2.5em) translateX(3em) rotate(45deg);
+  display: block;
+  text-align: center;
+  background: #0092DF;
+  font-family: Arial, Helvetica, clean, sans-serif;
+  font-size: 1.3em;
+  color: white;
 }
