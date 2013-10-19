@@ -2,3 +2,5 @@ name: Matt Steele
 markdown: redcarpet
 pygments: true
 permalink: /:title/
+baseurl: /blog
+distFolder: blog/
