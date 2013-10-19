@@ -1,3 +1,26 @@
+.iliveinomaha {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 15em;
+}
+
+.iliveinomaha a {
+  text-decoration: none;
+}
+
+.iliveinomaha span {
+  -webkit-transform: translateY(2.5em) translateX(3em) rotate(45deg);
+  -ms-transform: translateY(2.5em) translateX(3em) rotate(45deg);
+  transform: translateY(2.5em) translateX(3em) rotate(45deg);
+  display: block;
+  text-align: center;
+  background: #0092DF;
+  font-family: Arial, Helvetica, clean, sans-serif;
+  font-size: 1.3em;
+  color: white;
+}
+
 /* Basic resets */
 
 * {
@@ -28,6 +51,61 @@ img {
   height: 100%;
 }
 
+.iliveinomaha {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 15em;
+}
+
+.iliveinomaha a {
+  text-decoration: none;
+}
+
+.iliveinomaha span {
+  -webkit-transform: translateY(2.5em) translateX(3em) rotate(45deg);
+  -ms-transform: translateY(2.5em) translateX(3em) rotate(45deg);
+  transform: translateY(2.5em) translateX(3em) rotate(45deg);
+  display: block;
+  text-align: center;
+  background: #0092DF;
+  font-family: Arial, Helvetica, clean, sans-serif;
+  font-size: 1.3em;
+  color: white;
+}
+
+body {
+  font-family: 'Enriqueta', serif;
+}
+
+body a {
+  text-decoration: none;
+  color: skyblue;
+}
+
+body a:hover {
+  text-decoration: underline;
+}
+
+.title a {
+  color: #1a1a1a;
+  font-size: 2em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Istok Web', sans-serif;
+}
+
+.main {
+  font-size: 1.2em;
+  line-height: 150%;
+}
+
 /* Blog structure */
 
 .posts {
@@ -54,27 +132,4 @@ img {
 
 .posts .blog-date:before {
   content: " - ";
-}
-
-.iliveinomaha {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 15em;
-}
-
-.iliveinomaha a {
-  text-decoration: none;
-}
-
-.iliveinomaha span {
-  -webkit-transform: translateY(2.5em) translateX(3em) rotate(45deg);
-  -ms-transform: translateY(2.5em) translateX(3em) rotate(45deg);
-  transform: translateY(2.5em) translateX(3em) rotate(45deg);
-  display: block;
-  text-align: center;
-  background: #0092DF;
-  font-family: Arial, Helvetica, clean, sans-serif;
-  font-size: 1.3em;
-  color: white;
 }

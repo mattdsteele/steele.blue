@@ -13,7 +13,7 @@ meta:
     22:21:58";}
   _elasticsearch_indexed_on: '2013-06-19 21:46:31'
 ---
-I recently read Tim Wright's <a style="font-size:13px;" href="http://alistapart.com/article/environmental-design-with-the-device-api">article on A List Apart</a> detailing the Device API; a collection of W3C standards that let you obtain access to a number of hardware sensors.
+I recently read Tim Wright's <a href="http://alistapart.com/article/environmental-design-with-the-device-api">article on A List Apart</a> detailing the Device API; a collection of W3C standards that let you obtain access to a number of hardware sensors.
 
 I found this fascinating, and had to try them out. <strong>Here's what I've learned</strong>.
 
