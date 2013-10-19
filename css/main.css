@@ -1,8 +1,10 @@
 .iliveinomaha {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   width: 15em;
+  height: 15em;
+  overflow: hidden;
 }
 
 .iliveinomaha a {
@@ -52,10 +54,12 @@ img {
 }
 
 .iliveinomaha {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   width: 15em;
+  height: 15em;
+  overflow: hidden;
 }
 
 .iliveinomaha a {
