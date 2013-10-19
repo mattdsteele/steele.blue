@@ -7,7 +7,7 @@
   overflow: hidden;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 70em) {
   .iliveinomaha {
     position: fixed;
   }
@@ -68,7 +68,7 @@ img {
   overflow: hidden;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 70em) {
   .iliveinomaha {
     position: fixed;
   }
@@ -140,7 +140,7 @@ h6 {
 .contact {
   color: #999999;
   font-size: 2.0em;
-  line-height: 150%;
+  line-height: 200%;
 }
 
 /* Blog structure */

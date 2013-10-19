@@ -16,9 +16,14 @@ Let's say you had a wealth of information in a Google spreadsheet that you wante
 Glad you asked, because I've got just the solution for you.  It requires using Prototype, though you could use it with just about any other library which lets you use CSS selectors.
 
 First, create an array with which to store your data:
-[sourcecode language="jscript"]var items = [];[/sourcecode]
+
+{% highlight javascript %}
+var items = [];
+{% endhighlight %}
+
 Then, you'll have want to create a function which takes the raw HTML input and parses it into a set of objects:
-[sourcecode language="jscript"]
+
+{% highlight javascript %}
      function parseData(googleDoc) {
           var divItem = document.createElement('div');
           divItem.innerHTML = googleDoc;
@@ -44,9 +49,12 @@ Then, you'll have want to create a function which takes the raw HTML input and p
           obj.column2 = kids[2].innerHTML;
           //...etc
           return obj;
-     }[/sourcecode]
+     }
+{% endhighlight %}
+
 Then, just pull up the document with an Ajax call:
-[sourcecode language="jscript"]
+
+{% highlight javascript %}
 function loadData(){
      var req = new Ajax.Request(
           'url/to/googleDoc.html', {
@@ -56,5 +64,7 @@ function loadData(){
                parseData(googleDoc);
           }
      });
-}[/sourcecode]
+}
+{% endhighlight %}
+
 Simple, huh?
