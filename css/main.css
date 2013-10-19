@@ -7,6 +7,12 @@
   overflow: hidden;
 }
 
+@media (min-width: 50em) {
+  .iliveinomaha {
+    position: fixed;
+  }
+}
+
 .iliveinomaha a {
   text-decoration: none;
 }
@@ -62,6 +68,12 @@ img {
   overflow: hidden;
 }
 
+@media (min-width: 50em) {
+  .iliveinomaha {
+    position: fixed;
+  }
+}
+
 .iliveinomaha a {
   text-decoration: none;
 }
@@ -84,16 +96,26 @@ body {
 
 body a {
   text-decoration: none;
-  color: skyblue;
+  color: #1f8dba;
 }
 
 body a:hover {
   text-decoration: underline;
 }
 
+.title {
+  font-size: 2.2em;
+  text-align: center;
+}
+
+@media (min-width: 50em) {
+  .title {
+    font-size: 4vw;
+  }
+}
+
 .title a {
   color: #1a1a1a;
-  font-size: 2em;
 }
 
 h1,
@@ -105,7 +127,7 @@ h6 {
   font-family: 'Istok Web', sans-serif;
 }
 
-.site {
+.main {
   max-width: 40em;
   margin: auto;
 }
@@ -118,6 +140,7 @@ h6 {
 .contact {
   color: #999999;
   font-size: 2.0em;
+  line-height: 150%;
 }
 
 /* Blog structure */
@@ -146,4 +169,8 @@ h6 {
 
 .posts .blog-date:before {
   content: " - ";
+}
+
+.all-posts {
+  margin-top: 5em;
 }
