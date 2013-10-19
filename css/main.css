@@ -105,9 +105,19 @@ h6 {
   font-family: 'Istok Web', sans-serif;
 }
 
+.site {
+  max-width: 40em;
+  margin: auto;
+}
+
 .main {
   font-size: 1.2em;
   line-height: 150%;
+}
+
+.contact {
+  color: #999999;
+  font-size: 2.0em;
 }
 
 /* Blog structure */
