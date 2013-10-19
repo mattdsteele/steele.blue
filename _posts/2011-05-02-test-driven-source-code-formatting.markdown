@@ -12,24 +12,29 @@ meta:
 This morning, I had to fight a production error in an application I support. It turns out that using SELECT * statements with Spring JDBC can cause problems when you add new columns to the table. It has something to do with Oracle caching; I'm not sure.
 
 So, SELECT * statements are evil. But how do you ensure your codebase doesn't contain any? Being a good test-driven developer, I wanted to have a failing test before making wide swaths of changes to my source code.
-
 The solution I settled on was to write a new static analysis rule, using Checkstyle, to warn me when it identified a SELECT * statement. Here's what it looks like (you can put this in a Checkstyle v5 xml file):
-<code>
-&lt;module name="RegexpSinglelineJava"&gt;
-&lt;property name="format" value="SELECT.*[\. ]\*"/&gt;
-&lt;property name="ignoreComments" value="true"/&gt;
-&lt;property name="message" value="Do not use SELECT * statements"/&gt;
-&lt;/module&gt;
-</code>
+
+{% highlight xml %}
+<module name="RegexpSinglelineJava">
+<property name="format" value="SELECT.*[\. ]\*"/>
+<property name="ignoreComments" value="true"/>
+<property name="message" value="Do not use SELECT * statements"/>
+</module>
+{% endhighlight %}
+
 It's a regular expression that looks for a SELECT, followed by anything, and then either a dot or a space followed by the asterisk. This way, we can capture:
-<ul>
-	<li>SELECT * from table</li>
-	<li>SELECT t.* from table t</li>
-</ul>
+
+{% highlight sql %}
+SELECT * from table
+SELECT t.* from table t
+{% endhighlight %}
+
 But not:
-<ul>
-	<li>SELECT count(*) from table</li>
-</ul>
+
+{% highlight sql %}
+SELECT count(*) from table
+{% endhighlight %}
+
 Adding this check to our build immediately caught 13 instances where we performed this nefarious deed.  Using a continuous integration build like Hudson, it was easy to identify and track how we were progressing in removing these from the build:
 
 <a href="http://matthewsteele.files.wordpress.com/2011/05/png.png"><img class="aligncenter size-full wp-image-135" title="png" src="http://matthewsteele.files.wordpress.com/2011/05/png.png" alt="" /></a>
