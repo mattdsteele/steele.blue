@@ -10,11 +10,11 @@ published: true
 meta:
   _elasticsearch_indexed_on: '2009-10-18 23:09:56'
 ---
-As <a href="http://matthewsteele.wordpress.com/2009/09/23/stolen-bike-reward-offered/">previously noted</a>, my bike was stolen a couple weeks ago. Fortunately, some stories have happy endings, and it is now residing back at my house. What follows is the harrowing tale of how I got it back (note: it's not all that harrowing).
+As <a href="/stolen-bike-reward-offered/">previously noted</a>, my bike was stolen a couple weeks ago. Fortunately, some stories have happy endings, and it is now residing back at my house. What follows is the harrowing tale of how I got it back (note: it's not all that harrowing).
 
 Union Pacific has two sets of bike racks around its HQ building:
 
-<a href="http://matthewsteele.files.wordpress.com/2009/10/rack-locations1.png"><img class="aligncenter size-full wp-image-120" title="rack locations" src="http://matthewsteele.files.wordpress.com/2009/10/rack-locations1.png" alt="rack locations" ></a>
+![Bike Racks](/img/rack-locations1.png)
 
 Rack 1 is positioned next to the front door of the building, and is underneath an overhang that helps protect bikes from the elements. Rack 2, newly added this year, is out next to 13th Street and affords none of the amenities of the original set.  Needless to say, Rack 1 is as popular as a Homecoming queen, while Rack 2 gets rejected like a guy who just upgraded his D&amp;D Avenger character up to level 6.
 

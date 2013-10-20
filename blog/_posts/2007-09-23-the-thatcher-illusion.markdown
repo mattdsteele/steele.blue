@@ -13,7 +13,7 @@ meta:
 ---
 Want to see something cool?
 
-<img src="http://matthewsteele.files.wordpress.com/2007/09/thatcherillusion.JPG" alt="thatcher1" />
+![Thatcher Illusion](/img/thatcherillusion.JPG)
 
 Aside from upside down,  pretty normal, right?  Compare it to these:
 

@@ -15,7 +15,7 @@ On my way back from India, I finally had a chance to read <a href="http://www.am
 
 It also was something I'd wanted to do because last year, my company brought in Robert C. Martin for a two-day course on TDD for me and a dozen other employees. And it was amazing. My colleague Shawn compared it to "getting private guitar lessons from Jimi Hendrix".
 
-<a href="http://matthewsteele.files.wordpress.com/2011/10/img_0660.jpg"><img class="aligncenter size-full wp-image-149" title="IMG_0660" src="http://matthewsteele.files.wordpress.com/2011/10/img_0660.jpg" alt="" ></a>
+![Uncle Bob](/img/img_0660.jpg)
 
 To my delight, this came up as an anecdote in Chapter 6 of his book, "Practice":
 <blockquote>Since then many programmers have adopted a martial arts metaphor for their practice sessions. The name Coding Dojo seems to have stuck. Sometimes a group of programmers will meet and practice together just like martial artists do. At other times, programmers will practice solo, again as martial artists do.
