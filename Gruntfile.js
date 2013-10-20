@@ -7,7 +7,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     // Task configuration.
     config: {
-      root: ''
+      root: 'blog'
     },
     shell: {
       jekyll: {
@@ -15,13 +15,14 @@ module.exports = function(grunt) {
         options: {
           stdout: true,
           execOptions: {
+            cwd: '<%= config.root %>'
           }
         }
       }
     },
     watch: {
       content: {
-        files: ['_posts/**/*', '_layouts/**/*', 'index.html', 'css/**/*.less'],
+        files: ['<%= config.root %>/_posts/**/*', '<%= config.root %>/_layouts/**/*', '<%= config.root %>/index.html', '<%= config.root %>/css/**/*.less'],
         tasks: ['content']
       }
     },
@@ -30,21 +31,21 @@ module.exports = function(grunt) {
         options: {
           hostname: '*',
           port: 4000,
-          base: '_site'
+          base: '<%= config.root %>/_site'
         }
       }
     },
     less: {
       assets: {
         files: {
-          'css/main.css' : 'css/*.less'
+          '<%= config.root %>/css/main.css' : '<%= config.root %>/css/*.less'
         }
       }
     },
     autoprefixer: {
       generated: {
-        src: 'css/main.css',
-        dest: 'css/main.css'
+        src: '<%= config.root %>/css/main.css',
+        dest: '<%= config.root %>/css/main.css'
       }
     }
   });
