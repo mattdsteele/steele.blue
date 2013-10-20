@@ -3,8 +3,8 @@ title: A fresh coat of paint
 layout: post
 ---
 
-After years of using my website as a glorified landing page to other content, I've finally taken the time to build something proper.
-The link dump is gone, and I've moved my blog from WordPress.com to a real domain. The site is also available on GitHub.
+After years of using my website as a [glorified landing page](http://dynamic.matthew-steele.com/) to other content, I've taken the time to build something proper.
+The link dump is gone, and I've moved my blog from WordPress.com to my domain. [The site is also available on GitHub](https://github.com/mattdsteele/matthew-steele.com).
 
 **Google Reader expatriates: update your RSS feeds: [http://www.matthew-steele.com/feed/atom.xml](http://www.matthew-steele.com/feed/atom.xml)**
 
@@ -12,7 +12,7 @@ The link dump is gone, and I've moved my blog from WordPress.com to a real domai
 
 A few reasons:
 
-* Link dumps are lame. The meat of this site is on the blog, so why not show that up front?
+* Link dumps are lame. The meat of this site is on the blog, so it makes sense to show that up front. [No one likes to wait while they wait](http://www.lukew.com/ff/entry.asp?1458).
 * I began using WordPress.com 6 years ago, when I was working mostly on the back-end and didn't want to think about website layouts or CSS. Times have changed.
 * It's theraputic. I might be the only person who finds joy in moving periodically in the physical world. It's a great time to trash old artifacts and make way for the new.
 
