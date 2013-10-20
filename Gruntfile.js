@@ -11,7 +11,7 @@ module.exports = function(grunt) {
     },
     shell: {
       jekyll: {
-        command: 'jekyll build',
+        command: 'jekyll build --drafts',
         options: {
           stdout: true,
           execOptions: {
@@ -22,7 +22,7 @@ module.exports = function(grunt) {
     },
     watch: {
       content: {
-        files: ['<%= config.root %>/_posts/**/*', '<%= config.root %>/_layouts/**/*', '<%= config.root %>/index.html', '<%= config.root %>/css/**/*.less'],
+        files: ['<%= config.root %>/_drafts/**/*', '<%= config.root %>/_posts/**/*', '<%= config.root %>/_layouts/**/*', '<%= config.root %>/index.html', '<%= config.root %>/css/**/*.less'],
         tasks: ['content']
       }
     },
