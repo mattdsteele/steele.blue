@@ -153,6 +153,10 @@ h6 {
   line-height: 200%;
 }
 
+.highlight {
+  overflow-x: auto;
+}
+
 /* Blog structure */
 
 .posts {

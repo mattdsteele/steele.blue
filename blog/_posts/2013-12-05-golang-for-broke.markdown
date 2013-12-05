@@ -36,7 +36,7 @@ At this point, we had an idea that an app would be Go serving up an API on the b
 The Changelog also had a really helpful post outlining Go's [web application ecosystem][goweb].
 
 Go has an impressive standard library and can serve HTTP easily out of the box, but we decided to apply a framework to provide a little structure.
-We went with [Martini][martini]; a Sinatra-esque library that is less than a month old, in a proud Hack Omah tradition.
+We went with [Martini][martini]; a Sinatra-esque library that is less than a month old, in a proud Hack Omaha tradition.
 
 Our services ended up with this structure.
 {% highlight go %}
