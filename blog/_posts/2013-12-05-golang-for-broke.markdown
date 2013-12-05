@@ -17,7 +17,7 @@ This was all [Jerod Santo][1]'s fault.
 At the first Hack Omaha, Jerod amazed me by building his project in a [days-old JavaScript framework][Meteor].
 It was a high-wire act, but he convinced me that [I should follow suit][2].
 
-So when Hack Omaha rolled around this year, Jerod and I decided to team up and try a language neither of us knew. His suggestion: [Go][Go] - Google's new(ish) language. Juan Vasquez joined in, and [a team based on ignorance was born][3].
+So when Hack Omaha rolled around this year, Jerod and I decided to team up and try a language neither of us knew. His suggestion: [Go][Go] - Google's new(ish) language. Juan Vazquez joined in, and [a team based on ignorance was born][3].
 
 Go's [docs][Godocs] describe the language:
 > Go compiles quickly to machine code yet has the convenience of garbage collection and the power of run-time reflection. It's a fast, statically typed, compiled language that feels like a dynamically typed, interpreted language.
