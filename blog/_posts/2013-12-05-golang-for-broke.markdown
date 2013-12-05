@@ -22,6 +22,8 @@ So when Hack Omaha rolled around this year, Jerod and I decided to team up and t
 Go's [docs][Godocs] describe the language:
 > Go compiles quickly to machine code yet has the convenience of garbage collection and the power of run-time reflection. It's a fast, statically typed, compiled language that feels like a dynamically typed, interpreted language.
 
+![Leah and Juan get to work](/img/hackomaha1.jpg)
+
 ## Going to School
 
 I spent some time learning the language, and the [Go tour](http://tour.golang.org/) was my main source.
@@ -51,6 +53,8 @@ JSON encoding, HTTP headers, enabling CORS, all worked out of the box.
 I've heard it's also testable, but nary a unit test was written during the hackathon.
 I should have known better, based on my [lessons from last time][hackomaha1].
 That said, Go has [testing built into the language](http://golang.org/doc/code.html#Testing), so it'll be there when we're ready.
+
+![Alex and Michael](/img/hackomaha2.jpg)
 
 ## Databases, GORM Style
 
@@ -95,6 +99,8 @@ As we were connnecting to databases in Gorm, we weren't retrieving that second p
 
 Lesson: understand the idioms of a language you're futzing around with.
 
+![Jerod and Leah](/img/hackomaha3.jpg)
+
 ## Go Fly a Kite
 
 It wasn't all sunshine. Beyond database and library issues, here's a few problems I encountered with Go:
@@ -125,6 +131,8 @@ So forget the [LAMP](https://en.wikipedia.org/wiki/LAMP_(software_bundle\)) or [
 Try building your next application on [GAP: Go, AngularJS, and Postgres](https://twitter.com/jerodsanto/status/405744094510473216).
 
 ### [View the final code on GitHub](https://github.com/mattdsteele/hackomaha-ops)
+
+{% vine hUKDzMbhOBx%}
 
 [schools]: http://schools.opennebraska.io/
 [1]: https://twitter.com/jerodsanto/
