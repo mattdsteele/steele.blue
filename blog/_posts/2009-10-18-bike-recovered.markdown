@@ -40,10 +40,10 @@ A week and several voicemails later, I finally got a response from the police, w
 
 I've learned a lot of things through this whole ordeal, most of which are outlined in <a href="http://steel-cut.blogspot.com/2009/07/bradys-got-his-groove-ride-back.html">Brady's own post</a> about recovering his bike; so I won't repeat them here.
 
-But the most important part is to<strong> record your bike's serial number.</strong> If you have a bike, <strong>do it now</strong>. I was a lucky bastard to have mine recovered without it, but everything I've experienced tells me that it would have made the process much easier. Pawn shops are required to file a bike's serial number with the police before they can sell it. Without the serial number, I had to trust that the pawn shop and the police operated on the same wavelength, and would be able to identify the merchandise by my vague description: "It's light blue. Or is it teal? Man, I wish I had more than just <a href="http://matthewsteele.files.wordpress.com/2009/09/bike.jpg?w=500&amp;h=650">one picture</a> of this thing."
+But the most important part is to<strong> record your bike's serial number.</strong> If you have a bike, <strong>do it now</strong>. I was a lucky bastard to have mine recovered without it, but everything I've experienced tells me that it would have made the process much easier. Pawn shops are required to file a bike's serial number with the police before they can sell it. Without the serial number, I had to trust that the pawn shop and the police operated on the same wavelength, and would be able to identify the merchandise by my vague description: "It's light blue. Or is it teal? Man, I wish I had more than just <a href="/img/bike.jpg">one picture</a> of this thing."
 
 So I'm back in business! I picked up a new Kryptonite-built U-Lock from the Trek store and plan on riding into work tomorrow. No mere larceny can hold me down:
 
-<a href="http://matthewsteele.files.wordpress.com/2009/10/img_0425.jpg"><img class="aligncenter size-full wp-image-122" title="IMG_0425" src="http://matthewsteele.files.wordpress.com/2009/10/img_0425.jpg" alt="IMG_0425" ></a>
+![Bike](/img/img_0425.jpg)
 
 I only ask that Omaha's thief population let me keep my bike for at least one week before attempting another swindling.

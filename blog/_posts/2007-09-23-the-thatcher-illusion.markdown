@@ -17,7 +17,7 @@ Want to see something cool?
 
 Aside from upside down,  pretty normal, right?  Compare it to these:
 
-<img src="http://matthewsteele.files.wordpress.com/2007/09/thatcherillusion2.JPG" alt="thatcher2" />
+![Thatcher Illusion](/img/thatcherillusion2.JPG)
 
 What the heck happened here, and why does the left photo look like something you'd find on the pages of Fark?  Consider this: the two pairs of photos are <strong>exactly the same</strong>, except rotated 180 degrees.
 

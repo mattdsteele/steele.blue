@@ -23,7 +23,8 @@ To my delight, this came up as an anecdote in Chapter 6 of his book, "Practice":
 <strong>About a year ago I was teaching a group of developers in Omaha. At lunch they invited me to join their Coding Dojo. I watched as twenty developers opened their laptops and, keystroke by keystroke, followed along with the leader who was doing The Bowling Game Kata.</strong></blockquote>
 Reading this on the plane, I couldn't help but smile. Uncle Bob has had a tremendous affect on my development style and coding habits, so I'm glad to hear that I had an influence on him, however small that might be.
 
-<a href="http://matthewsteele.files.wordpress.com/2011/10/img_20111027_171005.jpg"><img class="aligncenter size-full wp-image-146" title="IMG_20111027_171005" src="http://matthewsteele.files.wordpress.com/2011/10/img_20111027_171005.jpg" alt="" ></a>
+
+![Clean Coder](/img/img_20111027_171005.jpg)
 
 Postscript: At the start of the session, we each introduced ourselves and explained what we wanted to get out of the course. <a href="http://twitter.com/JCake09">Jessica</a>'s conversation went like this:
 <blockquote><strong>Jessica</strong>: My name's Jessica Codr [pronounced "coder"]
