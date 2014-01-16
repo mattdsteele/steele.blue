@@ -44,6 +44,6 @@ But the most important part is to<strong> record your bike's serial number.</str
 
 So I'm back in business! I picked up a new Kryptonite-built U-Lock from the Trek store and plan on riding into work tomorrow. No mere larceny can hold me down:
 
-![Bike](/img/img_0425.jpg)
+{% picture /img/img_0425.jpg alt="Bike" %}
 
 I only ask that Omaha's thief population let me keep my bike for at least one week before attempting another swindling.

@@ -4,3 +4,16 @@ pygments: true
 permalink: /:title/
 baseurl: /blog
 distFolder: blog/
+picture:
+  output: "gen_img"
+  markup: "picturefill"
+  presets:
+    default:
+      ppi: [1, 1.5]
+      attr:
+        class: "picturefilled"
+      source_lg:
+        media: "(min-width: 400px)"
+        width: "768"
+      source_default:
+        width: "400"
