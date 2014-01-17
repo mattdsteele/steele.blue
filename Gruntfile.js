@@ -53,7 +53,7 @@ module.exports = function(grunt) {
       css: {
         expand: true,
         flatten: true,
-        src: '<%= config.root %>/assets/_css/*.css',
+        src: '<%= config.root %>/_assets/css/*.css',
         dest: '<%= config.root %>/_site/css/'
       }
     },
