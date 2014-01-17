@@ -5,6 +5,7 @@ permalink: /:title/
 baseurl: /blog
 distFolder: blog/
 picture:
+  source: "_img"
   output: "gen_img"
   markup: "picturefill"
   presets:

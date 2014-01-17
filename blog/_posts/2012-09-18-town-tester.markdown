@@ -14,7 +14,7 @@ meta:
 ---
 In my talk <a href="https://vimeo.com/49092644/">Zen and the Art of TDD</a>, I included a slide that showed only 43% of all Github repositories from Omaha developers included unit tests:
 
-![Languages](/img/languages1.png)
+{% picture languages1.png alt="Languages" %}
 
 Today I'm releasing the code I used to obtain this data: a script called Town Tester.
 

@@ -15,7 +15,7 @@ On my way back from India, I finally had a chance to read <a href="http://www.am
 
 It also was something I'd wanted to do because last year, my company brought in Robert C. Martin for a two-day course on TDD for me and a dozen other employees. And it was amazing. My colleague Shawn compared it to "getting private guitar lessons from Jimi Hendrix".
 
-![Uncle Bob](/img/img_0660.jpg)
+{% picture img_0660.jpg alt="Uncle Bob" %}
 
 To my delight, this came up as an anecdote in Chapter 6 of his book, "Practice":
 <blockquote>Since then many programmers have adopted a martial arts metaphor for their practice sessions. The name Coding Dojo seems to have stuck. Sometimes a group of programmers will meet and practice together just like martial artists do. At other times, programmers will practice solo, again as martial artists do.
@@ -24,7 +24,7 @@ To my delight, this came up as an anecdote in Chapter 6 of his book, "Practice":
 Reading this on the plane, I couldn't help but smile. Uncle Bob has had a tremendous affect on my development style and coding habits, so I'm glad to hear that I had an influence on him, however small that might be.
 
 
-![Clean Coder](/img/img_20111027_171005.jpg)
+{% picture img_20111027_171005.jpg alt="Clean Coder" %}
 
 Postscript: At the start of the session, we each introduced ourselves and explained what we wanted to get out of the course. <a href="http://twitter.com/JCake09">Jessica</a>'s conversation went like this:
 <blockquote><strong>Jessica</strong>: My name's Jessica Codr [pronounced "coder"]
