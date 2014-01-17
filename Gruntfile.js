@@ -7,7 +7,8 @@ module.exports = function(grunt) {
   grunt.initConfig({
     // Task configuration.
     config: {
-      root: 'blog'
+      root: 'blog',
+      bower: '../bower_components'
     },
     shell: {
       jekyll: {
@@ -22,7 +23,7 @@ module.exports = function(grunt) {
     },
     watch: {
       content: {
-        files: ['<%= config.root %>/_drafts/**/*', '<%= config.root %>/_posts/**/*', '<%= config.root %>/_layouts/**/*', '<%= config.root %>/index.html', '<%= config.root %>/css/**/*.less'],
+        files: ['<%= config.root %>/_drafts/**/*', '<%= config.root %>/_posts/**/*', '<%= config.root %>/_layouts/**/*', '<%= config.root %>/index.html', '<%= config.root %>/_/assets/css/**/*.less'],
         tasks: ['content']
       }
     },
@@ -38,14 +39,28 @@ module.exports = function(grunt) {
     less: {
       assets: {
         files: {
-          '<%= config.root %>/css/main.css' : '<%= config.root %>/css/*.less'
+          '<%= config.root %>/_site/css/main.css' : '<%= config.root %>/_assets/css/*.less'
         }
+      }
+    },
+    copy: {
+      iliveinomaha: {
+        expand: true,
+        flatten: true,
+        src: 'bower_components/iliveinomaha/iliveinomaha.css',
+        dest: '<%= config.root %>/_site/css/'
+      },
+      css: {
+        expand: true,
+        flatten: true,
+        src: '<%= config.root %>/assets/_css/*.css',
+        dest: '<%= config.root %>/_site/css/'
       }
     },
     autoprefixer: {
       generated: {
-        src: '<%= config.root %>/css/main.css',
-        dest: '<%= config.root %>/css/main.css'
+        src: '<%= config.root %>/_site/css/main.css',
+        dest: '<%= config.root %>/_site/css/main.css'
       }
     },
     aws: grunt.file.readJSON('grunt-aws.json'),
@@ -76,8 +91,8 @@ module.exports = function(grunt) {
   // These plugins provide necessary tasks.
   // Default task.
   grunt.registerTask('default', ['content']);
-  grunt.registerTask('content', ['less:assets', 'autoprefixer', 'shell:jekyll']);
-  grunt.registerTask('dev', ['connect:server', 'watch']);
+  grunt.registerTask('content', ['shell:jekyll', 'less:assets', 'copy', 'autoprefixer']);
+  grunt.registerTask('dev', ['content', 'connect:server', 'watch']);
   grunt.registerTask('deploy', ['content', 'aws_s3']);
 
 };
