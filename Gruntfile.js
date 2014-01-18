@@ -2,7 +2,6 @@
 module.exports = function(grunt) {
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
-
   // Project configuration.
   grunt.initConfig({
     // Task configuration.
@@ -23,7 +22,7 @@ module.exports = function(grunt) {
     },
     watch: {
       content: {
-        files: ['<%= config.root %>/_drafts/**/*', '<%= config.root %>/_posts/**/*', '<%= config.root %>/_layouts/**/*', '<%= config.root %>/index.html', '<%= config.root %>/_/assets/css/**/*.less'],
+        files: ['<%= config.root %>/_drafts/**/*', '<%= config.root %>/_posts/**/*', '<%= config.root %>/_layouts/**/*', '<%= config.root %>/index.html', '<%= config.root %>/_assets/**'],
         tasks: ['content']
       }
     },
@@ -39,28 +38,49 @@ module.exports = function(grunt) {
     less: {
       assets: {
         files: {
-          '<%= config.root %>/_site/css/main.css' : '<%= config.root %>/_assets/css/*.less'
+          '<%= config.root %>/_site/tmp/css/main.css' : '<%= config.root %>/_assets/css/*.less'
         }
       }
     },
-    copy: {
-      iliveinomaha: {
-        expand: true,
-        flatten: true,
-        src: 'bower_components/iliveinomaha/iliveinomaha.css',
-        dest: '<%= config.root %>/_site/css/'
-      },
+    clean: {
+      tmp: ['<%= config.root %>/_site/tmp']
+    },
+    concat: {
       css: {
-        expand: true,
-        flatten: true,
-        src: '<%= config.root %>/_assets/css/*.css',
-        dest: '<%= config.root %>/_site/css/'
+        src: [
+          '<%= config.root %>/_site/tmp/css/*.css',
+          '<%= config.root %>/_assets/css/*.css',
+          'bower_components/iliveinomaha/*.css'
+        ],
+        dest: '<%= config.root %>/_site/css/app.src.css'
+      },
+      js: {
+        src: [
+          'bower_components/picturefill/external/*.js',
+          'bower_components/picturefill/*.js',
+          '<%= config.root %>/_assets/js/*.js'
+        ],
+        dest: '<%= config.root %>/_site/js/app.src.js'
+      }
+    },
+    cssmin: {
+      css: {
+        files: {
+          '<%= config.root %>/_site/css/app.css' : '<%= concat.css.dest %>'
+        }
+      }
+    },
+    uglify: {
+      js: {
+        files: {
+          '<%= config.root %>/_site/js/app.js' : '<%= concat.js.dest %>'
+        }
       }
     },
     autoprefixer: {
       generated: {
-        src: '<%= config.root %>/_site/css/main.css',
-        dest: '<%= config.root %>/_site/css/main.css'
+        src: '<%= config.root %>/_site/tmp/css/main.css',
+        dest: '<%= config.root %>/_site/tmp/css/main.css'
       }
     },
     aws: grunt.file.readJSON('grunt-aws.json'),
@@ -91,7 +111,9 @@ module.exports = function(grunt) {
   // These plugins provide necessary tasks.
   // Default task.
   grunt.registerTask('default', ['content']);
-  grunt.registerTask('content', ['shell:jekyll', 'less:assets', 'copy', 'autoprefixer']);
+  grunt.registerTask('css', ['less:assets', 'concat:css', 'autoprefixer', 'cssmin']);
+  grunt.registerTask('js', ['concat:js', 'uglify']);
+  grunt.registerTask('content', ['shell:jekyll', 'css', 'js', 'clean:tmp']);
   grunt.registerTask('dev', ['content', 'connect:server', 'watch']);
   grunt.registerTask('deploy', ['content', 'aws_s3']);
 
