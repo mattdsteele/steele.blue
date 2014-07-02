@@ -2,12 +2,11 @@ name: Matt Steele
 markdown: redcarpet
 pygments: true
 permalink: /:title/
-baseurl: /blog
 distFolder: blog/
 picture:
   source: "_img"
   output: "gen_img"
-  markup: "picturefill"
+  markup: "picture"
   presets:
     default:
       ppi: [1, 1.5]

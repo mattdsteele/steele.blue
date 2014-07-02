@@ -56,8 +56,7 @@ module.exports = function(grunt) {
       },
       js: {
         src: [
-          'bower_components/picturefill/external/*.js',
-          'bower_components/picturefill/*.js',
+          'bower_components/picturefill/dist/picturefill.js',
           '<%= config.root %>/_assets/js/*.js'
         ],
         dest: '<%= config.root %>/_site/js/app.src.js'
@@ -114,7 +113,7 @@ module.exports = function(grunt) {
   grunt.registerTask('css', ['less:assets', 'concat:css', 'autoprefixer', 'cssmin']);
   grunt.registerTask('js', ['concat:js', 'uglify']);
   grunt.registerTask('content', ['shell:jekyll', 'css', 'js', 'clean:tmp']);
-  grunt.registerTask('dev', ['content', 'connect:server', 'watch']);
+  grunt.registerTask('serve', ['content', 'connect:server', 'watch']);
   grunt.registerTask('deploy', ['content', 'aws_s3']);
 
 };

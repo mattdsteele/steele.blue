@@ -16,6 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "iliveinomaha": "~0.1.4"
+    "iliveinomaha": "~0.1.4",
+    "picturefill": "~2.0.0"
   }
 }
