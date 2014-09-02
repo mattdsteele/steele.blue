@@ -1,6 +1,6 @@
 name: Matt Steele
 markdown: redcarpet
-pygments: true
+highlighter: pygments
 permalink: /:title/
 distFolder: blog/
 picture:
