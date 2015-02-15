@@ -87,6 +87,8 @@ module.exports = function(grunt) {
     cssmin: {
       options: {
         sourceMap: true
+        // Doesn't work yet, see https://github.com/jakubpawlowicz/clean-css/issues/397
+        // sourceMap: '<%= concat.css.dest %>.map'
       },
       css: {
         files: {
