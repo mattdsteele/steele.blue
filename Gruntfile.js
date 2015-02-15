@@ -36,6 +36,13 @@ module.exports = function(grunt) {
       }
     },
     less: {
+      options: {
+        sourceMap: true,
+        sourceMapURL: 'main.css.map',
+        sourceMapBasepath: '<%= config.root %>/_site/tmp/css',
+        sourceMapFilename: '<%= config.root %>/_site/tmp/css/main.css.map',
+        outputSourceFiles: true
+      },
       assets: {
         files: {
           '<%= config.root %>/_site/tmp/css/main.css' : '<%= config.root %>/_assets/css/*.less'
@@ -88,6 +95,9 @@ module.exports = function(grunt) {
       }
     },
     autoprefixer: {
+      options: {
+        map: true
+      },
       generated: {
         src: '<%= config.root %>/_site/tmp/css/main.css',
         dest: '<%= config.root %>/_site/tmp/css/main.css'
