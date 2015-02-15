@@ -46,6 +46,9 @@ module.exports = function(grunt) {
       tmp: ['<%= config.root %>/_site/tmp']
     },
     concat: {
+      options: {
+        sourceMap: true
+      },
       css: {
         src: [
           '<%= config.root %>/_site/tmp/css/*.css',
@@ -63,6 +66,9 @@ module.exports = function(grunt) {
       }
     },
     cssmin: {
+      options: {
+        sourceMap: true
+      },
       css: {
         files: {
           '<%= config.root %>/_site/css/app.css' : '<%= concat.css.dest %>'
@@ -70,6 +76,11 @@ module.exports = function(grunt) {
       }
     },
     uglify: {
+      options: {
+        sourceMap: true,
+        sourceMapIn: '<%= concat.js.dest %>.map',
+        sourceMapIncludeSources: true
+      },
       js: {
         files: {
           '<%= config.root %>/_site/js/app.js' : '<%= concat.js.dest %>'
