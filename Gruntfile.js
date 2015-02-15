@@ -7,7 +7,18 @@ module.exports = function(grunt) {
     // Task configuration.
     config: {
       root: 'blog',
+      site: '<%= config.root %>/_site',
       bower: '../bower_components'
+    },
+    babel: {
+      options: {
+        sourceMap: true
+      },
+      exampleJs: {
+        files: {
+          '<%= config.site %>/tmp/js/page.js' : '<%= config.root %>/_assets/js/page.es6'
+        }
+      }
     },
     shell: {
       jekyll: {
@@ -31,7 +42,7 @@ module.exports = function(grunt) {
         options: {
           hostname: '*',
           port: 4000,
-          base: '<%= config.root %>/_site'
+          base: '<%= config.site %>'
         }
       }
     },
@@ -67,6 +78,7 @@ module.exports = function(grunt) {
       js: {
         src: [
           'bower_components/picturefill/dist/picturefill.js',
+          '<%= config.site %>/tmp/js/*.js',
           '<%= config.root %>/_assets/js/*.js'
         ],
         dest: '<%= config.root %>/_site/js/app.src.js'
@@ -128,7 +140,7 @@ module.exports = function(grunt) {
   // Default task.
   grunt.registerTask('default', ['content']);
   grunt.registerTask('css', ['less:assets', 'concat:css', 'autoprefixer', 'cssmin']);
-  grunt.registerTask('js', ['concat:js', 'uglify']);
+  grunt.registerTask('js', ['babel', 'concat:js', 'uglify']);
   grunt.registerTask('content', ['shell:jekyll', 'css', 'js', 'clean:tmp']);
   grunt.registerTask('serve', ['content', 'connect:server', 'watch']);
   grunt.registerTask('deploy', ['content', 's3']);
