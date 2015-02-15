@@ -106,52 +106,22 @@ module.exports = function(grunt) {
     aws: grunt.file.readJSON('grunt-aws.json'),
     s3: {
       options: {
-        key: '<%= aws.key %>',
-        secret: '<%= aws.secret %>',
-        region: '<%= aws.region %>',
-        bucket: '<%= aws.bucket %>',
-        access: 'public-read',
-        headers: {
-          'X-i-live-in' : 'Omaha',
-          'Cache-Control': 'max-age=604800000, public',
-          'Expires': new Date(Date.now() + 604800000).toUTCString()
-        },
-        gzip: true,
-        gzipExclude: ['.jpg', '.png', '.gif', '.jpeg']
-      },
-      blog: {
-        sync: [
-          {
-            src: '<%= config.root %>/_site/**/*',
-            rel: '<%= config.root %>/_site',
-            dest: '/',
-            options: { verify: true }
-          }
-        ]
-      }
-    },
-    aws_s3: {
-      options: {
         accessKeyId: '<%= aws.key %>',
         secretAccessKey: '<%= aws.secret %>',
         region: '<%= aws.region %>',
-        bucket: '<%= aws.bucket %>'
-      },
-      blog: {
-        options: {
-          debug: false
+        bucket: '<%= aws.bucket %>',
+        access: 'public-read',
+        cache: true,
+        cacheTTL: 60*60*1000,
+        meta: {
+          'X-i-live-in' : 'Omaha',
         },
-        files: [
-          { dest: '/', action: 'delete' },
-          {
-            cwd: '<%= config.root %>/_site',
-            src: ['**'],
-            dest: '',
-            expand: true
-          }
-        ]
+      },
+      build: {
+        cwd: '<%= config.root %>/_site',
+        src: '**'
       }
-    }
+    },
   });
 
   // These plugins provide necessary tasks.
@@ -161,6 +131,6 @@ module.exports = function(grunt) {
   grunt.registerTask('js', ['concat:js', 'uglify']);
   grunt.registerTask('content', ['shell:jekyll', 'css', 'js', 'clean:tmp']);
   grunt.registerTask('serve', ['content', 'connect:server', 'watch']);
-  grunt.registerTask('deploy', ['content', 's3:blog']);
+  grunt.registerTask('deploy', ['content', 's3']);
 
 };
