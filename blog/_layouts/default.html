@@ -7,6 +7,29 @@
         <meta name="viewport" content="width=device-width">
         <link href="/feed/atom.xml" rel="alternate" title="Atom Feed" type="application/atom+xml">
 
+         <!-- Twitter -->
+         <meta name="twitter:card" content="summary">
+         <meta name="twitter:site" content="@mattdsteele">
+         <meta name="twitter:creator" content="@mattdsteele">
+         {% if page.title %}
+         <meta name="twitter:title" content="{{ page.title }}">
+         {% else %}
+         <meta name="twitter:title" content="{{ site.title }}">
+         {% endif %}
+         {% if page.url %}
+         <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+         {% endif %}
+         {% if page.description %}
+         <meta name="twitter:description" content="{{site.description}}">
+         {% else %}
+         <meta name="twitter:description" content="{{site.description}}">
+         {% endif %}
+
+         {% if page.image %}
+         <meta name="twitter:image:src" content="{{ site.url }}{{ page.image }}">
+         {% else %}
+         <meta name="twitter:image:src" content="http://www.gravatar.com/avatar/911466eedb687b909f7e66816223ceb2.png">
+         {% endif %}
 
         <!-- syntax highlighting CSS -->
         <link href='http://fonts.googleapis.com/css?family=Enriqueta' rel='stylesheet' type='text/css'>

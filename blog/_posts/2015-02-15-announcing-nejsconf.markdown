@@ -1,6 +1,7 @@
 ---
 layout: post
 title: We're hosting a JavaScript conference!
+image: /img/nejsconf-logo.svg
 ---
 
 On August 7, we'll be throwing [the first JavaScript conference ever held in Nebraska][site].
