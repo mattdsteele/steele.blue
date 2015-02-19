@@ -77,6 +77,7 @@ module.exports = function(grunt) {
       },
       js: {
         src: [
+          'node_modules/fontfaceobserver/fontfaceobserver.standalone.js',
           'bower_components/picturefill/dist/picturefill.js',
           '<%= config.site %>/tmp/js/*.js',
           '<%= config.root %>/_assets/js/*.js'
