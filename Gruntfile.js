@@ -20,6 +20,13 @@ module.exports = function(grunt) {
         }
       }
     },
+    copy: {
+      cssIncludes: {
+        files: {
+          '<%= config.root %>/_includes/css-includes.css' : '<%= config.root %>/_site/css/app.css' 
+        }
+      }
+    },
     shell: {
       jekyll: {
         command: 'jekyll build --drafts',
@@ -142,9 +149,9 @@ module.exports = function(grunt) {
   // These plugins provide necessary tasks.
   // Default task.
   grunt.registerTask('default', ['content']);
-  grunt.registerTask('css', ['less:assets', 'concat:css', 'autoprefixer', 'cssmin']);
+  grunt.registerTask('css', ['less:assets', 'concat:css', 'autoprefixer', 'cssmin', 'copy:cssIncludes']);
   grunt.registerTask('js', ['babel', 'concat:js', 'uglify']);
-  grunt.registerTask('content', ['shell:jekyll', 'css', 'js', 'clean:tmp']);
+  grunt.registerTask('content', ['css', 'shell:jekyll', 'js', 'clean:tmp']);
   grunt.registerTask('serve', ['content', 'connect:server', 'watch']);
   grunt.registerTask('deploy', ['content', 's3']);
 
