@@ -3,11 +3,11 @@ module Jekyll
 
     def initialize(name, id, tokens)
       super
-      @id = id
+      @id = id.strip
     end
 
     def render(context)
-      %(<script async class="speakerdeck-embed" data-id="#{id}" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>)
+      %(<script async class="speakerdeck-embed" data-id="#{@id}" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>)
     end
   end
 end

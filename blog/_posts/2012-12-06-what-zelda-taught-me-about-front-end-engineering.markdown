@@ -17,11 +17,14 @@ I spoke at the HaymarketDev meetup in Lincoln on treating JavaScript like a real
 
 I was coming down from an NES Zelda bender, and I think it shows.
 
-<strong><a href="https://speakerdeck.com/mattdsteele/what-zelda-taught-me-about-front-end-engineering">Slides</a></strong>
+## Slides
 
-Slides + Audio:
+{% speakerdeck 756e552021880130997622000a1d01dc %}
+
+## Screencast
+
 {% vimeo 54993676 %}
 
-Video:
+## Video:
 
 {% youtube 2whBsRpkt4Q %}

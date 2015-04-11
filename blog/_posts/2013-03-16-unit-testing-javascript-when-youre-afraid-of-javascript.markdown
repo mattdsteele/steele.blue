@@ -16,8 +16,9 @@ I spoke at <a href="http://www.nebraskacodecamp.com/">Nebraska Code Camp</a> on
 <blockquote>We've gone from writing toy programs in JavaScript to full-blown applications, but our testing skills haven't caught up. Weirdly, lots of us are coming to JavaScript from other languages that value and encourage testing. What happened?
 
 Turns out, unit testing JavaScript is different than other languages, and doing it well means you have to rethink how you write JS code.</blockquote>
-<a href="https://speakerdeck.com/mattdsteele/unit-testing-javascript-when-youre-afraid-of-javascript"><strong>Slides</strong></a>
 
-<strong>Slides + Audio</strong>
+## Slides
+{% speakerdeck 307545d070ae0130463812313d1c9482 %}
 
+## Screencast
 {% vimeo 62004647 %}
