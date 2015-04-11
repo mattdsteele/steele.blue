@@ -8,7 +8,11 @@ I spoke at [Omaha Coffee & Code](http://www.meetup.com/coffeeandcode/) about the
 
 > Big heavy images are responsible for most of the bloat on a responsive website, but it doesn't have to be that way.  Here's the latest HTML elements you can use to keep your images small, and your site lean & fast. 
 
-## [Slides](https://speakerdeck.com/mattdsteele/sizes)
+## Slides
+
+{% speakerdeck 1cbf82f0e3b001311c6d56c19b776c40 %}
+
+## Screencast
 
 {% vimeo 99683665 %}
 
