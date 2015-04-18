@@ -7,8 +7,7 @@ module.exports = function(grunt) {
     // Task configuration.
     config: {
       root: 'blog',
-      site: '<%= config.root %>/_site',
-      bower: '../bower_components'
+      site: '<%= config.root %>/_site'
     },
     babel: {
       options: {
@@ -78,14 +77,14 @@ module.exports = function(grunt) {
         src: [
           '<%= config.root %>/_site/tmp/css/*.css',
           '<%= config.root %>/_assets/css/*.css',
-          'bower_components/iliveinomaha/*.css'
+          'node_modules/iliveinomaha/*.css'
         ],
         dest: '<%= config.root %>/_site/css/app.src.css'
       },
       js: {
         src: [
           'node_modules/fontfaceobserver/fontfaceobserver.standalone.js',
-          'bower_components/picturefill/dist/picturefill.js',
+          'node_modules/picturefill/dist/picturefill.js',
           '<%= config.site %>/tmp/js/*.js',
           '<%= config.root %>/_assets/js/*.js'
         ],
