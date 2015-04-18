@@ -5,10 +5,10 @@ layout: null
 <feed xmlns="http://www.w3.org/2005/Atom">
  
   <title>Matt Steele</title>
-  <link href="http://www.matthew-steele.com"/>
-  <link type="application/atom+xml" rel="self" href="http://www.matthew-steele.com/feed/atom.xml"/>
+  <link href="http://steele.blue"/>
+  <link type="application/atom+xml" rel="self" href="http://steele.blue/feed/atom.xml"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>http://www.matthew-steele.com</id>
+  <id>http://steele.blue/id>
   <author>
     <name>Matt Steele</name>
     <email>orphum@gmail.com</email>
@@ -16,8 +16,8 @@ layout: null
 
   {% for post in site.posts %}
   <entry>
-    <id>http://www.matthew-steele.com{{ post.id }}</id>
-    <link type="text/html" rel="alternate" href="http://www.matthew-steele.com{{ post.url }}"/>
+    <id>http://steele.blue{{ post.id }}</id>
+    <link type="text/html" rel="alternate" href="http://steele.blue{{ post.url }}"/>
     <title>{{ post.title }}</title>
     <published>{{ post.date | date_to_xmlschema }}</published>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
