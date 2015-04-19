@@ -1,3 +1,22 @@
+// Variables
+@serif: 'Enriqueta', serif;
+@sans-serif: 'Istok Web', sans-serif;
+
+// Mixins
+.sans-serif() {
+  font-family: sans-serif;
+  &.font-enriqueta {
+    font-family: @sans-serif;
+  }
+}
+
+.serif() {
+  font-family: serif;
+  .font-istok-web & {
+    font-family: @serif;
+  }
+}
+
 /* Basic resets */
 * {
   box-sizing: border-box;
@@ -23,10 +42,8 @@ img {
 }
 
 body {
-  font-family:, serif;
-  &.font-enriqueta {
-    font-family: 'Enriqueta', serif;
-  }
+  .sans-serif;
+
   a {
     text-decoration: none;
     color: darken(skyblue, 30%);
@@ -48,10 +65,7 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: sans-serif;
-  .font-istok-web & {
-    font-family: 'Istok Web', sans-serif;
-  }
+  .serif;
 }
 .main {
   max-width: 40em;
