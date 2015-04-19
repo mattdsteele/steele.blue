@@ -11,6 +11,15 @@ I gave a talk at [NebraskaJS][nejs] about my journey with source maps:
 
 {% speakerdeck 4f8df47ac14f48bfbf1de9ca31717f05 %}
 
+## Demos
+
+* [Sass, Concatenation, Minification](http://projects.steele.blue/source-maps/example1.html)
+* [CoffeeScript, TypeScript, ECMAScript 6](http://projects.steele.blue/source-maps/example2.html)
+* [ArnoldC](http://projects.steele.blue/source-maps/example3.html)
+
+The source is available [on GitHub.](https://github.com/mattdsteele/sourcemaps-presentation/tree/master/examples)
+
+
 # We've complected things with tools
 
 You probably don't deploy your JavaScript or CSS to production in the same format as you write it.
