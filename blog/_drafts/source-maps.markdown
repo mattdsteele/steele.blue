@@ -7,10 +7,6 @@ I gave a talk at [NebraskaJS][nejs] about my journey with source maps:
 
 ## Video
 
-## Slides
-
-{% speakerdeck 4f8df47ac14f48bfbf1de9ca31717f05 %}
-
 ## Demos
 
 * [Sass, Concatenation, Minification](http://projects.steele.blue/source-maps/example1.html)
@@ -18,6 +14,10 @@ I gave a talk at [NebraskaJS][nejs] about my journey with source maps:
 * [ArnoldC](http://projects.steele.blue/source-maps/example3.html)
 
 The source is available [on GitHub.](https://github.com/mattdsteele/sourcemaps-presentation/tree/master/examples)
+
+## Slides
+
+{% speakerdeck 4f8df47ac14f48bfbf1de9ca31717f05 %}
 
 
 # We've complected things with tools
