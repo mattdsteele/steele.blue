@@ -27,6 +27,15 @@ module.exports = function(grunt) {
       }
     },
     shell: {
+      build: {
+        command: 'jekyll build',
+        options: {
+          stdout: true,
+          execOptions: {
+            cwd: '<%= config.root %>'
+          }
+        }
+      },
       jekyll: {
         command: 'jekyll build --drafts',
         options: {
@@ -151,7 +160,8 @@ module.exports = function(grunt) {
   grunt.registerTask('css', ['less:assets', 'concat:css', 'autoprefixer', 'cssmin', 'copy:cssIncludes']);
   grunt.registerTask('js', ['babel', 'concat:js', 'uglify']);
   grunt.registerTask('content', ['css', 'shell:jekyll', 'js', 'clean:tmp']);
+  grunt.registerTask('build', ['css', 'shell:build', 'js', 'clean:tmp']);
   grunt.registerTask('serve', ['content', 'connect:server', 'watch']);
-  grunt.registerTask('deploy', ['content', 's3']);
+  grunt.registerTask('deploy', ['build', 's3']);
 
 };
