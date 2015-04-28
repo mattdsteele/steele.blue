@@ -78,7 +78,7 @@ Here's part of [ArnoldC's lexer](https://github.com/mattdsteele/arnoldc.js/blob/
 ```
 
 Keywords go on the left, and the name of the token is on the right.
-The keywords are regular expressions, so you can be as complicated as you need.
+The keywords are regular expressions, so they can be as complicated as you need.
 
 The parser then takes these keywords and creates a language out of them. Here's a higher-level ArnoldC concept of a "statement":
 
