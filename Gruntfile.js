@@ -21,9 +21,9 @@ module.exports = function(grunt) {
     },
     copy: {
       cssIncludes: {
-        files: {
-          '<%= config.root %>/_includes/css-includes.css' : '<%= config.root %>/_site/tmp/css/main.css' 
-        }
+        files: [
+          {'<%= config.root %>/_includes/css-includes.css' : '<%= config.root %>/_site/tmp/css/main.css'}
+        ]
       },
       maps: {
         files: {
