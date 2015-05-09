@@ -1,19 +1,22 @@
+@import 'syntax';
+@import 'iliveinomaha';
+
 // Variables
-@serif: 'Enriqueta', serif;
-@sans-serif: 'Istok Web', sans-serif;
+$serif: 'Enriqueta', serif;
+$sans-serif: 'Istok Web', sans-serif;
 
 // Mixins
-.sans-serif() {
+@mixin sans-serif {
   font-family: sans-serif;
   &.font-enriqueta {
-    font-family: @sans-serif;
+    font-family: $sans-serif;
   }
 }
 
-.serif() {
+@mixin serif {
   font-family: serif;
   .font-istok-web & {
-    font-family: @serif;
+    font-family: $serif;
   }
 }
 
@@ -42,7 +45,7 @@ img {
 }
 
 body {
-  .sans-serif;
+  @include sans-serif;
 
   a {
     text-decoration: none;
@@ -65,7 +68,7 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  .serif;
+  @include serif;
 }
 .main {
   max-width: 40em;

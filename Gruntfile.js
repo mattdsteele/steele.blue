@@ -22,7 +22,12 @@ module.exports = function(grunt) {
     copy: {
       cssIncludes: {
         files: {
-          '<%= config.root %>/_includes/css-includes.css' : '<%= config.root %>/_site/css/app.css' 
+          '<%= config.root %>/_includes/css-includes.css' : '<%= config.root %>/_site/tmp/css/main.css' 
+        }
+      },
+      maps: {
+        files: {
+          '<%= config.root %>/_site/main.css.map' : '<%= config.root %>/_site/tmp/css/main.css.map'
         }
       }
     },
@@ -61,18 +66,24 @@ module.exports = function(grunt) {
         }
       }
     },
-    less: {
+    sass: {
       options: {
         sourceMap: true,
-        sourceMapURL: 'main.css.map',
-        sourceMapBasepath: '<%= config.root %>/_site/tmp/css',
-        sourceMapFilename: '<%= config.root %>/_site/tmp/css/main.css.map',
-        outputSourceFiles: true
+        sourceMapContents: true,
+        outputStyle: 'compressed',
+        includePaths: [
+          '<%= config.root %>/_site/tmp/css/',
+          '<%= config.root %>/_assets/css/',
+        ]
       },
       assets: {
-        files: {
-          '<%= config.root %>/_site/tmp/css/main.css' : '<%= config.root %>/_assets/css/*.less'
-        }
+        files: [{
+          expand: true,
+          cwd: '<%= config.root %>/_assets/css',
+          src: '*.scss',
+          dest: '<%= config.root %>/_site/tmp/css',
+          ext: '.css'
+        }]
       }
     },
     clean: {
@@ -81,14 +92,6 @@ module.exports = function(grunt) {
     concat: {
       options: {
         sourceMap: true
-      },
-      css: {
-        src: [
-          '<%= config.root %>/_site/tmp/css/*.css',
-          '<%= config.root %>/_assets/css/*.css',
-          'node_modules/iliveinomaha/*.css'
-        ],
-        dest: '<%= config.root %>/_site/css/app.src.css'
       },
       js: {
         src: [
@@ -108,7 +111,7 @@ module.exports = function(grunt) {
       },
       css: {
         files: {
-          '<%= config.root %>/_site/css/app.css' : '<%= concat.css.dest %>'
+          '<%= config.root %>/_site/css/main.css' : '<%= concat.css.dest %>'
         }
       }
     },
@@ -157,10 +160,10 @@ module.exports = function(grunt) {
   // These plugins provide necessary tasks.
   // Default task.
   grunt.registerTask('default', ['content']);
-  grunt.registerTask('css', ['less:assets', 'concat:css', 'autoprefixer', 'cssmin', 'copy:cssIncludes']);
+  grunt.registerTask('css', ['sass:assets', 'autoprefixer', 'copy:cssIncludes']);
   grunt.registerTask('js', ['babel', 'concat:js', 'uglify']);
-  grunt.registerTask('content', ['css', 'shell:jekyll', 'js', 'clean:tmp']);
-  grunt.registerTask('build', ['css', 'shell:build', 'js', 'clean:tmp']);
+  grunt.registerTask('content', ['shell:jekyll', 'css', 'js', 'copy:maps', 'clean:tmp']);
+  grunt.registerTask('build', ['shell:build', 'css', 'js', 'copy:maps', 'clean:tmp']);
   grunt.registerTask('serve', ['content', 'connect:server', 'watch']);
   grunt.registerTask('deploy', ['build', 's3']);
 
