@@ -7,6 +7,8 @@ I gave a talk at [NebraskaJS][nejs] about my journey with source maps:
 
 ## Video
 
+{% youtube Jv52vFLnn54 %}
+
 ## Demos
 
 * [Sass, Concatenation, Minification](http://projects.steele.blue/source-maps/example1.html)
@@ -53,7 +55,7 @@ Supporting Source Maps right is *hard*. Check out the release notes for the [Gru
 This happened across most of my toolchain.
 Concatenate? [Added less than a year ago](https://github.com/gruntjs/grunt-contrib-concat/pull/59).
 Uglify? [Took a complete rewrite](https://github.com/mishoo/UglifyJS2).
-Sass? Only worked well in the Ruby implementation until [two months ago](https://github.com/sass/node-sass/releases/tag/v2.0.0).
+Sass? Just got consistently working maps in Node [a week ago](https://github.com/sass/libsass/releases/tag/3.2.0).
 
 But I think **we're finally at a turning point**. At least for my toolchain, source maps work across the board.They're supported and on by default in every evergreen browser, and it all just works.
 
