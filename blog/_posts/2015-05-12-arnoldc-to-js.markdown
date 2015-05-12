@@ -62,7 +62,7 @@ If you understand a few key concepts, you can take advantage of libraries and to
 I registered for a [Stanford compilers course][coursera], but only watched up through the "Parsing" section.
 That's probably all you need to get started.
 
-Broadly, a compiler is really done in two phases: lexing and parsing.
+Broadly, a compiler works in two phases: lexing and parsing.
 The *lexer* takes your source code and converts it into tokens, such as `START_IF_STATEMENT`, or `ADDITION_OPERATOR`. 
 
 You then run your code through a *parser*, which is where the tokens get assembled into an Abstract Syntax Tree.
@@ -73,7 +73,7 @@ From here, you have a structured program and can write a translation from the in
 Writing lexers and parsers is difficult, so I've been told. But you don't have to do it!
 Instead, you can define your language (keywords and structure) using regular expressions, and use [Jison](https://zaach.github.io/jison/docs/) to generate the lexer and parser automatically.
 
-Jison was written by Mozilla's Zach Carter, and forms the spine of the ArnoldC compiler. Jison is a port of the C program Bison, which performs a similar role using a less fun language. But many of its [docs](http://dinosaur.compilertools.net/bison/bison_4.html#SEC7) might be useful to peruse.
+Jison was written by Mozilla's Zach Carter, and forms the spine of the ArnoldC compiler. Jison is a port of the C program [Bison(https://www.gnu.org/software/bison/), which performs a similar role using a less fun language. But many of its [docs](http://dinosaur.compilertools.net/bison/bison_4.html#SEC7) might be useful to peruse.
 
 Here's part of [ArnoldC's lexer](https://github.com/mattdsteele/arnoldc.js/blob/master/lib/arnoldc.jison), written in Jison:
 
