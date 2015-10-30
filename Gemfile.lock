@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    kramdown (1.8.0)
     mini_magick (3.7.0)
       subexec (~> 0.2.1)
     redcarpet (3.0.0)
@@ -10,5 +11,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  kramdown
   mini_magick
   redcarpet
+
+BUNDLED WITH
+   1.10.6

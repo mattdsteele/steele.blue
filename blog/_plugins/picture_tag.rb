@@ -1,1 +1,1 @@
-/Users/matt/code/jekyll-picture-tag/picture_tag.rb
+/Users/msteele/code/jekyll-picture-tag/picture_tag.rb

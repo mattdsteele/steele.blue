@@ -73,7 +73,7 @@ From here, you have a structured program and can write a translation from the in
 Writing lexers and parsers is difficult, so I've been told. But you don't have to do it!
 Instead, you can define your language (keywords and structure) using regular expressions, and use [Jison](https://zaach.github.io/jison/docs/) to generate the lexer and parser automatically.
 
-Jison was written by Mozilla's Zach Carter, and forms the spine of the ArnoldC compiler. Jison is a port of the C program [Bison(https://www.gnu.org/software/bison/), which performs a similar role using a less fun language. But many of its [docs](http://dinosaur.compilertools.net/bison/bison_4.html#SEC7) might be useful to peruse.
+Jison was written by Mozilla's Zach Carter, and forms the spine of the ArnoldC compiler. Jison is a port of the C program [Bison](https://www.gnu.org/software/bison/), which performs a similar role using a less fun language. But many of its [docs](http://dinosaur.compilertools.net/bison/bison_4.html#SEC7) might be useful to peruse.
 
 Here's part of [ArnoldC's lexer](https://github.com/mattdsteele/arnoldc.js/blob/master/lib/arnoldc.jison), written in Jison:
 
