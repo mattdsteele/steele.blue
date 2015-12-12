@@ -48,3 +48,6 @@ DEPENDENCIES
   kramdown
   mini_magick
   redcarpet
+
+BUNDLED WITH
+   1.10.6
