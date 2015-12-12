@@ -1,4 +1,6 @@
 /*global module:false*/
+var fs = require('fs');
+
 module.exports = function(grunt) {
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
@@ -8,16 +10,6 @@ module.exports = function(grunt) {
     config: {
       root: 'blog',
       site: '<%= config.root %>/_site'
-    },
-    babel: {
-      options: {
-        sourceMap: true
-      },
-      exampleJs: {
-        files: {
-          '<%= config.site %>/tmp/js/page.js' : '<%= config.root %>/_assets/js/page.es6'
-        }
-      }
     },
     copy: {
       cssIncludes: {
@@ -89,20 +81,6 @@ module.exports = function(grunt) {
     clean: {
       tmp: ['<%= config.root %>/_site/tmp']
     },
-    concat: {
-      options: {
-        sourceMap: true
-      },
-      js: {
-        src: [
-          'node_modules/fontfaceobserver/fontfaceobserver.js',
-          'node_modules/picturefill/dist/picturefill.js',
-          '<%= config.site %>/tmp/js/*.js',
-          '<%= config.root %>/_assets/js/*.js'
-        ],
-        dest: '<%= config.root %>/_site/js/app.src.js'
-      }
-    },
     cssmin: {
       options: {
         sourceMap: true
@@ -112,18 +90,6 @@ module.exports = function(grunt) {
       css: {
         files: {
           '<%= config.root %>/_site/css/main.css' : '<%= concat.css.dest %>'
-        }
-      }
-    },
-    uglify: {
-      options: {
-        sourceMap: true,
-        sourceMapIn: '<%= concat.js.dest %>.map',
-        sourceMapIncludeSources: true
-      },
-      js: {
-        files: {
-          '<%= config.root %>/_site/js/app.js' : '<%= concat.js.dest %>'
         }
       }
     },
@@ -155,13 +121,16 @@ module.exports = function(grunt) {
         src: '**'
       }
     },
+    webpack: {
+      app: require('./webpack.config.js')
+    }
   });
 
   // These plugins provide necessary tasks.
   // Default task.
   grunt.registerTask('default', ['content']);
   grunt.registerTask('css', ['sass:assets', 'autoprefixer', 'copy:cssIncludes']);
-  grunt.registerTask('js', ['babel', 'concat:js', 'uglify']);
+  grunt.registerTask('js', ['webpack']);
   grunt.registerTask('content', ['shell:jekyll', 'css', 'js', 'copy:maps', 'clean:tmp']);
   grunt.registerTask('build', ['shell:build', 'css', 'js', 'copy:maps', 'clean:tmp']);
   grunt.registerTask('serve', ['content', 'connect:server', 'watch']);
