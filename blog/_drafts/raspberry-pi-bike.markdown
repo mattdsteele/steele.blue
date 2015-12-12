@@ -11,10 +11,10 @@ I recently partook in [Bike De'Lights][event], Omaha's two-wheeled tour of the C
 Cyclists are encouraged to decorate their bikes with battery-powered lights, jingle bells, and get into the festive spirit.
 
 I treat this as an opportunity to build an overly-complex hardware project.
-[Last year I wired up an Arduino][2014] to send remote-control commands to drive LED light strip.
-It was fun, but there were some opportunities to make it better (or just further complect it), which is what I did!
+[Last year I wired up an Arduino][2014] to generate remote-control signals to drive an LED light strip.
+It was fun, but there were some opportunities to make it better (or just further complect the system), which is what I did!
 
-My goal for the project: hook up LED lights to my bike frame, and have it respond to my heart rate and pedaling cadence, using the ANT+ sensors on my bike.
+My goal for the project: hook up an LED light strip to my bike frame, and have it respond to my heart rate and pedaling cadence, using the ANT+ sensors on my bike.
 Specifically, I wanted the lights to **change color from green to red as I pedaled faster**, and have the **lights blink in sync with my heart rate**.
 
 I used a Raspberry Pi and an app written in JavaScript to do this. The code is on [GitHub][github]. It was rickety, but it worked! Here's how I put it together.
@@ -38,7 +38,7 @@ To capture sensor input from the bike:
 * [ANT+ USB receiver](http://www.amazon.com/gp/product/B004YJSD20)
 * [Speed/Cadence Bike Sensor](http://www.amazon.com/Garmin-Speed-Cadence-Bike-Sensor/dp/B000BFNOT8)
 * [Heart Rate Monitor](https://buy.garmin.com/en-US/US/shop-by-accessories/fitness-sensors/hrm-run-/prod133715.html)
-* [Micro-USB to USB adapter](http://www.amazon.com/gp/product/B015XA3W0G) (the Pi Zero has micro USB inputs)
+* [Micro-USB to USB adapter](http://www.amazon.com/gp/product/B015XA3W0G) (the Pi Zero has micro-USB inputs)
 
 I had most of these items on hand from previous projects, but had to buy the LED Light Strip and transistors.
 In total this project uses less than $20 of consumable parts.
@@ -61,21 +61,21 @@ Also note: the dimensions are off in the diagram - the circuitboard was actually
 The Raspberry Pi was running [Raspbian](https://www.raspberrypi.org/downloads/raspbian/) and a program I wrote in Node.js.
 
 I used Thomas Sarlandie's [pi-blaster](https://github.com/sarfata/pi-blaster) library to send PWM signals to the LED strip.
-The library creates a `/dev/pi-blaster` endpoint, which you write to and it send the signals to the GPIO pins.
-There's even a [Node.js wrapper](https://github.com/sarfata/pi-blaster.js) which made integration super simple.
+The library creates a `/dev/pi-blaster` endpoint on the filesystem, which you write to and it send the signals to the GPIO pins.
+There's even a [Node.js wrapper](https://github.com/sarfata/pi-blaster.js) which made adding it to my app super simple.
 
 {% youtube M45KM8725Os %}
 
 To capture ANT+ data, I used Alessandro Vergani's [ant-plus](https://github.com/Loghorn/ant-plus) library, which emits Node-style events when new sensor data comes in.
-This worked well, but only the heart rate monitor was supported.
+This worked well, but only the heart rate monitor was supported out of the box.
 So the majority of the coding I did for the project was implementing the ANT+ speed/cadence sensor into the library.
 The [pull request](https://github.com/Loghorn/ant-plus/pull/4) shows the fun involved there.
 
-The actual code to integrate them was another fun learning experience.
-Since the heart rate and cadence sensors produced a stream of events, I pulled in [RxJS](https://github.com/Reactive-Extensions/RxJS) to treat them as Observables, and used reactive programming techniques to pull everything together.
+The actual code to integrate sensor input and have it drive the LEDs was another fun learning experience.
+Since the heart rate and cadence sensors produced a stream of events, I pulled in [RxJS](https://github.com/Reactive-Extensions/RxJS) to treat them as Observables, and used reactive programming techniques to map the inputs into a stream that could "render" an LED strip.
 That's probably another blog post in itself.
 
-Once I had a working protytpe, I configured a `systemd` service to start my Node application on boot.
+Once I had a working protytpe, I configured a `systemd` service to start the Node application when the Pi booted up.
 This was especially useful as I had to reboot the Pi multiple times during the ride.
 
 ## Running the Lights
@@ -83,7 +83,7 @@ This was especially useful as I had to reboot the Pi multiple times during the r
 Overall, I'd say the results were a solid B/B+.
 The lights were super bright, and lots of folks complemented them as I rode.
 It was especially cool to see the lights start flashing like crazy as we climbed a big hill and my heart rate spiked.
-But some parts could have worked better:
+But some parts could have worked better.
 
 The cadence sensor connection was buggy as hell.
 About 50% of the time it wouldn't connect to the sensor on startup.
@@ -93,17 +93,17 @@ I'm not sure why this happened.
 My guess is it had to do with interference from other sensors, since the problem was especially pronounced at stops and locations with lots of other cyclists.
 
 I would also have fastened everything down better.
-Omaha streets are often potholed and bumpy, and there were several times when the batteries fell out of the enclosure, shutting off the entire light system.
+Omaha streets are often potholed and bumpy, and there were several times when the batteries fell out of the enclosure, shutting all the lights off.
 I also just used jumper wires to connect the circuit board to the LED strip, and those fell out a number of times.
 A little more soldering and electrical tape would have fixed these issues.
 A shakedown ride or two would have also helped; most of my testing was done on an indoor bike trainer.
 
-Also, I would have started on everything a little earlier.
+Also, I would have have given myself more time to build it out.
 I was working on the cadence sensor code until 4am the previous night, which probably contributed to the overall bugginess of the code.
 
 But with those caveats in mind, I was happy with the result!
 In particular I liked that I could use a Raspberry PI and write JavaScript code to power hardware, using tools I was already familiar with.
-This solidified my belief that [hardware is the new Geocities](/hardware-is-the-new-geocities), and that it's possible to build pretty slick (if a little rickety) projects using JavaScript.
+This solidifies my belief that [hardware is the new Geocities](/hardware-is-the-new-geocities), and that it's possible to build pretty slick (if a little rickety) physical projects using JavaScript.
 
 ## References
 
