@@ -1,4 +1,8 @@
 name: Matt Steele
+author:
+  name: Matt Steele
+  email: matt@steele.blue
+  uri: http://steele.blue
 url: https://steele.blue
 description: The personal website of Matt Steele
 markdown: redcarpet
@@ -19,3 +23,7 @@ picture:
         width: "768"
       source_default:
         width: "400"
+gems:
+  - jekyll-feed
+feed:
+  path: feed/atom.xml

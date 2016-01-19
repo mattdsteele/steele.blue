@@ -7,4 +7,5 @@ gem "kramdown"
 
 group :jekyll_plugins do
   gem 'jekyll-picture-tag', '~> 0.3.0'
+  gem 'jekyll-feed'
 end
