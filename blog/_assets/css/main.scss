@@ -37,6 +37,8 @@
 // Variables
 $serif: 'Enriqueta', serif;
 $sans-serif: 'Istok Web', sans-serif;
+$monospace: Consolas, Menlo, Andale Mono, Lucida Console, monospace;
+$code-grey: #f2f2f2;
 
 // Mixins
 @mixin sans-serif {
@@ -103,6 +105,13 @@ body {
 h1,h2,h3,h4,h5,h6 {
   @include serif;
 }
+
+code {
+  font-family: $monospace;
+  font-size: 0.85em;
+  background-color: $code-grey;
+}
+
 .main {
   max-width: 40em;
   margin: auto;
@@ -122,8 +131,10 @@ h1,h2,h3,h4,h5,h6 {
 .highlight {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  background-color: $code-grey;
   pre {
     line-height: 100%;
+    margin: 0.2em 0;
   }
 }
 
