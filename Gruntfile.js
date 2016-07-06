@@ -25,7 +25,7 @@ module.exports = function(grunt) {
     },
     shell: {
       build: {
-        command: 'jekyll build',
+        command: 'jekyll build --future',
         options: {
           stdout: true,
           execOptions: {
@@ -34,7 +34,7 @@ module.exports = function(grunt) {
         }
       },
       jekyll: {
-        command: 'jekyll build --drafts',
+        command: 'jekyll build --drafts --future',
         options: {
           stdout: true,
           execOptions: {

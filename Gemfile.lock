@@ -32,6 +32,10 @@ GEM
     mercenary (0.3.5)
     mini_magick (3.8.1)
       subexec (~> 0.2.1)
+    posix-spawn (0.3.11)
+    pygments.rb (0.6.3)
+      posix-spawn (~> 0.3.6)
+      yajl-ruby (~> 1.2.0)
     rb-fsevent (0.9.6)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
@@ -40,6 +44,7 @@ GEM
     safe_yaml (1.0.4)
     sass (3.4.20)
     subexec (0.2.3)
+    yajl-ruby (1.2.1)
 
 PLATFORMS
   ruby
@@ -49,6 +54,7 @@ DEPENDENCIES
   jekyll-picture-tag (~> 0.3.0)
   kramdown
   mini_magick
+  pygments.rb
   redcarpet
 
 BUNDLED WITH
