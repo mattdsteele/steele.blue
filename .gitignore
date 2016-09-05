@@ -1,5 +1,4 @@
 _site
-_drafts/*.*
 node_modules
 .DS_Store
 grunt-aws.json
