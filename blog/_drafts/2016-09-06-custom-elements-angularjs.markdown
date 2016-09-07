@@ -77,6 +77,7 @@ Consuming this in Angular 2 is pretty straightforward: you use the `[prop]="valu
 
 An Angular component that uses it might look like:
 
+{% raw %}
 ```javascript
 import { Component } from '@angular/core';
 
@@ -100,6 +101,7 @@ export class CountdownComponent {
   }
 }
 ```
+{% endraw %}
 
 One thing to watch out for, if you get an error like this:
 
@@ -133,7 +135,7 @@ So! We have two ways we can fix this.
 
 On the input side, we can add some code to our Custom Element that looks for attribute changes, using a few CE lifecycle hooks:
 
-```
+```javascript
 static get observedAttributes() {
   return ['seconds'];
 }
@@ -145,15 +147,17 @@ attributeChangedCallback(name, oldVal, newVal) {
 }
 ```
 
-And then bind to the attribute in our template (note the use of `ng-attr` to prevent the CE from seeing the raw expression):
+{% raw %}
+And then bind to the attribute in our template (note the use of `ng-attr` to prevent the CE from seeing the raw `{{expression}}`):
 
-```
+```html
 <countdown-timer ng-attr-seconds="{{$ctrl.secondsLeft}}"></countdown-timer>
 ```
+{% endraw %}
 
 On the output side, we can bind to the event manually, and wrap it in `$scope.$apply()` to make sure the digest call gets invoked:
 
-```
+```javascript
 $element.on('countdownEnded', (e) => {
   // If we don't do a digest, this doesn't get picked up immediately
   $scope.$apply(() => {
