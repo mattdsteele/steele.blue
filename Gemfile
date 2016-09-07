@@ -4,7 +4,7 @@ source "https://rubygems.org"
 gem "mini_magick"
 gem "redcarpet"
 gem "kramdown"
-gem "pygments.rb"
+gem "rouge"
 
 group :jekyll_plugins do
   gem 'jekyll-picture-tag', '~> 0.3.0'

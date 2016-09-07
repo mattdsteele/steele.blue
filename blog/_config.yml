@@ -6,7 +6,6 @@ author:
 url: https://steele.blue
 description: The personal website of Matt Steele
 markdown: redcarpet
-highlighter: pygments
 permalink: /:title/
 distFolder: blog/
 picture:
