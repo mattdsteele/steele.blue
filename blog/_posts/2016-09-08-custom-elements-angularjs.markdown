@@ -25,7 +25,7 @@ You give it the number of seconds you want the timer to run, and it'll spit out 
 We'll use a "one-way data flow" architecture - the element will accept its inputs via properties, and spit out DOM Events for its outputs. 
 This is the architecture Angular 2 uses, (and [the recommended approach for modern Angular 1 apps][ng2patterns].
 
-Here's the component in all its dumb glory:
+Here's the element in all its dumb glory:
 
 ```javascript
 class CountdownTimer extends HTMLElement {
@@ -201,7 +201,7 @@ So long as a framework interacts with the DOM (and they all do), they can use yo
 
 So you can support that weird Ember team, the stodgy server-rendered JSP folks, and even the framework-less static page hipsters.
 
-So yeah, give Custom Elements a looksie.
+So yeah, **Custom Elements are awesome** and you should give them a looskie.
 As Dion Almaer noted: [How would the component landscape look if we weren’t all rebuilding our own houses?](https://medium.com/ben-and-dion/web-components-building-web-tools-for-future-dion-1d0e731c96d2#.inn076mvm)
 
 [wcyay]: https://medium.com/dev-channel/the-case-for-custom-elements-part-1-65d807b4b439#.inbchipy8
