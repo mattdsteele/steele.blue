@@ -1,4 +1,4 @@
-import FontFaceObserver from 'fontfaceobserver/fontfaceobserver';
+import FontFaceObserver from 'fontfaceobserver';
 
 class FontLoader {
   constructor(fontFace) {
@@ -8,7 +8,7 @@ class FontLoader {
 
     let observer = new FontFaceObserver(fontFace);
 
-    observer.check().then(() => {
+    observer.load().then(() => {
       let className = fontFace.toLowerCase().replace(' ', '-');
       document.body.classList.add(`font-${className}`);
     });
