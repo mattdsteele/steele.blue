@@ -7,8 +7,7 @@
   "license": "BSD",
   "dependencies": {
     "fontfaceobserver": "^2.0.0",
-    "iliveinomaha": "^0.1.5",
-    "picturefill": "^3.0.1"
+    "iliveinomaha": "^0.1.5"
   },
   "devDependencies": {
     "babel-core": "^6.3.17",
