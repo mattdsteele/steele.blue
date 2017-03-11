@@ -9,17 +9,20 @@ module.exports = {
     path: './blog/_site/js',
     filename: 'app.js'
   },
+  devtool: 'source-map',
   module: {
-    loaders: [
+    rules: [
       {
         test: /.js$/,
         exclude: /node_modules/,
-        loader: 'babel'
+        use: [ 'babel-loader' ]
       }
     ]
   },
   plugins: [
-    new webpack.optimize.UglifyJsPlugin({})
+    new webpack.optimize.UglifyJsPlugin({
+      sourceMap: true
+    })
   ],
   devtool: 'source-map'
 };
