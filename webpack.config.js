@@ -4,10 +4,12 @@ let webpack = require('webpack');
 
 module.exports = {
   context: __dirname + '/blog',
-  entry: './_assets/js/index.js',
+  entry: {
+    app: './_assets/js/index.js',
+    sw: './_assets/js/sw.js'
+  },
   output: {
-    path: './blog/_site/js',
-    filename: 'app.js'
+    path: './blog/_site/'
   },
   devtool: 'source-map',
   module: {

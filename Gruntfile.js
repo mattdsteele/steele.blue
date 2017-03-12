@@ -22,6 +22,14 @@ module.exports = function(grunt) {
         files: {
           '<%= config.root %>/_site/main.css.map' : '<%= config.root %>/_site/tmp/css/main.css.map'
         }
+      },
+      sw: {
+        files: [{
+          expand: true,
+          cwd: 'node_modules/sw-toolbox/',
+          src: ['sw-toolbox*'],
+          dest: '<%= config.root %>/_site/js/'
+        }],
       }
     },
     shell: {
@@ -148,8 +156,8 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['content']);
   grunt.registerTask('css', ['sass:assets', 'autoprefixer', 'copy:cssIncludes']);
   grunt.registerTask('js', ['webpack']);
-  grunt.registerTask('content', ['shell:jekyll', 'css', 'js', 'copy:maps', 'clean:tmp']);
-  grunt.registerTask('build', ['shell:build', 'css', 'js', 'copy:maps', 'clean:tmp']);
+  grunt.registerTask('content', ['shell:jekyll', 'css', 'js', 'copy:maps', 'copy:sw', 'clean:tmp']);
+  grunt.registerTask('build', ['shell:build', 'css', 'js', 'copy:maps', 'copy:sw', 'clean:tmp']);
   grunt.registerTask('serve', ['content', 'connect:server', 'watch']);
   grunt.registerTask('deploy', ['build', 's3', 'cloudfront_invalidation']);
 
