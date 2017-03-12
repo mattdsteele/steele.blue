@@ -1,5 +1,6 @@
-/*global module:false*/
-var fs = require('fs');
+const { readFileSync } = require('fs');
+
+const aws = JSON.parse(readFileSync('grunt-aws.json', 'utf8'));
 
 module.exports = function(grunt) {
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
@@ -81,6 +82,23 @@ module.exports = function(grunt) {
     clean: {
       tmp: ['<%= config.root %>/_site/tmp']
     },
+    cloudfront_invalidation: {
+      options: {
+        credentials: {
+          accessKeyId: aws.key,
+          secretAccessKey: aws.secret,
+          distributionId: aws.cloudfrontDistributionId
+        },
+        onInvalidationComplete() {
+          console.log('invalidated everything');
+        }
+      },
+      build: {
+        options: {
+          invalidations: [ '/*' ]
+        }
+      }
+    },
     cssmin: {
       options: {
         sourceMap: true
@@ -102,13 +120,12 @@ module.exports = function(grunt) {
         dest: '<%= config.root %>/_site/tmp/css/main.css'
       }
     },
-    aws: grunt.file.readJSON('grunt-aws.json'),
     s3: {
       options: {
-        accessKeyId: '<%= aws.key %>',
-        secretAccessKey: '<%= aws.secret %>',
-        region: '<%= aws.region %>',
-        bucket: '<%= aws.bucket %>',
+        accessKeyId: aws.key,
+        secretAccessKey: aws.secret,
+        region: aws.region,
+        bucket: aws.bucket,
         access: 'public-read',
         cache: true,
         cacheTTL: 60*60*1000,
@@ -134,6 +151,6 @@ module.exports = function(grunt) {
   grunt.registerTask('content', ['shell:jekyll', 'css', 'js', 'copy:maps', 'clean:tmp']);
   grunt.registerTask('build', ['shell:build', 'css', 'js', 'copy:maps', 'clean:tmp']);
   grunt.registerTask('serve', ['content', 'connect:server', 'watch']);
-  grunt.registerTask('deploy', ['build', 's3']);
+  grunt.registerTask('deploy', ['build', 's3', 'cloudfront_invalidation']);
 
 };
