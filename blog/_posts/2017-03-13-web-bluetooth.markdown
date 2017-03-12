@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Web Bluetooth Is Your New Squeeze
+image: /gen_img/web-bluetooth-768by492-c5ee36.jpg
 ---
 
 {% picture web-bluetooth.jpg alt="Web Bluetooth" %}
