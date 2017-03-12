@@ -11,11 +11,12 @@
     "sw-toolbox": "^3.6.0"
   },
   "devDependencies": {
+    "autoprefixer": "^6.7.7",
     "babel-core": "^6.3.17",
     "babel-loader": "^6.2.0",
     "babel-preset-env": "^1.2.1",
+    "cssnano": "^3.10.0",
     "grunt": "^1.0.1",
-    "grunt-autoprefixer": "^2.2.0",
     "grunt-aws": "^0.6.2",
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-concat": "^1.0.1",
@@ -24,6 +25,7 @@
     "grunt-contrib-cssmin": "^2.0.0",
     "grunt-contrib-less": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.8.0",
     "grunt-sass": "^2.0.0",
     "grunt-shell": "^2.1.0",
     "grunt-webpack": "^2.0.1",

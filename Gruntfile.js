@@ -114,11 +114,15 @@ module.exports = function(grunt) {
         }
       }
     },
-    autoprefixer: {
+    postcss: {
       options: {
-        map: true
+        map: true,
+        processors: [
+          require('autoprefixer')({ browsers: 'last 2 versions' }),
+          require('cssnano')()
+        ]
       },
-      generated: {
+      css: {
         src: '<%= config.root %>/_site/tmp/css/main.css',
         dest: '<%= config.root %>/_site/tmp/css/main.css'
       }
@@ -149,7 +153,7 @@ module.exports = function(grunt) {
   // These plugins provide necessary tasks.
   // Default task.
   grunt.registerTask('default', ['content']);
-  grunt.registerTask('css', ['sass:assets', 'autoprefixer', 'copy:cssIncludes']);
+  grunt.registerTask('css', ['sass:assets', 'postcss', 'copy:cssIncludes']);
   grunt.registerTask('js', ['webpack']);
   grunt.registerTask('content', ['shell:jekyll', 'css', 'js', 'copy:maps', 'copy:sw', 'clean:tmp']);
   grunt.registerTask('build', ['shell:build', 'css', 'js', 'copy:maps', 'copy:sw', 'clean:tmp']);
