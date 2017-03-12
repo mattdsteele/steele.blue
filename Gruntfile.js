@@ -90,16 +90,11 @@ module.exports = function(grunt) {
     clean: {
       tmp: ['<%= config.root %>/_site/tmp']
     },
-    cloudfront_invalidation: {
+    cloudfront: {
       options: {
-        credentials: {
-          accessKeyId: aws.key,
-          secretAccessKey: aws.secret,
-          distributionId: aws.cloudfrontDistributionId
-        },
-        onInvalidationComplete() {
-          console.log('invalidated everything');
-        }
+        accessKeyId: aws.key,
+        secretAccessKey: aws.secret,
+        distributionId: aws.cloudfrontDistributionId
       },
       build: {
         options: {
@@ -159,6 +154,6 @@ module.exports = function(grunt) {
   grunt.registerTask('content', ['shell:jekyll', 'css', 'js', 'copy:maps', 'copy:sw', 'clean:tmp']);
   grunt.registerTask('build', ['shell:build', 'css', 'js', 'copy:maps', 'copy:sw', 'clean:tmp']);
   grunt.registerTask('serve', ['content', 'connect:server', 'watch']);
-  grunt.registerTask('deploy', ['build', 's3', 'cloudfront_invalidation']);
+  grunt.registerTask('deploy', ['build', 's3', 'cloudfront']);
 
 };
