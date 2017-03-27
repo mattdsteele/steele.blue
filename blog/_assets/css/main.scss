@@ -105,6 +105,10 @@ h1,h2,h3,h4,h5,h6 {
   @include serif;
 }
 
+blockquote {
+  background-color: $code-grey;
+}
+
 code {
   font-family: $monospace;
   font-size: 0.85em;
