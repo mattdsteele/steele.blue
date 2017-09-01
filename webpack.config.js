@@ -1,4 +1,5 @@
 'use strict';
+const { resolve } = require('path');
 
 let webpack = require('webpack');
 
@@ -9,7 +10,7 @@ module.exports = {
     sw: './_assets/js/sw.js'
   },
   output: {
-    path: './blog/_site/'
+    path: resolve('./blog/_site/')
   },
   devtool: 'source-map',
   module: {

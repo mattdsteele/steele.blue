@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Building Custom Elements That Work With Angular 1 and 2
+title: Building Custom Elements That Work With AngularJS 1.x and Angular
 ---
 
 So Web Components! They've recently gotten [a lot of love][wcyay], and [a lot of hate][wcboo].
@@ -12,7 +12,7 @@ The [Web Components proponents propose composing](http://staltz.com/react-could-
 So you'd write your Angular/React/whatever app that contained your business logic, and its templates would be made up of Custom Elements, standard HTML, and other Angular/React/whatever components.
 
 I haven't seen this interop story in action (or documented) in many places.
-In particular, **how do you build a Custom Element that'll work in both Angular 1 and Angular 2 apps**?
+In particular, **how do you build a Custom Element that'll work in both AngularJS (1.x) and Angular 2+ apps**?
 
 *Note*: I'll be using on the new "V1" version of the Custom Elements spec. [Here's a good intro article](https://developers.google.com/web/fundamentals/primers/customelements/), and [here's a polyfill](https://github.com/WebReflection/document-register-element).
 
@@ -23,7 +23,7 @@ Let's make a `<countdown-timer>` Custom Element.
 You give it the number of seconds you want the timer to run, and it'll spit out an event (with a message) when the countdown ends.
 
 We'll use a "one-way data flow" architecture - the element will accept its inputs via properties, and spit out DOM Events for its outputs. 
-This is the architecture Angular 2 uses, (and [the recommended approach for modern Angular 1 apps][ng2patterns].
+This is the architecture Angular uses, (and [the recommended approach for modern Angular 1 apps][ng2patterns].
 
 Here's the element in all its dumb glory:
 
@@ -70,9 +70,9 @@ window.customElements.define('countdown-timer', CountdownTimer);
 
 Not much to it - initialize stuff in the `connectedCallback` hook, and then add your functionality.
 
-## Angular 2 ([View Demo](http://plnkr.co/edit/wNkzWzRvTVGZL1SdQHFk?p=preview))
+## Angular ([View Demo](http://plnkr.co/edit/CBbCeyDkoWhwGuyy8pYI?p=preview))
 
-Consuming this in Angular 2 is pretty straightforward: you use the `[prop]="value"` syntax to bind to a property, and the `(event)="handler()"` syntax to bind to events.
+Consuming this in Angular is pretty straightforward: you use the `[prop]="value"` syntax to bind to a property, and the `(event)="handler()"` syntax to bind to events.
 
 A component that uses it might have a template that looks like:
 
@@ -109,12 +109,12 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 })
 ```
 
-## Angular 1 ([View Demo](http://plnkr.co/edit/3N3Kk7bSJVgPsSImYjrv?p=preview))
+## AngularJS (1.x) ([View Demo](http://plnkr.co/edit/3N3Kk7bSJVgPsSImYjrv?p=preview))
 
-Out of the box, our Custom Element won't play nicely with Angular 1. There are two problems:
+Out of the box, our Custom Element won't play nicely with AngularJS. There are two problems:
 
 * Its templating system binds to an element's *attributes*, while our component updates the element's *properties*
-* Angular isn't aware of the events your Custom Element fires, and doesn't hook into the normal `&` callback bindings
+* AngularJS isn't aware of the events your Custom Element fires, and doesn't hook into the normal `&` callback bindings
 
 So! We can fix this in a couple different ways:
 
@@ -143,7 +143,7 @@ And then bind to the attribute in our template (note the use of `ng-attr` to pre
 ```
 {% endraw %}
 
-On the output side, we can bind to the event manually in our Angular controller, and wrap it in `$scope.$apply()` to make sure a digest runs:
+On the output side, we can bind to the event manually in our controller, and wrap it in `$scope.$apply()` to make sure a digest runs:
 
 ```javascript
 $element.on('countdownEnded', (e) => {
@@ -168,7 +168,7 @@ Should've read ahead in my post, I guess.
 
 Rob Dodson wrote a [set of directives to help Custom Elements interop with Angular 1](https://github.com/robdodson/angular-custom-elements). It's labelled for use with the Polymer project, but it'll work for any Custom Element, including ours.
 
-Since we're using a one-way data flow, we can add the `ce-one-way` directive to our Angular template:
+Since we're using a one-way data flow, we can add the `ce-one-way` directive to our AngularJS template:
 
 ```html
 <countdown-timer ce-one-way
@@ -185,16 +185,16 @@ Could be worse, I suppose.
 
 At work, we maintain an enterprise component library, like many large orgs do.
 It's currently built as a set of Angular 1 directives.
-As we begin to investigate Angular 2, we want to make the migration process smooth as butter.
+As we begin to investigate Angular, we want to make the migration process smooth as butter.
 
-We *could* rebuild the component library as a set of Angular 2 components, and
-Angular 1 interoperability could come through the [ngUpgrade module](https://angular.io/docs/ts/latest/guide/upgrade.html), probably.
+We *could* rebuild the component library as a set of Angular components, and
+AngularJS interoperability could come through the [ngUpgrade module](https://angular.io/docs/ts/latest/guide/upgrade.html), probably.
 
-But this begs the question: what happens when we ditch Angular 2? Our components would again be dependent on a single framework, and they'd have to be rewritten once again.
+But this begs the question: what happens when we ditch Angular? Our components would again be dependent on a single framework, and they'd have to be rewritten once again.
 
 Building your company's component library on Custom Elements solves multiple problems.
 
-Short-term, it helps you migrate from Angular 1 to Angular 2, since both applications can use the same component library.
+Short-term, it helps you migrate from AngularJS 1.x to Angular, since both applications can use the same component library.
 
 Long-term, it helps isolate your company's component library from the Sturm und Drang of front-end frameworks.
 So long as a framework interacts with the DOM (and they all do), they can use your components.
