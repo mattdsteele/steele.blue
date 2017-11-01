@@ -1,2 +1,1 @@
-import './load-fonts';
-import './register-sw';
+import "./load-fonts";

@@ -1,24 +1,24 @@
-'use strict';
-const { resolve } = require('path');
+"use strict";
+const { resolve } = require("path");
 
-let webpack = require('webpack');
+let webpack = require("webpack");
 
 module.exports = {
-  context: __dirname + '/blog',
+  context: __dirname + "/blog",
   entry: {
-    app: './_assets/js/index.js',
-    sw: './_assets/js/sw.js'
+    app: "./_assets/js/index.js"
+    // sw: './_assets/js/sw.js'
   },
   output: {
-    path: resolve('./blog/_site/')
+    path: resolve("./blog/_site/")
   },
-  devtool: 'source-map',
+  devtool: "source-map",
   module: {
     rules: [
       {
         test: /.js$/,
         exclude: /node_modules/,
-        use: [ 'babel-loader' ]
+        use: ["babel-loader"]
       }
     ]
   },
@@ -27,5 +27,5 @@ module.exports = {
       sourceMap: true
     })
   ],
-  devtool: 'source-map'
+  devtool: "source-map"
 };
