@@ -31,6 +31,8 @@ I can't tell you how satisfying it is to remotely flash new code to an Arduino w
 
 ## At least I'm sprouting a dataset
 
+{% picture soil-4.png alt="Soil Sensors" %}
+
 To handle the sensor data, I pulled in RxJS, which [I've done before](https://steele.blue/reactive-programming-bike-sensors/) and find to be a super-solid approach. This let me take the Particle-provided EventEmitter, convert it to an reactive stream, and create a new stream out of the last 5 readings, averaged:
 
 ```typescript
