@@ -12,25 +12,25 @@
   },
   "devDependencies": {
     "autoprefixer": "^6.7.7",
-    "babel-core": "^6.3.17",
+    "babel-core": "^6.26.0",
     "babel-loader": "^6.2.0",
-    "babel-preset-env": "^1.2.1",
+    "babel-preset-env": "^1.6.1",
     "cssnano": "^3.10.0",
-    "grunt": "^1.0.1",
+    "grunt": "^1.0.2",
     "grunt-aws": "^0.6.2",
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-connect": "^1.0.2",
     "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-cssmin": "^2.0.0",
+    "grunt-contrib-cssmin": "^2.2.1",
     "grunt-contrib-less": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-postcss": "^0.8.0",
-    "grunt-sass": "^2.0.0",
+    "grunt-sass": "^2.1.0",
     "grunt-shell": "^2.1.0",
     "grunt-webpack": "^2.0.1",
     "matchdep": "^1.0.1",
-    "webpack": "^2.2.1",
-    "webpack-dev-server": "^2.4.1"
+    "webpack": "^2.7.0",
+    "webpack-dev-server": "^2.11.2"
   }
 }
