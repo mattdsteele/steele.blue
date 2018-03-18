@@ -13,7 +13,7 @@
   "devDependencies": {
     "autoprefixer": "^6.7.7",
     "babel-core": "^6.26.0",
-    "babel-loader": "^6.2.0",
+    "babel-loader": "^7",
     "babel-preset-env": "^1.6.1",
     "cssnano": "^3.10.0",
     "grunt": "^1.0.2",
@@ -28,9 +28,9 @@
     "grunt-postcss": "^0.8.0",
     "grunt-sass": "^2.1.0",
     "grunt-shell": "^2.1.0",
-    "grunt-webpack": "^2.0.1",
-    "matchdep": "^1.0.1",
-    "webpack": "^2.7.0",
-    "webpack-dev-server": "^2.11.2"
+    "grunt-webpack": "^3",
+    "matchdep": "^2",
+    "webpack": "^4",
+    "webpack-dev-server": "^3"
   }
 }
