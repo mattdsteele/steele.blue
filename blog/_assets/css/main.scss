@@ -168,3 +168,18 @@ code {
 .all-posts {
   margin-top: 5em;
 }
+
+.rss-club {
+  margin: auto;
+  max-width: 18em;
+  background: lighten(skyblue, 20%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3em;
+  .exclusive {
+    font-weight: bold;
+
+  }
+}
