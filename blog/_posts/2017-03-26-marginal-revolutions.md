@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Marginal Revolutions
+rss_only: true
 ---
 
 Weekend illnesses are a great opportunity to work through an Instapaper queue.
