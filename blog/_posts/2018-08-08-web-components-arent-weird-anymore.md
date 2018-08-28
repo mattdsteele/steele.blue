@@ -11,7 +11,7 @@ In it, I tried to first answer the question: **why aren't Web Components as popu
 They both offer reusable components; building blocks which let you assemble sites easily and without rework.
 But React (and Vue, Angular, etc) took off, and Web Components never did. Why aren't we Using The Platform (tm)?
 
-There are a number of factors, but my take: for nearly their entire existence, Web Components were **super weird** to use.
+There are a number of factors, but my take: for nearly their entire existence, Web Components were **super weird** to use.<sup>[1](#sub-1)</sup>
 
 A few years ago, to get a Web Component on the screen, you had to:
 
@@ -31,3 +31,5 @@ But over the last year, Web Components have slowly lost their weirdness. Because
 * There's lots of "Web Component Native" frameworks beyond Polymer, including my favorite [Stencil](http://stenciljs.com/)
 
 We're finally at the point were it's **easier** to add a Custom Element into any app than it is a React component. Now that's weird.
+
+<p id="sub-1">1. Essentially, this entire talk is a rehash of the "Weirdness Budget" concept the Polymer folks <a href="https://www.youtube.com/watch?v=7CUO7PyD5zA&feature=youtu.be&t=5m37s">talk about here</a>.</p>
