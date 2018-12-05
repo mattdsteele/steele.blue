@@ -7,15 +7,18 @@ exports.onCreateNode = function onCreateNode({ actions, node }) {
     createNodeField({
       node,
       name: 'slug',
-      value: `/${slugify(node.frontmatter.title)}`
+      value: `/${slugify(node.frontmatter.title)}`,
     })
 
     const fileName = path.basename(node.fileAbsolutePath)
-    const date = fileName.match(/^[\d-]+/).pop().slice(0, -1)
+    const date = fileName
+      .match(/^[\d-]+/)
+      .pop()
+      .slice(0, -1)
     createNodeField({
       node,
       name: 'date',
-      value: date
+      value: date,
     })
   }
 }
@@ -24,7 +27,7 @@ exports.createPages = async function createPages({ actions, graphql }) {
   const { createPage, createNodeField } = actions
   const result = await graphql(`
     {
-      posts:allMarkdownRemark {
+      posts: allMarkdownRemark {
         edges {
           node {
             fields {
@@ -34,8 +37,7 @@ exports.createPages = async function createPages({ actions, graphql }) {
         }
       }
     }
-  `)
-    .then(res => res.data)
+  `).then(res => res.data)
 
   const postTemplate = path.resolve('src/templates/blog-post.js')
   result.posts.edges.forEach(({ node }) => {
@@ -44,8 +46,8 @@ exports.createPages = async function createPages({ actions, graphql }) {
       component: postTemplate,
       path: slug,
       context: {
-        slug
-      }
+        slug,
+      },
     })
   })
 }

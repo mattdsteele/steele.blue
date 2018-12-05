@@ -8,7 +8,11 @@ export default function About() {
       render={data => {
         const { author, location, social } = data.site.siteMetadata
         return (
-          <p>I'm {author}, a programmer living in {location}. You can find me on <a href={`https://github.com/${social.github}`}>GitHub</a> and <a href={`https://twitter.com/${social.twitter}`}>Twitter</a>.</p>
+          <p>
+            I'm {author}, a programmer living in {location}. You can find me on{' '}
+            <a href={`https://github.com/${social.github}`}>GitHub</a> and{' '}
+            <a href={`https://twitter.com/${social.twitter}`}>Twitter</a>.
+          </p>
         )
       }}
     />

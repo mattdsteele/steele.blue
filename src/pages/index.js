@@ -14,14 +14,12 @@ export default function IndexPage({ data }) {
       <SEO />
       <h2>All posts</h2>
       <ul>
-        {
-          data.posts.edges.map(({ node }) => (
-            <li key={node.fields.slug}>
-              <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
-              {` - ${node.fields.dateWithYear}`}
-            </li>
-          ))
-        }
+        {data.posts.edges.map(({ node }) => (
+          <li key={node.fields.slug}>
+            <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+            {` - ${node.fields.dateWithYear}`}
+          </li>
+        ))}
       </ul>
       <About />
     </Layout>
@@ -30,7 +28,7 @@ export default function IndexPage({ data }) {
 
 export const indexQuery = graphql`
   query IndexQuery {
-    posts:allMarkdownRemark(sort:{fields:[fields___date], order:DESC}) {
+    posts: allMarkdownRemark(sort: { fields: [fields___date], order: DESC }) {
       edges {
         node {
           ...PostDetails

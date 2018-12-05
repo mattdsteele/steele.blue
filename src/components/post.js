@@ -17,11 +17,11 @@ function Post({ frontmatter, fields, html, showLink }) {
 }
 
 Post.defaultProps = {
-  showLink: true
+  showLink: true,
 }
 
 Post.propTypes = {
-  showLink: PropTypes.bool
+  showLink: PropTypes.bool,
 }
 
 export default Post
@@ -29,8 +29,8 @@ export default Post
 export const postFragment = graphql`
   fragment PostDetails on MarkdownRemark {
     fields {
-      dateWithDay:date(formatString:"DD MMM YYYY")
-      dateWithYear:date(formatString:"MMM YYYY")
+      dateWithDay: date(formatString: "DD MMM YYYY")
+      dateWithYear: date(formatString: "MMM YYYY")
       slug
     }
     frontmatter {

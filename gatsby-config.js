@@ -5,13 +5,14 @@ module.exports = {
     title,
     author: 'Matt Steele',
     siteUrl: 'http://steele.blue',
-    gravatar: 'http://www.gravatar.com/avatar/911466eedb687b909f7e66816223ceb2.png?s=400',
+    gravatar:
+      'http://www.gravatar.com/avatar/911466eedb687b909f7e66816223ceb2.png?s=400',
     description: 'The personal website of Matt Steele',
     location: 'Omaha, Nebraska',
     social: {
       github: 'mattdsteele',
-      twitter: 'mattdsteele'
-    }
+      twitter: 'mattdsteele',
+    },
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -43,9 +44,9 @@ module.exports = {
             },
           },
           'gatsby-remark-prismjs',
-          'gatsby-remark-copy-linked-files'
-        ]
-      }
+          'gatsby-remark-copy-linked-files',
+        ],
+      },
     },
     'gatsby-plugin-sharp',
     {
@@ -74,25 +75,25 @@ module.exports = {
           }
         }
       `,
-      feeds: [
-        {
-          serialize: ({ query: { site, posts }}) => {
-            return posts.edges.map(({ node }) => {
-              const url = `${site.siteMetadata.siteUrl}/${node.fields.slug}`
-              return Object.assign({}, node.frontmatter, {
-                description: node.excerpt,
-                date: node.fields.date,
-                url,
-                guid: url,
-                custom_elements: [
-                  {
-                    'content_encoded': node.html
-                  }
-                ]
+        feeds: [
+          {
+            serialize: ({ query: { site, posts } }) => {
+              return posts.edges.map(({ node }) => {
+                const url = `${site.siteMetadata.siteUrl}/${node.fields.slug}`
+                return Object.assign({}, node.frontmatter, {
+                  description: node.excerpt,
+                  date: node.fields.date,
+                  url,
+                  guid: url,
+                  custom_elements: [
+                    {
+                      content_encoded: node.html,
+                    },
+                  ],
+                })
               })
-            })
-          },
-          query: `
+            },
+            query: `
             {
               posts:allMarkdownRemark(sort:{fields:[fields___date], order:DESC}) {
                 edges {
@@ -111,11 +112,11 @@ module.exports = {
               }
             }
           `,
-          output: '/rss.xml',
-          title: `steele.blue RSS Feed`
-        }
-      ]
-      }
-    }
+            output: '/rss.xml',
+            title: `steele.blue RSS Feed`,
+          },
+        ],
+      },
+    },
   ],
 }
