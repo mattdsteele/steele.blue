@@ -5,7 +5,12 @@ module.exports = {
     title,
     author: 'Matt Steele',
     url: 'http://steele.blue',
-    description: 'The personal website of Matt Steele'
+    description: 'The personal website of Matt Steele',
+    location: 'Omaha, Nebraska',
+    social: {
+      github: 'mattdsteele',
+      twitter: 'mattdsteele'
+    }
   },
   plugins: [
     'gatsby-plugin-react-helmet',
