@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title,
     author: 'Matt Steele',
-    url: 'http://steele.blue',
+    siteUrl: 'http://steele.blue',
     gravatar: 'http://www.gravatar.com/avatar/911466eedb687b909f7e66816223ceb2.png?s=400',
     description: 'The personal website of Matt Steele',
     location: 'Omaha, Nebraska',
@@ -60,5 +60,62 @@ module.exports = {
         icon: 'src/images/gatsby-icon.png',
       },
     },
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+        {
+          site {
+            siteMetadata {
+              title
+              description
+              siteUrl
+            }
+          }
+        }
+      `,
+      feeds: [
+        {
+          serialize: ({ query: { site, posts }}) => {
+            return posts.edges.map(({ node }) => {
+              const url = `${site.siteMetadata.siteUrl}/${node.fields.slug}`
+              return Object.assign({}, node.frontmatter, {
+                description: node.excerpt,
+                date: node.fields.date,
+                url,
+                guid: url,
+                custom_elements: [
+                  {
+                    'content_encoded': node.html
+                  }
+                ]
+              })
+            })
+          },
+          query: `
+            {
+              posts:allMarkdownRemark(sort:{fields:[fields___date], order:DESC}) {
+                edges {
+                  node {
+                    excerpt
+                    html
+                    fields {
+                      date(formatString: "DD MMM YYYY HH:mm:ss ZZ")
+                      slug
+                    }
+                    frontmatter {
+                      title
+                    }
+                  }
+                }
+              }
+            }
+          `,
+          output: '/rss.xml',
+          title: `steele.blue RSS Feed`
+        }
+      ]
+      }
+    }
   ],
 }
