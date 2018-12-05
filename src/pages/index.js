@@ -3,6 +3,7 @@ import { graphql, Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import Post from '../components/post'
+import About from '../components/about'
 
 export default function IndexPage({ data }) {
   const [latest] = data.posts.edges
@@ -20,6 +21,7 @@ export default function IndexPage({ data }) {
           ))
         }
       </ul>
+      <About />
     </Layout>
   )
 }
