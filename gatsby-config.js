@@ -5,6 +5,7 @@ module.exports = {
     title,
     author: 'Matt Steele',
     url: 'http://steele.blue',
+    gravatar: 'http://www.gravatar.com/avatar/911466eedb687b909f7e66816223ceb2.png?s=400',
     description: 'The personal website of Matt Steele',
     location: 'Omaha, Nebraska',
     social: {
@@ -14,6 +15,7 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-twitter',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
