@@ -3,6 +3,8 @@ import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 
+import 'prismjs/themes/prism-okaidia.css'
+
 export default function BlogPost({ data }) {
   return (
     <Layout>
