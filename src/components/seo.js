@@ -11,7 +11,7 @@ const query = graphql`
         author
         description
         gravatar
-        url
+        siteUrl
         social {
           twitter
         }
@@ -20,14 +20,14 @@ const query = graphql`
   }
 `
 
-function SEO({ meta, image, title, description, slug }) {
+function SEO({ meta, title, description, slug }) {
   return (
     <StaticQuery
       query={query}
       render={data => {
         const { siteMetadata } = data.site
         const metaDescription = description || siteMetadata.description
-        const url = `${siteMetadata.url}${slug}`
+        const url = `${siteMetadata.siteUrl}${slug}`
         return (
           <Helmet
             htmlAttributes={{ lang: 'en' }}
@@ -97,7 +97,6 @@ SEO.defaultProps = {
 
 SEO.propTypes = {
   description: PropTypes.string,
-  image: PropTypes.string,
   meta: PropTypes.array,
   slug: PropTypes.string,
   title: PropTypes.string.isRequired,
