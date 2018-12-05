@@ -58,7 +58,7 @@ function SEO({ meta, title, description, slug }) {
               },
               {
                 property: 'og:image',
-                content: siteMetadata.gravatar
+                content: siteMetadata.gravatar,
               },
               {
                 name: 'twitter:card',
@@ -79,9 +79,8 @@ function SEO({ meta, title, description, slug }) {
               {
                 name: 'twitter:image:src',
                 content: siteMetadata.gravatar,
-              }
-            ]
-              .concat(meta)}
+              },
+            ].concat(meta)}
           />
         )
       }}

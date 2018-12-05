@@ -11,7 +11,11 @@ export default function BlogPost({ data }) {
   const { post } = data
   return (
     <Layout>
-      <SEO title={post.frontmatter.title} description={post.excerpt} slug={post.fields.slug} />
+      <SEO
+        title={post.frontmatter.title}
+        description={post.excerpt}
+        slug={post.fields.slug}
+      />
       <Post {...post} showLink={false} />
     </Layout>
   )
@@ -19,7 +23,7 @@ export default function BlogPost({ data }) {
 
 export const blogPostQuery = graphql`
   query BlogPostDetails($slug: String!) {
-    post:markdownRemark(fields: { slug: { eq: $slug }}) {
+    post: markdownRemark(fields: { slug: { eq: $slug } }) {
       ...PostDetails
     }
   }
