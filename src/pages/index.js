@@ -3,6 +3,7 @@ import { graphql, Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import Post from '../components/post'
+import SEO from '../components/seo'
 import About from '../components/about'
 
 export default function IndexPage({ data }) {
@@ -10,6 +11,7 @@ export default function IndexPage({ data }) {
   return (
     <Layout>
       <Post {...latest.node} />
+      <SEO />
       <h2>All posts</h2>
       <ul>
         {
@@ -31,15 +33,7 @@ export const indexQuery = graphql`
     posts:allMarkdownRemark(sort:{fields:[fields___date], order:DESC}) {
       edges {
         node {
-          fields {
-            dateWithDay:date(formatString:"DD MMM YYYY")
-            dateWithYear:date(formatString:"MMM YYYY")
-            slug
-          }
-          frontmatter {
-            title
-          }
-          html
+          ...PostDetails
         }
       }
     }

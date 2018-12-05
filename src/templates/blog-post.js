@@ -2,13 +2,17 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
+import Post from '../components/post'
+import SEO from '../components/seo'
 
 import 'prismjs/themes/prism-okaidia.css'
 
 export default function BlogPost({ data }) {
+  const { post } = data
   return (
     <Layout>
-      <div dangerouslySetInnerHTML={{ __html: data.post.html }} />
+      <SEO title={post.frontmatter.title} description={post.excerpt} slug={post.fields.slug} />
+      <Post {...post} showLink={false} />
     </Layout>
   )
 }
@@ -16,7 +20,7 @@ export default function BlogPost({ data }) {
 export const blogPostQuery = graphql`
   query BlogPostDetails($slug: String!) {
     post:markdownRemark(fields: { slug: { eq: $slug }}) {
-      html
+      ...PostDetails
     }
   }
 `
