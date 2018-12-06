@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Web Components Aren't Weird Anymore
+tags:
+  - web components
+  - stencil
 ---
 
 I gave a talk at [Barcamp Omaha](https://barcampomaha.org/) on Web Components:

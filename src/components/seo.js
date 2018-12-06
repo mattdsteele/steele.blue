@@ -20,7 +20,7 @@ const query = graphql`
   }
 `
 
-function SEO({ meta, title, description, slug }) {
+function SEO({ meta, title, description, slug, keywords }) {
   return (
     <StaticQuery
       query={query}
@@ -80,7 +80,12 @@ function SEO({ meta, title, description, slug }) {
                 name: 'twitter:image:src',
                 content: siteMetadata.gravatar,
               },
-            ].concat(meta)}
+            ]
+              .concat(keywords ? {
+                name: 'keywords',
+                content: keywords.join(', ')
+              } : [])
+              .concat(meta)}
           />
         )
       }}
@@ -96,6 +101,7 @@ SEO.defaultProps = {
 
 SEO.propTypes = {
   description: PropTypes.string,
+  keywords: PropTypes.arrayOf(PropTypes.string),
   meta: PropTypes.array,
   slug: PropTypes.string,
   title: PropTypes.string.isRequired,

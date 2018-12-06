@@ -15,6 +15,7 @@ export default function BlogPost({ data }) {
         title={post.frontmatter.title}
         description={post.excerpt}
         slug={post.fields.slug}
+        keywords={post.frontmatter.tags}
       />
       <Post {...post} showLink={false} />
     </Layout>
