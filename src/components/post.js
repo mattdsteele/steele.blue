@@ -35,6 +35,7 @@ export const postFragment = graphql`
     }
     frontmatter {
       title
+      tags
     }
     html
     excerpt(pruneLength: 160)
