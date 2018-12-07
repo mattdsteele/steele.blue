@@ -14,12 +14,14 @@ export default function IndexPage({ data }) {
       <SEO />
       <h2>All posts</h2>
       <ul>
-        {data.posts.edges.map(({ node }) => (
-          <li key={node.fields.slug}>
-            <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
-            {` - ${node.fields.dateWithYear}`}
-          </li>
-        ))}
+        {data.posts.edges
+          .filter(({ node }) => !node.frontmatter.rss_only)
+          .map(({ node }) => (
+            <li key={node.fields.slug}>
+              <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+              {` - ${node.fields.dateWithYear}`}
+            </li>
+          ))}
       </ul>
       <About />
     </Layout>
