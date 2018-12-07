@@ -11,6 +11,7 @@ function Post({ frontmatter, fields, html, showLink }) {
     <article>
       <h1>{title}</h1>
       <h2>{fields.dateWithDay}</h2>
+      {frontmatter.rss_only ? <h1>RSS ONLY</h1> : null}
       <div dangerouslySetInnerHTML={{ __html: html }} />
     </article>
   )
@@ -36,6 +37,7 @@ export const postFragment = graphql`
     frontmatter {
       title
       tags
+      rss_only
     }
     html
     excerpt(pruneLength: 160)
