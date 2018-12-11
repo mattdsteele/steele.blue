@@ -36,6 +36,11 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
+          {
+            resolve: 'gatsby-remark-embed-youtube',
+            options: { width: 160, height: 90 },
+          },
+
           'gatsby-remark-responsive-iframe',
           {
             resolve: `gatsby-remark-images`,
