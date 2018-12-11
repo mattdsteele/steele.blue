@@ -1,16 +1,17 @@
 const path = require('path')
-const slugify = require('limax')
 
 exports.onCreateNode = function onCreateNode({ actions, node }) {
   const { createNodeField } = actions
   if (node.internal.type === 'MarkdownRemark') {
+    const fileName = path.basename(node.fileAbsolutePath)
+    const splitFiles = /(^[\d-]+)(.*)\.m/g.exec(fileName)
+    const slug = splitFiles[2]
     createNodeField({
       node,
       name: 'slug',
-      value: `/${slugify(node.frontmatter.title)}`,
+      value: `/${slug}`,
     })
 
-    const fileName = path.basename(node.fileAbsolutePath)
     const date = fileName
       .match(/^[\d-]+/)
       .pop()
