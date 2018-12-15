@@ -18,9 +18,9 @@ Turns out, hacking Bluetooth Low Energy toys is _way_ more fun than actually usi
 
 Watch the talk, then check out these links:
 
-* [Interact with Bluetooth Devices on the Web](https://developers.google.com/web/updates/2015/07/interact-with-ble-devices-on-the-web)
-* [Bluetooth and Progressive Web Apps](https://medium.com/@urish/start-building-with-web-bluetooth-and-progressive-web-apps-6534835959a6#.2pqsde5i8)
-* [Hacking Unicorns with Web Bluetooth](https://www.contextis.com/resources/blog/hacking-unicorns-web-bluetooth/)
+- [Interact with Bluetooth Devices on the Web](https://developers.google.com/web/updates/2015/07/interact-with-ble-devices-on-the-web)
+- [Bluetooth and Progressive Web Apps](https://medium.com/@urish/start-building-with-web-bluetooth-and-progressive-web-apps-6534835959a6#.2pqsde5i8)
+- [Hacking Unicorns with Web Bluetooth](https://www.contextis.com/resources/blog/hacking-unicorns-web-bluetooth/)
 
 # Devices
 

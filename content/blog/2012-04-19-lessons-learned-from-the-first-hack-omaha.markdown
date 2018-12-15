@@ -2,8 +2,8 @@
 layout: post
 title: Lessons Learned from the first Hack Omaha
 categories:
-- Code
-- omaha
+  - Code
+  - omaha
 tags: []
 status: publish
 type: post
@@ -14,7 +14,9 @@ meta:
   _wpas_mess: Lessons Learned from the first Hack Omaha http://wp.me/p7gnP-2k
   _elasticsearch_indexed_on: '2012-04-19 21:44:23'
 ---
+
 This weekend I took part in Hack Omaha - the city's first hackathon with a focus on making apps from public data. We built an app that <a href="http://www.omahafoodfight.org/">gameified health inspection data</a>. It was awesome. Nate's already written up an <a href="http://fullycroisened.com/omaha-food-fight-hackomaha-app/">hour by hour recap</a> of our team's experience, but I thought I'd share specifics of what I learned.
+
 <ul>
 	<li><strong>Pitch an idea, even if it's not a winner.</strong> Nick Wertzburger started the pitch session off with a joke app (I think) that he <a href="https://twitter.com/#!/rannick/status/187954462441218048">tweeted earlier</a>. It was one of only a handful of pitches, and his team ran with it and melded it into an awesome <a href="http://www.safeomaha.org/">heatmap </a>page; my favorite project of the weekend.</li>
 	<li><strong>Sinatra rocks</strong>. My day job consists of writing Web Services, with a capital W and S. The process is often heavyweight, cumbersome, and requires numerous approval and manual configuration steps. It was beyond refreshing to just write a <code>get /matchup</code> method, paste in some JSON, and have a working service. Prototyping service design before you've even gotten a dataset gives you lots of flexibility to change your design on the fly.</li>

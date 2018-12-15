@@ -9,10 +9,10 @@ Most side projects don't need much oversight. That's kind of the idea: you spend
 
 But I think there's space for another kind of project: one that spans years. The formula's simple:
 
-* Build a site/app/whatever
-* Let it sit on a shelf for a year
-* Dust off the cobwebs and make some enhancement, switch frameworks, whatever
-* Repeat
+- Build a site/app/whatever
+- Let it sit on a shelf for a year
+- Dust off the cobwebs and make some enhancement, switch frameworks, whatever
+- Repeat
 
 ### The Codebase of Theseus
 
@@ -24,11 +24,11 @@ I built my first version of the app back in 2011 as a fresh-faced front-end dev,
 
 Over the years, I've migrated and rebuilt the app numerous times:
 
-* Original jQuery version (2011)
-* Added a build toolchain with Webpack and npm (2014)
-* Rewrote using AngularJS 1.x (2015)
-* Migrated to Angular 2 beta (2016)
-* Rebuilt with TypeScript and the Angular CLI (2018)
+- Original jQuery version (2011)
+- Added a build toolchain with Webpack and npm (2014)
+- Rewrote using AngularJS 1.x (2015)
+- Migrated to Angular 2 beta (2016)
+- Rebuilt with TypeScript and the Angular CLI (2018)
 
 ### Inheriting Your Legacy
 

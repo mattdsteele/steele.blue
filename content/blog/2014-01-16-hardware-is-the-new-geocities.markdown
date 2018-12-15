@@ -12,13 +12,12 @@ I demoed an Arduino-powered Power Glove, modified my slides on the fly with a We
 
 {% vimeo 83907789 %}
 
-
 I also gave a 20-minute version of this at [Barcamp Omaha][barcamp], which you can watch if you enjoy seeing quadcopters crash and burn.
 
 {% vine h3zEv1Qzl0l%}
 
 Video and more courtesy of Zach Leatherman at [NebraskaJS][2].
 
-[1]:http://nebraskajs.com/
-[barcamp]:http://techomaha.com/2013/11/matt-steele-hardware-barcamp/
-[2]:http://nebraskajs.com/2014/hardware-geocities/
+[1]: http://nebraskajs.com/
+[barcamp]: http://techomaha.com/2013/11/matt-steele-hardware-barcamp/
+[2]: http://nebraskajs.com/2014/hardware-geocities/

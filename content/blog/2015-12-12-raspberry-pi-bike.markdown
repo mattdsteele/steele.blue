@@ -23,25 +23,25 @@ I used a Raspberry Pi and an app written in JavaScript to do this. The code is o
 
 The core of the project:
 
-* [Raspberry Pi Zero](https://www.raspberrypi.org/blog/raspberry-pi-zero/) and a 4GB micro SD card
-* [5M Waterproof RGB LED Light Strip](http://www.amazon.com/gp/product/B00DTOAWZ2)
-* [USB portable charger](http://www.amazon.com/Energizer-Portable-Smartphone-Charger-smartphones/dp/B0092MD8P6) and micro-USB cable
+- [Raspberry Pi Zero](https://www.raspberrypi.org/blog/raspberry-pi-zero/) and a 4GB micro SD card
+- [5M Waterproof RGB LED Light Strip](http://www.amazon.com/gp/product/B00DTOAWZ2)
+- [USB portable charger](http://www.amazon.com/Energizer-Portable-Smartphone-Charger-smartphones/dp/B0092MD8P6) and micro-USB cable
 
 To power the LED light strip:
 
-* [TIP120 Transistors (3x)](https://www.radioshack.com/products/tip120-transistor?variant=5717612869)
-* [8 AA battery holder](https://www.radioshack.com/products/radioshack-8-aa-battery-holder?variant=5717214213) and [9V snap connector](https://www.radioshack.com/products/radioshack-heavy-duty-9v-snap-connectors?variant=5717208197)
-* A handful of jumper wires and a prototyping board
+- [TIP120 Transistors (3x)](https://www.radioshack.com/products/tip120-transistor?variant=5717612869)
+- [8 AA battery holder](https://www.radioshack.com/products/radioshack-8-aa-battery-holder?variant=5717214213) and [9V snap connector](https://www.radioshack.com/products/radioshack-heavy-duty-9v-snap-connectors?variant=5717208197)
+- A handful of jumper wires and a prototyping board
 
 To capture sensor input from the bike:
 
-* [ANT+ USB receiver](http://www.amazon.com/gp/product/B004YJSD20)
-* [Speed/Cadence Bike Sensor](http://www.amazon.com/Garmin-Speed-Cadence-Bike-Sensor/dp/B000BFNOT8)
-* [Heart Rate Monitor](https://buy.garmin.com/en-US/US/shop-by-accessories/fitness-sensors/hrm-run-/prod133715.html)
-* [Micro-USB to USB adapter](http://www.amazon.com/gp/product/B015XA3W0G) (the Pi Zero has micro-USB inputs)
+- [ANT+ USB receiver](http://www.amazon.com/gp/product/B004YJSD20)
+- [Speed/Cadence Bike Sensor](http://www.amazon.com/Garmin-Speed-Cadence-Bike-Sensor/dp/B000BFNOT8)
+- [Heart Rate Monitor](https://buy.garmin.com/en-US/US/shop-by-accessories/fitness-sensors/hrm-run-/prod133715.html)
+- [Micro-USB to USB adapter](http://www.amazon.com/gp/product/B015XA3W0G) (the Pi Zero has micro-USB inputs)
 
 I had most of these items on hand from previous projects, but had to buy the LED Light Strip and transistors.
-In total this project uses less than $20 of consumable parts.
+In total this project uses less than \$20 of consumable parts.
 
 Everything fit in my bike's saddle bag; this worked really well due to the super-tiny Pi Zero.
 I placed the Pi and the circuit board in a makeshift enclosure I made from a to-go container, and held it down using electrical tape.
@@ -114,11 +114,10 @@ If you use this as the basis for your project, shoot me a note, I'd love to hear
 
 Other pages I found useful:
 
-* [mitchtech.net/raspberry-pi-pwm-rgb-led-strip/](http://mitchtech.net/raspberry-pi-pwm-rgb-led-strip/)
-* [willmakesthings.com/color-my-desk/](http://willmakesthings.com/color-my-desk/)
-* [github.com/k1sul1/Raspberry-Pi-PHP-LED-controller](https://github.com/k1sul1/Raspberry-Pi-PHP-LED-controller#whatsneeded)
-* [elfboimakingstuff.tumblr.com/](http://elfboimakingstuff.tumblr.com/post/132956410578/raspberry-pi-pwm-rgb-led-strip)
-
+- [mitchtech.net/raspberry-pi-pwm-rgb-led-strip/](http://mitchtech.net/raspberry-pi-pwm-rgb-led-strip/)
+- [willmakesthings.com/color-my-desk/](http://willmakesthings.com/color-my-desk/)
+- [github.com/k1sul1/Raspberry-Pi-PHP-LED-controller](https://github.com/k1sul1/Raspberry-Pi-PHP-LED-controller#whatsneeded)
+- [elfboimakingstuff.tumblr.com/](http://elfboimakingstuff.tumblr.com/post/132956410578/raspberry-pi-pwm-rgb-led-strip)
 
 [event]: https://www.facebook.com/events/1093828353982844/
 [2014]: /arduino-bike-lights/
