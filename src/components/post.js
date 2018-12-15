@@ -1,11 +1,11 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
-import PropTypes from 'prop-types'
+import React from 'react';
+import { Link, graphql } from 'gatsby';
+import PropTypes from 'prop-types';
 
 function Post({ frontmatter, fields, html, showLink }) {
-  let title = frontmatter.title
+  let title = frontmatter.title;
   if (fields.slug && showLink) {
-    title = <Link to={fields.slug}>{frontmatter.title}</Link>
+    title = <Link to={fields.slug}>{frontmatter.title}</Link>;
   }
   return (
     <article>
@@ -14,18 +14,18 @@ function Post({ frontmatter, fields, html, showLink }) {
       {frontmatter.rss_only ? <h1>RSS ONLY</h1> : null}
       <div dangerouslySetInnerHTML={{ __html: html }} />
     </article>
-  )
+  );
 }
 
 Post.defaultProps = {
   showLink: true,
-}
+};
 
 Post.propTypes = {
   showLink: PropTypes.bool,
-}
+};
 
-export default Post
+export default Post;
 
 export const postFragment = graphql`
   fragment PostDetails on MarkdownRemark {
@@ -42,4 +42,4 @@ export const postFragment = graphql`
     html
     excerpt(pruneLength: 160)
   }
-`
+`;
