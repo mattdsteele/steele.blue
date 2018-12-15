@@ -14,12 +14,13 @@ Here's what I learned.
 
 This was all [Jerod Santo][1]'s fault.
 
-At the first Hack Omaha, Jerod amazed me by building his project in a [days-old JavaScript framework][Meteor].
+At the first Hack Omaha, Jerod amazed me by building his project in a [days-old JavaScript framework][meteor].
 It was a high-wire act, but he convinced me that [I should follow suit][2].
 
-So when Hack Omaha rolled around this year, Jerod and I decided to team up and try a language neither of us knew. His suggestion: [Go][Go] - Google's new(ish) language. Juan Vazquez joined in, and [a team based on ignorance was born][3].
+So when Hack Omaha rolled around this year, Jerod and I decided to team up and try a language neither of us knew. His suggestion: [Go][go] - Google's new(ish) language. Juan Vazquez joined in, and [a team based on ignorance was born][3].
 
-Go's [docs][Godocs] describe the language:
+Go's [docs][godocs] describe the language:
+
 > Go compiles quickly to machine code yet has the convenience of garbage collection and the power of run-time reflection. It's a fast, statically typed, compiled language that feels like a dynamically typed, interpreted language.
 
 {% picture hackomaha1.jpg alt="Leah and Juan get to work" %}
@@ -39,11 +40,12 @@ Go has an impressive standard library and can serve HTTP easily out of the box, 
 We went with [Martini][martini]; a Sinatra-esque library that is less than a month old, in a proud Hack Omaha tradition.
 
 Our services ended up with this structure.
-{% highlight go %}
+
+```go
 m.Get("/schools", func(res http.ResponseWriter) string {
   return render(res, allSchools)
 })
-{% endhighlight %}
+```
 
 This should look similar to Sinatra and its bretheren.
 Martini gives you the objects you need (like a ResponseWriter) via parameterized Dependency Injection, which is super convenient.
@@ -60,29 +62,29 @@ That said, Go has [testing built into the language](http://golang.org/doc/code.h
 
 Go has database operations built into the standard library; just bring your own database-specific adapter.
 We went with MySQL, which [has a great Go adapter](https://github.com/go-sql-driver/mysql).
-And writing queries is lame, so we tried out an ORM called [Gorm][Gorm].
+And writing queries is lame, so we tried out an ORM called [Gorm][gorm].
 This was a little more mature, as it was a full 6 weeks old.
 
 Using Gorm is pretty simple: define a `struct` with types named like your database columns:
 
-{% highlight go %}
+```go
 type School struct {
-  Id          int64
-  Name        string `sql:"size:255"`
-  CountyId    int64
-  DistrictId  int64
-  Lat         float64
-  Lon         float64
+Id int64
+Name string `sql:"size:255"`
+CountyId int64
+DistrictId int64
+Lat float64
+Lon float64
 }
-{% endhighlight %}
+```
 
 And populate them:
 
-{% highlight go %}
-  var school = School{}
-  schoolId := params["id"]
-  db.Where("id = ?", schoolId).First(&school)
-{% endhighlight %}
+```go
+var school = School{}
+schoolId := params["id"]
+db.Where("id = ?", schoolId).First(&school)
+```
 
 ORMs are appealing, especially when your database tables are denormalized by design to allow simple querying.
 But the additional complexity Gorm brought might not have been worth it.
@@ -105,15 +107,15 @@ Lesson: understand the idioms of a language you're futzing around with.
 
 It wasn't all sunshine. Beyond database and library issues, here's a few problems I encountered with Go:
 
-* I like functional collections, and using slices (Go's version of an array) in a functional manner proved impossible.
-Go _appears_ to have functions for `filter`, `map`, and others, but we never got them working.
-It appears that Go programmers are content to use `for` loops for everything, which is what we ended up doing.
-* Go provides strict checks at compile time. This includes failing the build when you have declared a variable or import that you haven't used.
-Normally I love these checks, but this proved more annoying than useful in the iterative environment of a hackathon.
-* As a user of third-party libraries, Go's package management is great (simply type `go get github.com/package` and it's available).
-But I never figured how to split apart our single-file Go program into a decent structure.
-We settled on placing our `struct`s in one file, and everything else in another.
-They all shared the `main` package, as well.
+- I like functional collections, and using slices (Go's version of an array) in a functional manner proved impossible.
+  Go _appears_ to have functions for `filter`, `map`, and others, but we never got them working.
+  It appears that Go programmers are content to use `for` loops for everything, which is what we ended up doing.
+- Go provides strict checks at compile time. This includes failing the build when you have declared a variable or import that you haven't used.
+  Normally I love these checks, but this proved more annoying than useful in the iterative environment of a hackathon.
+- As a user of third-party libraries, Go's package management is great (simply type `go get github.com/package` and it's available).
+  But I never figured how to split apart our single-file Go program into a decent structure.
+  We settled on placing our `struct`s in one file, and everything else in another.
+  They all shared the `main` package, as well.
 
 ## So you won, right?
 
@@ -136,12 +138,12 @@ Try building your next application on [GAP: Go, AngularJS, and Postgres](https:/
 
 [schools]: http://schools.opennebraska.io/
 [1]: https://twitter.com/jerodsanto/
-[Meteor]: http://blog.jerodsanto.net/2012/04/confessions-of-a-meteor-newb/
+[meteor]: http://blog.jerodsanto.net/2012/04/confessions-of-a-meteor-newb/
 [2]: http://blog.jerodsanto.net/2012/04/confessions-of-a-meteor-newb/#comment-507865511
-[Go]: http://golang.org/
+[go]: http://golang.org/
 [3]: https://twitter.com/jerodsanto/status/394909959948754944
-[Godocs]: http://golang.org/doc/
+[godocs]: http://golang.org/doc/
 [goweb]: http://thechangelog.com/on-go-web-application-ecosystem
 [martini]: http://martini.codegangsta.io/
 [hackomaha1]: /lessons-learned-from-the-first-hack-omaha/
-[Gorm]: https://github.com/jinzhu/gorm
+[gorm]: https://github.com/jinzhu/gorm

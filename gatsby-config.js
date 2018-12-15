@@ -36,6 +36,7 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
+          'gatsby-remark-embed-speakerdeck',
           {
             resolve: 'gatsby-remark-embed-youtube',
             options: { width: 160, height: 90 },

@@ -14,7 +14,7 @@ So you'd write your Angular/React/whatever app that contained your business logi
 I haven't seen this interop story in action (or documented) in many places.
 In particular, **how do you build a Custom Element that'll work in both AngularJS (1.x) and Angular 2+ apps**?
 
-*Note*: I'll be using on the new "V1" version of the Custom Elements spec. [Here's a good intro article](https://developers.google.com/web/fundamentals/primers/customelements/), and [here's a polyfill](https://github.com/WebReflection/document-register-element).
+_Note_: I'll be using on the new "V1" version of the Custom Elements spec. [Here's a good intro article](https://developers.google.com/web/fundamentals/primers/customelements/), and [here's a polyfill](https://github.com/WebReflection/document-register-element).
 
 ## Building The Custom Element ([View on GitHub](https://github.com/mattdsteele/countdown-timer-element))
 
@@ -22,50 +22,49 @@ Let's make a `<countdown-timer>` Custom Element.
 
 You give it the number of seconds you want the timer to run, and it'll spit out an event (with a message) when the countdown ends.
 
-We'll use a "one-way data flow" architecture - the element will accept its inputs via properties, and spit out DOM Events for its outputs. 
+We'll use a "one-way data flow" architecture - the element will accept its inputs via properties, and spit out DOM Events for its outputs.
 This is the architecture Angular uses, (and [the recommended approach for modern Angular 1 apps][ng2patterns].
 
 Here's the element in all its dumb glory:
 
 ```javascript
 class CountdownTimer extends HTMLElement {
-	connectedCallback() {
-		const template = `
+  connectedCallback() {
+    const template = `
 			<button class="countdown-start">Start the countdown</button>
 			<span class="seconds-left"></span>
-			`;
-		this.innerHTML = template;
+			`
+    this.innerHTML = template
 
-		// Useful references
-		this.button = this.querySelector('.countdown-start');
-		this.secondsDisplay = this.querySelector('.seconds-left');
+    // Useful references
+    this.button = this.querySelector('.countdown-start')
+    this.secondsDisplay = this.querySelector('.seconds-left')
 
-		// Initialize
-		this.button.addEventListener('click', () => this.handleClick());
-	}
+    // Initialize
+    this.button.addEventListener('click', () => this.handleClick())
+  }
 
-	handleClick() {
-		this.updateTimer();
-		this.button.disabled = true;
-		this.button.innerHTML = 'YOU DID IT';
-		this.updateTimer();
-		const counter = window.setInterval(() => {
-			this.seconds--;
-			this.updateTimer();
-			if (this.seconds === 0) {
-				window.clearInterval(counter);
-				console.info('BOOM');
-			}
-		}, 1000);
-	}
+  handleClick() {
+    this.updateTimer()
+    this.button.disabled = true
+    this.button.innerHTML = 'YOU DID IT'
+    this.updateTimer()
+    const counter = window.setInterval(() => {
+      this.seconds--
+      this.updateTimer()
+      if (this.seconds === 0) {
+        window.clearInterval(counter)
+        console.info('BOOM')
+      }
+    }, 1000)
+  }
 
-	updateTimer() {
-		this.secondsDisplay.innerHTML = this.seconds;
-	}
-
+  updateTimer() {
+    this.secondsDisplay.innerHTML = this.seconds
+  }
 }
 
-window.customElements.define('countdown-timer', CountdownTimer);
+window.customElements.define('countdown-timer', CountdownTimer)
 ```
 
 Not much to it - initialize stuff in the `connectedCallback` hook, and then add your functionality.
@@ -76,19 +75,18 @@ Consuming this in Angular is pretty straightforward: you use the `[prop]="value"
 
 A component that uses it might have a template that looks like:
 
-{% raw %}
-```javascript
-    <p>
-      <label>How long to count down? 
-        <input [(ngModel)]="secondsLeft" type="number">
-      </label>
-    </p>
-    <countdown-timer 
-      [seconds]="secondsLeft" 
-      (countdown-ended)="handleCountdownEnded($event.detail)">
-    </countdown-timer>
+```html
+<p>
+  <label
+    >How long to count down? <input [(ngModel)]="secondsLeft" type="number" />
+  </label>
+</p>
+<countdown-timer
+  [seconds]="secondsLeft"
+  (countdown-ended)="handleCountdownEnded($event.detail)"
+>
+</countdown-timer>
 ```
-{% endraw %}
 
 One thing to watch out for, if you get an error like this:
 
@@ -100,7 +98,7 @@ Can't bind to 'seconds' since it isn't a known property of 'countdown-timer'.
 
 You'll need to add `CUSTOM_ELEMENTS_SCHEMA` to your `@NgModule` declaration, via:
 
-```javascript
+```typescript
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @NgModule({
@@ -113,8 +111,8 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 Out of the box, our Custom Element won't play nicely with AngularJS. There are two problems:
 
-* Its templating system binds to an element's *attributes*, while our component updates the element's *properties*
-* AngularJS isn't aware of the events your Custom Element fires, and doesn't hook into the normal `&` callback bindings
+- Its templating system binds to an element's _attributes_, while our component updates the element's _properties_
+- AngularJS isn't aware of the events your Custom Element fires, and doesn't hook into the normal `&` callback bindings
 
 So! We can fix this in a couple different ways:
 
@@ -135,30 +133,28 @@ attributeChangedCallback(name, oldVal, newVal) {
 }
 ```
 
-{% raw %}
 And then bind to the attribute in our template (note the use of `ng-attr` to prevent the element from seeing the raw `{{expression}}`):
 
 ```html
 <countdown-timer ng-attr-seconds="{{$ctrl.secondsLeft}}"></countdown-timer>
 ```
-{% endraw %}
 
 On the output side, we can bind to the event manually in our controller, and wrap it in `$scope.$apply()` to make sure a digest runs:
 
 ```javascript
-$element.on('countdownEnded', (e) => {
+$element.on('countdownEnded', e => {
   // If we don't do a digest, this doesn't get picked up immediately
   $scope.$apply(() => {
-    this.message = e.detail.message;
-  });
-});
+    this.message = e.detail.message
+  })
+})
 ```
 
 But this has limitations:
 
-* Binding to attributes means you're limited to passing String expressions to your Custom Element
-* You lose encapsulation by binding to the Custom Element's events in your Angular controller. If you wanted to write idiomatic AngularJS, you'd have to create a wrapper component that provided an `on-countdown-ended` attribute, and run a digest manually. But now you're writing wrapper components for *every* Custom Element you import, and we were trying to get away from that!
-* Plus, you're modifying your supposedly framework-agnostic Custom Element to satisfy a particular framework
+- Binding to attributes means you're limited to passing String expressions to your Custom Element
+- You lose encapsulation by binding to the Custom Element's events in your Angular controller. If you wanted to write idiomatic AngularJS, you'd have to create a wrapper component that provided an `on-countdown-ended` attribute, and run a digest manually. But now you're writing wrapper components for _every_ Custom Element you import, and we were trying to get away from that!
+- Plus, you're modifying your supposedly framework-agnostic Custom Element to satisfy a particular framework
 
 So yeah, that sucks. Hope there's a better way!
 
@@ -171,8 +167,9 @@ Rob Dodson wrote a [set of directives to help Custom Elements interop with Angul
 Since we're using a one-way data flow, we can add the `ce-one-way` directive to our AngularJS template:
 
 ```html
-<countdown-timer ce-one-way
-  seconds="$ctrl.secondsLeft" 
+<countdown-timer
+  ce-one-way
+  seconds="$ctrl.secondsLeft"
   on-countdown-ended="$ctrl.countdownEnded()"
 ></countdown-timer>
 ```
@@ -187,7 +184,7 @@ At work, we maintain an enterprise component library, like many large orgs do.
 It's currently built as a set of Angular 1 directives.
 As we begin to investigate Angular, we want to make the migration process smooth as butter.
 
-We *could* rebuild the component library as a set of Angular components, and
+We _could_ rebuild the component library as a set of Angular components, and
 AngularJS interoperability could come through the [ngUpgrade module](https://angular.io/docs/ts/latest/guide/upgrade.html), probably.
 
 But this begs the question: what happens when we ditch Angular? Our components would again be dependent on a single framework, and they'd have to be rewritten once again.
