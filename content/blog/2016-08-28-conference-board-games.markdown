@@ -12,9 +12,9 @@ I thought it worked pretty well, but I haven't seen many other tech conferences 
 
 tl;dr:
 
-* Collect games from your friends' libraries
-* Take some simple precautions to make sure nothing gets lost
-* If you've got the budget, raffle off a couple games at the end of the night
+- Collect games from your friends' libraries
+- Take some simple precautions to make sure nothing gets lost
+- If you've got the budget, raffle off a couple games at the end of the night
 
 ## Why board games?
 
@@ -50,33 +50,33 @@ We offered to discount donors' admission as a way of saying thanks.
 
 You want to get games that meet a few criteria:
 
-* **Short** - preferably under an hour to setup and play.
-* **Easy to learn** - Folks don't want to pour through manuals, they want to be unboxing and playing in a few minutes.
-* **Easy to play** - Hardcore strategy games like [Power Grid](http://boardgamegeek.com/boardgame/2651/power-grid) are tons of fun, but probably overkill for most attendees at this point in the day.
+- **Short** - preferably under an hour to setup and play.
+- **Easy to learn** - Folks don't want to pour through manuals, they want to be unboxing and playing in a few minutes.
+- **Easy to play** - Hardcore strategy games like [Power Grid](http://boardgamegeek.com/boardgame/2651/power-grid) are tons of fun, but probably overkill for most attendees at this point in the day.
 
 We also grabbed a few train-based games, to match our conference's theme (the venue was an old railroad station).
 
 Here's some games that fit this criterion (and got played a lot):
 
-* [Dominion](http://boardgamegeek.com/boardgame/36218/dominion) - A fun deck-builder that'll scratch the itch of the ex-Magic: The Gathering players that sneak into your conference.
-* [Wits & Wagers](http://boardgamegeek.com/boardgame/20100/wits-wagers) - A trivia game where you can win even if you don't know any answers? Sold.
-* [Pandemic](http://boardgamegeek.com/boardgame/30549/pandemic) - Cooperative games are particularly great at generating tables of cheers and high-fives.
-* [Concept](http://boardgamegeek.com/boardgame/147151/concept) - A great word association game. Another nice feature: folks can join at any time and don't have to wait for a new table to start up.
+- [Dominion](http://boardgamegeek.com/boardgame/36218/dominion) - A fun deck-builder that'll scratch the itch of the ex-Magic: The Gathering players that sneak into your conference.
+- [Wits & Wagers](http://boardgamegeek.com/boardgame/20100/wits-wagers) - A trivia game where you can win even if you don't know any answers? Sold.
+- [Pandemic](http://boardgamegeek.com/boardgame/30549/pandemic) - Cooperative games are particularly great at generating tables of cheers and high-fives.
+- [Concept](http://boardgamegeek.com/boardgame/147151/concept) - A great word association game. Another nice feature: folks can join at any time and don't have to wait for a new table to start up.
 
 [Here's the complete list of games we collected for NEJS CONF](https://gist.github.com/mattdsteele/21d3bb8386e566ce6743be15e87ea1b0), if you're curious.
 
 ## Keep them safe
 
-Since you'll likely be consolidating a collection worth hundreds or thousands of dollars, folks will want to know that it's in good hands. [And bad things can happen][pretzcon], unfortunately.  A few things you want to have a plan for:
+Since you'll likely be consolidating a collection worth hundreds or thousands of dollars, folks will want to know that it's in good hands. [And bad things can happen][pretzcon], unfortunately. A few things you want to have a plan for:
 
-* **Make an inventory** - We used a Google Spreadsheet to keep track of people's games. I made the spreadsheet a few days before and shared it with the game donors, and then re-inventoried all the games during the conference.
-* **Have a plan for duplicate games** - There were a few games the library had multiple copies of. Make a note of these, and mark them appropriately.
-Ask the owners if there are any expansions, sleeved cards, or other identifiable markings in the box.
-* **Return games at end of the night** - Donors want their games back sooner rather than later, and you don't want to keep a boatload of games in your car, anyhow.
+- **Make an inventory** - We used a Google Spreadsheet to keep track of people's games. I made the spreadsheet a few days before and shared it with the game donors, and then re-inventoried all the games during the conference.
+- **Have a plan for duplicate games** - There were a few games the library had multiple copies of. Make a note of these, and mark them appropriately.
+  Ask the owners if there are any expansions, sleeved cards, or other identifiable markings in the box.
+- **Return games at end of the night** - Donors want their games back sooner rather than later, and you don't want to keep a boatload of games in your car, anyhow.
 
 ## Games Ambassadors
 
-{% picture players-wanted.jpg alt="Geekway To The West" %}
+{% picture players-wanted.jpg alt="Geekway To The West" %}
 [Geekway To The West](https://www.facebook.com/GeekwaytotheWest/photos/a.10151887467747320.1073741827.51610637319/10153302091137320/?type=3&theater)
 
 You'll want to recruit a **Game Ambassador** or two - these are volunteers who facilitate play among non-gamers.
@@ -92,7 +92,7 @@ We probably doubled the number of tables playing board games as a result of our 
 ## Giveaways
 
 We worked with [Spielbound][spielbound], our friendly local board game cafe, to purchase a dozen board games, and we raffled them off at the end of the night.
-This was the most expensive part of the event, and ran about $300.
+This was the most expensive part of the event, and ran about \$300.
 
 You'll want to announce the raffle rules ahead of time, and have answers to common questions. For example: Who's eligible for the raffle? Do you get to choose your game or is it first-come-first-serve? Do you have to be present for the raffle to win?
 
@@ -114,11 +114,11 @@ We ended up not doing this, as we had enough library games that it wasn't worth 
 
 At this point, running the library is pretty straightforward. A few other bits to consider:
 
-* **Shelving** - Putting games on tables is lame and you'll run into a mess fast.
-Get some actual shelves, and put your games on 'em.
-[I picked up these at Lowe's](http://www.lowes.com/pd/Blue-Hawk-72-in-H-x-36-in-W-x-18-in-D-5-Tier-Plastic-Freestanding-Shelving-Unit/50436504?#!&_=_) for $30.
-* **Check in/out** - If someone wanted a game, we just took their conference namebadge and put it in a box.
-When they returned the game they got it back. Simple.
+- **Shelving** - Putting games on tables is lame and you'll run into a mess fast.
+  Get some actual shelves, and put your games on 'em.
+  [I picked up these at Lowe's](http://www.lowes.com/pd/Blue-Hawk-72-in-H-x-36-in-W-x-18-in-D-5-Tier-Plastic-Freestanding-Shelving-Unit/50436504?#!&_=_) for \$30.
+- **Check in/out** - If someone wanted a game, we just took their conference namebadge and put it in a box.
+  When they returned the game they got it back. Simple.
 
 Other than that, the event pretty much runs itself.
 You might have to wait a while for the last table to finish up their games before you can pack up, but otherwise it's easy as pie.
@@ -126,7 +126,6 @@ You might have to wait a while for the last table to finish up their games befor
 Happy gaming!
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/mattdsteele">@mattdsteele</a> <a href="https://twitter.com/nejsconf">@nejsconf</a> I feel like I&#39;ve made a mistake by not planning to be there</p>&mdash; Nick (@programmerman) <a href="https://twitter.com/programmerman/status/768867428709330944">August 25, 2016</a></blockquote>
-
 
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>

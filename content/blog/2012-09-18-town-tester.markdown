@@ -2,7 +2,7 @@
 layout: post
 title: Town Tester - How well does your city unit test?
 categories:
-- Code
+  - Code
 tags: []
 status: publish
 type: post
@@ -12,6 +12,7 @@ meta:
   _wpas_skip_twitter: '1'
   _elasticsearch_indexed_on: '2012-09-18 16:20:19'
 ---
+
 In my talk <a href="https://vimeo.com/49092644/">Zen and the Art of TDD</a>, I included a slide that showed only 43% of all Github repositories from Omaha developers included unit tests:
 
 {% picture languages1.png alt="Languages" %}
@@ -21,6 +22,7 @@ Today I'm releasing the code I used to obtain this data: a script called Town Te
 <strong><a href="https://github.com/mattdsteele/town-tester">View town-tester on Github</a></strong>
 
 It's a Ruby script that queries the Github API to do the following tasks:
+
 <ul>
 	<li>Find users with their Location set to the value you provide</li>
 	<li>Clones all "popular" repos (not a dotfiles project, at least 1 watcher, not a fork)</li>

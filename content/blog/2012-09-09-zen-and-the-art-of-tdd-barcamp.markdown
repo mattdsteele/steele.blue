@@ -2,8 +2,8 @@
 layout: post
 title: Zen and the Art of TDD
 categories:
-- Code
-- Talks
+  - Code
+  - Talks
 tags: []
 status: publish
 type: post
@@ -14,6 +14,7 @@ meta:
   _wpas_skip_39196: '1'
   _elasticsearch_indexed_on: '2012-09-09 19:15:00'
 ---
+
 Over the weekend at <a href="http://barcampomaha.org">Barcamp Omaha</a> I gave a talk on why I practice test driven development. Though TDD is over a decade old, it still isn't a practice we do with much regularity. So this is my Top 5 list of reasons why I think TDD is an important skill to develop.
 
 While prepping this talk, I discovered that only 43% of GitHub repositories from Omaha developers have any tests at all. How many were built with TDD is certainly an even smaller fraction.

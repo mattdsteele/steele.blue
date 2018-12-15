@@ -18,10 +18,11 @@ It turns out that Reactive Programming techniques are perfect for a use case lik
 
 If you're new to the concept of reactive programming, check out these guides:
 
-* [RxMarbles](http://rxmarbles.com/) - you could just play around on this site and learn most of what you need
-* [Introduction to Reactive Programming](https://egghead.io/series/introduction-to-reactive-programming) course on egghead.io
+- [RxMarbles](http://rxmarbles.com/) - you could just play around on this site and learn most of what you need
+- [Introduction to Reactive Programming](https://egghead.io/series/introduction-to-reactive-programming) course on egghead.io
 
 ## Creating the streams
+
 Sensor input was grabbed from the [ant-plus](https://github.com/Loghorn/ant-plus) library.
 It emits a [Node-style Event](https://nodejs.org/api/events.html) periodically (every 250ms for the heart rate monitor, and on every pedal stroke for the cadence sensor).
 
@@ -31,7 +32,7 @@ RxJS makes it easy to convert these to a stream:
 let Rx = require('rx');
 
 //`sensor` emits 'cadenceData' events periodically
-let rawCadence = Rx.Observable.fromEvent(sensor, 'cadenceData')
+let rawCadence = Rx.Observable.fromEvent(sensor, 'cadenceData');
 ```
 
 This produces an Observable stream of cadence events.
@@ -71,7 +72,7 @@ calculatedCadence
 ```
 
 Here I'm using an [Arduino-style `remap`](https://www.arduino.cc/en/Reference/Map) function to convert my cadence range (25rpm during easy pedaling, 100rpm during fast sprints) to a 0-1 range, which the lights class expects.
- Then we pass that data to the LED lights.
+Then we pass that data to the LED lights.
 
 ## Faking out the stream
 
@@ -81,10 +82,9 @@ Creating a fake stream for testing was a piece of cake. In a separate file:
 //mock-cadence-stream.js
 
 // Start emitting 30rpm, then switch to 90rpm after 5 seconds
-let mockedCadenceStream = Rx.Observable
-  .interval(1000)
+let mockedCadenceStream = Rx.Observable.interval(1000)
   .timeInterval()
-  .map(e => e.value >= 5 ? 30 : 90);
+  .map(e => (e.value >= 5 ? 30 : 90));
 
 module.exports = mockedCadenceStream;
 ```
@@ -104,9 +104,9 @@ Simple, but it gets the job done.
 Getting data from the heart rate monitor was similar but required a few additional RxJS tricks.
 I used these Reactive functions:
 
-* [`distinctUntilChanged`](http://rxmarbles.com/#distinctUntilChanged) to only emit when my HR changed
-* [`debounce`](http://rxmarbles.com/#debounce) as 250ms was too rapid for my use
-* [`flatMap` and `flatMapLatest`](http://reactivex.io/documentation/operators/flatmap.html) to convert the event data (beats per minute) into a stream of "heartbeat" events
+- [`distinctUntilChanged`](http://rxmarbles.com/#distinctUntilChanged) to only emit when my HR changed
+- [`debounce`](http://rxmarbles.com/#debounce) as 250ms was too rapid for my use
+- [`flatMap` and `flatMapLatest`](http://reactivex.io/documentation/operators/flatmap.html) to convert the event data (beats per minute) into a stream of "heartbeat" events
 
 You can see the full implementation on [GitHub](https://github.com/mattdsteele/raspberry-pi-bike-leds/blob/master/src/boot.js#L33-L35).
 

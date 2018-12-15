@@ -10,14 +10,14 @@ I'll blame the head cold, but I see connective tissue across several articles.
 ---
 
 First, Scott Alexander makes a compelling case that [Trump supporters aren't immune to logic and truth][ssc].
-One *presumes* they are, because when's the last time you debated a Trumpist and changed their minds?
+One _presumes_ they are, because when's the last time you debated a Trumpist and changed their minds?
 
 But that's because these debates usually entail a handful of drive-by "CHECKMATE ATHEISTS" encounters.
 Rather, one should focus on a longer-term, convince-one-person-over-five-years approach:
 
 > Am I saying that if you met with a conservative friend for an hour in a quiet cafe to talk over your disagreements, they’d come away convinced? No. I’ve changed my mind on various things during my life, and it was never a single moment that did it. It was more of a series of different things, each taking me a fraction of the way. As the old saying goes, “First they ignore you, then they laugh at you, then they fight you, then they fight you half-heartedly, then they’re neutral, then they then they grudgingly say you might have a point even though you’re annoying, then they say on balance you’re mostly right although you ignore some of the most important facets of the issue, then you win.”
 
-Instead, we throw up our hands and proclaim we're in a post-truth era, because the longer-term approach is *hard*:
+Instead, we throw up our hands and proclaim we're in a post-truth era, because the longer-term approach is _hard_:
 
 > Improving the quality of debate, shifting people’s mindsets from transmission to collaborative truth-seeking, is a painful process. It has to be done one person at a time, it only works on people who are already almost ready for it, and you will pick up far fewer warm bodies per hour of work than with any of the other methods.
 
@@ -34,7 +34,7 @@ The internists' secret weapon: access to way more data:
 
 ---
 
-Finally, my hometown of Omaha is looking to solve its public transit problems by [building a new $150M streetcar system][owh1].
+Finally, my hometown of Omaha is looking to solve its public transit problems by [building a new \$150M streetcar system][owh1].
 It's a massive, big-bang solution to public transit woes, which is odd, given that Nebraska [spends less on public transit than any other state](https://twitter.com/peraun/status/839926603484389377).
 
 Similarly, the city has let its road infrastructure crumble so much over the years that [it's converting some roads back to gravel][nytomaha], and declaring them "unmaintained".
@@ -52,7 +52,7 @@ But to accomplish it they'll move resources away from longer-term projects, like
 
 Making those long-term investments is hard. And it's an uphill battle. When short-term solutions work they're more dramatic, are easier to measure, and are more fun. So of course folks prioritize them.
 
-But it's not just that the longer-term approach is more effective. It's that the alternative is often *actively harmful*.
+But it's not just that the longer-term approach is more effective. It's that the alternative is often _actively harmful_.
 
 If you don't think you can rationally convince a Trumpist they're wrong, then what's your alternative?
 Sophistry, emotional appeals, or shutting down discourse a la the antifa folks?

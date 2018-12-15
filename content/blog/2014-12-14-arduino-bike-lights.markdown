@@ -13,7 +13,7 @@ Zach attached 5 meters of LED lights to his bike frame, but I wanted to take it 
 
 I wired the lights and attached them to my bike using the method Zach outlined, so it's worth [checking out his setup](http://www.zachleat.com/web/bike-lights/).
 
-LED light strips are great: they're cheap (about $10), super bright, and can be battery-powered. (There are "smart" strips that have individually addressible lights, but they're quite pricy.)
+LED light strips are great: they're cheap (about \$10), super bright, and can be battery-powered. (There are "smart" strips that have individually addressible lights, but they're quite pricy.)
 
 I picked up the [E-Goal 3528 RGB LED strip](http://www.amazon.com/gp/product/B00JX6SUWM/) off Amazon. It included a remote control to adjust the lights.
 
@@ -33,7 +33,7 @@ It doesn't take much to build a homemade IR blaster - first you need to decode t
 
 ## Debugging the remote
 
-I shouldn't have expected much from a $10 gadget, so it's no surprise that the light strip and remote did not come with any instructions or data sheet.
+I shouldn't have expected much from a \$10 gadget, so it's no surprise that the light strip and remote did not come with any instructions or data sheet.
 
 After learning about infrared, I borrowed a [USB Infrared Toy](http://dangerousprototypes.com/docs/USB_Infrared_Toy), which provided a convenient way to both send and recieve IR signals. Surprisingly, it had the best support on [Windows](http://winlirc.sourceforge.net/), which I wasn't setup for.
 
@@ -97,7 +97,7 @@ Unfortunately the configuration file LIRC generated didn't work with this (the h
 
 ```
 begin raw_codes
- 
+
   name on
     8874    4565     511     597     533     554
     533     575     511     575     554     554
@@ -122,7 +122,7 @@ Then it was just a matter of converting these values to a C array and sending it
 
 ```c
 IRsend irsend;
- 
+
 unsigned int on[67] = { 8874,4565,511,597,533,554,533,575,511,575,554,554,554,554,511,597,533,554,554,1685,511,1685,533,1685,575,1706,533,554,554,1706,511,1685,533,1706,554,1685,554,1685,511,575,554,533,575,533,533,575,511,554,554,533,533,575,554,554,554,1685,533,1685,554,1685,575,1685,533,1685,533,1685,554};
 
 irsend.sendRaw(on, 67, 38); //command, array length, khz
@@ -132,7 +132,7 @@ After a bit of testing, it all worked! I whipped up a small program to go throug
 
 {% picture bdl-1.jpg alt="LED Strip" %}
 
-##  Scope Creep
+## Scope Creep
 
 Like most projects, if I had more time I'd have made it more complicated. I was hoping to get the data from my bike's [cadence sensor](https://buy.garmin.com/en-US/US/shop-by-accessories/fitness-sensors/speed-cadence-bike-sensor/prod1266.html) over the ANT+ protocol. That way, each time I pedaled the lights could change colors.
 
@@ -145,7 +145,6 @@ All in all I'm pretty happy with this setup. It's way nicer than the battery-pow
 
 ## Resources
 
-* All the code and configuration is available [in this Gist](https://gist.github.com/mattdsteele/c6c0504bdab640035f02)
-* [Bookmarks tagged #lirc](https://delicious.com/mattsteele/lirc) on Delicious
-* [More photos/videos of the lights](https://www.flickr.com/photos/orphum/sets/72157647434786353/) on Flickr
-
+- All the code and configuration is available [in this Gist](https://gist.github.com/mattdsteele/c6c0504bdab640035f02)
+- [Bookmarks tagged #lirc](https://delicious.com/mattsteele/lirc) on Delicious
+- [More photos/videos of the lights](https://www.flickr.com/photos/orphum/sets/72157647434786353/) on Flickr

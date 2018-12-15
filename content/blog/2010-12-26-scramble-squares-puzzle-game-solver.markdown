@@ -2,7 +2,7 @@
 layout: post
 title: Scramble Squares puzzle game solver
 categories:
-- Code
+  - Code
 tags: []
 status: publish
 type: post
@@ -13,6 +13,7 @@ meta:
   _oembed_a19957b1eb73781c81ecef35db02e3a4: ! '{{unknown}}'
   _elasticsearch_indexed_on: '2010-12-27 00:32:59'
 ---
+
 My folks got a golf tile puzzle game called "<a href="http://www.b-dazzle.com/puzzdetail.asp?PuzzID=52&amp;CategoryName=Hobbies%20and%20Activities%20Puzzles&amp;CatID=8">Scramble Squares</a>". I was tired of trying to solve it manually, so I wrote a little Ruby app to find all the valid solutions. The code's on GitHub:
 
 <a href="https://github.com/mattdsteele/scramblesquares-solver">https://github.com/mattdsteele/scramblesquares-solver</a>

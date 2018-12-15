@@ -33,38 +33,38 @@ class CountdownTimer extends HTMLElement {
     const template = `
 			<button class="countdown-start">Start the countdown</button>
 			<span class="seconds-left"></span>
-			`
-    this.innerHTML = template
+			`;
+    this.innerHTML = template;
 
     // Useful references
-    this.button = this.querySelector('.countdown-start')
-    this.secondsDisplay = this.querySelector('.seconds-left')
+    this.button = this.querySelector('.countdown-start');
+    this.secondsDisplay = this.querySelector('.seconds-left');
 
     // Initialize
-    this.button.addEventListener('click', () => this.handleClick())
+    this.button.addEventListener('click', () => this.handleClick());
   }
 
   handleClick() {
-    this.updateTimer()
-    this.button.disabled = true
-    this.button.innerHTML = 'YOU DID IT'
-    this.updateTimer()
+    this.updateTimer();
+    this.button.disabled = true;
+    this.button.innerHTML = 'YOU DID IT';
+    this.updateTimer();
     const counter = window.setInterval(() => {
-      this.seconds--
-      this.updateTimer()
+      this.seconds--;
+      this.updateTimer();
       if (this.seconds === 0) {
-        window.clearInterval(counter)
-        console.info('BOOM')
+        window.clearInterval(counter);
+        console.info('BOOM');
       }
-    }, 1000)
+    }, 1000);
   }
 
   updateTimer() {
-    this.secondsDisplay.innerHTML = this.seconds
+    this.secondsDisplay.innerHTML = this.seconds;
   }
 }
 
-window.customElements.define('countdown-timer', CountdownTimer)
+window.customElements.define('countdown-timer', CountdownTimer);
 ```
 
 Not much to it - initialize stuff in the `connectedCallback` hook, and then add your functionality.
@@ -145,9 +145,9 @@ On the output side, we can bind to the event manually in our controller, and wra
 $element.on('countdownEnded', e => {
   // If we don't do a digest, this doesn't get picked up immediately
   $scope.$apply(() => {
-    this.message = e.detail.message
-  })
-})
+    this.message = e.detail.message;
+  });
+});
 ```
 
 But this has limitations:

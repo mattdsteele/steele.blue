@@ -63,9 +63,9 @@ I registered for a [Stanford compilers course][coursera], but only watched up th
 That's probably all you need to get started.
 
 Broadly, a compiler works in two phases: lexing and parsing.
-The *lexer* takes your source code and converts it into tokens, such as `START_IF_STATEMENT`, or `ADDITION_OPERATOR`. 
+The _lexer_ takes your source code and converts it into tokens, such as `START_IF_STATEMENT`, or `ADDITION_OPERATOR`.
 
-You then run your code through a *parser*, which is where the tokens get assembled into an Abstract Syntax Tree.
+You then run your code through a _parser_, which is where the tokens get assembled into an Abstract Syntax Tree.
 From here, you have a structured program and can write a translation from the input program into JavaScript.
 
 ## Jison
@@ -155,13 +155,13 @@ This is where the bulk of the actual compiler work is done, and will be unique t
 
 Once you've parsed the entire AST, you can use the library's `toStringWithSourceMap` function - it returns an object with `map` and `code` properties, which can then be saved off to the file system.
 
-Here's an example of the final code for transpiling ArnoldC's print expression `TALK TO THE HAND`: 
+Here's an example of the final code for transpiling ArnoldC's print expression `TALK TO THE HAND`:
 
 ```javascript
 PrintExpression.prototype.compile = function(indent, fileName) {
-    return this._sn(indent, fileName, 'console.log( ')
-        .add(this.value.compile(indent, fileName))
-        .add(' );\n');
+  return this._sn(indent, fileName, 'console.log( ')
+    .add(this.value.compile(indent, fileName))
+    .add(' );\n');
 };
 ```
 

@@ -18,14 +18,14 @@ class MathFns {
   static for(val) {
     return {
       square() {
-        return val * val
+        return val * val;
       },
-    }
+    };
   }
 }
 
-const fns = MathFns.for(5)
-console.log(fns.square())
+const fns = MathFns.for(5);
+console.log(fns.square());
 ```
 
 By adding a single type token:
@@ -35,14 +35,14 @@ class MathFns {
   static for(val: number) {
     return {
       square() {
-        return val * val
+        return val * val;
       },
-    }
+    };
   }
 }
 
-const fns = MathFns.for(5)
-console.log(fns.square())
+const fns = MathFns.for(5);
+console.log(fns.square());
 ```
 
 Inferred typing means you add drastically fewer tokens than you would to make Java code typesafe; conservatively you'd have to add least six type tokens in an equivalent Java program. Incremental typing means you can convert existing JavaScript code into TypeScript without it being all-or-nothing.

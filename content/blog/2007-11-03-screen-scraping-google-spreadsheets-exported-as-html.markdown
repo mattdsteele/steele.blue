@@ -19,55 +19,54 @@ Glad you asked, because I've got just the solution for you. It requires using Pr
 First, create an array with which to store your data:
 
 ```js
-var items = []
+var items = [];
 ```
 
 Then, you'll have want to create a function which takes the raw HTML input and parses it into a set of objects:
 
 ```js
 function parseData(googleDoc) {
-  var divItem = document.createElement('div')
-  divItem.innerHTML = googleDoc
-  $(divItem).hide()
-  document.body.appendChild(divItem)
-  var tblMain = $('tblMain')
+  var divItem = document.createElement('div');
+  divItem.innerHTML = googleDoc;
+  $(divItem).hide();
+  document.body.appendChild(divItem);
+  var tblMain = $('tblMain');
 
   $(tblMain)
     .getElementsBySelector('td.rAll')
     .each(function(n, i) {
       if (i == 0) {
-        return //if you have a header row, you don't want to include it
+        return; //if you have a header row, you don't want to include it
       }
-      var item = n.parentNode
-      var kids = $(item).getElementsBySelector('td.g')
-      items[i - 1] = parseRow(kids)
-    })
-  document.body.removeChild(divItem)
+      var item = n.parentNode;
+      var kids = $(item).getElementsBySelector('td.g');
+      items[i - 1] = parseRow(kids);
+    });
+  document.body.removeChild(divItem);
 }
 
 function parseRow(kids) {
-  var obj = {}
-  obj.title = kids[0].innerHTML
-  obj.column1 = kids[1].innerHTML
-  obj.column2 = kids[2].innerHTML
+  var obj = {};
+  obj.title = kids[0].innerHTML;
+  obj.column1 = kids[1].innerHTML;
+  obj.column2 = kids[2].innerHTML;
   //...etc
-  return obj
+  return obj;
 }
 ```
 
 Then, just pull up the document with an Ajax call:
 
-{% highlight javascript %}
-function loadData(){
-var req = new Ajax.Request(
-'url/to/googleDoc.html', {
-method:'get',
-onComplete: function(req) {
-googleDoc = req.responseText;
-parseData(googleDoc);
+```js
+function loadData() {
+  var req = new Ajax.Request('url/to/googleDoc.html', {
+    method: 'get',
+    onComplete: function(req) {
+      googleDoc = req.responseText;
+      parseData(googleDoc);
+    },
+  });
 }
-});
-}
-{% endhighlight %}
+```
 
 Simple, huh?

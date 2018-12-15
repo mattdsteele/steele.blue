@@ -19,7 +19,7 @@ I also picked up a few [DHT11 thermometer/humidity sensors](http://a.co/ePXTcah)
 
 {% picture soil-3.jpg alt="Soil Sensors" %}
 
-The microcontroller world has advanced quite a bit since I last checked! In 2014 I used the [Johnny-Five](http://johnny-five.io/) library to get sensor data into a Node app, but it required running Node on a "full" computer, then connecting to a USB-tethered Arduino. Tethering, *ugh*.
+The microcontroller world has advanced quite a bit since I last checked! In 2014 I used the [Johnny-Five](http://johnny-five.io/) library to get sensor data into a Node app, but it required running Node on a "full" computer, then connecting to a USB-tethered Arduino. Tethering, _ugh_.
 
 Nowadays, you can run Node directly on a Raspberry Pi, and connect to the Pi's GPIO pins using a [J5 plug-in](http://johnny-five.io/platform-support/#raspberry-pi-3-model-b). Sinc the Pi 3 has integrated Wi-Fi, the only cord you need is power.
 
@@ -41,17 +41,22 @@ import { getEventStream } from './photon-stream';
 const event$ = getEventStream();
 
 const stream = (eventName: string) => {
-  return event$.filter(d => d.name === eventName).map(d => {
-    return { value: parseFloat(d.data) }
-  }).bufferCount(5).map(vals => {
-    return vals.reduce((prev, curr) => prev + curr.value, 0) / vals.length;
-  }).map(value => {
-    return {
-      value,
-      time: new Date()
-    }
-  })
-}
+  return event$
+    .filter(d => d.name === eventName)
+    .map(d => {
+      return { value: parseFloat(d.data) };
+    })
+    .bufferCount(5)
+    .map(vals => {
+      return vals.reduce((prev, curr) => prev + curr.value, 0) / vals.length;
+    })
+    .map(value => {
+      return {
+        value,
+        time: new Date(),
+      };
+    });
+};
 
 export const soil$ = stream('soilMoisture');
 ```
@@ -71,4 +76,3 @@ So yeah, JavaScript hardware is very possible, still cool, and has only gotten e
 You can view the code [here](https://github.com/mattdsteele/pi-garden), and see the charts [here](https://garden.steele.blue/d/Y5Y6Q2Rmk/gardening?orgId=1) (user/user).
 
 Inspiration comes from John Hobbs's [homemade chicken incubator](https://incubator.velvetcache.org/).
-

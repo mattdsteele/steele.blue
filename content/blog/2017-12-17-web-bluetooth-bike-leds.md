@@ -11,9 +11,9 @@ This year I've been most excited about Web Bluetooth, and Web Components. Each t
 
 ## Hardware
 
-* [RGB 12V LED Light Strip](https://www.amazon.com/gp/product/B00DTOAWZ2/ref=oh_aui_search_detailpage?ie=UTF8&psc=1)
-* [Bluetooth LED controller](https://www.amazon.com/gp/product/B00ZQVWU2O/ref=oh_aui_search_detailpage?ie=UTF8&psc=1)
-* [12V of AA batteries](https://www.amazon.com/SMAKN%C2%AE-8PCS-Battery-Holder-Black/dp/B01F6LHMR6/ref=sr_1_4?ie=UTF8&qid=1513571511&sr=8-4&keywords=12v+aa+battery+holder)
+- [RGB 12V LED Light Strip](https://www.amazon.com/gp/product/B00DTOAWZ2/ref=oh_aui_search_detailpage?ie=UTF8&psc=1)
+- [Bluetooth LED controller](https://www.amazon.com/gp/product/B00ZQVWU2O/ref=oh_aui_search_detailpage?ie=UTF8&psc=1)
+- [12V of AA batteries](https://www.amazon.com/SMAKN%C2%AE-8PCS-Battery-Holder-Black/dp/B01F6LHMR6/ref=sr_1_4?ie=UTF8&qid=1513571511&sr=8-4&keywords=12v+aa+battery+holder)
 
 The controller and batteries fit in the bike's saddlebag, and the light strip had sticky tape that stuck to the frame. It's a pretty simple setup.
 

@@ -2,7 +2,7 @@
 layout: post
 title: Now this is a story all about how my bike got flipped, turned upside down
 categories:
-- Biking
+  - Biking
 tags: []
 status: publish
 type: post
@@ -10,6 +10,7 @@ published: true
 meta:
   _elasticsearch_indexed_on: '2009-10-18 23:09:56'
 ---
+
 As <a href="/stolen-bike-reward-offered/">previously noted</a>, my bike was stolen a couple weeks ago. Fortunately, some stories have happy endings, and it is now residing back at my house. What follows is the harrowing tale of how I got it back (note: it's not all that harrowing).
 
 Union Pacific has two sets of bike racks around its HQ building:
@@ -36,7 +37,7 @@ On a Sunday afternoon, about two weeks after the theft, I got a call from an off
 
 Then for a long time, nothing happened.
 
-A week and several voicemails later, I finally got a response from the police, who sent a letter to both me and the pawn shop, declaring that I was the rightful owner and could pick up the bike. So yesterday, I ventured downtown to the Mid City pawn shop, and paid the $35 fee needed to get my bike out of hock.
+A week and several voicemails later, I finally got a response from the police, who sent a letter to both me and the pawn shop, declaring that I was the rightful owner and could pick up the bike. So yesterday, I ventured downtown to the Mid City pawn shop, and paid the \$35 fee needed to get my bike out of hock.
 
 I've learned a lot of things through this whole ordeal, most of which are outlined in <a href="http://steel-cut.blogspot.com/2009/07/bradys-got-his-groove-ride-back.html">Brady's own post</a> about recovering his bike; so I won't repeat them here.
 

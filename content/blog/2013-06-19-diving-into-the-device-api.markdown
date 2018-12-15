@@ -2,17 +2,19 @@
 layout: post
 title: Diving into the Device API
 categories:
-- Technology
+  - Technology
 tags: []
 status: publish
 type: post
 published: true
 meta:
   _publicize_pending: '1'
-  tagazine-media: a:7:{s:7:"primary";s:0:"";s:6:"images";a:0:{}s:6:"videos";a:0:{}s:11:"image_count";i:0;s:6:"author";s:7:"1801759";s:7:"blog_id";s:7:"1731277";s:9:"mod_stamp";s:19:"2013-06-19
+  tagazine-media:
+    a:7:{s:7:"primary";s:0:"";s:6:"images";a:0:{}s:6:"videos";a:0:{}s:11:"image_count";i:0;s:6:"author";s:7:"1801759";s:7:"blog_id";s:7:"1731277";s:9:"mod_stamp";s:19:"2013-06-19
     22:21:58";}
   _elasticsearch_indexed_on: '2013-06-19 21:46:31'
 ---
+
 I recently read Tim Wright's <a href="http://alistapart.com/article/environmental-design-with-the-device-api">article on A List Apart</a> detailing the Device API; a collection of W3C standards that let you obtain access to a number of hardware sensors.
 
 I found this fascinating, and had to try them out. <strong>Here's what I've learned</strong>.
@@ -20,6 +22,7 @@ I found this fascinating, and had to try them out. <strong>Here's what I've lear
 Note: for most of these demos, you'll want to try them out in specific browsers (either Android Firefox or iOS Safari); as of today, browser support is limited. The most up-to-date information on browser implementation is on <a href="http://www.w3.org/2009/dap/wiki/ImplementationStatus">this page</a>.
 
 All demo code is <a href="https://github.com/mattdsteele/device-apis">available on GitHub</a>.
+
 <h2>Battery Status</h2>
 {% youtube dLD7Ve5t5cI %}
 <h3><a href="http://www.matthew-steele.com/projects/device-apis/battery.html">View Demo <em>(works in Android Firefox)</em></a></h3>
@@ -28,6 +31,7 @@ The <a href="https://dvcs.w3.org/hg/dap/raw-file/tip/battery/Overview.html#intro
 <code>battery.charging</code> returns a boolean. You can inspect the charged level using <code>battery.level</code>, but the most interesting parts are the <a href="https://dvcs.w3.org/hg/dap/raw-file/tip/battery/Overview.html#event-handlers">events</a>, which let you capture when a device starts charging, or reaches a threshold over 60%, etc.
 
 The demo captures the <code>chargingchange</code> event and changes some background colors. but you could do lots of things with this data. For example, it might be prudent to turn off 3D CSS transformations at a certain battery threshold, as they're quite power-hungry. <strong>By treating power as a feature test, you can take progressive enhancement to a new level</strong>.
+
 <h3>Availability</h3>
 Firefox currently supports this API on desktop and mobile Android. WebKit <a href="https://bugs.webkit.org/show_bug.cgi?id=62698">appears to have implemented</a> it briefly last year, but it's currently disabled and work to re-enable it <a href="https://bugs.webkit.org/show_bug.cgi?id=90538">appears to have stalled</a>. Similarly, <a href="https://code.google.com/p/chromium/issues/detail?id=122593">Chromium has a patch built</a> but it doesn't seem to have ever landed.
 <h2>Ambient Light Sensor</h2>
@@ -40,6 +44,7 @@ Firefox on Android has it, and it's implemented on the desktop in OS X. There's 
 {% youtube c7rWFcYSs1g %}
 
 A native app that recently captured my attention was the <a href="http://pizza-compass.com/">well-advertised Pizza Compass</a> for iOS. It does exactly what you'd expect. I wanted to try a version in pure HTML5. Right now it only points you to a pizza place in my city, but it meets my use case, so why abstract?
+
 <h3><a href="http://www.matthew-steele.com/projects/device-apis/pizza.html">View Demo <em>(works in Mobile Safari/iOS Chrome)</em></a></h3>
 There's a number of device location/orientation sensors in modern cell phones, and it's not always clear which HTML5 feature to use:
 <ul>
