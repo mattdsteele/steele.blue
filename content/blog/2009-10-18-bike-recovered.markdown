@@ -15,7 +15,7 @@ As <a href="/stolen-bike-reward-offered/">previously noted</a>, my bike was sto
 
 Union Pacific has two sets of bike racks around its HQ building:
 
-{% picture rack-locations1.png alt="Bike Racks" %}
+![Bike Racks](../images/rack-locations1.png)
 
 Rack 1 is positioned next to the front door of the building, and is underneath an overhang that helps protect bikes from the elements. Rack 2, newly added this year, is out next to 13th Street and affords none of the amenities of the original set.  Needless to say, Rack 1 is as popular as a Homecoming queen, while Rack 2 gets rejected like a guy who just upgraded his D&amp;D Avenger character up to level 6.
 
@@ -45,6 +45,6 @@ But the most important part is to<strong> record your bike's serial number.</str
 
 So I'm back in business! I picked up a new Kryptonite-built U-Lock from the Trek store and plan on riding into work tomorrow. No mere larceny can hold me down:
 
-{% picture img_0425.jpg alt="Bike" %}
+![Bike](../images/img_0425.jpg)
 
 I only ask that Omaha's thief population let me keep my bike for at least one week before attempting another swindling.

@@ -38,7 +38,7 @@ SELECT count(*) from table
 
 Adding this check to our build immediately caught 13 instances where we performed this nefarious deed.  Using a continuous integration build like Hudson, it was easy to identify and track how we were progressing in removing these from the build:
 
-{% picture png.png alt="png" %}
+![png](../images/png.png)
 
 Of course, there a number of issues with this approach:
 
