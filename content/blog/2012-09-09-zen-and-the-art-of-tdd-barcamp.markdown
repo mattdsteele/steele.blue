@@ -21,13 +21,13 @@ While prepping this talk, I discovered that only 43% of GitHub repositories from
 
 <strong>Slides with Audio</strong>
 
-{% vimeo 49092644 %}
+`vimeo: 49092644`
 
 &nbsp;
 
 <strong>Video + Slides</strong>
 
-{% youtube wBX28bJIPhQ %}
+`youtube:https://www.youtube.com/embed/wBX28bJIPhQ`
 
 &nbsp;
 

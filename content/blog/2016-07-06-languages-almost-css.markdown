@@ -10,7 +10,7 @@ Fortunately, I read a fascinating article by Zack Bloom on [The Languages Which 
 
 I also included a couple lessons I think we can take from the whole experience. And if you listen closely, there's a [Game of Thrones][got] allusion thrown in near the end.
 
-{% vimeo 173573313 %}
+`vimeo: 173573313`
 
 Thanks to Zack for researching and posting such a cool article!
 

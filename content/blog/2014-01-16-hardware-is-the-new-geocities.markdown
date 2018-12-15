@@ -10,11 +10,11 @@ I demoed an Arduino-powered Power Glove, modified my slides on the fly with a We
 
 ## Video
 
-{% vimeo 83907789 %}
+`vimeo: 83907789`
 
 I also gave a 20-minute version of this at [Barcamp Omaha][barcamp], which you can watch if you enjoy seeing quadcopters crash and burn.
 
-{% vine h3zEv1Qzl0l%}
+`vine: h3zEv1Qzl0l`
 
 Video and more courtesy of Zach Leatherman at [NebraskaJS][2].
 

@@ -66,7 +66,7 @@ I used Thomas Sarlandie's [pi-blaster](https://github.com/sarfata/pi-blaster) li
 The library creates a `/dev/pi-blaster` endpoint on the filesystem, which you write to and it send the signals to the GPIO pins.
 There's even a [Node.js wrapper](https://github.com/sarfata/pi-blaster.js) which made adding it to my app super simple.
 
-{% youtube M45KM8725Os %}
+`youtube:M45KM8725Os`
 
 To capture ANT+ data, I used Alessandro Vergani's [ant-plus](https://github.com/Loghorn/ant-plus) library, which emits Node-style events when new sensor data comes in.
 This worked well, but only the heart rate monitor was supported out of the box.

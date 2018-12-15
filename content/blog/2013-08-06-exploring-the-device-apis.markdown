@@ -20,4 +20,4 @@ I gave a lightning talk at <a href="http://nebraskajs.com/">NebraskaJS</a> on so
 
 ## Screencast
 
-{%vimeo 71864754 %}
+`vimeo:71864754`

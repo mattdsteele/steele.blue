@@ -24,7 +24,7 @@ I was coming down from an NES Zelda bender, and I think it shows.
 
 ## Screencast
 
-{% vimeo 54993676 %}
+`vimeo: 54993676`
 
 ## Video:
 
