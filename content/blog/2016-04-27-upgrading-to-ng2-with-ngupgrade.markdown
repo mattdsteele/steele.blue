@@ -15,4 +15,4 @@ I spoke at [ng-nebraska](http://www.ng-nebraska.com/#/app/home) on how the ngUpg
 
 ## Slides
 
-{% speakerdeck 3b01eb70e7154a33bbcefd10a6bf49d1 %}
+`speakerdeck:3b01eb70e7154a33bbcefd10a6bf49d1`
