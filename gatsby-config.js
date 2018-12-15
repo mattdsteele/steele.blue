@@ -1,4 +1,4 @@
-const title = 'steele.blue'
+const title = 'steele.blue';
 
 module.exports = {
   siteMetadata: {
@@ -41,14 +41,14 @@ module.exports = {
             resolve: 'gatsby-remark-embed-youtube',
             options: { width: 160, height: 90 },
           },
-
-          'gatsby-remark-responsive-iframe',
           {
-            resolve: `gatsby-remark-images`,
+            resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 600,
+              maxWidth: 768,
+              withWebp: true,
             },
           },
+          'gatsby-remark-responsive-iframe',
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
         ],
@@ -85,7 +85,7 @@ module.exports = {
           {
             serialize: ({ query: { site, posts } }) => {
               return posts.edges.map(({ node }) => {
-                const url = `${site.siteMetadata.siteUrl}/${node.fields.slug}`
+                const url = `${site.siteMetadata.siteUrl}/${node.fields.slug}`;
                 return Object.assign({}, node.frontmatter, {
                   description: node.excerpt,
                   date: node.fields.date,
@@ -96,8 +96,8 @@ module.exports = {
                       content_encoded: node.html,
                     },
                   ],
-                })
-              })
+                });
+              });
             },
             query: `
             {
@@ -125,4 +125,4 @@ module.exports = {
       },
     },
   ],
-}
+};
