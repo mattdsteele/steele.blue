@@ -134,6 +134,8 @@ Try building your next application on [GAP: Go, AngularJS, and Postgres](https:/
 
 ### [View the final code on GitHub](https://github.com/mattdsteele/hackomaha-ops)
 
+`vine:hUKDzMbhOBx`
+
 [schools]: http://schools.opennebraska.io/
 [1]: https://twitter.com/jerodsanto/
 [meteor]: http://blog.jerodsanto.net/2012/04/confessions-of-a-meteor-newb/
