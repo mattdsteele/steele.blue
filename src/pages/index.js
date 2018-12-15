@@ -1,13 +1,13 @@
-import React from 'react'
-import { graphql, Link } from 'gatsby'
+import React from 'react';
+import { graphql, Link } from 'gatsby';
 
-import Layout from '../components/layout'
-import Post from '../components/post'
-import SEO from '../components/seo'
-import About from '../components/about'
+import Layout from '../components/layout';
+import Post from '../components/post';
+import SEO from '../components/seo';
+import About from '../components/about';
 
 export default function IndexPage({ data }) {
-  const [latest] = data.posts.edges
+  const [latest] = data.posts.edges;
   return (
     <Layout>
       <Post {...latest.node} />
@@ -25,7 +25,7 @@ export default function IndexPage({ data }) {
       </ul>
       <About />
     </Layout>
-  )
+  );
 }
 
 export const indexQuery = graphql`
@@ -38,4 +38,4 @@ export const indexQuery = graphql`
       }
     }
   }
-`
+`;
