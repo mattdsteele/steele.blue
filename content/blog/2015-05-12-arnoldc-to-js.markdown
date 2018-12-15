@@ -6,7 +6,7 @@ subtitle: Or, How to Learn to Write a Compiler Through Silliness
 
 At [NebraskaJS][nejs] I introduced my dumbest project yet: a compiler which converts [ArnoldC][arnoldc] programs into JavaScript, with full support for [Source Maps](/source-maps).
 
-{% youtube Jv52vFLnn54 %}
+`youtube:https://www.youtube.com/embed/Jv52vFLnn54`
 
 (Start at 17:46 for the ArnoldC action)
 

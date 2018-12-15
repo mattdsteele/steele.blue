@@ -12,7 +12,7 @@ I wanted to see if Web Bluetooth could breathe new life into them.
 Turns out, hacking Bluetooth Low Energy toys is _way_ more fun than actually using them.
 [I spoke at NebraskaJS](nebraskajs.com) about what I learned, and why I'm excited about hooking Bluetooth up to the Web.
 
-{% youtube LPAKy9Rc4rA %}
+`youtube:https://www.youtube.com/embed/LPAKy9Rc4rA`
 
 # Getting Started
 

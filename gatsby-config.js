@@ -38,8 +38,8 @@ module.exports = {
         plugins: [
           'gatsby-remark-embed-speakerdeck',
           {
-            resolve: 'gatsby-remark-embed-youtube',
-            options: { width: 160, height: 90 },
+            resolve: 'gatsby-remark-better-embed-video',
+            options: {},
           },
           {
             resolve: 'gatsby-remark-images',

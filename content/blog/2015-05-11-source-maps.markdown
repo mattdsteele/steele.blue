@@ -8,7 +8,7 @@ I gave a talk at [NebraskaJS][nejs] about my journey with source maps:
 
 ## Video
 
-{% youtube Jv52vFLnn54 %}
+`youtube:https://www.youtube.com/embed/Jv52vFLnn54`
 
 ## Demos
 

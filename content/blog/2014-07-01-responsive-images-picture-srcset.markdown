@@ -15,7 +15,7 @@ I spoke at [Omaha Coffee & Code](http://www.meetup.com/coffeeandcode/) about the
 
 ## Screencast
 
-{% vimeo 99683665 %}
+`vimeo: 99683665`
 
 Thanks to Eric Portis's [amazing post on srcset/sizes][eric], which really helped me understand how these new elements worked, and from which I borrowed liberally.
 
