@@ -4,7 +4,7 @@ title: Web Bluetooth Is Your New Squeeze
 image: /gen_img/web-bluetooth-768by492-c5ee36.jpg
 ---
 
-{% picture web-bluetooth.jpg alt="Web Bluetooth" %}
+![Web Bluetooth](../images/web-bluetooth.jpg)
 
 One of the side-effects to living that Internet-Of-Things lifestyle is that you end up with a lot of pseudo-smart devices, mostly collecting dust.
 I wanted to see if Web Bluetooth could breathe new life into them.

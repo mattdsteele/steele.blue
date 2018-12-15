@@ -16,7 +16,7 @@ And it'll run in the evenings, so you don't even have to convince your boss to t
 
 You can [register on Interface's website][int2]. It'll be fun!
 
-[{% picture interface.jpg alt="Responsive Web Design Course" %}][int2]
+[![Responsive Web Design Course](../images/interface.jpg)
 
 (PS: This post is using [Picturefill](http://scottjehl.github.io/picturefill/), which is one approach to responsive images I'll talk about during the course.)
 

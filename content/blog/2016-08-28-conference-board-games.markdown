@@ -76,7 +76,8 @@ Since you'll likely be consolidating a collection worth hundreds or thousands of
 
 ## Games Ambassadors
 
-{% picture players-wanted.jpg alt="Geekway To The West" %}
+![Geekway To The West](../images/players-wanted.jpg)
+
 [Geekway To The West](https://www.facebook.com/GeekwaytotheWest/photos/a.10151887467747320.1073741827.51610637319/10153302091137320/?type=3&theater)
 
 You'll want to recruit a **Game Ambassador** or two - these are volunteers who facilitate play among non-gamers.

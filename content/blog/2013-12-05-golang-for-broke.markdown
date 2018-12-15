@@ -23,7 +23,7 @@ Go's [docs][godocs] describe the language:
 
 > Go compiles quickly to machine code yet has the convenience of garbage collection and the power of run-time reflection. It's a fast, statically typed, compiled language that feels like a dynamically typed, interpreted language.
 
-{% picture hackomaha1.jpg alt="Leah and Juan get to work" %}
+![Leah and Juan get to work](../images/hackomaha1.jpg)
 
 ## Going to School
 
@@ -56,7 +56,7 @@ I've heard it's also testable, but nary a unit test was written during the hacka
 I should have known better, based on my [lessons from last time][hackomaha1].
 That said, Go has [testing built into the language](http://golang.org/doc/code.html#Testing), so it'll be there when we're ready.
 
-{% picture hackomaha2.jpg alt="Alex and Michael" %}
+![Alex and Michael](../images/hackomaha2.jpg)
 
 ## Databases, GORM Style
 
@@ -101,7 +101,7 @@ As we were connnecting to databases in Gorm, we weren't retrieving that second p
 
 Lesson: understand the idioms of a language you're futzing around with.
 
-{% picture hackomaha3.jpg alt="Jerod and Leah" %}
+![Jerod and Leah](../images/hackomaha3.jpg)
 
 ## Go Fly a Kite
 
