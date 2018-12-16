@@ -2,6 +2,8 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 
+import styles from './post.module.css'
+
 function Post({ frontmatter, fields, html, showLink }) {
   let title = frontmatter.title;
   if (fields.slug && showLink) {
@@ -9,10 +11,10 @@ function Post({ frontmatter, fields, html, showLink }) {
   }
   return (
     <article>
-      <h1>{title}</h1>
-      <h2>{fields.dateWithDay}</h2>
+      <h1 className={styles.title}>{title}</h1>
+      <h2 className={styles.date}>{fields.dateWithDay}</h2>
       {frontmatter.rss_only ? <h1>RSS ONLY</h1> : null}
-      <div dangerouslySetInnerHTML={{ __html: html }} />
+      <div className={styles.content} dangerouslySetInnerHTML={{ __html: html }} />
     </article>
   );
 }
