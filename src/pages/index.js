@@ -6,7 +6,7 @@ import Post from '../components/post';
 import SEO from '../components/seo';
 import About from '../components/about';
 
-import styles from './index.module.css'
+import styles from './index.module.css';
 
 export default function IndexPage({ data }) {
   const [latest] = data.posts.edges;
@@ -21,7 +21,9 @@ export default function IndexPage({ data }) {
           .map(({ node }) => (
             <li key={node.fields.slug}>
               <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
-              <span className={styles.date}>{` - ${node.fields.dateWithYear}`}</span>
+              <span className={styles.date}>{` - ${
+                node.fields.dateWithYear
+              }`}</span>
             </li>
           ))}
       </ul>

@@ -1,4 +1,4 @@
-import Typography from 'typography'
+import Typography from 'typography';
 
 const typography = new Typography({
   baseFontSize: '18px',
@@ -9,7 +9,7 @@ const typography = new Typography({
     a: {
       color: '#1f8dba',
     },
-  })
-})
+  }),
+});
 
-export default typography
+export default typography;
