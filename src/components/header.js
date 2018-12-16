@@ -11,31 +11,25 @@ const headerQuery = graphql`
       }
     }
   }
-`
+`;
 
 function Header() {
   return (
     <StaticQuery
       query={headerQuery}
       render={data => (
-        <header className={styles.header}
-      >
-        <div
-          className={styles.container}
-        >
-          <h1 className={styles.title}>
-            <Link
-              className={styles.link}
-              to="/"
-            >
-              {data.site.siteMetadata.author}
-            </Link>
-          </h1>
-        </div>
-      </header>
+        <header className={styles.header}>
+          <div className={styles.container}>
+            <h1 className={styles.title}>
+              <Link className={styles.link} to="/">
+                {data.site.siteMetadata.author}
+              </Link>
+            </h1>
+          </div>
+        </header>
       )}
     />
-  )
+  );
 }
 
 export default Header;

@@ -8,11 +8,9 @@ function Layout({ children }) {
   return (
     <>
       <Header />
-      <main className={styles.container}>
-        {children}
-      </main>
+      <main className={styles.container}>{children}</main>
     </>
-  )
+  );
 }
 
 Layout.propTypes = {

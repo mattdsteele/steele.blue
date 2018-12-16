@@ -12,8 +12,20 @@ export default function About() {
         return (
           <p className={styles.container}>
             I'm {author}, a programmer living in {location}. You can find me on{' '}
-            <a className={styles.link} href={`https://github.com/${social.github}`}>GitHub</a> and{' '}
-            <a className={styles.link} href={`https://twitter.com/${social.twitter}`}>Twitter</a>.
+            <a
+              className={styles.link}
+              href={`https://github.com/${social.github}`}
+            >
+              GitHub
+            </a>{' '}
+            and{' '}
+            <a
+              className={styles.link}
+              href={`https://twitter.com/${social.twitter}`}
+            >
+              Twitter
+            </a>
+            .
           </p>
         );
       }}
