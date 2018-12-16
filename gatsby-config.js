@@ -1,3 +1,5 @@
+const path = require('path')
+
 const title = 'steele.blue';
 
 module.exports = {
@@ -17,6 +19,13 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-twitter',
+    {
+      resolve: 'gatsby-plugin-typography',
+      options: {
+        pathToConfigModule: 'src/util/typography.js',
+        omitGoogleFont: true
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
