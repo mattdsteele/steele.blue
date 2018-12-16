@@ -1,9 +1,9 @@
-.about {
+.container {
   color: #999;
   font-size: 2rem;
   margin: 1rem 0;
 }
 
-.about--link {
+.link {
   color: #1f8dba;
 }

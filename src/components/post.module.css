@@ -1,0 +1,24 @@
+.title {
+  font-size: 1.8rem;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.title a {
+  text-decoration: none;
+}
+
+.title a:hover {
+  text-decoration: underline;
+}
+
+.date {
+  font-family: monospace;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: #807f7f;
+}
+
+.content {
+  padding: 1rem 0;
+}
