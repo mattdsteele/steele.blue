@@ -1,6 +1,8 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 
+import './about.css';
+
 export default function About() {
   return (
     <StaticQuery
@@ -8,10 +10,10 @@ export default function About() {
       render={data => {
         const { author, location, social } = data.site.siteMetadata;
         return (
-          <p>
+          <p className="about">
             I'm {author}, a programmer living in {location}. You can find me on{' '}
-            <a href={`https://github.com/${social.github}`}>GitHub</a> and{' '}
-            <a href={`https://twitter.com/${social.twitter}`}>Twitter</a>.
+            <a className="about--link" href={`https://github.com/${social.github}`}>GitHub</a> and{' '}
+            <a className="about--link" href={`https://twitter.com/${social.twitter}`}>Twitter</a>.
           </p>
         );
       }}
