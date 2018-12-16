@@ -1,7 +1,7 @@
 const visit = require('unist-util-visit');
 
 const speakerDeckEmbed = id => {
-  const props = [
+  const attrs = [
     `src="//speakerdeck.com/player/${id}"`,
     `allowfullscreen`,
     `scrolling="no"`,
@@ -10,7 +10,7 @@ const speakerDeckEmbed = id => {
     `height="400"`
   ]
 
-  return `<iframe ${props.join(' ')}></iframe>`;
+  return `<iframe ${attrs.join(' ')}></iframe>`;
 }
 
 module.exports = ({ markdownAST }) => {
