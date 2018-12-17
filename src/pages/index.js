@@ -15,17 +15,20 @@ export default function IndexPage({ data }) {
       <Post {...latest.node} />
       <SEO />
       <h2>All posts</h2>
-      <ul>
-        {data.posts.edges
-          .filter(({ node }) => !node.frontmatter.rss_only)
-          .map(({ node }) => (
-            <li key={node.fields.slug}>
-              <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
-              <span className={styles.date}>{` - ${
-                node.fields.dateWithYear
-              }`}</span>
-            </li>
-          ))}
+      <ul
+        style={{
+          listStyleType: 'none',
+          margin: 0,
+        }}
+      >
+        {data.posts.edges.map(({ node }) => (
+          <li key={node.fields.slug}>
+            <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+            <span className={styles.date}>{` - ${
+              node.fields.dateWithYear
+            }`}</span>
+          </li>
+        ))}
       </ul>
       <About />
     </Layout>
@@ -34,7 +37,10 @@ export default function IndexPage({ data }) {
 
 export const indexQuery = graphql`
   query IndexQuery {
-    posts: allMarkdownRemark(sort: { fields: [fields___date], order: DESC }) {
+    posts: allMarkdownRemark(
+      sort: { fields: [fields___date], order: DESC }
+      filter: { frontmatter: { rss_only: { ne: true } } }
+    ) {
       edges {
         node {
           ...PostDetails
