@@ -1,0 +1,15 @@
+.wrapper {
+  background-color: #def2fa;
+  max-width: 18em;
+  margin: auto;
+  padding: 1em;
+}
+
+.exclusive {
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
+}
+.exclusive a {
+  text-decoration: none;
+}

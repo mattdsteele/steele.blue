@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
+import RssClub from './rss-club';
 
 import styles from './post.module.css';
 
@@ -13,7 +14,7 @@ function Post({ frontmatter, fields, html, showLink }) {
     <article>
       <h1 className={styles.title}>{title}</h1>
       <h2 className={styles.date}>{fields.dateWithDay}</h2>
-      {frontmatter.rss_only ? <h1>RSS ONLY</h1> : null}
+      {frontmatter.rss_only ? <RssClub /> : null}
       <div
         className={styles.content}
         dangerouslySetInnerHTML={{ __html: html }}
