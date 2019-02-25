@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Matthew Steele",
   "dependencies": {
-    "gatsby": "^2.0.67",
+    "gatsby": "^2.1.17",
     "gatsby-image": "^2.0.25",
     "gatsby-plugin-feed": "^2.0.11",
     "gatsby-plugin-manifest": "^2.0.12",
@@ -16,7 +16,7 @@
     "gatsby-remark-better-embed-video": "^2.4.0",
     "gatsby-remark-copy-linked-files": "^2.0.7",
     "gatsby-remark-images": "^3.0.1",
-    "gatsby-remark-prismjs": "^3.1.4",
+    "gatsby-remark-prismjs": "^3.2.4",
     "gatsby-remark-responsive-iframe": "^2.0.7",
     "gatsby-source-filesystem": "^2.0.12",
     "gatsby-transformer-remark": "^2.1.15",
@@ -24,12 +24,12 @@
     "normalize.css": "^8.0.1",
     "prismjs": "^1.15.0",
     "prop-types": "^15.6.2",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
     "react-helmet": "^5.2.0",
     "react-typography": "^0.16.18",
     "typeface-enriqueta": "0.0.54",
-    "typeface-istok-web": "0.0.54",
+    "typeface-istok-web": "^0.0.71",
     "typography": "^0.16.18"
   },
   "keywords": [

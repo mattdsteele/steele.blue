@@ -72,6 +72,7 @@ module.exports = {
         theme_color: '#663399',
         display: 'minimal-ui',
         icon: 'src/images/gatsby-icon.png',
+        include_favicon: false, // This will exclude favicon link tag
       },
     },
     {
