@@ -3,7 +3,7 @@ layout: post
 title: Toolchainless
 ---
 
-I'm a fan of build tools. I like [TypeScript](/typescript-for-javaers), Gulp, and the like. I think that [compilers are the new frameworks](https://tomdale.net/2017/09/compilers-are-the-new-frameworks/).
+I have a complicated relationship with build tools. I like [TypeScript](/typescript-for-javaers), Gulp, and the like. I think that [compilers are the new frameworks](https://tomdale.net/2017/09/compilers-are-the-new-frameworks/).
 Heck, even this static site is built with Gatsby; an overcomplicated toolchain to generate HTML files if there ever was one.
 
 But build tools are a [Roach Motel](https://hannahatkin.com/roach-motel/) in your stack: once you add them in, you're unlikely to ever abandon 'em. And it's never been easier to start a project with a ludicrously complicated toolchain. You're just one `npx create-react-app` away from a running project, powered by 1023 dependencies in node_modules. [Easy, but not simple](https://www.infoq.com/presentations/Simple-Made-Easy).
@@ -52,7 +52,7 @@ I recently rebuilt an old project, [Pizza Compass](https://pizza.steele.blue/), 
 
 [The first version](https://github.com/mattdsteele/device-apis/blob/master/js/pizza.js) of Pizza Compass was built in 2013 using jQuery, before toolchains took over. When I decided to rebuild it using modern UI components, I went with a toolchainless approach.
 
-Built with the Preact + htm stack above, the codebase feels modern and clean. And it felt _great_. I can still build with components:
+Built with the Preact + htm stack above, the codebase is modern and clean. And it felt _great_. I can still build with components:
 
 ```js
 const PizzaCompass = ({ loc, heading, currentLoc }) => {
@@ -75,10 +75,10 @@ The whole thing is 150-ish lines of Preact code, and when I'm done I can push to
 
 ## How far does this scale?
 
-I don't know. Eventually you'll probably reach a point where you want to add in tooling for testing, or asset optimization, or supporting IE11.
+I don't know. Eventually you'll probably reach a point where you want to add in tooling for asset optimization, or smarter bundling, or supporting IE11.
 
 But for a weekend project like this, it worked great. And if it ever gets big enough, I can check in the tooling Roach Motel then.
 
-I like this approach because it aligns closer to the [Principle of Least Privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege). Not every project needs to have 1023 dependencies in their `node_modules`. And the more you default to using an opaque toolchain for everything, the more likely you'll get [bit with opaque errors](https://daverupert.com/2019/01/angular-autoprefixer-ie11-and-css-grid-walk-into-a-bar/).
+I like this approach because it aligns with the [Principle of Least Power](https://www.w3.org/DesignIssues/Principles.html). Not every project needs to have 1023 dependencies in their `node_modules`. And the more you default to using an opaque toolchain for everything, the more likely you'll get [bit with opaque errors](https://daverupert.com/2019/01/angular-autoprefixer-ie11-and-css-grid-walk-into-a-bar/).
 
 Toolchains are a chainsaw. And these days, you don't have to use a chainsaw for everything.
