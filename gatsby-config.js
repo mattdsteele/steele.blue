@@ -126,7 +126,7 @@ module.exports = {
               }
             }
           `,
-            output: '/rss.xml',
+            output: '/feed/atom.xml',
             title: `steele.blue RSS Feed`,
           },
         ],
