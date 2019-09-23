@@ -29,7 +29,7 @@
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
     "react-typography": "^0.16.19",
-    "typeface-enriqueta": "0.0.54",
+    "typeface-enriqueta": "0.0.72",
     "typeface-istok-web": "^0.0.71",
     "typography": "^0.16.19"
   },
