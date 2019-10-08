@@ -16,7 +16,7 @@
   font-family: monospace;
   font-size: 1.2rem;
   margin: 0.5rem 0;
-  color: #807f7f;
+  color: var(--intermediate-color);
 }
 
 .content {
