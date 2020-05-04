@@ -1,5 +1,5 @@
 import React from 'react';
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 
@@ -24,7 +24,7 @@ function SEO({ meta, title, description, slug, keywords }) {
   return (
     <StaticQuery
       query={query}
-      render={data => {
+      render={(data) => {
         const { siteMetadata } = data.site;
         const metaDescription = description || siteMetadata.description;
         const url = `${siteMetadata.siteUrl}${slug}`;

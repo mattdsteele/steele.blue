@@ -10,7 +10,7 @@
     "gatsby-plugin-google-analytics": "^2.3.0",
     "gatsby-plugin-manifest": "^2.4.1",
     "gatsby-plugin-no-javascript": "^2.0.5",
-    "gatsby-plugin-offline": "^2.2.10",
+    "gatsby-plugin-offline": "^3",
     "gatsby-plugin-react-helmet": "^3.3.0",
     "gatsby-plugin-sharp": "^2.6.0",
     "gatsby-plugin-twitter": "^2.3.0",
@@ -28,9 +28,9 @@
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-helmet": "^5.2.1",
+    "react-helmet": "^6",
     "react-typography": "^0.16.19",
-    "typeface-enriqueta": "0.0.72",
+    "typeface-enriqueta": "^1",
     "typeface-istok-web": "^0.0.71",
     "typography": "^0.16.19"
   },
@@ -46,7 +46,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "prettier": "^1.19.1"
+    "prettier": "^2"
   },
   "repository": {
     "type": "git",
