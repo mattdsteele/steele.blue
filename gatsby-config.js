@@ -127,7 +127,7 @@ module.exports = {
             }
           `,
             output: '/feed/atom.xml',
-            title: `steele.blue RSS Feed`,
+            title: `Matt Steele`,
           },
         ],
       },
