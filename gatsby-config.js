@@ -45,7 +45,7 @@ module.exports = {
         plugins: [
           'gatsby-remark-embed-speakerdeck',
           {
-            resolve: 'gatsby-remark-better-embed-video',
+            resolve: 'gatsby-remark-embed-video-lite',
             options: {},
           },
           {
@@ -55,7 +55,6 @@ module.exports = {
               withWebp: true,
             },
           },
-          'gatsby-remark-responsive-iframe',
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
         ],
