@@ -24,7 +24,9 @@ Note: for most of these demos, you'll want to try them out in specific browsers 
 All demo code is <a href="https://github.com/mattdsteele/device-apis">available on GitHub</a>.
 
 <h2>Battery Status</h2>
+
 `youtube:https://www.youtube.com/embed/dLD7Ve5t5cI`
+
 <h3><a href="http://www.matthew-steele.com/projects/device-apis/battery.html">View Demo <em>(works in Android Firefox)</em></a></h3>
 The <a href="https://dvcs.w3.org/hg/dap/raw-file/tip/battery/Overview.html#introduction">Battery Status API</a> is straightforward - it adds a new object <code>window.navigator.battery</code> that you can inspect and discover how much juice is left in the device for you to suck out (this is exposed by <code>battery.dischargingTime</code> and is measured in seconds).
 
@@ -35,7 +37,9 @@ The demo captures the <code>chargingchange</code> event and changes some backgro
 <h3>Availability</h3>
 Firefox currently supports this API on desktop and mobile Android. WebKit <a href="https://bugs.webkit.org/show_bug.cgi?id=62698">appears to have implemented</a> it briefly last year, but it's currently disabled and work to re-enable it <a href="https://bugs.webkit.org/show_bug.cgi?id=90538">appears to have stalled</a>. Similarly, <a href="https://code.google.com/p/chromium/issues/detail?id=122593">Chromium has a patch built</a> but it doesn't seem to have ever landed.
 <h2>Ambient Light Sensor</h2>
+
 `youtube:https://www.youtube.com/embed/YEkhmYXJAeY`
+
 <h3><a href="http://www.matthew-steele.com/projects/device-apis/lightsensor.html">View Demo <em>(works in Android Firefox)</em></a></h3>
 Most phones have an ambient light sensor - it's mostly used to dim the screen in low-light environments. The <a href="https://dvcs.w3.org/hg/dap/raw-file/tip/light/Overview.html">Ambient Light Sensor API</a> works with any sensors that can read light levels, including an embedded camera. There's lots of environment-specific modifications to a site you could perform with this.
 <h3>Availability</h3>
