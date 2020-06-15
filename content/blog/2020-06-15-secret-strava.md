@@ -53,3 +53,13 @@ I have very little faith that Strava has third-party developers in mind when bui
 Tom Scott has a good overview of the tradeoffs we've decided as an industry to make (and RIP to the legendary Yahoo Pipes):
 
 `youtube: BxV14h0kFs0`
+
+## Heroku was ahead of its time
+
+I really liked building and deploying to GCP using Cloud Run. The abstraction for general-purpose HTTP servers feels right, and the auto-scaling means the price is right.
+
+But at the end of the day, I'm not sure it's any more advanced than Heroku's original PaaS product from like, 10 years ago. It's crazy how advanced Heroku was compared to the other toolchains at the time.
+
+Has the last decade of Cloud Native tooling really just been a process of standardizing the offering across other languages, and making the PaaS tooling work with Docker/Kubernetes?
+
+I'd love to know more about what other PaaS offerings are like. From my perspective, Cloud Foundry/Heroku/OpenShift/Knative are all pretty interchangeable. If there's more nuance here, let me know!
