@@ -7,6 +7,10 @@ title: Maybe mashups in 2020 are just Jamstack sites
 
 _*Millhouse voice*_ Remember mashups? They're back, in Jamstack form.
 
+Recommended listening for this post:
+
+`youtube: vU62x2PnSO4`
+
 A decade ago the Big Idea in front-end development was the [mashup](https://en.wikipedia.org/wiki/Mashup_%28web_application_hybrid%29); taking disparate data sources and combining them via JavaScript trickery to create something novel. Want to pull down the current weather and compare it to the climates on Star Wars planets? [Hell yeah, dawg](https://www.slashfilm.com/star-wars-weather-compares-local-weather-conditions-to-star-wars-planets/).
 
 Did you know there was a nonprofit consortium dedicated to enterprise mashup standards? [Open Mashup Alliance](https://en.wikipedia.org/wiki/Open_Mashup_Alliance), we need you now more than ever!
@@ -21,4 +25,4 @@ Lately I've been playing with Strava's datasets, which are inaccessible in the b
 
 The whole thing is hosted on a CDN, populates a serverless database via a serverless functions, and is easily in the free tier of cloud services.
 
-So get yourself back in the 2009 mindset: throw on a [Girl Talk](https://www.youtube.com/watch?v=vU62x2PnSO4) album and build the mashup of your dreams.
+So get yourself back in the 2009 mindset, throw on a [Girl Talk](https://www.youtube.com/watch?v=vU62x2PnSO4) album, and build the mashup of your dreams.
