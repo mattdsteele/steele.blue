@@ -16,7 +16,7 @@
     "gatsby-plugin-twitter": "^2.3.10",
     "gatsby-plugin-typography": "^2.5.10",
     "gatsby-remark-copy-linked-files": "^2.3.12",
-    "gatsby-remark-embed-video-lite": "^0.1.2",
+    "gatsby-remark-embed-video-lite": "^0.1.3",
     "gatsby-remark-images": "^3.3.23",
     "gatsby-remark-prismjs": "^3.5.10",
     "gatsby-source-filesystem": "^2.3.23",
