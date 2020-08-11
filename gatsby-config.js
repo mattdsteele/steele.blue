@@ -1,6 +1,8 @@
+const { node } = require('prop-types');
+
 const title = 'steele.blue';
 
-module.exports = {
+const config = {
   siteMetadata: {
     title,
     author: 'Matt Steele',
@@ -146,3 +148,15 @@ module.exports = {
     'gatsby-plugin-no-javascript',
   ],
 };
+
+if (process.env.NODE_ENV !== 'production') {
+  config.plugins.push({
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      name: `drafts`,
+      path: `${__dirname}/content/drafts`,
+    },
+  });
+}
+
+module.exports = config;
