@@ -25,12 +25,12 @@
     "normalize.css": "^8.0.1",
     "prismjs": "^1.23.0",
     "prop-types": "^15.7.2",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
+    "react": "^17",
+    "react-dom": "^17",
     "react-helmet": "^6.1.0",
     "react-typography": "^0.16.19",
     "typeface-enriqueta": "^1.1.13",
-    "typeface-istok-web": "^0.0.71",
+    "typeface-istok-web": "^1",
     "typography": "^0.16.19"
   },
   "keywords": [
