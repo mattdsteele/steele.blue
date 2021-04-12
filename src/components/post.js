@@ -3,22 +3,19 @@ import { Link, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import RssClub from './rss-club';
 
-import styles from './post.module.css';
+import { title, date, content } from './post.module.css';
 
 function Post({ frontmatter, fields, html, showLink }) {
-  let title = frontmatter.title;
+  let postTitle = frontmatter.title;
   if (fields.slug && showLink) {
-    title = <Link to={fields.slug}>{frontmatter.title}</Link>;
+    postTitle = <Link to={fields.slug}>{frontmatter.title}</Link>;
   }
   return (
     <article>
-      <h1 className={styles.title}>{title}</h1>
-      <h2 className={styles.date}>{fields.dateWithDay}</h2>
+      <h1 className={title}>{postTitle}</h1>
+      <h2 className={date}>{fields.dateWithDay}</h2>
       {frontmatter.rss_only ? <RssClub /> : null}
-      <div
-        className={styles.content}
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
+      <div className={content} dangerouslySetInnerHTML={{ __html: html }} />
     </article>
   );
 }

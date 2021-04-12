@@ -1,28 +1,22 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 
-import styles from './about.module.css';
+import { container, link } from './about.module.css';
 
 export default function About() {
   return (
     <StaticQuery
       query={aboutQuery}
-      render={data => {
+      render={(data) => {
         const { author, location, social } = data.site.siteMetadata;
         return (
-          <p className={styles.container}>
+          <p className={container}>
             I'm {author}, a programmer living in {location}. You can find me on{' '}
-            <a
-              className={styles.link}
-              href={`https://github.com/${social.github}`}
-            >
+            <a className={link} href={`https://github.com/${social.github}`}>
               GitHub
             </a>{' '}
             and{' '}
-            <a
-              className={styles.link}
-              href={`https://twitter.com/${social.twitter}`}
-            >
+            <a className={link} href={`https://twitter.com/${social.twitter}`}>
               Twitter
             </a>
             .

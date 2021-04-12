@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, StaticQuery, graphql } from 'gatsby';
 
-import styles from './header.module.css';
+import { header, container, title, link } from './header.module.css';
 
 const headerQuery = graphql`
   {
@@ -17,11 +17,11 @@ function Header() {
   return (
     <StaticQuery
       query={headerQuery}
-      render={data => (
-        <header className={styles.header}>
-          <div className={styles.container}>
-            <h1 className={styles.title}>
-              <Link className={styles.link} to="/">
+      render={(data) => (
+        <header className={header}>
+          <div className={container}>
+            <h1 className={title}>
+              <Link className={link} to="/">
                 {data.site.siteMetadata.author}
               </Link>
             </h1>
