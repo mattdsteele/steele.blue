@@ -29,9 +29,9 @@ But over the last year, Web Components have slowly lost their weirdness. Because
 
 - They've been implemented in all mobile and most desktop browsers
 - You can use standard tools like NPM and Webpack to build and publish your components
-- They [interop seamlessly](http://custom-elements-everywhere.com/) with most frameworks
+- They [interop seamlessly](https://custom-elements-everywhere.com/) with most frameworks
 - Your framework probably exports them (Angular, Vue, and Dojo do natively; and React can with a wrapper)
-- There's lots of "Web Component Native" frameworks beyond Polymer, including my favorite [Stencil](http://stenciljs.com/)
+- There's lots of "Web Component Native" frameworks beyond Polymer, including my favorite [Stencil](https://stenciljs.com/)
 
 We're finally at the point were it's **easier** to add a Custom Element into any app than it is a React component. Now that's weird.
 
