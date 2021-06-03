@@ -41,7 +41,7 @@ Once I built the site, I deployed to a static host, but my goal was to let other
 
 This is where the [Physical Web](https://google.github.io/physical-web/) comes in - a device can broadcast a URL, and nearby devices can be notified and interact with it.
 
-I installed Node on a [Next Thing CHIP](https://docs.getchip.com/chip.html), and used the [eddystone-beacon](https://www.npmjs.com/package/eddystone-beacon) module to broadcast my StencilJS URL.
+I installed Node on a [Next Thing CHIP](https://web.archive.org/web/20170930101728/https://docs.getchip.com/chip.html), and used the [eddystone-beacon](https://www.npmjs.com/package/eddystone-beacon) module to broadcast my StencilJS URL.
 
 Fun fact: the USB battery was way larger than the computer it was powering!
 
