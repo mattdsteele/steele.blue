@@ -16,7 +16,7 @@ But I think there's space for another kind of project: one that spans years. The
 
 ### The Codebase of Theseus
 
-One project I've been building is a statistics app for [Super Bowl Squares](http://www.superbowlsquares.org/how-to-play), a mostly-random gambling endeavor. It's a dumb game, worthy of a dumb side project. You can [view the latest version here](https://projects.steele.blue/squares/ng5/).
+One project I've been building is a statistics app for [Super Bowl Squares](https://www.superbowlsquares.org/how-to-play), a mostly-random gambling endeavor. It's a dumb game, worthy of a dumb side project. You can [view the latest version here](https://projects.steele.blue/squares/ng5/).
 
 ![squares](https://images.performgroup.com/di/library/sporting_news/8/e4/super-bowl-squares-012815-ftrjpg_192r85vn9rmv61fzavaolc2i8s.jpg?t=846249227&w=960&quality=70)
 
