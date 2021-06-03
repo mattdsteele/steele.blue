@@ -10,7 +10,7 @@ Or: why would I delete gold like this?
 I've been on Twitter for eleven years and in that time amassed a trail of thousands of tweets. I couldn't tell you what 99% of them are about, because Twitter is meant to be ephemeral.
 Unless you're [Milkshake Duck](https://twitter.com/pixelatedboat/status/741904787361300481).
 
-Every week or two someone's old Twitter history gets weaponized against them. Sometimes it's [Ken Bone](https://money.cnn.com/2016/10/14/technology/ken-bone-reddit/) or [Josh Hader](https://www.washingtonpost.com/news/the-intersect/wp/2018/07/18/josh-haders-all-star-game-controversy-shows-how-online-ghosts-will-haunt-us-forever/?utm_term=.4855f2e8eaa1)'s less-than-woke history cropping up after achieving minor Internet fame.
+Every week or two someone's old Twitter history gets weaponized against them. Sometimes it's [Ken Bone](https://web.archive.org/web/20180825061230/https://money.cnn.com/2016/10/14/technology/ken-bone-reddit/) or [Josh Hader](https://www.washingtonpost.com/news/the-intersect/wp/2018/07/18/josh-haders-all-star-game-controversy-shows-how-online-ghosts-will-haunt-us-forever/?utm_term=.4855f2e8eaa1)'s less-than-woke history cropping up after achieving minor Internet fame.
 
 But more often it's the latest form of [oppo research](https://www.washingtonpost.com/news/the-intersect/wp/2018/07/30/theres-no-good-reason-to-keep-old-tweets-online-heres-how-to-delete-them/?utm_term=.6da146165ecb); wherein trolls like Mike Cernovich dig up old tweets, and use them in bad faith to smear their ideological opponents. Trevor Noah, Sarah Jeong, Patton Oswalt - all fell victim to this in the last year.
 
