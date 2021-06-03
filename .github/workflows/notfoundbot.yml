@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Fix links
-        uses: mattdsteele/notfoundbot@main
+        uses: mattdsteele/notfoundbot@custom-content
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
