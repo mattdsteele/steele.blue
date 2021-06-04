@@ -27,7 +27,7 @@ Go's [docs][godocs] describe the language:
 
 ## Going to School
 
-I spent some time learning the language, and the [Go tour](http://tour.golang.org/) was my main source.
+I spent some time learning the language, and the [Go tour](https://tour.golang.org/) was my main source.
 Perhaps it's the Ken Thompson-inspired origins, but it was nice working with a language that didn't condescend to you and treat you as a programming neophyte.
 I often feel like this about other guide, such as \_why's Poigniant Guide to Ruby.
 
@@ -88,7 +88,7 @@ db.Where("id = ?", schoolId).First(&school)
 
 ORMs are appealing, especially when your database tables are denormalized by design to allow simple querying.
 But the additional complexity Gorm brought might not have been worth it.
-ORMs are known as the [Vietnam of Computer Science](http://blogs.tedneward.com/2006/06/26/The+Vietnam+Of+Computer+Science.aspx) for a reason.
+ORMs are known as the [Vietnam of Computer Science](https://web.archive.org/web/20131031003739/http://blogs.tedneward.com/2006/06/26/The+Vietnam+Of+Computer+Science.aspx) for a reason.
 
 Throughout Friday and all of Saturday, we were unable to connect to the database using Gorm's classes.
 It wasn't until nearly midnight on Saturday that we were able to figure out the correct incantations to get MySQL and Gorm [to pull in data](https://github.com/mattdsteele/hackomaha-ops/commit/fe841c50d8b9a0116bd8e94545730e75df46bd00#diff-34c6b408d72845d076d47126c29948d1R18).
