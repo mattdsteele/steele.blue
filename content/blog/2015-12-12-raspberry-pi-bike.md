@@ -24,8 +24,8 @@ I used a Raspberry Pi and an app written in JavaScript to do this. The code is o
 The core of the project:
 
 - [Raspberry Pi Zero](https://www.raspberrypi.org/blog/raspberry-pi-zero/) and a 4GB micro SD card
-- [5M Waterproof RGB LED Light Strip](http://www.amazon.com/gp/product/B00DTOAWZ2)
-- [USB portable charger](http://www.amazon.com/Energizer-Portable-Smartphone-Charger-smartphones/dp/B0092MD8P6) and micro-USB cable
+- [5M Waterproof RGB LED Light Strip](https://www.amazon.com/gp/product/B00DTOAWZ2)
+- [USB portable charger](https://www.amazon.com/Energizer-Portable-Smartphone-Charger-smartphones/dp/B0092MD8P6) and micro-USB cable
 
 To power the LED light strip:
 
@@ -35,10 +35,10 @@ To power the LED light strip:
 
 To capture sensor input from the bike:
 
-- [ANT+ USB receiver](http://www.amazon.com/gp/product/B004YJSD20)
-- [Speed/Cadence Bike Sensor](http://www.amazon.com/Garmin-Speed-Cadence-Bike-Sensor/dp/B000BFNOT8)
+- [ANT+ USB receiver](https://www.amazon.com/gp/product/B004YJSD20)
+- [Speed/Cadence Bike Sensor](https://www.amazon.com/Garmin-Speed-Cadence-Bike-Sensor/dp/B000BFNOT8)
 - [Heart Rate Monitor](https://buy.garmin.com/en-US/US/shop-by-accessories/fitness-sensors/hrm-run-/prod133715.html)
-- [Micro-USB to USB adapter](http://www.amazon.com/gp/product/B015XA3W0G) (the Pi Zero has micro-USB inputs)
+- [Micro-USB to USB adapter](https://www.amazon.com/gp/product/B015XA3W0G) (the Pi Zero has micro-USB inputs)
 
 I had most of these items on hand from previous projects, but had to buy the LED Light Strip and transistors.
 In total this project uses less than \$20 of consumable parts.
@@ -117,7 +117,7 @@ Other pages I found useful:
 - [mitchtech.net/raspberry-pi-pwm-rgb-led-strip/](http://mitchtech.net/raspberry-pi-pwm-rgb-led-strip/)
 - [willmakesthings.com/color-my-desk/](http://willmakesthings.com/color-my-desk/)
 - [github.com/k1sul1/Raspberry-Pi-PHP-LED-controller](https://github.com/k1sul1/Raspberry-Pi-PHP-LED-controller#whatsneeded)
-- [elfboimakingstuff.tumblr.com/](http://elfboimakingstuff.tumblr.com/post/132956410578/raspberry-pi-pwm-rgb-led-strip)
+- [elfboimakingstuff.tumblr.com/](https://elfboimakingstuff.tumblr.com/post/132956410578/raspberry-pi-pwm-rgb-led-strip)
 
 [event]: https://www.facebook.com/events/1093828353982844/
 [2014]: /arduino-bike-lights/
