@@ -5,7 +5,7 @@ title: Responsive Web Design Workshop at Interface
 
 It's been nearly four years since Ethan Marcotte published a little piece [A List Apart][rwd] on Responsive Web Design.
 It's the post that launched a thousand redesigns.
-Like many, I was first introduced to RWD after seeing the [Boston Globe's redesign](http://www.bostonglobe.com), and I began to implement it at work (which now sports a solid responsive homepage) and on this blog.
+Like many, I was first introduced to RWD after seeing the [Boston Globe's redesign](https://www.bostonglobe.com/), and I began to implement it at work (which now sports a solid responsive homepage) and on this blog.
 
 [But not everyone is sold on the concept][svn].
 Lots of folks are building desktop-only sites, or siloing a fraction of their content off into an m-dot subdomain.
@@ -18,7 +18,7 @@ You can [register on Interface's website][int2]. It'll be fun!
 
 [![Responsive Web Design Course](../images/interface.jpg)
 
-(PS: This post is using [Picturefill](http://scottjehl.github.io/picturefill/), which is one approach to responsive images I'll talk about during the course.)
+(PS: This post is using [Picturefill](https://scottjehl.github.io/picturefill/), which is one approach to responsive images I'll talk about during the course.)
 
 [jerod]: http://jerodsanto.net/
 [rwd]: http://alistapart.com/article/responsive-web-design/
