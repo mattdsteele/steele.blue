@@ -37,7 +37,7 @@ But it's only a partial solution, as it doesn't restore variable names, show cod
 
 I'd heard of Source Maps a few years ago.
 At the time, it was being touted as the solution to the tooling problem we created.
-Way back in 2012, Ryan Seddon [published an article](http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/) outlining all the cool stuff you could do with the technology.
+Way back in 2012, Ryan Seddon [published an article](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/) outlining all the cool stuff you could do with the technology.
 But _it didn't seem to catch on_; I hardly ever noticed a site with source maps enabled.
 
 So what gives? From my perspective, the problem wasn't with individual _tools_, it was with the _toolchain_.
