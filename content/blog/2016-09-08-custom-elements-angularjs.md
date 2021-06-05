@@ -8,7 +8,7 @@ So Web Components! They've recently gotten [a lot of love][wcyay], and [a lot of
 Let's talk about Custom Elements in particular.
 This is the technology that lets you drop `<relative-time>` on a page, and it renders into something usable and pretty. No framework required.
 
-The [Web Components proponents propose composing](http://staltz.com/react-could-love-web-components.html) Web Components into existing frameworks, particularly as leaf nodes.
+The [Web Components proponents propose composing](https://staltz.com/react-could-love-web-components.html) Web Components into existing frameworks, particularly as leaf nodes.
 So you'd write your Angular/React/whatever app that contained your business logic, and its templates would be made up of Custom Elements, standard HTML, and other Angular/React/whatever components.
 
 I haven't seen this interop story in action (or documented) in many places.
@@ -69,7 +69,7 @@ window.customElements.define('countdown-timer', CountdownTimer);
 
 Not much to it - initialize stuff in the `connectedCallback` hook, and then add your functionality.
 
-## Angular ([View Demo](http://plnkr.co/edit/CBbCeyDkoWhwGuyy8pYI?p=preview))
+## Angular ([View Demo](https://plnkr.co/edit/CBbCeyDkoWhwGuyy8pYI?p=preview))
 
 Consuming this in Angular is pretty straightforward: you use the `[prop]="value"` syntax to bind to a property, and the `(event)="handler()"` syntax to bind to events.
 
@@ -107,7 +107,7 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 })
 ```
 
-## AngularJS (1.x) ([View Demo](http://plnkr.co/edit/3N3Kk7bSJVgPsSImYjrv?p=preview))
+## AngularJS (1.x) ([View Demo](https://plnkr.co/edit/3N3Kk7bSJVgPsSImYjrv?p=preview))
 
 Out of the box, our Custom Element won't play nicely with AngularJS. There are two problems:
 
