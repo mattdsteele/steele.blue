@@ -5,7 +5,7 @@ title: Upgrading to Angular 2 using ngUpgrade
 
 ![Me, Presenting](../images/ng-upgrade.jpg)
 
-I spoke at [ng-nebraska](http://www.ng-nebraska.com/#/app/home) on how the ngUpgrade module can help bridge the gap between Angulars 1 and 2.
+I spoke at [ng-nebraska](https://web.archive.org/web/20160501021547/http://www.ng-nebraska.com:80/) on how the ngUpgrade module can help bridge the gap between Angulars 1 and 2.
 
 `vimeo: 164378615`
 
