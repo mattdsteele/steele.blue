@@ -35,7 +35,7 @@ Uncle Bob was right, TDD truly is the pinnacle of professional software developm
 
 ## Elfy Smart Light - [Code](https://github.com/mattdsteele/web-bluetooth/blob/master/src/bt/elfy.js)
 
-The [Elfy](http://en.emie.com/emie-elfy-smart-light) is a color-changing night light I picked up from a rando site in China. It looks the part.
+The [Elfy](https://web.archive.org/web/20170224201620/http://en.emie.com:80/emie-elfy-smart-light) is a color-changing night light I picked up from a rando site in China. It looks the part.
 You can hit it, and it'll alternate between a set of colors.
 
 For one demo, I hooked up an `<input type="color">` to the Elfy.
