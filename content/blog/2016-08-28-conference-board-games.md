@@ -23,7 +23,7 @@ tl;dr:
 Because they're catalysts for a memorable after-party:
 
 **Games facilitate new connections among attendees** - We encouraged attendees to interact with out speakers and conference organizers, and games work marvelously for this.
-A first-time conference attendee might worry they'll run out of things to talk to an experienced speaker about, but they'll probably be more comfortable playing a game of [Codenames](http://boardgamegeek.com/boardgame/178900/codenames) with them, and it'll likely be more memorable.
+A first-time conference attendee might worry they'll run out of things to talk to an experienced speaker about, but they'll probably be more comfortable playing a game of [Codenames](https://boardgamegeek.com/boardgame/178900/codenames) with them, and it'll likely be more memorable.
 
 **It's an accessible alternative to a boozefest** - Lots of conferences market their evening events as an opportunity to blow off steam.
 This often translates to: we have an open bar, so get shitfaced on our dime.
@@ -52,16 +52,16 @@ You want to get games that meet a few criteria:
 
 - **Short** - preferably under an hour to setup and play.
 - **Easy to learn** - Folks don't want to pour through manuals, they want to be unboxing and playing in a few minutes.
-- **Easy to play** - Hardcore strategy games like [Power Grid](http://boardgamegeek.com/boardgame/2651/power-grid) are tons of fun, but probably overkill for most attendees at this point in the day.
+- **Easy to play** - Hardcore strategy games like [Power Grid](https://boardgamegeek.com/boardgame/2651/power-grid) are tons of fun, but probably overkill for most attendees at this point in the day.
 
 We also grabbed a few train-based games, to match our conference's theme (the venue was an old railroad station).
 
 Here's some games that fit this criterion (and got played a lot):
 
-- [Dominion](http://boardgamegeek.com/boardgame/36218/dominion) - A fun deck-builder that'll scratch the itch of the ex-Magic: The Gathering players that sneak into your conference.
-- [Wits & Wagers](http://boardgamegeek.com/boardgame/20100/wits-wagers) - A trivia game where you can win even if you don't know any answers? Sold.
-- [Pandemic](http://boardgamegeek.com/boardgame/30549/pandemic) - Cooperative games are particularly great at generating tables of cheers and high-fives.
-- [Concept](http://boardgamegeek.com/boardgame/147151/concept) - A great word association game. Another nice feature: folks can join at any time and don't have to wait for a new table to start up.
+- [Dominion](https://boardgamegeek.com/boardgame/36218/dominion) - A fun deck-builder that'll scratch the itch of the ex-Magic: The Gathering players that sneak into your conference.
+- [Wits & Wagers](https://boardgamegeek.com/boardgame/20100/wits-wagers) - A trivia game where you can win even if you don't know any answers? Sold.
+- [Pandemic](https://boardgamegeek.com/boardgame/30549/pandemic) - Cooperative games are particularly great at generating tables of cheers and high-fives.
+- [Concept](https://boardgamegeek.com/boardgame/147151/concept) - A great word association game. Another nice feature: folks can join at any time and don't have to wait for a new table to start up.
 
 [Here's the complete list of games we collected for NEJS CONF](https://gist.github.com/mattdsteele/21d3bb8386e566ce6743be15e87ea1b0), if you're curious.
 
@@ -117,7 +117,7 @@ At this point, running the library is pretty straightforward. A few other bits t
 
 - **Shelving** - Putting games on tables is lame and you'll run into a mess fast.
   Get some actual shelves, and put your games on 'em.
-  [I picked up these at Lowe's](http://www.lowes.com/pd/Blue-Hawk-72-in-H-x-36-in-W-x-18-in-D-5-Tier-Plastic-Freestanding-Shelving-Unit/50436504?#!&_=_) for \$30.
+  [I picked up these at Lowe's](https://www.lowes.com/pd/Blue-Hawk-72-in-H-x-36-in-W-x-18-in-D-5-Tier-Plastic-Freestanding-Shelving-Unit/50436504?#!&_=_) for \$30.
 - **Check in/out** - If someone wanted a game, we just took their conference namebadge and put it in a box.
   When they returned the game they got it back. Simple.
 
