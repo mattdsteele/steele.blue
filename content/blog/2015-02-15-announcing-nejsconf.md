@@ -8,7 +8,7 @@ On August 7, we'll be throwing [the first JavaScript conference ever held in Neb
 
 [![Logo]({{site.url}}../images/nejsconf-logo.svg)][site]
 
-I'm pretty sure this is the first technical conference held at [a world-class zoo](https://www.omahazoo.com/), and that's just the start. We're planning on a killer lineup of local and nationally-known speakers, as well as showcasing what makes Nebraska such a great state to live and write code.
+I'm pretty sure this is the first technical conference held at [a world-class zoo](https://web.archive.org/web/20150216015606/http://www.omahazoo.com:80/), and that's just the start. We're planning on a killer lineup of local and nationally-known speakers, as well as showcasing what makes Nebraska such a great state to live and write code.
 
 I'm stoked to be on the organizing committee, alongside folks far more talented than I. If we've assembled the Justice League of Nebraska JavaScripters, I'd be Aquaman.
 
