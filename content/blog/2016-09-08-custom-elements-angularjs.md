@@ -69,7 +69,7 @@ window.customElements.define('countdown-timer', CountdownTimer);
 
 Not much to it - initialize stuff in the `connectedCallback` hook, and then add your functionality.
 
-## Angular ([View Demo](https://plnkr.co/edit/CBbCeyDkoWhwGuyy8pYI?p=preview))
+## Angular ([View Demo](https://web.archive.org/web/20201026050938/http://plnkr.co/edit/CBbCeyDkoWhwGuyy8pYI?p=preview))
 
 Consuming this in Angular is pretty straightforward: you use the `[prop]="value"` syntax to bind to a property, and the `(event)="handler()"` syntax to bind to events.
 
