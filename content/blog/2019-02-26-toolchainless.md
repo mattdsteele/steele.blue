@@ -79,6 +79,6 @@ I don't know. Eventually you'll probably reach a point where you want to add in 
 
 But for a weekend project like this, it worked great. And if it ever gets big enough, I can check in the tooling Roach Motel then.
 
-I like this approach because it aligns with the [Principle of Least Power](https://www.w3.org/DesignIssues/Principles.html). Not every project needs to have 1023 dependencies in their `node_modules`. And the more you default to using an opaque toolchain for everything, the more likely you'll get [bit with opaque errors](https://daverupert.com/2019/01/angular-autoprefixer-ie11-and-css-grid-walk-into-a-bar/).
+I like this approach because it aligns with the [Principle of Least Power](https://web.archive.org/web/20190216032625/http://www.w3.org:80/DesignIssues/Principles.html). Not every project needs to have 1023 dependencies in their `node_modules`. And the more you default to using an opaque toolchain for everything, the more likely you'll get [bit with opaque errors](https://daverupert.com/2019/01/angular-autoprefixer-ie11-and-css-grid-walk-into-a-bar/).
 
 Toolchains are a chainsaw. And these days, you don't have to use a chainsaw for everything.
