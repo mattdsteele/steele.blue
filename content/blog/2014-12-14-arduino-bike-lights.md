@@ -35,7 +35,7 @@ It doesn't take much to build a homemade IR blaster - first you need to decode t
 
 I shouldn't have expected much from a \$10 gadget, so it's no surprise that the light strip and remote did not come with any instructions or data sheet.
 
-After learning about infrared, I borrowed a [USB Infrared Toy](http://dangerousprototypes.com/docs/USB_Infrared_Toy), which provided a convenient way to both send and recieve IR signals. Surprisingly, it had the best support on [Windows](http://winlirc.sourceforge.net/), which I wasn't setup for.
+After learning about infrared, I borrowed a [USB Infrared Toy](https://web.archive.org/web/20141223195556/http://dangerousprototypes.com/docs/USB_Infrared_Toy), which provided a convenient way to both send and recieve IR signals. Surprisingly, it had the best support on [Windows](http://winlirc.sourceforge.net/), which I wasn't setup for.
 
 I used [LIRC](https://www.lirc.org/), which looked like the best-supported Linux package to read and send IR commands. LIRC's remote database already had over 2000 devices available but the LED strips were not on there. Luckily the `irrecord` command lets you create your own device configurations, using a CLI-based wizard.
 
