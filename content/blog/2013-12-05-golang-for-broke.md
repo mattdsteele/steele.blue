@@ -3,7 +3,7 @@ layout: post
 title: Go(lang) for Broke
 ---
 
-A few weeks ago I took part in the third [Hack Omaha](https://twitter.com/hackomaha), a civic hackathon put on by [Matt Wynn](https://twitter.com/mattwynn), [Open Nebraska](https://opennebraska.io/), and others.
+A few weeks ago I took part in the third [Hack Omaha](https://twitter.com/hackomaha), a civic hackathon put on by [Matt Wynn](https://twitter.com/mattwynn), [Open Nebraska](https://web.archive.org/web/20140413035547/http://opennebraska.io:80/), and others.
 
 We built a website to [visualize Omaha Public School's enrollment data][schools]. It was a blast to build, and not just because it helped answer burning questions of teammate, parent, and all-around cool guy [Alex Gates](http://www.ketv.com/news/local-news/parents-worry-about-overpacked-classrooms-kids-education/-/9674510/21457722/-/trv6dnz/-/index.html?absolute=true&utm_source=dlvr.it&utm_medium=twitter&utm_campaign=ketv).
 Alex wanted to know why his daughter's kindergarden class had 39 children in it when classes began.
