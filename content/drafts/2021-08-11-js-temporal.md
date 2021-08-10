@@ -1,8 +1,13 @@
-# Stuff I learned working with the JavaScript Temporal API
+---
+layout: post
+title: Stuff I learned working with the JavaScript Temporal API
+---
 
 I've been preparing for a [303-mile endurance gravel bike race](https://www.gravel-worlds.com/the-long-voyage). Not by training or improving fitness, of course, but by [building a PWA to estimate and track checkpoint ETAs](https://longvoyage.steele.blue/).
 
 By adjusting the sliders for my day and evening paces, the app estimates when I'll be able to take breaks, reach hazards, etc.
+
+![Long Voyage Screenshot](../images/long-voyage-screenshot.png)
 
 It's been a while since I built something on the front-end that did lots of date manipulation, but I thought this would be a nice time to try out the Temporal API, which is [now in Stage 3](https://tc39.es/proposal-temporal/docs/) and has a [nice polyfill available](https://www.npmjs.com/package/@js-temporal/polyfill).
 
@@ -20,13 +25,30 @@ Similarly, a thousand Node flowers have bloomed, all trying to provide a saner d
 
 Having worked with both of the "new standards" I'm pretty impressed at the conceptual convergence! Most of the base classes are available in both libraries: from [ZonedDateTime](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html) to [Duration](https://tc39.es/proposal-temporal/docs/#Temporal-Duration), to [Instant](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html). And combined with the polyfill's [nice TypeScript definitions](https://www.npmjs.com/package/@js-temporal/polyfill), it's really straightforward to just start working with the library, and autocomplete your way to development. 
 
-# No parsing human-readable dates
+Seriously, this is really nice to use:
+
+```ts
+const dayDelta = startTime.until(nightTime);
+const totalHours = dayDelta.total({unit: "hours"})
+const nightDelta = nightTime.until(morningTime);
+const totalNightHours = nightDelta.total({unit: "hours"});
+
+// how far can you get by sundown?
+const dayDistance = totalHours * pace.day1;
+if (distance < dayDistance) {
+  const hoursDelta = (distance / pace.day1).toPrecision(5);
+  const eta = startTime.add(`PT${hoursDelta}H`);
+  return eta;
+}
+```
+
+# It doesn't support parsing human-readable dates?
 
 One feature I was expecting, and which the Java Time API supports, is parsing andd formatting "human readable dates", via a [DateTimeFormatter](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html) and other classes. This doesn't appear to be in scope for Temporal API! From what I can tell, if you've got anything that isn't standard ISO8601, you'll need to pull in another date parsing library.
 
 I'd love to be wrong about this, but from what I can tell, you'd need to pull in date-fns or another third-party library to parse "non-standard" date strings.
 
-# Formats well, with Intl API syntax
+# It formats well, using the Intl API
 
 On the formatting side, it took a bit of digging but I was able to convert a `ZonedDateTime` to a human-readable time (think `HH:MM`), using the [Intl.DateTimeFormat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat) API.
 
