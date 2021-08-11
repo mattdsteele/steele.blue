@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 3 things I learned trying out the JavaScript Temporal API
+title: 3 Things I Learned Trying out the JavaScript Temporal API
 ---
 
 I've been preparing for a [303-mile endurance gravel bike race](https://www.gravel-worlds.com/the-long-voyage). Not by training or improving fitness, of course, but by [building a PWA to estimate and track checkpoint ETAs](https://longvoyage.steele.blue/).
