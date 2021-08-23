@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Race Recap - Gravel Worlds Long Voyage
+title: Gravel Worlds - Long Voyage
 ---
 
 ![long voyage](../images/long-voyage/long-voyage-4.jpg)
@@ -54,6 +54,7 @@ I made it to Seward at mile 234 and decided to pull the plug. I probably had eno
 * Bike fit - If anything was going to give on this ride it would have been my back and palms, and I think a more precise fitting and adjusting saddle position, etc. would help alleviate these issues.
 * Prepping for hike-a-bike - If there's a good chance I'll be shouldering a bike for multiple miles, I'm going to strip off the bottle cages on the bike frame, and wear a Camelback instead. It'll help with proper form, and the hydration pack should provide some padding for the steel frame digging into my shoulder (which is still sore!)
 * Applying more sunscreen - I got burned after not applying more sunscreen on the second day of riding, and sunburns traditionally sap a ton of energy from me.
-* General fitness - Near the end of my ride I was in dead last place of those still riding. With races that have a cutoff, that's not good enough. Some structured training, sweet-spot intervals, and the like are the standard solutions here.
+* Less stopped time - At each town I stopped at convenience stores anywhere from 15 to 50 minutes; this obviously eats into my elapsed pace, and is probably the lowest-hanging fruit.
+* General fitness - Near the end of my ride I was in dead last place of those still riding. For races with a cutoff, that's not good enough. Some structured training, sweet-spot intervals, and the like are the standard solutions here.
 
 Overall I was pretty happy with my race; I set new personal records for the longest and farthest I've ridden in one go, it was my first completely overnight ride, and I made some new friends along the way. But I'd love to finish one of these endurance races, so I have a 2022 goal already in mind.
