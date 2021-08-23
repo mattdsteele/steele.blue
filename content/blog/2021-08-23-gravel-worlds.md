@@ -7,7 +7,7 @@ title: Gravel Worlds - Long Voyage
 
 I participated in the inaugural Gravel Worlds [Long Voyage](https://www.gravel-worlds.com/the-long-voyage) bike race last weekend. It was my fifth year racing a Gravel Worlds event, and I'm not planning on stopping any time soon. Corey, Craig, and the other organizers do a great job to make everyone welcome and accepted.
 
-I applied for the 300-mile event partially for personal redemption. In 2018 I raced [Trans Iowa](https://transiowa.blogspot.com/), but only made it about halfway through the 300+ mile course, primarily due to poor equipment and clothing choices. After T.I. ended, I wanted to give it another go, and trusted the Pirate Cycling League to keep the spirit alive.
+I applied for the 300-mile event partially for personal redemption. In 2018 I raced [Trans Iowa](https://transiowa.blogspot.com/), but only made it about halfway through the 330+ mile course, primarily due to poor equipment and clothing choices. After T.I. ended, I wanted to give it another go, and trusted the Pirate Cycling League to keep the spirit alive.
 
 I pulled up to the starting line having trained with teammates [Rafal](https://www.instagram.com/rdoloto78/) and [Alex](https://www.instagram.com/alexander_g_sanchez/), both of whom are stronger riders and helped pull me through summer Bacon Rides. I also got to chat with multiple other folks who came out for the send-off, including Patrick Davlin, Robbie Benton, Jason Faas, Michelle Cleasby, Curtis Wilson, and Dustin Slivka. Seeing these folks after a year of of isolation and Zwift riding was really heartwarming.
 
@@ -27,13 +27,15 @@ Night riding was pretty pleasant, the weather was great with a nearly full moon 
 
 At mile 90 we hit another mile of MMR which was partially unrideable, though I felt pretty confident just mashing through on my singlespeed as I had fewer parts to fail. I came across one rider with a completely blown deraillieur after attempting to shift while covered in mud, which unfortunately ended her event.
 
-Finally around mile 130 I hit a dirt road that was completely unrideable, and so muddy that it was impossible to even push the bike through; mud would just get caught on the tires and jam up in the fork, seizing up the wheels. The only solution here is to hike-a-bike. I have some experience from years of racing cyclocross, but the optimal strategy of shouldering in the triangle wasn't feasible with frame bags and multiple bottle cages. So I threw the bike over my shoulder, and just tried to slog on. Those two miles of road took nearly an hour to traverse, and sapped a ton of energy I was hoping to preserve for later in the race.
-
 ![long voyage](../images/long-voyage/long-voyage-2.jpg)
+
+Finally around mile 130 I hit a dirt road that was completely unrideable, and so muddy that it was impossible to even push the bike through; mud would just get caught on the tires and jam up in the fork, seizing up the wheels. The only solution here is to hike-a-bike. I have some experience from years of racing cyclocross, but the optimal strategy of shouldering in the triangle wasn't feasible with frame bags and multiple bottle cages. So I threw the bike over my shoulder, and just tried to slog on. Those two miles of road took nearly an hour to traverse, and sapped a ton of energy I was hoping to preserve for later in the race.
 
 We hit one more dirt road that evening, but we were able to push the bike through a grassy ditch. As dawn broke, I was praying to the gravel gods that sunlight would help dry out the remaining 7 miles of dirt on the course.
 
 While riding overnight I also encountered a new terrain I hadn't seen in years of gravel riding - slatted bridges with gaps wider than my tires; which could easily swallow a wheel. I was probably more cautious than I needed to be when traversing them, but didn't want to take any chances suffering a mechanical because I was in Full Send mode.
+
+![long voyage](../images/long-voyage/long-voyage-5.jpg)
 
 As dawn broke I continued to ride with a couple folks from Pennsylvania and Michigan. As the headwinds began to come into effect, we formed a paceline and began to take pulls pretty effectively, considering we hadn't ridden together before. A few of them pulled the plug in Crete, and I rode out to Milford with another singlespeeder from Kansas. We encountered a few dirt roads, but the sunlight and wind dried them out and they were as fast as pavement.
 
