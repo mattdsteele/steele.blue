@@ -48,7 +48,7 @@ Drop that into a script tag in your `index.html` file and you've got a working P
 
 ## Pizza Compass
 
-I recently rebuilt an old project, [Pizza Compass](https://pizza.steele.blue/), a PWA that points you to the closest pizza. [The app I cloned](http://pizza-compass.com/) claims to be the most important app ever made, which I can't deny.
+I recently rebuilt an old project, [Pizza Compass](https://pizza.steele.blue/), a PWA that points you to the closest pizza. [The app I cloned](https://web.archive.org/web/20190321204022/http://pizza-compass.com/) claims to be the most important app ever made, which I can't deny.
 
 [The first version](https://github.com/mattdsteele/device-apis/blob/master/js/pizza.js) of Pizza Compass was built in 2013 using jQuery, before toolchains took over. When I decided to rebuild it using modern UI components, I went with a toolchainless approach.
 
