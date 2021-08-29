@@ -134,20 +134,20 @@ const config = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-gtag`,
+      resolve: `gatsby-plugin-gtag-redactjs`,
       options: {
-        trackingIds: ['UA-30572618-1'],
-        // Puts tracking script in the head instead of the body
-        gtagConfig: {
-          anonymize_ip: true,
-        },
-        pluginConfig: {
-          head: true,
-          respectDNT: true
-        }
+        trackingId: 'UA-30572618-1',
+        head: true,
+        anonymize: true
       },
     },
-    'gatsby-plugin-no-javascript',
+    {
+      resolve: 'gatsby-plugin-no-javascript-utils',
+      options: {
+        noScript: true,
+        noSourcemaps: true
+      }
+    }
   ],
 };
 
