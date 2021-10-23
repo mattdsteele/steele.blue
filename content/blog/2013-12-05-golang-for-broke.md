@@ -119,7 +119,7 @@ It wasn't all sunshine. Beyond database and library issues, here's a few problem
 
 ## So you won, right?
 
-Nope. [This project did.](http://douglas.ne.localboards.org/)
+Nope. [This project did.](https://web.archive.org/web/20160826210702/http://douglas.ne.localboards.org:80/)
 
 ## So we should blame Go?
 
