@@ -106,7 +106,7 @@ I used these Reactive functions:
 
 - [`distinctUntilChanged`](https://rxmarbles.com/#distinctUntilChanged) to only emit when my HR changed
 - [`debounce`](https://rxmarbles.com/#debounce) as 250ms was too rapid for my use
-- [`flatMap` and `flatMapLatest`](http://reactivex.io/documentation/operators/flatmap.html) to convert the event data (beats per minute) into a stream of "heartbeat" events
+- [`flatMap` and `flatMapLatest`](https://reactivex.io/documentation/operators/flatmap.html) to convert the event data (beats per minute) into a stream of "heartbeat" events
 
 You can see the full implementation on [GitHub](https://github.com/mattdsteele/raspberry-pi-bike-leds/blob/master/src/boot.js#L33-L35).
 
@@ -117,7 +117,7 @@ I didn't write any automated tests to verify the behavior, but I think it would 
 You can even mock out (and speed up) the passage of time using a [Virtual Time Scheduler](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/schedulers/virtualtimescheduler.md).
 
 I also coded up some pretty [terrible error handling code](https://github.com/mattdsteele/raspberry-pi-bike-leds/blob/master/src/boot.js#L70-L81) to switch the lights to 'idle' mode after 5 seconds without sensor data.
-After thinking about it for a bit, I'm pretty sure I could have used a standard [debounce operator](http://reactivex.io/documentation/operators/debounce.html) rather than the recursive monstrosity I created.
+After thinking about it for a bit, I'm pretty sure I could have used a standard [debounce operator](https://reactivex.io/documentation/operators/debounce.html) rather than the recursive monstrosity I created.
 
 But even as a non-expert in reactive paradigms I really liked using RxJS!
 If you need to manage asynchronous events at a higher level than callbacks or `setTimeout` allow, give it a shot.
