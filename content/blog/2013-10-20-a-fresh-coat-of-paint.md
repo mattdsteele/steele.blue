@@ -12,7 +12,7 @@ The link dump is gone, and I've moved my blog from WordPress.com to my domain. [
 
 A few reasons:
 
-- Link dumps are lame. The meat of this site is on the blog, so it makes sense to show that up front. [No one likes to wait while they wait](https://www.lukew.com/ff/entry.asp?1458).
+- Link dumps are lame. The meat of this site is on the blog, so it makes sense to show that up front. [No one likes to wait while they wait](https://web.archive.org/web/20131005120649/http://www.lukew.com/ff/entry.asp?1458).
 - I began using WordPress.com 6 years ago, when I was working mostly on the back-end and didn't want to think about website layouts or CSS. Times have changed.
 - It's theraputic. I might be the only person who finds joy in moving periodically in the physical world. It's a great time to trash old artifacts and make way for the new.
 
