@@ -18,7 +18,7 @@ Look for the XHR request `/cgi/cgi_get?Object=Device.PPP.Interface`, and root ar
 Or, just paste this into your console:
 
 ```js
-fetch(/'cgi/cgi_get?Object=Device.PPP.Interface', {
+fetch('/cgi/cgi_get?Object=Device.PPP.Interface', {
   headers: new Headers({
     'X-Requested-With': 'XMLHttpRequest',
   }),
