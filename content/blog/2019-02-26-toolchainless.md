@@ -13,7 +13,7 @@ But I'm excited about new methodologies that are breaking that link, and letting
 
 ## You might not need build tools
 
-Some tools have gone away because browsers got better. With features like CSS Custom Properties, [you might not need Sass](https://hospodarets.com/you-might-not-need-a-css-preprocessor/#/) anymore.
+Some tools have gone away because browsers got better. With features like CSS Custom Properties, [you might not need Sass](https://web.archive.org/web/20191218025653/https://hospodarets.com/you-might-not-need-a-css-preprocessor/) anymore.
 And you can decompose your app into ES Modules and load as needed using import/export statements; no Webpack or Rollup required.
 
 Some build tools went away because your editor got smarter. I love TypeScript, but Visual Studio Code's inference works pretty damn well for JavaScript as well; providing [autocomplete and lots of other goodies](https://code.visualstudio.com/Docs/languages/javascript).
