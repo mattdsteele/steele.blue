@@ -52,7 +52,7 @@ I have very little faith that Strava has third-party developers in mind when bui
 
 Tom Scott has a good overview of the tradeoffs we've decided as an industry to make (and RIP to the legendary Yahoo Pipes):
 
-`youtube: BxV14h0kFs0`
+`youtube:https://www.youtube.com/embed/BxV14h0kFs0`
 
 ## Heroku was ahead of its time
 

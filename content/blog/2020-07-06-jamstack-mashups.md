@@ -9,7 +9,7 @@ _*Millhouse voice*_ Remember mashups? They're back, in Jamstack form.
 
 Recommended listening for this post:
 
-`youtube: uWzkK7tUjaU`
+`youtube:https://www.youtube.com/embed/uWzkK7tUjaU`
 
 A decade ago the Big Idea in front-end development was the [mashup](https://en.wikipedia.org/wiki/Mashup_%28web_application_hybrid%29); taking disparate data sources and combining them via JavaScript trickery to create something novel. Want to pull down the current weather and compare it to the climates on Star Wars planets? [Hell yeah, dawg](https://www.slashfilm.com/star-wars-weather-compares-local-weather-conditions-to-star-wars-planets/).
 

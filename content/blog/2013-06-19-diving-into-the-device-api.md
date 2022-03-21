@@ -46,7 +46,7 @@ Most phones have an ambient light sensor - it's mostly used to dim the screen in
 Firefox on Android has it, and it's implemented on the desktop in OS X. There's a patch for Windows 7 that <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=754199">appears to have stalled</a>. I don't see any evidence that other browsers are planning to implement it.
 <h2>Device Orientation</h2>
 
-`youtube: c7rWFcYSs1g`
+`youtube:https://www.youtube.com/embed/c7rWFcYSs1g`
 
 A native app that recently captured my attention was the <a href="http://pizza-compass.com/">well-advertised Pizza Compass</a> for iOS. It does exactly what you'd expect. I wanted to try a version in pure HTML5. Right now it only points you to a pizza place in my city, but it meets my use case, so why abstract?
 
