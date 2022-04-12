@@ -8,7 +8,7 @@ Or: why would I delete gold like this?
 ![bad tweets](../images/bad-tweets.png)
 
 I've been on Twitter for eleven years and in that time amassed a trail of thousands of tweets. I couldn't tell you what 99% of them are about, because Twitter is meant to be ephemeral.
-Unless you're [Milkshake Duck](https://twitter.com/pixelatedboat/status/741904787361300481).
+Unless you're [Milkshake Duck](https://web.archive.org/web/20190704195024/https://twitter.com/pixelatedboat/status/741904787361300481).
 
 Every week or two someone's old Twitter history gets weaponized against them. Sometimes it's [Ken Bone](https://web.archive.org/web/20180825061230/https://money.cnn.com/2016/10/14/technology/ken-bone-reddit/) or [Josh Hader](https://www.washingtonpost.com/news/the-intersect/wp/2018/07/18/josh-haders-all-star-game-controversy-shows-how-online-ghosts-will-haunt-us-forever/?utm_term=.4855f2e8eaa1)'s less-than-woke history cropping up after achieving minor Internet fame.
 
@@ -25,7 +25,7 @@ Twitter will probably never provide this out of the box. So I built [Blumhouse](
 There are a number of prebuilt tools to this problem. [TweetDelete](https://tweetdelete.net/) is a one-button approach that requires zero programming.
 There are also self-hosted tools like [timeliner](https://github.com/mholt/timeliner) or [ephemeral](https://github.com/victoriadotdev/ephemeral) that provide archive or delete capabilities.
 
-You can also [request an archive](https://twitter.com/settings/your_twitter_data) of your data from Twitter, if you like messing with giant zips of XML.
+You can also [request an archive](https://web.archive.org/web/20190320025155/https://twitter.com/settings/your_twitter_data) of your data from Twitter, if you like messing with giant zips of XML.
 
 But in true NIH fashion, none of them did exactly what I wanted so it became my latest side project. This also gave me an opportunity to play with Google's Cloud Platform, which recently announced [Serverless support for Go](https://cloud.google.com/blog/products/application-development/cloud-functions-go-1-11-is-now-a-supported-language), among other goodies.
 
