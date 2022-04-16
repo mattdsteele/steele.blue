@@ -25,7 +25,7 @@ Twitter will probably never provide this out of the box. So I built [Blumhouse](
 There are a number of prebuilt tools to this problem. [TweetDelete](https://tweetdelete.net/) is a one-button approach that requires zero programming.
 There are also self-hosted tools like [timeliner](https://github.com/mholt/timeliner) or [ephemeral](https://github.com/victoriadotdev/ephemeral) that provide archive or delete capabilities.
 
-You can also [request an archive](https://twitter.com/settings/your_twitter_data) of your data from Twitter, if you like messing with giant zips of XML.
+You can also [request an archive](https://web.archive.org/web/20190320025155/https://twitter.com/settings/your_twitter_data) of your data from Twitter, if you like messing with giant zips of XML.
 
 But in true NIH fashion, none of them did exactly what I wanted so it became my latest side project. This also gave me an opportunity to play with Google's Cloud Platform, which recently announced [Serverless support for Go](https://cloud.google.com/blog/products/application-development/cloud-functions-go-1-11-is-now-a-supported-language), among other goodies.
 
