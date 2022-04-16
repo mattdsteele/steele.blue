@@ -112,4 +112,4 @@ REPOSITORY                SIZE
 particle-scratch-optim    5.33MB
 ```
 
-In total, these optimizations took my GitHub action from a **6+ minute run down to 30 seconds**. Pretty sweet when you're [waiting for the action to complete to get candy](https://twitter.com/mattdsteele/status/1173628386742345728).
+In total, these optimizations took my GitHub action from a **6+ minute run down to 30 seconds**. Pretty sweet when you're [waiting for the action to complete to get candy](https://web.archive.org/web/20190922131203/https://twitter.com/mattdsteele/status/1173628386742345728).
