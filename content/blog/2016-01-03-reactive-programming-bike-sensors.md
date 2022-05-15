@@ -71,7 +71,7 @@ calculatedCadence
   .subscribe(data => lights.setRgb(data));
 ```
 
-Here I'm using an [Arduino-style `remap`](https://www.arduino.cc/en/Reference/Map) function to convert my cadence range (25rpm during easy pedaling, 100rpm during fast sprints) to a 0-1 range, which the lights class expects.
+Here I'm using an [Arduino-style `remap`](https://web.archive.org/web/20160114022814/https://www.arduino.cc/en/Reference/Map) function to convert my cadence range (25rpm during easy pedaling, 100rpm during fast sprints) to a 0-1 range, which the lights class expects.
 Then we pass that data to the LED lights.
 
 ## Faking out the stream
