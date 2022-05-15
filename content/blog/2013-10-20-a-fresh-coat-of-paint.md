@@ -44,7 +44,7 @@ Posts are written in Markdown, which _feels_ right and lets me blog in Vim.
 While designing, I went _mobile-first and responsive_. With such a simple static page, I was able to just pull up `localhost` on the iOS simulator and my Android tablet and call it good.
 It also simplified my CSS by a pretty substantial amount.
 
-Since I now have control over the layout, I also took the time to add an [I Live in Omaha](http://iliveinomaha.com/) banner to the page.
+Since I now have control over the layout, I also took the time to add an [I Live in Omaha](https://web.archive.org/web/20131012072030/http://iliveinomaha.com:80/) banner to the page.
 There's an `<img>` version of the banner, but I decided to rewrite it using pure HTML and CSS3. This made it responsive and Retina-sharp.
 On small screens, it's a footer at the bottom of the site. As you gain more real estate, it jumps to the top of the page, and eventually gets fixed to the top.
 Since it's progressively enhanced, this also avoids many of the [issues with position:fixed](http://bradfrostweb.com/blog/mobile/fixed-position/) on mobile devices.
