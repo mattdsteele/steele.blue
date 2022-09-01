@@ -23,7 +23,7 @@ tl;dr:
 Because they're catalysts for a memorable after-party:
 
 **Games facilitate new connections among attendees** - We encouraged attendees to interact with out speakers and conference organizers, and games work marvelously for this.
-A first-time conference attendee might worry they'll run out of things to talk to an experienced speaker about, but they'll probably be more comfortable playing a game of [Codenames](https://boardgamegeek.com/boardgame/178900/codenames) with them, and it'll likely be more memorable.
+A first-time conference attendee might worry they'll run out of things to talk to an experienced speaker about, but they'll probably be more comfortable playing a game of [Codenames](https://web.archive.org/web/20160826085701/http://boardgamegeek.com/boardgame/178900/codenames) with them, and it'll likely be more memorable.
 
 **It's an accessible alternative to a boozefest** - Lots of conferences market their evening events as an opportunity to blow off steam.
 This often translates to: we have an open bar, so get shitfaced on our dime.
@@ -58,8 +58,8 @@ We also grabbed a few train-based games, to match our conference's theme (the ve
 
 Here's some games that fit this criterion (and got played a lot):
 
-- [Dominion](https://boardgamegeek.com/boardgame/36218/dominion) - A fun deck-builder that'll scratch the itch of the ex-Magic: The Gathering players that sneak into your conference.
-- [Wits & Wagers](https://boardgamegeek.com/boardgame/20100/wits-wagers) - A trivia game where you can win even if you don't know any answers? Sold.
+- [Dominion](https://web.archive.org/web/20160902172940/http://boardgamegeek.com/boardgame/36218/dominion) - A fun deck-builder that'll scratch the itch of the ex-Magic: The Gathering players that sneak into your conference.
+- [Wits & Wagers](https://web.archive.org/web/20160826011444/http://boardgamegeek.com/boardgame/20100/wits-wagers) - A trivia game where you can win even if you don't know any answers? Sold.
 - [Pandemic](https://boardgamegeek.com/boardgame/30549/pandemic) - Cooperative games are particularly great at generating tables of cheers and high-fives.
 - [Concept](https://boardgamegeek.com/boardgame/147151/concept) - A great word association game. Another nice feature: folks can join at any time and don't have to wait for a new table to start up.
 
