@@ -11,10 +11,10 @@ This year, I felt better prepared, rode smarter, and actually finished! My inten
 
 I credit some of my success this year to spending more time riding through the year, both on longer gravel base rides, and structured intervals on the trainer. But I still had enough time to build another dubiously useful website!
 
-That's what I want to share today; a site that captures data from a GPS tracker, and makes it available for folks to track my progress. There are a number of public versions of this (they call it [dot watching](https://www.cyclist.co.uk/in-depth/10221/what-is-dotwatching)), but I wanted to add some fancier features, such as creating geofences at expected stops.
+That's what I want to share today; a site that captures data from a GPS tracker, and makes it available for folks to track my progress. There are a number of public versions of this (they call it [dot watching](https://www.cyclist.co.uk/in-depth/10221/what-is-dotwatching)), but I wanted to add some fancier features, such as making geofences at expected stops, and capturing enter/exit times.
 
 I built out the site using AWS serverless architecture (Location Services, Lambda, and others).
-The code is available at https://github.com/mattdsteele/spot-tracker-tracker, and you can see the page for my ride [here](https://2022-gw--reliable-liger-e88e30.netlify.app/)
+The code is available at https://github.com/mattdsteele/spot-tracker-tracker, and you can see the page for my ride [here](https://2022-gw--reliable-liger-e88e30.netlify.app/).
 
 ![map-overall](../images/bike-gps/map-overall.png)
 
@@ -46,6 +46,18 @@ Cycling routes are traditionally saved as `.fit` files, among other formats. The
 To do this, I used Tormod Erevik Lea's [fit Go library](https://github.com/tormoder/fit), which made easy work processing the .fit files.
 
 I wanted to make this easy to use, so I made an S3 bucket so I could upload `.fit` files as I set courses up. I then built a Lambda that found the latest file in the bucket, and returned the coordinates in an easy to process JSON format for the UI.
+
+```go
+lambda.Start(func(ctx context.Context) (events.LambdaFunctionURLResponse, error) {
+    config, _ := config.LoadDefaultConfig(ctx)
+    files := spot.GetFilesInBucket(config)
+    latestFile := files[0]
+    fileContents := spot.DownloadFile(*latestFile.Key, config)
+    fitFile := spot.ParseFitData(bytes.NewReader(fileContents))
+    course := toCourse(fitFile)
+    j, err := json.Marshal(course)
+})
+```
 
 ## REST Services
 
