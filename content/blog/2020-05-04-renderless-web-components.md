@@ -36,7 +36,7 @@ Rather, it's just distributed as a Custom Element to make for easy integration w
 
 I'm not sure if this pattern has a formal name, but I've been calling them "renderless web components". I've seen a handful of these in the wild, such as Polymer's [iron-ajax](https://www.webcomponents.org/element/@polymer/iron-ajax) for making Ajax calls, or [app-pouchdb-query](https://www.webcomponents.org/element/PolymerElements/app-pouchdb/elements/app-pouchdb-query) to handle database queries.
 
-I'm no React expert, but there are a few interesting renderless components out there, such as [powerplug](https://rena.to/react-powerplug/#/). Components that delegate to a render prop (such as [Downshift](https://kentcdodds.com/blog/introducing-downshift-for-react)) seem to be operate with a similar philosophy.
+I'm no React expert, but there are a few interesting renderless components out there, such as [powerplug](https://rena.to/react-powerplug/#/). Components that delegate to a render prop (such as [Downshift](https://web.archive.org/web/20200414125454/https://kentcdodds.com/blog/introducing-downshift-for-react/)) seem to be operate with a similar philosophy.
 
 For web-facing libraries I quite like the idea of building them with HTML, rather than JavaScript, as the starting point.
 For no other reason, It's pretty neat getting Bluetooth functionality in a browser without leaving the "HTML" tab in JSBin!
