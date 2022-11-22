@@ -16,8 +16,8 @@ export default function About() {
               GitHub
             </a>{' '}
             and{' '}
-            <a className={link} href={`https://twitter.com/${social.twitter}`}>
-              Twitter
+            <a className={link} href={`${social.mastodon}`}>
+              Mastodon
             </a>
             .
           </p>
@@ -35,7 +35,7 @@ const aboutQuery = graphql`
         location
         social {
           github
-          twitter
+          mastodon
         }
       }
     }

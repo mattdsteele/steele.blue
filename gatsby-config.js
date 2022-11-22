@@ -14,6 +14,7 @@ const config = {
     social: {
       github: 'mattdsteele',
       twitter: 'mattdsteele',
+      mastodon: 'https://carhenge.club/@mattdsteele'
     },
   },
   plugins: [
