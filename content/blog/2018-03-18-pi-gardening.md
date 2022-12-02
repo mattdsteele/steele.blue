@@ -19,11 +19,11 @@ I also picked up a few [DHT11 thermometer/humidity sensors](http://a.co/ePXTcah)
 
 ![Soil Sensors](../images/soil-3.jpg)
 
-The microcontroller world has advanced quite a bit since I last checked! In 2014 I used the [Johnny-Five](http://johnny-five.io/) library to get sensor data into a Node app, but it required running Node on a "full" computer, then connecting to a USB-tethered Arduino. Tethering, _ugh_.
+The microcontroller world has advanced quite a bit since I last checked! In 2014 I used the [Johnny-Five](https://web.archive.org/web/20180319101150/http://johnny-five.io:80/) library to get sensor data into a Node app, but it required running Node on a "full" computer, then connecting to a USB-tethered Arduino. Tethering, _ugh_.
 
-Nowadays, you can run Node directly on a Raspberry Pi, and connect to the Pi's GPIO pins using a [J5 plug-in](http://johnny-five.io/platform-support/#raspberry-pi-3-model-b). Sinc the Pi 3 has integrated Wi-Fi, the only cord you need is power.
+Nowadays, you can run Node directly on a Raspberry Pi, and connect to the Pi's GPIO pins using a [J5 plug-in](https://web.archive.org/web/20180327095828/http://johnny-five.io:80/platform-support/). Sinc the Pi 3 has integrated Wi-Fi, the only cord you need is power.
 
-Unfortunately, the Pi doesn't have analog GPIO inputs, which are needed for the soil moisture sensor. A few minicomputers such as the [Next Thing C.H.I.P.](http://johnny-five.io/platform-support/#chip) can do the job.
+Unfortunately, the Pi doesn't have analog GPIO inputs, which are needed for the soil moisture sensor. A few minicomputers such as the [Next Thing C.H.I.P.](https://web.archive.org/web/20180327095828/http://johnny-five.io:80/platform-support/) can do the job.
 
 But in the end I was smitten with the [Particle Photon](https://docs.particle.io/guide/getting-started/intro/photon/), a Wi-Fi-enabled Arduino. It's super neat and crazy cheap. You connect it up to your wireless network, and emit events to the Particle cloud. They have a JavaScript SDK, which lets you receive these events in a Node app.
 
