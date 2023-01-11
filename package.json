@@ -20,7 +20,7 @@
     "gatsby-remark-images": "^5",
     "gatsby-remark-prismjs": "^5",
     "gatsby-source-filesystem": "^3.2.0",
-    "gatsby-transformer-remark": "^4",
+    "gatsby-transformer-remark": "^5",
     "gatsby-transformer-sharp": "^3.2.0",
     "normalize.css": "^8.0.1",
     "postcss": "^8.2.10",
