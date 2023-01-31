@@ -68,10 +68,10 @@ const config = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: title,
-        short_name: 'starter',
+        short_name: title,
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#047cc2',
+        theme_color: '#047cc2',
         display: 'minimal-ui',
         icon: 'src/images/gatsby-icon.png',
         include_favicon: false, // This will exclude favicon link tag
