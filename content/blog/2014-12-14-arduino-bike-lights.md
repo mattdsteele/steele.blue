@@ -37,7 +37,7 @@ I shouldn't have expected much from a \$10 gadget, so it's no surprise that the 
 
 After learning about infrared, I borrowed a [USB Infrared Toy](http://dangerousprototypes.com/docs/USB_Infrared_Toy), which provided a convenient way to both send and recieve IR signals. Surprisingly, it had the best support on [Windows](https://winlirc.sourceforge.net/), which I wasn't setup for.
 
-I used [LIRC](https://www.lirc.org/), which looked like the best-supported Linux package to read and send IR commands. LIRC's remote database already had over 2000 devices available but the LED strips were not on there. Luckily the `irrecord` command lets you create your own device configurations, using a CLI-based wizard.
+I used [LIRC](https://web.archive.org/web/20141213222525/http://www.lirc.org/), which looked like the best-supported Linux package to read and send IR commands. LIRC's remote database already had over 2000 devices available but the LED strips were not on there. Luckily the `irrecord` command lets you create your own device configurations, using a CLI-based wizard.
 
 Aside: if you want to get the most features out of the IR Toy on Linux, don't use the LIRC version available out of the default repository - [get this package instead](https://launchpad.net/~forage/+archive/ubuntu/lirc). Otherwise it's stuck in the inferior "IRman" format.
 
