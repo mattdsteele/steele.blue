@@ -39,6 +39,10 @@ function SEO({ meta, title, description, slug, keywords }) {
               : {
                   title: siteMetadata.author,
                 })}
+            link={[{
+              href: 'https://carhenge.club/@mattdsteele',
+              rel: 'me'
+            }]}
             meta={[
               {
                 name: 'description',
