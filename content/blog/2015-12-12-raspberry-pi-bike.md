@@ -115,7 +115,7 @@ If you use this as the basis for your project, shoot me a note, I'd love to hear
 Other pages I found useful:
 
 - [mitchtech.net/raspberry-pi-pwm-rgb-led-strip/](https://mitchtech.net/raspberry-pi-pwm-rgb-led-strip/)
-- [willmakesthings.com/color-my-desk/](http://willmakesthings.com/color-my-desk/)
+- [willmakesthings.com/color-my-desk/](https://web.archive.org/web/20151221072146/http://willmakesthings.com:80/color-my-desk/)
 - [github.com/k1sul1/Raspberry-Pi-PHP-LED-controller](https://github.com/k1sul1/Raspberry-Pi-PHP-LED-controller#whatsneeded)
 - [elfboimakingstuff.tumblr.com/](https://elfboimakingstuff.tumblr.com/post/132956410578/raspberry-pi-pwm-rgb-led-strip)
 
