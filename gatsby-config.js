@@ -14,7 +14,7 @@ const config = {
     social: {
       github: 'mattdsteele',
       twitter: 'mattdsteele',
-      mastodon: 'https://carhenge.club/@mattdsteele'
+      mastodon: 'https://carhenge.club/@mattdsteele',
     },
   },
   plugins: [
@@ -139,16 +139,16 @@ const config = {
       options: {
         trackingId: 'UA-30572618-1',
         head: true,
-        anonymize: true
+        anonymize: true,
       },
     },
     {
       resolve: 'gatsby-plugin-no-javascript-utils',
       options: {
         noScript: true,
-        noSourcemaps: true
-      }
-    }
+        noSourcemaps: true,
+      },
+    },
   ],
 };
 

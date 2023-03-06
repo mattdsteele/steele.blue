@@ -1,0 +1,87 @@
+:root {
+    --card-width: 1024px;
+    --card-height: 512px;
+
+    --card-opacity: rgba(255, 255, 255, 0.3);
+}
+
+.card {
+    width: var(--card-width);
+    height: var(--card-height);
+    background: url('../../content/images/default-bg-image.webp');
+    background-size: cover;
+
+    display: grid;
+    grid-template-rows: 1.7fr 1fr 0.4fr;
+    grid-template-columns: 33% 33% 33%;
+
+    grid-template-areas: 
+    "title title title"
+    "excerpt excerpt excerpt"
+    "avatar avatar metadata";
+}
+
+.cardTitle {
+    grid-area: title;
+    margin-top: 0;
+    padding: 15px;
+    background: var(--card-opacity);
+    margin: 15px;
+    border-radius: 10px;
+    color: black;
+    font-size: 2.9em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardExcerpt {
+    grid-area: excerpt;
+    background: var(--card-opacity);
+    margin: 15px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    color: black;
+    padding: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardDate {
+    font-size: 2.3em;
+    font-weight: bold;
+    grid-area: date;
+    align-self: end;
+}
+
+.cardAuthor {
+    font-size: 1.5em;
+    grid-area: author;
+    justify-self: end;
+    align-self: end;
+}
+
+.cardAvatar {
+    width: 200px;
+    margin-bottom: 0;
+}
+.cardMetadata {
+    grid-area: metadata;
+    justify-self: end;
+    align-self: center;
+    margin-bottom: 15px;
+}
+
+.cardTransparency {
+    padding: 15px;
+    background: var(--card-opacity);
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.cardMetadata p {
+    margin: 5px 0px;
+}

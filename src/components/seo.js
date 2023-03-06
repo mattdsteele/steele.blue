@@ -3,6 +3,12 @@ import { Helmet } from 'react-helmet';
 import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 
+const socialCardUrl = url => `${url}/social-card/`;
+const screenshotUrl = uri => {
+  const encoded = encodeURIComponent(socialCardUrl(uri));
+  return `https://v1.screenshot.11ty.dev/${encoded}/`;
+}
+
 const query = graphql`
   query GetSiteMetadata {
     site {
@@ -62,7 +68,7 @@ function SEO({ meta, title, description, slug, keywords }) {
               },
               {
                 property: 'og:image',
-                content: siteMetadata.gravatar,
+                content: screenshotUrl(url),
               },
               {
                 name: 'twitter:card',
@@ -82,7 +88,7 @@ function SEO({ meta, title, description, slug, keywords }) {
               },
               {
                 name: 'twitter:image:src',
-                content: siteMetadata.gravatar,
+                content: screenshotUrl(url),
               },
             ]
               .concat(
