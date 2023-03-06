@@ -36,7 +36,7 @@ export default function IndexPage({ data }) {
 export const indexQuery = graphql`
   query IndexQuery {
     posts: allMarkdownRemark(
-      sort: { fields: [fields___date], order: DESC }
+      sort: { fields: {date: DESC}}
       filter: { frontmatter: { rss_only: { ne: true } } }
     ) {
       edges {

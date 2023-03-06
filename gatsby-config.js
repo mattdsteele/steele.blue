@@ -111,7 +111,7 @@ const config = {
             },
             query: `
             {
-              posts:allMarkdownRemark(sort:{fields:[fields___date], order:DESC}) {
+              posts:allMarkdownRemark(sort:{fields: {date: DESC}}) {
                 edges {
                   node {
                     excerpt
