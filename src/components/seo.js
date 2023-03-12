@@ -74,6 +74,14 @@ function SEO({ meta, title, description, slug, keywords }) {
                 content: screenshotUrl(url),
               },
               {
+                property: 'og:image:width',
+                content: '1200',
+              },
+              {
+                property: 'og:image:height',
+                content: '630',
+              },
+              {
                 name: 'twitter:card',
                 content: 'summary',
               },
