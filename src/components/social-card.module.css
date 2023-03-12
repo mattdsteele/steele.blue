@@ -1,5 +1,6 @@
 :root {
-    --card-width: 100%;
+    /* OpenGraph card size */
+    --card-width: 1200px;
     --card-height: 630px;
 
     --card-opacity: rgba(255, 255, 255, 0.3);
@@ -29,7 +30,7 @@
     margin: 15px;
     border-radius: 10px;
     color: black;
-    font-size: 2.9em;
+    font-size: 3.4em;
 
     display: flex;
     align-items: center;
@@ -41,7 +42,7 @@
     background: var(--card-opacity);
     margin: 15px;
     border-radius: 10px;
-    font-size: 1.5em;
+    font-size: 1.9em;
     color: black;
     padding: 15px;
 
@@ -51,21 +52,21 @@
 }
 
 .cardDate {
-    font-size: 2.3em;
+    font-size: 2.9em;
     font-weight: bold;
     grid-area: date;
     align-self: end;
 }
 
 .cardAuthor {
-    font-size: 1.5em;
+    font-size: 1.9em;
     grid-area: author;
     justify-self: end;
     align-self: end;
 }
 
 .cardAvatar {
-    width: 200px;
+    width: 250px;
     margin-bottom: 0;
 }
 .cardMetadata {
