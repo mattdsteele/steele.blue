@@ -75,7 +75,7 @@ function SEO({ meta, title, description, slug, keywords }) {
               },
               {
                 property: 'og:image:width',
-                content: '1200',
+                content: '1024',
               },
               {
                 property: 'og:image:height',
