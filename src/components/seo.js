@@ -3,11 +3,12 @@ import { Helmet } from 'react-helmet';
 import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 
-const socialCardUrl = url => `${url}/social-card/`;
-const screenshotUrl = uri => {
+const socialCardUrl = (url) => `${url}/social-card/`;
+const screenshotUrl = (uri) => {
   const encoded = encodeURIComponent(socialCardUrl(uri));
-  return `https://v1.screenshot.11ty.dev/${encoded}/opengraph/`;
-}
+  const hashBust = new Date().getTime();
+  return `https://v1.screenshot.11ty.dev/${encoded}/opengraph/${hashBust}`;
+};
 
 const query = graphql`
   query GetSiteMetadata {
@@ -45,10 +46,12 @@ function SEO({ meta, title, description, slug, keywords }) {
               : {
                   title: siteMetadata.author,
                 })}
-            link={[{
-              href: 'https://carhenge.club/@mattdsteele',
-              rel: 'me'
-            }]}
+            link={[
+              {
+                href: 'https://carhenge.club/@mattdsteele',
+                rel: 'me',
+              },
+            ]}
             meta={[
               {
                 name: 'description',
