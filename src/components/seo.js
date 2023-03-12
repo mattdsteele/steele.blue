@@ -6,8 +6,8 @@ import { StaticQuery, graphql } from 'gatsby';
 const socialCardUrl = (url) => `${url}/social-card/`;
 const screenshotUrl = (uri) => {
   const encoded = encodeURIComponent(socialCardUrl(uri));
-  const hashBust = new Date().getTime();
-  return `https://v1.screenshot.11ty.dev/${encoded}/opengraph/${hashBust}`;
+  const cacheBust = new Date().getTime();
+  return `https://v1.screenshot.11ty.dev/${encoded}/opengraph/_${cacheBust}`;
 };
 
 const query = graphql`
