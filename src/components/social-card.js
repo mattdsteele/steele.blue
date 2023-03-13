@@ -7,15 +7,16 @@ import {
   cardMetadata,
   cardAuthor,
   cardAvatar,
+  verticalCenter,
   cardTransparency
 } from './social-card.module.css';
 import avatar from '../../content/images/avatar-transparent.png';
 
-const SocialCard = ({ pageContext: { title, excerpt, slug, date } }) => {
+const SocialCard = ({ pageContext: { title, excerpt, date } }) => {
   return (
     <main className={card}>
-      <h1 className={cardTitle}>{title}</h1>
-      <p className={cardExcerpt}>{excerpt}</p>
+      <h1 className={[cardTitle, cardTransparency, verticalCenter].join(' ')}>{title}</h1>
+      <p className={[cardExcerpt, cardTransparency, verticalCenter].join(' ')}>{excerpt}</p>
       <img className={cardAvatar} src={avatar} alt="Avatar" />
       <div className={[cardMetadata, cardTransparency].join(' ')}>
         <p className={cardDate}>{date}</p>

@@ -14,7 +14,7 @@
 
     display: grid;
     grid-template-rows: 1.7fr 1fr 0.4fr;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 33% 34% 33%;
 
     grid-template-areas: 
     "title title title"
@@ -25,30 +25,12 @@
 .cardTitle {
     grid-area: title;
     margin-top: 0;
-    padding: 15px;
-    background: var(--card-opacity);
-    margin: 15px;
-    border-radius: 10px;
-    color: black;
     font-size: 3.4em;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .cardExcerpt {
     grid-area: excerpt;
-    background: var(--card-opacity);
-    margin: 15px;
-    border-radius: 10px;
     font-size: 1.9em;
-    color: black;
-    padding: 15px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .cardDate {
@@ -85,4 +67,10 @@
 
 .cardMetadata p {
     margin: 5px 0px;
+}
+
+.verticalCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
