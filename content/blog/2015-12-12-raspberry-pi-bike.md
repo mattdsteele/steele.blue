@@ -25,7 +25,7 @@ The core of the project:
 
 - [Raspberry Pi Zero](https://www.raspberrypi.org/blog/raspberry-pi-zero/) and a 4GB micro SD card
 - [5M Waterproof RGB LED Light Strip](https://web.archive.org/web/20201119215030/https://www.amazon.com/gp/product/B00DTOAWZ2)
-- [USB portable charger](https://www.amazon.com/Energizer-Portable-Smartphone-Charger-smartphones/dp/B0092MD8P6) and micro-USB cable
+- [USB portable charger](https://web.archive.org/web/20160313113230/http://www.amazon.com:80/Energizer-Portable-Smartphone-Charger-smartphones/dp/B0092MD8P6) and micro-USB cable
 
 To power the LED light strip:
 
