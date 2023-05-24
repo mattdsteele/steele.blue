@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Matthew Steele",
   "dependencies": {
-    "gatsby": "^5.0.0",
+    "gatsby": "^5.10.0",
     "gatsby-plugin-feed": "^5.0.0",
     "gatsby-plugin-gtag-redactjs": "^1.0.13",
     "gatsby-plugin-manifest": "^5.0.0",
