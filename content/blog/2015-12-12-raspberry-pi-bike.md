@@ -29,8 +29,8 @@ The core of the project:
 
 To power the LED light strip:
 
-- [TIP120 Transistors (3x)](https://www.radioshack.com/products/tip120-transistor?variant=5717612869)
-- [8 AA battery holder](https://www.radioshack.com/products/radioshack-8-aa-battery-holder?variant=5717214213) and [9V snap connector](https://www.radioshack.com/products/radioshack-heavy-duty-9v-snap-connectors?variant=5717208197)
+- [TIP120 Transistors (3x)](https://web.archive.org/web/20200920214123/https://www.radioshack.com/products/tip120-transistor?variant=5717612869)
+- [8 AA battery holder](https://web.archive.org/web/20200920200324/https://www.radioshack.com/products/radioshack-8-aa-battery-holder?variant=5717214213) and [9V snap connector](https://web.archive.org/web/20200920214249/https://www.radioshack.com/products/radioshack-heavy-duty-9v-snap-connectors?variant=5717208197)
 - A handful of jumper wires and a prototyping board
 
 To capture sensor input from the bike:
