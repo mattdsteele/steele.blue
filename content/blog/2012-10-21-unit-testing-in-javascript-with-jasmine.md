@@ -16,4 +16,4 @@ meta:
 
 I spoke at the Omaha Java User Group this month about what testing JavaScript is like for a JS neophyte:
 
-`vimeo: 51600238`
+`vimeo:https://vimeo.com/51600238`

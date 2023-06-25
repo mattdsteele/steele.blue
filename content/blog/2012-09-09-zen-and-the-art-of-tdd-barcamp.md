@@ -21,7 +21,7 @@ While prepping this talk, I discovered that only 43% of GitHub repositories from
 
 <strong>Slides with Audio</strong>
 
-`vimeo: 49092644`
+`vimeo:https://vimeo.com/49092644`
 
 &nbsp;
 

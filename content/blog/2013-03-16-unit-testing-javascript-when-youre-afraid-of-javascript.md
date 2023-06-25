@@ -25,4 +25,4 @@ Turns out, unit testing JavaScript is different than other languages, and doing 
 
 ## Screencast
 
-`vimeo: 62004647`
+`vimeo:https://vimeo.com/62004647`
