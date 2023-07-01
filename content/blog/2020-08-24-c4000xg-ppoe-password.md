@@ -3,7 +3,7 @@ layout: post
 title: Getting the PPPoE Credentials from your C4000XG without calling CenturyLink
 ---
 
-If you've switched to CenturyLink recently, you might want to hook up your own router directly to the OTB, and bypass the router they provide/rent to you.
+If you've switched to CenturyLink recently, you might want to hook up your own router directly to the ONT, and bypass the router they provide/rent to you.
 
 This is pretty easy to do! See [this Reddit post for more details](https://www.reddit.com/r/centurylink/comments/ic4asm/howto_you_may_not_need_that_c4000xg_or_whatever/).
 
