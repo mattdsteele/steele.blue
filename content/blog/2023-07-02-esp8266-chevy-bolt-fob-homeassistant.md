@@ -15,7 +15,7 @@ I wanted to see if I could build something similar with "standard" IoT and home 
 I had a few goals:
 
 * Don't do anything warranty-voiding. That means no messing with the car's wiring or internal computer
-* Everything runs on-prem - because the "S" in IoT stands for Security
+* Everything runs on-prem - because [the "S" in IoT stands for Security](https://www.iot-inc.com/the-s-in-iot-stands-for-security-article/)
 * Integrate into an existing Home Assistant setup, so I can tie into rest of the home automation ecosystem I've been building up
 
 A few others have gone down this route, by wiring up a spare fob to a microcontroller (Arduino, Raspberry Pi, etc), and "pressing" the unlock/lock/start buttons electronically. Seems feasible!
@@ -96,7 +96,7 @@ With a Raspberry Pi or Arduino I'd be sure to salvage after I was done with the 
 
 ## What is it good for, absolutely nothing
 
-This setup has a few limitations. In particular, it only works when I'm on-network in my house, and the car is in physical proximity to the fob, but I consider that a feature rather than a bug. Since [the "S" in IoT stands for Security](https://www.iot-inc.com/the-s-in-iot-stands-for-security-article/), adding some physical safeguards helps me sleep a bit better.
+This setup has a few limitations. In particular, it only works when I'm on-network in my house, and the car is in physical proximity to the fob, but I consider that a feature rather than a bug. Adding some physical safeguards helps me sleep a bit better.
 
 I still don't really know what I'm going to do with the project. Since it's tied into home automation, I could easily setup a few interesting workflows:
 
