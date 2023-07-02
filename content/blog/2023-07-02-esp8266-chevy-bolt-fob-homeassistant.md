@@ -90,8 +90,7 @@ I then created a Dashboard in Home Assistant so I had easy access to the buttons
 
 * While testing the fob buttons, I discovered the “start vehicle” and “trigger alarm” buttons were reversed from how they were labeled. As did all my neighbors!
 * Soldering on a surface-mount board is hard! I ended up bricking my first fob because I got a little solder on some adjoining transistors, which short-circuited the entire device and rendered it useless. I suppose this gets better with practice, but when you treat hardware projects [with the same rigor as a Geocities website](/hardware-is-the-new-geocities/), it's not something you improve at quickly.
-* The ESP8266 is a really cool device; and it's fascinating to have something so easily programmable be at a price point where I can just treat the microcontroller as a dedicated component to this project.
-With a Raspberry Pi or Arduino I'd be sure to salvage after I was done with the project, but at less than 5 bucks, I don't feel bad soldering directly onto it.
+* The ESP8266 is a really cool device; and it's fascinating to have something so easily programmable be at a price point where I can just treat the microcontroller as a dedicated component to this project.  With a Raspberry Pi or Arduino I'd be sure to salvage after I was done with the project, but at less than 5 bucks, I don't feel bad soldering directly onto it.
 * There's a few home automation/IoT aspects I haven't gotten to yet; designing and 3D printing a custom enclosure would be a nice way to finish the project. For now, it's just sitting on a shelf.
 
 ## What is it good for, absolutely nothing
