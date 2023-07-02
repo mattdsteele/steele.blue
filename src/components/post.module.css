@@ -23,3 +23,7 @@
   padding: 1rem 0;
   line-height: 1.35;
 }
+
+video {
+  max-width: 100%;
+}

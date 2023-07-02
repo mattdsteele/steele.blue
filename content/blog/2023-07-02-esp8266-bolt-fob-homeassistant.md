@@ -1,6 +1,10 @@
 ---
-title: Using Home Assistant, an ESP8266, and a spare fob to overcomplicate starting your vehicle
+title: Overly Complicate Starting Your Vehicle, Using Home Assistant, an ESP8266, and a Spare Car Fob
 ---
+
+<video controls preload="none" muted="true" poster="/images/car-lock-snap.png">
+  <source src='/videos/car-lock-demo.mp4' type="video/mp4" />
+</video>
 
 I recently bought a new vehicle (the now-discontinued Chevy Bolt), it's great! Coming from a 14 year old car, everything about it feels space-age.
 
@@ -24,6 +28,7 @@ A few others have gone down this route, by wiring up a spare fob to a microcontr
 
 ## Hardware
 
+![Pinout of the board](../images/car-lock/board-1.jpg)
 
 **Spare Car Fob** - I picked up a cheap aftermarket fob on AliExpress, though it took a bit of time confirming compatibility.
 I ordered this one for the 2023 Bolt: https://www.aliexpress.us/item/3256804168747183.html
@@ -45,6 +50,8 @@ The buttons are surface mounted on the fob's PCB. Removing them would be pretty 
 Once I exposed the bare pads on the fob, there was a bit of trial and error to find which lead was connected to the fob, and which to ground (I used a breadboard and just tapped the pads while seeing if the car responded). From there, I soldered a wire between the connected pad, and onto a GPIO pin on the ESP8266, [via this pinout](https://randomnerdtutorials.com/esp8266-pinout-reference-gpios/).
 
 ## Software
+
+![Finished product](../images/car-lock/finished-1.jpg)
 
 **Home Assistant** - I already had an instance running on a Raspberry Pi, so this was easy.
 
@@ -78,6 +85,8 @@ Once you've setup the appropriate buttons in the ESPHome configuration section (
 I then created a Dashboard in Home Assistant so I had easy access to the buttons.
 
 ## A few things I learned
+
+![Finished product](../images/car-lock/finished-2.jpg)
 
 * While testing the fob buttons, I discovered the “start vehicle” and “trigger alarm” buttons were reversed from how they were labeled. As did all my neighbors!
 * Soldering on a surface-mount board is hard! I ended up bricking my first fob because I got a little solder on some adjoining transistors, which short-circuited the entire device and rendered it useless. I suppose this gets better with practice, but when you treat hardware projects [with the same rigor as a Geocities website](/hardware-is-the-new-geocities/), it's not something you improve at quickly.
