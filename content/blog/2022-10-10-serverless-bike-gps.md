@@ -14,7 +14,7 @@ I credit some of my success this year to spending more time riding through the y
 That's what I want to share today; a site that captures data from a GPS tracker, and makes it available for folks to track my progress. There are a number of public versions of this (they call it [dot watching](https://www.cyclist.co.uk/in-depth/10221/what-is-dotwatching)), but I wanted to add some fancier features, such as making geofences at expected stops, and capturing enter/exit times.
 
 I built out the site using AWS serverless architecture (Location Services, Lambda, and others).
-The code is available at https://github.com/mattdsteele/spot-tracker-tracker, and you can see the page for my ride [here](https://2022-gw--reliable-liger-e88e30.netlify.app/).
+The code is available at https://github.com/mattdsteele/spot-tracker-tracker, and you can see the page for my ride [here](https://track.steele.blue/?course=gw-2022).
 
 ![map-overall](../images/bike-gps/map-overall.png)
 
