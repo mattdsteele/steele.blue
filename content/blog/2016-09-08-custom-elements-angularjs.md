@@ -107,7 +107,7 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 })
 ```
 
-## AngularJS (1.x) ([View Demo](https://plnkr.co/edit/3N3Kk7bSJVgPsSImYjrv?p=preview))
+## AngularJS (1.x) ([View Demo](https://web.archive.org/web/20201026050416/http://plnkr.co/edit/3N3Kk7bSJVgPsSImYjrv?p=preview))
 
 Out of the box, our Custom Element won't play nicely with AngularJS. There are two problems:
 
