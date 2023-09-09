@@ -101,6 +101,10 @@ function SEO({ meta, title, description, slug, keywords }) {
                 name: 'twitter:image:src',
                 content: screenshotUrl(url),
               },
+              {
+                name: 'view-transition',
+                content: 'same-origin'
+              },
             ]
               .concat(
                 keywords
