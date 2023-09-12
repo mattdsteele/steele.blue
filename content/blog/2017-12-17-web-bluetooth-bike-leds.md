@@ -21,7 +21,7 @@ The controller and batteries fit in the bike's saddlebag, and the light strip ha
 
 The Bluetooth LED controller was intended to be controlled via a native Android app, but it's garbage. But since it's a Bluetooth Low Energy device, [it's hackable](/web-bluetooth/)!
 
-To reverse engineer the controller, I ended up using the strategy described [in Uri's post](https://medium.com/@urish/reverse-engineering-a-bluetooth-lightbulb-56580fcb7546): recording interacting with the app and playing it back on my laptop using Wireshark.
+To reverse engineer the controller, I ended up using the strategy described [in Uri's post](https://web.archive.org/web/20171125190841/https://medium.com/@urish/reverse-engineering-a-bluetooth-lightbulb-56580fcb7546): recording interacting with the app and playing it back on my laptop using Wireshark.
 
 I found one Bluetooth service/characteristic you could send two types of commands via `Uint8Array`s: an arbitrary RGB color, or a preset color scheme (mostly fades).
 
