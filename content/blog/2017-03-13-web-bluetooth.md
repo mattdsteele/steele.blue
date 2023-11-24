@@ -26,7 +26,7 @@ Watch the talk, then check out these links:
 
 ## BBQ Thermometer - [Code](https://github.com/mattdsteele/web-bluetooth/blob/master/src/bt/bbq.js)
 
-I picked this one up from [Meh](https://meh.com/deals/grill-right-bluetooth-bbq-thermometer-1).
+I picked this one up from [Meh](https://web.archive.org/web/20170208195123/https://meh.com/deals/grill-right-bluetooth-bbq-thermometer-1).
 No specs available, but you can reverse engineer the temperature if you know some Big Endian notation.
 
 For part of the talk I advanced my slides by dropping the thermometer into glasses of hot & cold water.
