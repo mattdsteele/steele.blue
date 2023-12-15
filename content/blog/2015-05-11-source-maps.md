@@ -53,7 +53,7 @@ But I think _we're at a turning point_. For my Node-based toolchain, source maps
 
 - Concatenate? [Added less than a year ago](https://github.com/gruntjs/grunt-contrib-concat/pull/59).
 - Uglify? [Took a complete rewrite to support](https://github.com/mishoo/UglifyJS2).
-- Sass? Just got consistently working maps in node-sass [last week](https://github.com/sass/libsass/releases/tag/3.2.0).
+- Sass? Just got consistently working maps in node-sass [last week](https://web.archive.org/web/20150612231835/https://github.com/sass/libsass/releases/tag/3.2.0).
 
 Some of this credit has got to go to Nick Fitzgerald and the excellent work Mozilla has done on the [source-map](https://www.npmjs.com/package/source-map) library, which provides the bulk of the code folks need to enable source maps without having to dive deep into the spec. It works great, has a simple and flexible API, and [over 200 npm modules](https://www.npmjs.com/browse/depended/source-map) depend on it.
 
