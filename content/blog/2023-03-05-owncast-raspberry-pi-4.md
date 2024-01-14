@@ -28,8 +28,6 @@ It's connected to my home network via Wi-Fi; which is also where the source RTMP
 You'll need to [run an old version of Raspbian OS](https://downloads.raspberrypi.org/raspios_full_armhf/images/raspios_full_armhf-2021-05-28/2021-05-07-raspios-buster-armhf-full.zip).
 This is a 32-bit OS, even though the Pi 4 has a 64-bit CPU. More on that later.
 
-You also need to run an old version of Owncast: [version 0.0.11](https://github.com/owncast/owncast/releases/tag/v0.0.11) or earlier. Download the [arm7 release](https://github.com/owncast/owncast/releases/download/v0.0.11/owncast-0.0.11-linux-arm7.zip) (or compile from source).
-
 You'll also need a copy of ffmpeg which supports the [OpenMAX](https://en.wikipedia.org/wiki/OpenMAX) (omx) codec. The version available from the package manager will be sufficient: `sudo apt install ffmpeg`.
 
 The remainder of the setup from the [Owncast quickstart](https://owncast.online/quickstart/configure/) is sufficient. For example, I enabled HTTPS by running an instance of [Caddy](https://caddyserver.com/) on the Pi.
@@ -58,11 +56,6 @@ Support for OMX on newer Raspberry Pi OS versions has gotten worse. Previously i
 
 So I took a look at enabling the new option for hardware encoding (Video4Linux). After hours of investigation, I wasn't able to find a version of ffmpeg that would let me successfully encode/decode videos with V4L hardware acceleration.
 The full gory details are [in Issue #1379](https://github.com/owncast/owncast/issues/1379#issuecomment-1445502469).
-
-## Newer Owncast versions don't work on 32-bit ARM
-
-Owncast has gotten a number of enhancements since 0.0.11, including capturing metrics into  an embedded time-series database.
-Unfortunately, their dependency has a bug that crashes when running on 32-bit ARM hardware, and doesn't appear to be well-maintained, so a patch isn't imminent. Details are [in Issue #2746](https://github.com/owncast/owncast/issues/2746)
 
 # I'm still pretty happy with this setup
 
