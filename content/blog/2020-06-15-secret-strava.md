@@ -36,7 +36,7 @@ It was pretty neat to take my running app from my workstation, and push to GCP j
 
 ### Stuff I had trouble with
 
-**GraphQL queries on the server** - Maybe this is better in other server-side languages, but this part was rough. Even using GitHub's [graphql-client](https://github.com/github/graphql-client), I missed out on most of the things I get from Apollo+TypeScript, such as development-time syntax verification. Compared to other ORM approaches it felt very messy.
+**GraphQL queries on the server** - Maybe this is better in other server-side languages, but this part was rough. Even using GitHub's [graphql-client](https://web.archive.org/web/20200526015829/https://github.com/github/graphql-client), I missed out on most of the things I get from Apollo+TypeScript, such as development-time syntax verification. Compared to other ORM approaches it felt very messy.
 
 **Ruby** - It's been almost 10 years since I wrote any Ruby, so I'm definitely a little rusty, but everything felt sloppy compared to the TypeScript/Java/Go I'm used to coding in.
 
