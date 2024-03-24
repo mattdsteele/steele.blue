@@ -3,9 +3,11 @@ layout: post
 title: My favorite water bottles
 ---
 
+![A collection of water bottles](../images/2024-water-bottles/bottles.jpg)
+
 Inspired by "my favorite mugs" posts from [Cassey](https://www.cassey.dev/favorite-mugs/) and [Benji](https://www.benji.dog/articles/my-favorite-mugs/), here's a few of my favorite drinkware.
 While I do have a set of mugs I love, I probably get more use out of my water bottles.
-They pull double-duty as a daily drinker, and for any activities on a bike.
+They pull double-duty as a convenient vessel for daily drinking, and for any activities on a bike.
 
 ![Gravel Worlds](../images/2024-water-bottles/gravel-worlds.jpg)
 
@@ -25,4 +27,13 @@ Runner-up: the [Zefal Magnum](https://www.zefal.com/en/bottles/545-magnum.html) 
 
 This one's substantially smaller and doesn't actually get on the bike frequently, but it makes me smile every time I break it out.
 I don't buy many products from [meme influencers](https://thrillpool.com/), but I make an exception for an especially good Simpsons reference.
-I makes me want to [conquer the Murderhorn](https://simpsonswiki.com/wiki/Powersauce), even when I fill it with apple cores and Chinese newspapers.
+It makes me want to [conquer the Murderhorn](https://simpsonswiki.com/wiki/Powersauce), even when I fill it with apple cores and Chinese newspapers.
+
+## Postscript - Bottle Longeivity
+
+One endless conversation that I've never heard a satisfactory answer is bottle longeivity.
+Advice is all over the place, from "replace your bottles every season" to "use them until mold is visible and unremovable".
+
+I tend to be pragmatic; I'll give them a good cleaning with soap and a bottle brush, and they'll be good for years.
+If I start to notice a funk/aftertaste, they'll get replaced.
+This is probably more psychological than scientific; most of the advocacy I've seen around microplastics, etc. tend to be from the same groups that are focused on trends and style, not sustainability.
