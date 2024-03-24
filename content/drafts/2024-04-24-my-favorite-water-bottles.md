@@ -3,22 +3,26 @@ layout: post
 title: My favorite water bottles
 ---
 
-Inspired by posts from Cassey and Zach, here's a few of my favorite drinkware.
+Inspired by "my favorite mugs" posts from [Cassey](https://www.cassey.dev/favorite-mugs/) and [Benji](https://www.benji.dog/articles/my-favorite-mugs/), here's a few of my favorite drinkware.
 While I do have a set of mugs I love, I probably get more use out of my water bottles.
 They pull double-duty as a daily drinker, and for any activities on a bike.
 
-![Gravel Worlds]()
+![Gravel Worlds](../images/2024-water-bottles/gravel-worlds.jpg)
 
-I've raced Gravel Worlds a half dozen times at this point, and get a new bottle of theirs every year.
-It's both functional (at 24oz it's a decent size to throw on a bike) and stylish, and a mainstay of my bottle collection.
+I've raced [Gravel Worlds](https://www.gravel-worlds.com/) a half dozen times, and get a new bottle every year.
+It's both functional (at 24oz, it's a decent size to throw on a bike) and stylish, and a mainstay of my bottle collection.
 
-![Elite Fly MTB 950]()
+![Elite Fly MTB 950](../images/2024-water-bottles/elitefly.jpg)
 
-Liter-sized bottles are a mainstay of my gravel races. The extra few ounces have kept me from having to carry a hydration pack, and let me make full use of the two bottle cages on my bike.
+[Liter-sized bottles](https://www.elite-it.com/en/products/water-bottles/sport/fly-mtb) are a mainstay of my gravel races.
+The extra few ounces have kept me from having to carry a hydration pack, and let me make full use of the two bottle cages on my bike.
 I especially like these ones from Elite with a protective cap, which helps keep the lid free from gravel dust.
 I've eaten enough dirt through the years!
 
-![Powersauce]()
+Runner-up: the [Zefal Magnum](https://www.zefal.com/en/bottles/545-magnum.html) 1L bottles have traveled the most miles on my bike.
+
+![Powersauce](../images/2024-water-bottles/powersauce.jpg)
 
 This one's substantially smaller and doesn't actually get on the bike frequently, but it makes me smile every time I break it out.
-I makes me want to conquer the Murderhorn, even when I fill it with apple cores and newspaper clippings.
+I don't buy many products from [meme influencers](https://thrillpool.com/), but I make an exception for an especially good Simpsons reference.
+I makes me want to [conquer the Murderhorn](https://simpsonswiki.com/wiki/Powersauce), even when I fill it with apple cores and Chinese newspapers.
