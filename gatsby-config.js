@@ -18,6 +18,7 @@ const config = {
     },
   },
   plugins: [
+    'gatsby-plugin-decap-cms',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-twitter',
     {
