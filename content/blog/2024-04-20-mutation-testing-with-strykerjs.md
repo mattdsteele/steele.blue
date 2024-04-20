@@ -12,4 +12,4 @@ Make a change to your code, then run your tests. If everything passes, then your
 
 In some ways it's similar to fuzzing: by making large number of pseudo-random changes to a codebase, you can start to get a feel for which parts are solid, and which could use more attention.
 
-I've had some experience with testing Java code with [PIT](https://pitest.org/), but am just starting to toy with Stryker for JS code.
+I've had some experience with testing Java code with [PIT](https://pitest.org/), and am just starting to toy with Stryker for JS code. I'm hoping it becomes a useful tool in the belt.
