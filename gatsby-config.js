@@ -74,8 +74,8 @@ const config = {
         background_color: '#047cc2',
         theme_color: '#047cc2',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png',
-        include_favicon: false, // This will exclude favicon link tag
+        icon: 'src/images/profile-avi.png',
+        include_favicon: true, // This will exclude favicon link tag
       },
     },
     {
