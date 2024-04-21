@@ -10,7 +10,7 @@ import {
   verticalCenter,
   cardTransparency
 } from './social-card.module.css';
-import avatar from '../../content/images/avatar-transparent.png';
+import avatar from '../../content/images/profile-avi-transparent.png';
 
 const SocialCard = ({ pageContext: { title, excerpt, date } }) => {
   return (
