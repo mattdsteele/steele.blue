@@ -12,6 +12,8 @@ I can relate to “this wedding would be a great opportunity to build everything
 - built our website and RSVP system with a Firebase and Airtable backend (probably should have blogged about that too!)
 - crafted, painted, and stained the welcome signage
 
+![Wedding Signage](content/images/cms/img_3207.jpg)
+
 By most objective measures, this was a colossal waste of time.
 
 Some advice I received after getting engaged was to accept that you won't be able to maintain focus and attention on every aspect of the wedding. Trying to "make your mark" on decorations, seating order, invitation typography, etc. was a recipe for spreading yourself too thin, and doing none of them well. A more prudent approach is to drill into a few things you really care about, and make those great.
