@@ -27,8 +27,8 @@ Some of my favorite memories of the early part of the pandemic were pairing with
 I was reminded of these fun projects after seeing [this post from Foone](https://digipres.club/@foone/112339899135647678):
 
 > the world needs more recreational programming.
-like, was this the most optimal or elegant way to code this?
->
+> like, was this the most optimal or elegant way to code this?
+
 > no, but it was the most fun to write.
 
 There's plenty of reasons to work on a side project: maybe you want to learn something new to make yourself more marketable. Or perhaps it's a [ritual](neverending-side-project/) you do each year to see how the ecosystem has changed. But my favorite kinds of projects are the ones that are just for the fun of it.
