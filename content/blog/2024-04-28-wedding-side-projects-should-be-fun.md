@@ -12,7 +12,7 @@ I can relate to “this wedding would be a great opportunity to build everything
 - built our website and RSVP system with a Firebase and Airtable backend (probably should have blogged about that too!)
 - crafted, painted, and stained the welcome signage
 
-![Wedding Signage](content/images/cms/img_3207.jpg)
+![Wedding Signage](../images/cms/img_3207.jpg)
 
 By most objective measures, this was a colossal waste of time.
 
