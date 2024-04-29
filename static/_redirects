@@ -1,2 +1,3 @@
 # feed
-/feed/atom.xml /feed/rss.xml 301!
+/feed/atom.xml /feed 301!
+/feed /feed/rss.xml 200

@@ -131,6 +131,7 @@ const config = {
           `,
             output: '/feed/rss.xml',
             title: `Matt Steele`,
+            link: '/feed',
           },
         ],
       },
