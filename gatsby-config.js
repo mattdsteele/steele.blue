@@ -129,7 +129,7 @@ const config = {
               }
             }
           `,
-            output: '/feed/atom.xml',
+            output: '/feed/rss.xml',
             title: `Matt Steele`,
           },
         ],

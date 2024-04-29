@@ -1,3 +1,2 @@
 # feed
-/rss-feed /feed/atom.xml 200
-/rss /feed/atom.xml
+/feed/atom.xml /feed/rss.xml
