@@ -1,15 +1,16 @@
 ---
-layout: post
-title: Exploring the Device APIs
-categories:
-tags: []
-status: publish
-type: post
-published: true
 meta:
-  geo_public: '0'
-  _publicize_pending: '1'
-  _elasticsearch_indexed_on: '2013-08-07 03:32:39'
+  geo_public: "0"
+  _publicize_pending: "1"
+  _elasticsearch_indexed_on: 2013-08-07 03:32:39
+layout: post
+published: true
+status: publish
+title: Exploring the Device APIs
+tags: []
+rss_only: false
+type: post
+categories: null
 ---
 
 I gave a lightning talk at <a href="http://nebraskajs.com/">NebraskaJS</a> on some of the new features available through the <a href="/diving-into-the-device-api/">Device API</a>. More importantly, it marks the glorious return of the Wayne's World light sensor.
@@ -20,4 +21,4 @@ I gave a lightning talk at <a href="http://nebraskajs.com/">NebraskaJS</a> on so
 
 ## Screencast
 
-`vimeo:71864754`
+`vimeo:https://vimeo.com/71864754`
