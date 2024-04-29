@@ -16,5 +16,5 @@ collections:
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "RSS Only", name: "rss_only", widget: "boolean" }
+      - { label: "RSS Only", name: "rss_only", widget: "boolean", default: false }
       - { label: "Body", name: "body", widget: "markdown" }
