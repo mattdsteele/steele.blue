@@ -1,0 +1,3 @@
+# feed
+/rss-feed /feed/atom.xml 200
+/rss /feed/atom.xml
