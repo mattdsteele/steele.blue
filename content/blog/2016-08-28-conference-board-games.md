@@ -117,7 +117,7 @@ At this point, running the library is pretty straightforward. A few other bits t
 
 - **Shelving** - Putting games on tables is lame and you'll run into a mess fast.
   Get some actual shelves, and put your games on 'em.
-  [I picked up these at Lowe's](https://www.lowes.com/pd/Blue-Hawk-72-in-H-x-36-in-W-x-18-in-D-5-Tier-Plastic-Freestanding-Shelving-Unit/50436504?#!&_=_) for \$30.
+  [I picked up these at Lowe's](https://web.archive.org/web/20160724114340/http://www.lowes.com:80/pd/Blue-Hawk-72-in-H-x-36-in-W-x-18-in-D-5-Tier-Plastic-Freestanding-Shelving-Unit/50436504?) for \$30.
 - **Check in/out** - If someone wanted a game, we just took their conference namebadge and put it in a box.
   When they returned the game they got it back. Simple.
 
