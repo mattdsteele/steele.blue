@@ -18,12 +18,12 @@ const config = {
     },
   },
   plugins: [
-    {
-      resolve: 'gatsby-plugin-decap-cms',
-      options: {
-        modulePath: `${__dirname}/src/cms/cms.js`,
-      },
-    },
+    // {
+    //   resolve: 'gatsby-plugin-decap-cms',
+    //   options: {
+    //     modulePath: `${__dirname}/src/cms/cms.js`,
+    //   },
+    // },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-twitter',
     {
