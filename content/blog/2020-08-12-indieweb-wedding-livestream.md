@@ -24,7 +24,7 @@ Twitch videos are routinely subject to [DMCA takedowns](https://twitter.com/Twit
 
 And content disappears. When Twitch's predecessor justin.tv pivoted to gaming, its [millions of videos](https://arstechnica.com/gaming/2014/08/streaming-video-site-justin-tv-announces-closure-effective-immediately/) were all taken offline. [Mixer just shut down last month](https://mixer.com/). More sites to add to the [internet's cemetary](https://indieweb.org/site-deaths).
 
-This was a real concern for our wedding: we were going to have copyrighted music before the ceremony, and didn't want to just hope the [takedown bots wouldn't find us](https://www.washingtonpost.com/entertainment/music/copyright-bots-and-classical-musicians-are-fighting-online-the-bots-are-winning/2020/05/20/a11e349c-98ae-11ea-89fd-28fb313d1886_story.html).
+This was a real concern for our wedding: we were going to have copyrighted music before the ceremony, and didn't want to just hope the [takedown bots wouldn't find us](https://web.archive.org/web/20200731124308/https://www.washingtonpost.com/entertainment/music/copyright-bots-and-classical-musicians-are-fighting-online-the-bots-are-winning/2020/05/20/a11e349c-98ae-11ea-89fd-28fb313d1886_story.html).
 
 But through cheap cloud VPS hosting and open-source tooling, we now have the tools to take back control of our streaming world.
 
