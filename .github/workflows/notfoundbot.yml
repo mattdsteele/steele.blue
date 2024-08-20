@@ -12,5 +12,6 @@ jobs:
         uses: tmcw/notfoundbot@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          EXCEPTIONS: www.washingtonpost.com
         with:
           content-folder: content/blog
