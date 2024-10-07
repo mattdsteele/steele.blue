@@ -2,12 +2,12 @@
 layout: 'layouts/base.njk'
 ---
 
-{% set last = collections.posts | last %}
+{% set last = collections.nonRssPosts | last %}
 <h1>{{last.data.title}}</h1>
 {{ last.content | safe }}
 
 <ul>
-	{%- for entry in collections.posts %}
+	{%- for entry in collections.nonRssPosts %}
 	<li><a href="{{ entry.url }}"><code>{{ entry.data.title }}</code></a></li>
 	{%- endfor %}
 </ul>
