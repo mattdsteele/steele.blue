@@ -19,5 +19,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "devDependencies": {
+    "@11ty/eleventy-img": "^5.0.0"
   }
 }
