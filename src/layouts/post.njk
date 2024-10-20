@@ -6,4 +6,6 @@ layout: 'layouts/base.njk'
 {% endrenderTemplate %}{% endif %}
 <h1>{{title}}</h1>
 <h2>{{postDate}}</h2>
-{{ content | safe }}
+<article>
+    {{ content | safe }}
+</article>

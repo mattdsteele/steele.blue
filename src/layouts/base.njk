@@ -4,6 +4,13 @@
     <link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
 </head>
 <body>
+<main>
 {{ content | safe }}
+</main>
+<footer>
+{% renderTemplate "webc" %}
+    <about-me></about-me>
+{% endrenderTemplate %}
+</footer>
 </body>
 </html>
