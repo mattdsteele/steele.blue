@@ -1,4 +1,6 @@
 import {eleventyImageTransformPlugin} from '@11ty/eleventy-img';
+import webcPlugin from '@11ty/eleventy-plugin-webc';
+import { EleventyRenderPlugin } from "@11ty/eleventy";
 
 export default async function (eleventyConfig) {
   eleventyConfig.setIncludesDirectory('src');
@@ -18,6 +20,8 @@ export default async function (eleventyConfig) {
     // mdLib.use(youtubeLitePlugin);
   })
 
+  eleventyConfig.addPlugin(EleventyRenderPlugin);
+  eleventyConfig.addPlugin(webcPlugin, { components: 'src/components/**/*.webc'});
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     extensions: 'html',
     formats: ['jpg'],

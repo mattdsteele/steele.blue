@@ -1,0 +1,9 @@
+<template shadowrootmode="open">
+<style>
+p {
+    color: green;
+}
+</style>
+
+<p>RSS club exclusive</p>
+</template>

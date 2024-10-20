@@ -1,5 +1,9 @@
 ---
 layout: 'layouts/base.njk'
 ---
-<h1>{{title}}!</h1>
+{% if rss_only %}{% renderTemplate "webc" %}
+    <rss-club></rss-club>
+{% endrenderTemplate %}{% endif %}
+<h1>{{title}}</h1>
+<h2>{{postDate}}</h2>
 {{ content | safe }}
