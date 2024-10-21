@@ -4,6 +4,7 @@ import { EleventyRenderPlugin } from '@11ty/eleventy';
 import { createHash } from 'node:crypto';
 import { resolve } from 'node:path';
 import { FlatCache } from 'flat-cache';
+import { feedPlugin } from '@11ty/eleventy-plugin-rss';
 
 export default async function (eleventyConfig) {
   eleventyConfig.setIncludesDirectory('src');
@@ -48,8 +49,7 @@ export default async function (eleventyConfig) {
     const shiki = await import('shiki');
 
     const highlighter = await shiki.createHighlighter({
-      themes: ['dark-plus'],
-      theme: 'dark-plus',
+      themes: ['dark-plus', 'light-plus'],
       langs: [
         'js',
         'html',
@@ -83,7 +83,7 @@ export default async function (eleventyConfig) {
 
           const html = highlighter.codeToHtml(code, {
             lang,
-            themes: { light: 'dark-plus', dark: 'dark-plus' },
+            themes: { light: 'light-plus', dark: 'dark-plus' },
           });
           cache.setKey(hash, html);
           cache.save();
@@ -92,4 +92,23 @@ export default async function (eleventyConfig) {
       })
     );
   });
+
+  eleventyConfig.addPlugin(feedPlugin, {
+    type: 'atom',
+    outputPath: '/atom.xml',
+    collection: {
+      name: 'posts',
+      limit: 0
+    },
+    metadata: {
+      language: 'en',
+      title: 'Matt Steele',
+      subtitle: 'The personal blog of Matt Steele',
+      base: 'https://steele.blue',
+      author: {
+        name: 'Matt Steele',
+        email: 'matt@steele.blue'
+      }
+    }
+  })
 }
