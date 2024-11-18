@@ -5,7 +5,9 @@
   "type": "module",
   "author": "Matthew Steele",
   "dependencies": {
-    "@11ty/eleventy": "^3.0.0"
+    "@11ty/eleventy": "^3.0.0",
+    "@justinribeiro/lite-youtube": "^1.6.0",
+    "lite-vimeo-embed": "^0.3.0"
   },
   "keywords": [
     "gatsby"

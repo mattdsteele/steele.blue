@@ -35,13 +35,21 @@ export const getVideoType = (codeBlock) => {
 }
 
 export const videoEmbed = (md) => {
-  console.log(md.renderer.rules.code_inline);
   const originalCodeLine = md.renderer.rules.code_inline;
   const newCodeInline = (tokens, idx, options, env, self) => {
     const token = tokens[idx];
     const embeddedVideo = getVideoType(token.content);
     if (embeddedVideo) {
-        return `${embeddedVideo.type}! ${embeddedVideo.embed}`;
+        switch (embeddedVideo.type) {
+          case 'vimeo':
+            return `<lite-vimeo videoid=${embeddedVideo.embed}></lite-vimeo>`;
+            break;
+          case 'youtube':
+            return `<lite-youtube videoid=${embeddedVideo.embed}></lite-youtube>`;
+            break;
+        default:
+            // do nothing
+        }
     }
     return originalCodeLine(tokens, idx, options, env, self);
   }

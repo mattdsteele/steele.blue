@@ -11,6 +11,13 @@ export default async function (eleventyConfig) {
   eleventyConfig.setIncludesDirectory('src');
   eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
 
+  eleventyConfig.addPassthroughCopy({
+    'node_modules/lite-vimeo-embed/lite-vimeo-embed.js':
+      'assets/lite-vimeo-embed.js',
+    'node_modules/@justinribeiro/lite-youtube/lite-youtube.js':
+      'assets/lite-youtube.js',
+  });
+
   // RSS Only
   eleventyConfig.addCollection('nonRssPosts', function (collectionApi) {
     return collectionApi
