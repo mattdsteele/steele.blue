@@ -5,6 +5,7 @@ import { createHash } from 'node:crypto';
 import { resolve } from 'node:path';
 import { FlatCache } from 'flat-cache';
 import { feedPlugin } from '@11ty/eleventy-plugin-rss';
+import { videoEmbed } from './src/plugins/mdit-video-embed.js';
 
 export default async function (eleventyConfig) {
   eleventyConfig.setIncludesDirectory('src');
@@ -71,7 +72,7 @@ export default async function (eleventyConfig) {
       },
     });
     const cache = new FlatCache({cacheDir: resolve('.cache/shiki')});
-    eleventyConfig.amendLibrary('md', (mdLib) =>
+    eleventyConfig.amendLibrary('md', (mdLib) => {
       mdLib.set({
         highlight: (code, lang) => {
           const hash = createHash('md5').update(code).digest('hex');
@@ -89,8 +90,10 @@ export default async function (eleventyConfig) {
           cache.save();
           return html;
         },
-      })
-    );
+      });
+      mdLib.use(videoEmbed);
+      return mdLib;
+    });
   });
 
   eleventyConfig.addPlugin(feedPlugin, {
