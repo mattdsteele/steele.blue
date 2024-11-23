@@ -12,6 +12,12 @@ export const getVideoType = (codeBlock) => {
                 embed
             }
         },
+        speakerdeck(input) {
+            return {
+                type: 'speakerdeck',
+                embed: input.substring(input.indexOf(':') + 1)
+            }
+        },
         vimeo(input) {
             return {
                 type: 'vimeo',
@@ -34,6 +40,17 @@ export const getVideoType = (codeBlock) => {
     return mappings[type](url);
 }
 
+const makeSpeakerdeckIframe = (id) => {
+  const attrs = [
+    `src="//speakerdeck.com/player/${id}"`,
+    `allowfullscreen`,
+    `scrolling="no"`,
+    `allow="autoplay; encrypted-media"`,
+    `width="600"`,
+    `height="400"`
+  ]
+    return `<iframe ${attrs.join(' ')}></iframe>`;
+}
 export const videoEmbed = (md) => {
   const originalCodeLine = md.renderer.rules.code_inline;
   const newCodeInline = (tokens, idx, options, env, self) => {
@@ -43,10 +60,10 @@ export const videoEmbed = (md) => {
         switch (embeddedVideo.type) {
           case 'vimeo':
             return `<lite-vimeo videoid=${embeddedVideo.embed}></lite-vimeo>`;
-            break;
           case 'youtube':
             return `<lite-youtube videoid=${embeddedVideo.embed}></lite-youtube>`;
-            break;
+            case 'speakerdeck':
+            return makeSpeakerdeckIframe(embeddedVideo.embed);
         default:
             // do nothing
         }

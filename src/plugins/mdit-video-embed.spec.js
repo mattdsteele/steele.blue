@@ -9,6 +9,7 @@ const videos = [
   'youtube:https://www.youtube.com/embed/2x_pqyrf9lA',
   'vimeo:https://vimeo.com/99683665',
   'vimeo:https://vimeo.com/54993676',
+  `speakerdeck:756e552021880130997622000a1d01dc`
 ];
 
 const test = () => {
