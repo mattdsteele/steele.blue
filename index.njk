@@ -8,6 +8,6 @@ layout: 'layouts/base.njk'
 
 <ul>
 	{%- for entry in collections.nonRssPosts %}
-	<li><a href="{{ entry.url }}"><code>{{ entry.data.title }}</code></a></li>
+	<li><a href="{{ entry.url }}">{{ entry.data.title }}</a></li>
 	{%- endfor %}
 </ul>
