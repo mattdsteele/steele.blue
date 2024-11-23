@@ -1,5 +1,8 @@
 ---
-title: Overly Complicate Starting Your Vehicle, Using Home Assistant, an ESP8266, and a Spare Car Fob
+title: >-
+  Overly Complicate Starting Your Vehicle, Using Home Assistant, an ESP8266, and
+  a Spare Car Fob
+layout: post
 ---
 
 <video controls preload="none" muted="true" poster="/images/car-lock-snap.png">

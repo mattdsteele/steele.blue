@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Making a Raspberry Pi Photo Booth with Pibooth, NeoPixels, and Giant Buttons
+title: 'Making a Raspberry Pi Photo Booth with Pibooth, NeoPixels, and Giant Buttons'
 ---
 
 `youtube:https://www.youtube.com/watch?v=tNagjSGzJYA`

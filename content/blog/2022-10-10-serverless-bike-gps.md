@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Serverless Bike Tracking with a SPOT Tracker, AWS Location + Friends
+title: 'Serverless Bike Tracking with a SPOT Tracker, AWS Location + Friends'
 ---
 
 I recently participated in the Gravel Worlds [Long Voyage](https://www.gravel-worlds.com/the-long-voyage) bike race. Last year I [tried, and failed](/gravel-worlds), to finish the 300 mile course, and [built a pacing calculator along the way](/js-temporal).

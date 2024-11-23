@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Building Fast, Tiny GitHub Actions with Go and Docker
+title: 'Building Fast, Tiny GitHub Actions with Go and Docker'
 ---
 
 [GitHub Actions](https://github.com/features/actions) are sweet! It's still in beta but it's a great way to automate tasks after things happen like code pushes, comments on Issues, pull requests, etc.

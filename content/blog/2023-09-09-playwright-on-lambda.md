@@ -1,5 +1,6 @@
 ---
 title: Running a Playwright script on AWS Lambda
+layout: post
 ---
 
 I had a hell of a time getting a [Playwright script](https://playwright.dev/) to successfully run in an AWS Lambda.
