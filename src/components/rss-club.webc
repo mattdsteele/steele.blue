@@ -1,9 +1,9 @@
 <template shadowrootmode="open">
     <style>
-        p {
+        a {
             color: green;
         }
     </style>
 
-    <p>RSS club exclusive</p>
+    <p><a href="/rss-club">RSS club exclusive</a></p>
 </template>
