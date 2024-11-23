@@ -7,4 +7,6 @@ p {
 }
 </style>
 
-<p>I'm Matt Steele, a programmer living in Omaha, Nebraska.</p>
+<footer>
+    <p>I'm Matt Steele, a programmer living in Omaha, Nebraska.</p>
+</footer>

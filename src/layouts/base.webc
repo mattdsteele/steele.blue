@@ -3,6 +3,13 @@
 <!doctype html>
 <html lang="en">
 <template webc:type="11ty" 11ty:type="njk">
+    <style>
+        /* Base settings */
+        img {
+            max-inline-size: 100%;
+            block-size: auto;
+        }
+    </style>
     <head>
         <link rel="stylesheet" webc:keep :href="getBundleFileUrl('css')">
         <script type="module" webc:keep src="/assets/lite-vimeo-embed.js" defer></script>
@@ -12,15 +19,13 @@
         <title>{{ title }}</title>
     </head>
     <body>
-        <header>
-            <page-header></page-header>
-        </header>
+        <page-header></page-header>
+
         <main>
             {{ content | safe }}
         </main>
-        <footer>
-            <about-me></about-me>
-        </footer>
+
+        <about-me></about-me>
     </body>
     </html>
 </template>

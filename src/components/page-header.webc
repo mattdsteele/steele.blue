@@ -1,9 +1,22 @@
-<style>
-    page-header {
+<style webc:scoped="">
+    :host {
         display: block;
-        background: orange;
+        container-type: inline-size;
+    }
+
+    p {
+        color: green;
+        font-size: 2em;
+
+        @container (max-width: 500px) {
+            font-size: 1em;
+            color: red;
+        }
+
     }
 </style>
 
-<div>This is me</div>
-<img src="/src/img/profile-avi.png" alt="Profile avatar">
+<header>
+    <img src="/src/img/profile-avi.png" alt="Profile avatar">
+    <p>Matt Steele</p>
+</header>
