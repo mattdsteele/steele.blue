@@ -1,0 +1,26 @@
+---
+---
+<!doctype html>
+<html lang="en">
+<template webc:type="11ty" 11ty:type="njk">
+    <head>
+        <link rel="stylesheet" webc:keep :href="getBundleFileUrl('css')">
+        <script type="module" webc:keep src="/assets/lite-vimeo-embed.js" defer></script>
+        <script type="module" webc:keep src="/assets/lite-youtube.js" defer></script>
+        <link rel="alternate" href="/atom.xml" title="Post Feed" type="application/atom+xml">
+        <link rel="icon" href="/images/profile-avi.png">
+        <title>{{ title }}</title>
+    </head>
+    <body>
+        <header>
+            <page-header></page-header>
+        </header>
+        <main>
+            {{ content | safe }}
+        </main>
+        <footer>
+            <about-me></about-me>
+        </footer>
+    </body>
+    </html>
+</template>

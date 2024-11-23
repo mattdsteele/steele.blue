@@ -1,0 +1,15 @@
+---
+layout: 'layouts/base.webc'
+---
+
+<template webc:type="11ty" 11ty:type="njk">
+	{% set last = collections.nonRssPosts | last %}
+	<h1>{{last.data.title}}</h1>
+	{{ last.content | safe }}
+
+	<ul>
+		{%- for entry in collections.nonRssPosts %}
+		<li><a href="{{ entry.url }}">{{ entry.data.title }}</a></li>
+		{%- endfor %}
+	</ul>
+</template>

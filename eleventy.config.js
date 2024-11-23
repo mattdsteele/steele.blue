@@ -9,7 +9,7 @@ import { videoEmbed } from './src/plugins/mdit-video-embed.js';
 
 export default async function (eleventyConfig) {
   eleventyConfig.setIncludesDirectory('src');
-  eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
+  eleventyConfig.addLayoutAlias('post', 'layouts/post.webc');
 
   eleventyConfig.addPassthroughCopy({static: '/'});
   eleventyConfig.addPassthroughCopy({
@@ -34,9 +34,10 @@ export default async function (eleventyConfig) {
   });
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     extensions: 'html',
-    formats: ['jpg'],
-    widths: [600, 1000],
+    formats: ['jpg', 'webp'],
+    widths: [600, 1000, 'auto'],
     defaultAttributes: {
+      decoding: 'async',
       sizes: '100vw',
       loading: 'lazy',
     },

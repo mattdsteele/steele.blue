@@ -1,5 +1,9 @@
-<style>
-about-me {
+<style webc:scoped="">
+:host {
+    display: block;
+}
+p {
+    font-size: 20px;
 }
 </style>
 

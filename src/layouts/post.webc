@@ -1,0 +1,9 @@
+---
+layout: 'layouts/base.webc'
+---
+
+<rss-club webc:if="rss_only"></rss-club>
+
+<h1 @text="title"></h1>
+<h2 @text="postDate"></h2>
+<article @raw="content"></article>
