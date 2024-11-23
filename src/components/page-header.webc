@@ -1,0 +1,9 @@
+<style>
+    page-header {
+        display: block;
+        background: orange;
+    }
+
+</style>
+
+<div>This is me</div>

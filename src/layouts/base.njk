@@ -8,6 +8,11 @@
     <title>{{ title }}</title>
 </head>
 <body>
+<header>
+{% renderTemplate "webc" %}
+    <page-header></page-header>
+{% endrenderTemplate %}
+</header>
 <main>
 {{ content | safe }}
 </main>
