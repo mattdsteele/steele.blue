@@ -3,7 +3,7 @@
         display: block;
         background: orange;
     }
-
 </style>
 
 <div>This is me</div>
+<img src="/src/img/profile-avi.png" alt="Profile avatar">
