@@ -11,6 +11,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.setIncludesDirectory('src');
   eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
 
+  eleventyConfig.addPassthroughCopy({static: '/'});
   eleventyConfig.addPassthroughCopy({
     'node_modules/lite-vimeo-embed/lite-vimeo-embed.js':
       'assets/lite-vimeo-embed.js',
@@ -25,11 +26,6 @@ export default async function (eleventyConfig) {
       .filter((item) => {
         return !item.data.rss_only;
       });
-  });
-
-  // TODO write a converter
-  eleventyConfig.amendLibrary('md', (mdLib) => {
-    // mdLib.use(youtubeLitePlugin);
   });
 
   eleventyConfig.addPlugin(EleventyRenderPlugin);
