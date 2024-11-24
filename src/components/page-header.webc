@@ -7,9 +7,9 @@
 
     p {
         font-family: 'Diffusion Web', sans-serif;
-        font-size: 2em;
+        font-size: 1.5em;
         @container (min-width: 500px) {
-            font-size: 3em;
+            font-size: 2em;
         }
     }
     a {

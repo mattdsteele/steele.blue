@@ -2,7 +2,15 @@
 layout: 'layouts/base.webc'
 ---
 
+<style webc:scoped="" webc:keep>
+	h1 {
+		font-size: 48px;
+		text-align: center;
+	}
+</style>
+
 <template webc:type="11ty" 11ty:type="njk">
+	<section>
 	{% set last = collections.nonRssPosts | last %}
 	<h1>{{last.data.title}}</h1>
 	{{ last.content | safe }}
@@ -12,4 +20,5 @@ layout: 'layouts/base.webc'
 		<li><a href="{{ entry.url }}">{{ entry.data.title }}</a></li>
 		{%- endfor %}
 	</ul>
+	</section>
 </template>
