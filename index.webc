@@ -15,9 +15,12 @@ layout: 'layouts/base.webc'
 		}
 	}
 	.archive {
+		list-style-type: none;
+		padding-left: 0;
+
 		li {
 			font-size: var(--text-size);
-			padding-top: 16px;
+			padding-top: 12px;
 		}
 		.date {
 			color: var(--dust-7);
@@ -32,7 +35,7 @@ layout: 'layouts/base.webc'
 	{{ last.content | safe }}
 
 	<ul class="archive">
-		{%- for entry in collections.nonRssPosts %}
+		{%- for entry in collections.nonRssPosts | reverse %}
 		<li><a href="{{ entry.url }}">{{ entry.data.title }}</a> - <span class="date">{{ entry.data.page.date | year }}</span>
 		</li>
 		{%- endfor %}
