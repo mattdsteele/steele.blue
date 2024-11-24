@@ -47,7 +47,7 @@ const description = 'A post from Matt Steele';
         <link rel="stylesheet" webc:keep :href="'/css/webfont.css'">
         <script type="module" webc:keep src="/assets/lite-vimeo-embed.js" defer></script>
         <script type="module" webc:keep src="/assets/lite-youtube.js" defer></script>
-        <link rel="alternate" href="/atom.xml" title="Post Feed" type="application/atom+xml">
+        <link rel="alternate" href="/feed" title="Post Feed" type="application/atom+xml">
         <link rel="icon" href="/images/profile-avi.png">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
         <title @text="title"></title>
