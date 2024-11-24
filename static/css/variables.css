@@ -83,7 +83,7 @@
 
 /* Theme */
 :root {
-  --bg-color: var(--cyan-1);
+  --bg-color: #fff;
   --bg-accent-color: var(--cyan-1);
   --text-color: var(--dust-16);
   --text-accent-color: var(--dust-7);
@@ -99,8 +99,5 @@
     --text-accent-color: var(--dust-7);
     --link-color: var(--cyan-7);
     --headline-color: var(--cyan-4);
-  }
-  img {
-    filter: brightness(0.8) contrast(1.2);
   }
 }
