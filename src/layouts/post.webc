@@ -2,7 +2,8 @@
 layout: 'layouts/base.webc'
 ---
 <style webc:scoped="" webc:keep>
-    h1 {
+    h1.title {
+		font-size: 48px;
         text-align: center;
     }
 </style>
@@ -10,7 +11,7 @@ layout: 'layouts/base.webc'
 <section>
     <rss-club webc:if="rss_only"></rss-club>
 
-    <h1 @text="title"></h1>
+    <h1 class="title" @text="title"></h1>
     <h2 @text="postDate"></h2>
     <article @raw="content"></article>
 </section>

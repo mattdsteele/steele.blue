@@ -17,11 +17,11 @@
 </style>
 
 <template webc:type="11ty" 11ty:type="njk">
-    <ul class="archive">
-        {%- for entry in posts | reverse %}
-        <li><a href="{{ entry.url }}">{{ entry.data.title }}</a> - <span class="date">{{ entry.data.page.date | year
-                }}</span>
-        </li>
-        {%- endfor %}
-    </ul>
+	<ul class="archive">
+		{%- for entry in posts | reverse %}
+		<li><a href="{{ entry.url }}">{{ entry.data.title }}</a> - <span class="date">{{ entry.data.page.date | year
+				}}</span>
+		</li>
+		{%- endfor %}
+	</ul>
 </template>
