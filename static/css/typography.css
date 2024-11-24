@@ -3,7 +3,7 @@ h1 {
 }
 
 h1, h2, h3, h4, h5, h6, pre, code {
-    font-family: 'Diffusion Web', serif;
+    font-family: 'Diffusion Web', Georgia, serif;
     color: var(--headline-color);
 }
 
@@ -18,7 +18,7 @@ p {
 }
 
 p, li {
-    font-family: 'Metrophobic', sans-serif;
+    font-family: 'Metrophobic', Arial, sans-serif;
 }
 
 a, a:visited {

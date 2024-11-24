@@ -5,6 +5,7 @@
 	font-weight: 400;
 	font-style: normal;
 	src: url('woff2/diffusion-regular.woff2') format('woff2');
+	font-display: swap;
 }
 
 @font-face {
@@ -12,6 +13,7 @@
 	font-weight: 400;
 	font-style: italic;
 	src: url('woff2/diffusion-italic.woff2') format('woff2');
+	font-display: swap;
 }
 
 @font-face {
@@ -19,6 +21,7 @@
 	font-weight: 700;
 	font-style: normal;
 	src: url('woff2/diffusion-bold.woff2') format('woff2');
+	font-display: swap;
 }
 
 @font-face {
@@ -26,6 +29,7 @@
 	font-weight: 700;
 	font-style: italic;
 	src: url('woff2/diffusion-bolditalic.woff2') format('woff2');
+	font-display: swap;
 }
 
 @font-face {
@@ -33,6 +37,7 @@
 	font-weight: 300;
 	font-style: normal;
 	src: url('woff2/diffusion-light.woff2') format('woff2');
+	font-display: swap;
 }
 
 @font-face {
@@ -40,6 +45,7 @@
 	font-weight: 300;
 	font-style: italic;
 	src: url('woff2/diffusion-lightitalic.woff2') format('woff2');
+	font-display: swap;
 }
 
 /* https://github.com/googlefonts/MetrophobicFont */
@@ -49,4 +55,5 @@
 	font-weight: 300;
 	font-style: normal;
 	src: url('woff2/Metrophobic-Regular.woff2') format('woff2');
+	font-display: swap;
 }
