@@ -129,7 +129,7 @@ If anything, I'm ready to double down on Go for the next hackathon.
 
 You get productivity out of the box with a great standard library, plus the performance of a natively-compiled app, plus a syntax that feels both classical and modern.
 
-So forget the [LAMP](https://en.wikipedia.org/wiki/LAMP_(software_bundle\)) or [MEAN](https://web.archive.org/web/20131207033011/http://mean.io/) stacks.
+So forget the [LAMP](https://en.wikipedia.org/wiki/LAMP_(software_bundle)) or [MEAN](https://web.archive.org/web/20131207033011/http://mean.io/) stacks.
 Try building your next application on [GAP: Go, AngularJS, and Postgres](https://twitter.com/jerodsanto/status/405744094510473216).
 
 ### [View the final code on GitHub](https://github.com/mattdsteele/hackomaha-ops)

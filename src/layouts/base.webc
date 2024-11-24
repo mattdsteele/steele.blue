@@ -14,23 +14,6 @@
             block-size: auto;
         }
 
-        h1 {
-            font-size: 48px;
-        }
-
-        h1,h2,h3,h4,h5,h6,pre,code {
-            font-family: 'Diffusion Web', serif;
-            color: var(--cyan-14);
-        }
-
-        p {
-            font-family: 'Metrophobic', sans-serif;
-        }
-
-        a, a:visited {
-            color: var(--cyan-12);
-        }
-
         html {
             background-color: var(--cyan-1);
         }
@@ -53,6 +36,7 @@
         <style @raw="getBundle('css', 'critical')" webc:keep></style>
         <link rel="stylesheet" webc:keep :href="getBundleFileUrl('css')">
         <link rel="stylesheet" webc:keep :href="'/css/variables.css'">
+        <link rel="stylesheet" webc:keep :href="'/css/typography.css'">
         <link rel="stylesheet" webc:keep :href="'/css/webfont.css'">
         <script type="module" webc:keep src="/assets/lite-vimeo-embed.js" defer></script>
         <script type="module" webc:keep src="/assets/lite-youtube.js" defer></script>

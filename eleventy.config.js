@@ -1,10 +1,11 @@
-import { eleventyImageTransformPlugin } from '@11ty/eleventy-img';
-import webcPlugin from '@11ty/eleventy-plugin-webc';
 import { EleventyRenderPlugin } from '@11ty/eleventy';
+import { eleventyImageTransformPlugin } from '@11ty/eleventy-img';
+import { feedPlugin } from '@11ty/eleventy-plugin-rss';
+import webcPlugin from '@11ty/eleventy-plugin-webc';
+import { FlatCache } from 'flat-cache';
 import { createHash } from 'node:crypto';
 import { resolve } from 'node:path';
-import { FlatCache } from 'flat-cache';
-import { feedPlugin } from '@11ty/eleventy-plugin-rss';
+import { inspect } from 'node:util';
 import { videoEmbed } from './src/plugins/mdit-video-embed.js';
 
 export default async function (eleventyConfig) {
@@ -118,4 +119,10 @@ export default async function (eleventyConfig) {
       }
     }
   })
+  eleventyConfig.addFilter('console', function (value) {
+    return inspect(value);
+  });
+  eleventyConfig.addFilter('year', function (value) {
+    return value.getFullYear();
+  });
 }

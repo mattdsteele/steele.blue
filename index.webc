@@ -7,18 +7,34 @@ layout: 'layouts/base.webc'
 	h1 {
 		font-size: 48px;
 		text-align: center;
+		a {
+			text-decoration: none;
+			&:active, &:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	.archive {
+		li {
+			font-size: var(--text-size);
+			padding-top: 16px;
+		}
+		.date {
+			color: var(--dust-7);
+		}
 	}
 </style>
 
 <template webc:type="11ty" 11ty:type="njk">
 	<section>
 	{% set last = collections.nonRssPosts | last %}
-	<h1>{{last.data.title}}</h1>
+	<h1><a href="{{ entry.url }}">{{last.data.title}}</a></h1>
 	{{ last.content | safe }}
 
-	<ul>
+	<ul class="archive">
 		{%- for entry in collections.nonRssPosts %}
-		<li><a href="{{ entry.url }}">{{ entry.data.title }}</a></li>
+		<li><a href="{{ entry.url }}">{{ entry.data.title }}</a> - <span class="date">{{ entry.data.page.date | year }}</span>
+		</li>
 		{%- endfor %}
 	</ul>
 	</section>
