@@ -21,8 +21,11 @@ const last = collections.nonRssPosts[collections.nonRssPosts.length - 1];
 </style>
 
 <section>
-	<h1 class="title"><a href="{{ entry.url }}" @text="last.data.title"></a></h1>
-	<div @html="last.content"></div>
+	<h1 class="title"><a :href="last.url" @text="last.data.title"></a></h1>
+	<template webc:type="11ty" 11ty:type="njk">
+		{% set lastPost = collections.nonRssPosts | last %}
+		{{ last.content | safe }}
+	 </template>
 </section>
 
 <post-archive></post-archive>
