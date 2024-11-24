@@ -3,11 +3,19 @@
 <!doctype html>
 <html lang="en">
 <template webc:type="11ty" 11ty:type="njk">
-    <style webc:bucket="foo">
+    <style webc:bucket="critical">
         /* Base settings */
+        *,:before,:after {
+            box-sizing: border-box;
+        }
+
         picture, img {
             max-inline-size: 100%;
             block-size: auto;
+        }
+
+        a, a:visited {
+            color: var(--cyan-12);
         }
 
         html {
@@ -15,6 +23,7 @@
         }
 
         body {
+            padding: 0 8px;
             max-width: 800px;
             margin: auto;
             background-color: white;
@@ -28,7 +37,7 @@
         }
     </style>
     <head>
-        <style @raw="getBundle('css', 'foo')" webc:keep></style>
+        <style @raw="getBundle('css', 'critical')" webc:keep></style>
         <link rel="stylesheet" webc:keep :href="getBundleFileUrl('css')">
         <link rel="stylesheet" webc:keep :href="'/variables.css'">
         <script type="module" webc:keep src="/assets/lite-vimeo-embed.js" defer></script>
