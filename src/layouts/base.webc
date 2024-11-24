@@ -3,20 +3,39 @@
 <!doctype html>
 <html lang="en">
 <template webc:type="11ty" 11ty:type="njk">
-    <style>
+    <style webc:bucket="foo">
         /* Base settings */
-        img {
+        picture, img {
             max-inline-size: 100%;
             block-size: auto;
         }
+
+        html {
+            background-color: var(--cyan-1);
+        }
+
+        body {
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+
+            color: var(--dust-16)
+        }
+
+        pre.shiki {
+            max-width: 100vw;
+            overflow-y: scroll;
+        }
     </style>
     <head>
+        <style @raw="getBundle('css', 'foo')" webc:keep></style>
         <link rel="stylesheet" webc:keep :href="getBundleFileUrl('css')">
+        <link rel="stylesheet" webc:keep :href="'/variables.css'">
         <script type="module" webc:keep src="/assets/lite-vimeo-embed.js" defer></script>
         <script type="module" webc:keep src="/assets/lite-youtube.js" defer></script>
         <link rel="alternate" href="/atom.xml" title="Post Feed" type="application/atom+xml">
         <link rel="icon" href="/images/profile-avi.png">
-        <title>{{ title }}</title>
+        <title @text="title"></title>
     </head>
     <body>
         <page-header></page-header>
