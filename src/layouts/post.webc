@@ -9,9 +9,9 @@ layout: 'layouts/base.webc'
 </style>
 
 <section>
-    <rss-club webc:if="rss_only"></rss-club>
 
     <h1 class="title" @text="title"></h1>
+    <rss-club webc:if="rss_only"></rss-club>
     <h2 @text="postDate"></h2>
     <article @raw="content"></article>
 </section>
