@@ -1,6 +1,9 @@
 <style webc:scoped="">
 :host {
     display: block;
+    background-color: var(--bg-accent-color);
+    margin: 0 -8px;
+    padding: 32px 8px;
 }
 p {
     font-size: 20px;
@@ -9,4 +12,5 @@ p {
 
 <footer>
     <p>I'm Matt Steele, a programmer living in Omaha, Nebraska.</p>
+    <p><a href="https://carhenge.club/@mattdsteele">Find me on the Fediverse.</a></p>
 </footer>
