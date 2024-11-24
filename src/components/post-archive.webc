@@ -1,5 +1,5 @@
 <script webc:setup>
-    const posts = this.$data.collections.nonRssPosts;
+    const posts = this.$data.collections?.nonRssPosts;
 </script>
 <style>
 	.archive {
@@ -11,7 +11,7 @@
 			padding-top: 12px;
 		}
 		.date {
-			color: var(--dust-7);
+			color: var(--text-accent-color);
 		}
 	}
 </style>

@@ -80,3 +80,27 @@
   --cyan-16: oklch(10% 0.019 204);
   --cyan-accent: oklch(47.8% 0.109 206);
 }
+
+/* Theme */
+:root {
+  --bg-color: var(--cyan-1);
+  --bg-accent-color: var(--cyan-1);
+  --text-color: var(--dust-16);
+  --text-accent-color: var(--dust-7);
+  --link-color: var(--cyan-12);
+  --headline-color: var(--cyan-14);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: var(--cyan-14);
+    --bg-accent-color: var(--cyan-15);
+    --text-color: var(--dust-2);
+    --text-accent-color: var(--dust-7);
+    --link-color: var(--cyan-7);
+    --headline-color: var(--cyan-4);
+  }
+  img {
+    filter: brightness(0.8) contrast(1.2);
+  }
+}
