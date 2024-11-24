@@ -14,6 +14,11 @@
             block-size: auto;
         }
 
+        h1,h2,h3,h4,h5,h6,pre,code {
+            font-family: 'Diffusion Web', sans-serif;
+            color: var(--cyan-14);
+        }
+
         a, a:visited {
             color: var(--cyan-12);
         }
@@ -39,7 +44,8 @@
     <head>
         <style @raw="getBundle('css', 'critical')" webc:keep></style>
         <link rel="stylesheet" webc:keep :href="getBundleFileUrl('css')">
-        <link rel="stylesheet" webc:keep :href="'/variables.css'">
+        <link rel="stylesheet" webc:keep :href="'/css/variables.css'">
+        <link rel="stylesheet" webc:keep :href="'/css/webfont.css'">
         <script type="module" webc:keep src="/assets/lite-vimeo-embed.js" defer></script>
         <script type="module" webc:keep src="/assets/lite-youtube.js" defer></script>
         <link rel="alternate" href="/atom.xml" title="Post Feed" type="application/atom+xml">

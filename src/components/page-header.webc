@@ -6,7 +6,10 @@
     }
 
     p {
+        font-family: 'Diffusion Web', sans-serif;
+        font-size: 2em;
         @container (min-width: 500px) {
+            font-size: 3em;
         }
     }
     a {
@@ -15,7 +18,7 @@
     }
     p {
         text-align: right;
-        align-content: center;;
+        align-content: center;
         flex-grow: 1;
         margin: 0;
     }
