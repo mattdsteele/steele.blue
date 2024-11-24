@@ -14,18 +14,6 @@ layout: 'layouts/base.webc'
 			}
 		}
 	}
-	.archive {
-		list-style-type: none;
-		padding-left: 0;
-
-		li {
-			font-size: var(--text-size);
-			padding-top: 12px;
-		}
-		.date {
-			color: var(--dust-7);
-		}
-	}
 </style>
 
 <template webc:type="11ty" 11ty:type="njk">
@@ -34,11 +22,8 @@ layout: 'layouts/base.webc'
 	<h1><a href="{{ entry.url }}">{{last.data.title}}</a></h1>
 	{{ last.content | safe }}
 
-	<ul class="archive">
-		{%- for entry in collections.nonRssPosts | reverse %}
-		<li><a href="{{ entry.url }}">{{ entry.data.title }}</a> - <span class="date">{{ entry.data.page.date | year }}</span>
-		</li>
-		{%- endfor %}
-	</ul>
 	</section>
+	{% renderTemplate "webc" %}
+	<post-archive></post-archive>
+	{% endrenderTemplate %}
 </template>
