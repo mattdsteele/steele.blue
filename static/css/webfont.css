@@ -41,3 +41,12 @@
 	font-style: italic;
 	src: url('woff2/diffusion-lightitalic.woff2') format('woff2'), url('woff/diffusion-lightitalic.woff') format('woff'), url('ttf/diffusion-lightitalic.ttf') format('truetype');
 }
+
+/* https://github.com/googlefonts/MetrophobicFont */
+
+@font-face {
+	font-family: 'Metrophobic';
+	font-weight: 300;
+	font-style: normal;
+	src: url('woff2/Metrophobic-Regular.woff2') format('woff2');
+}

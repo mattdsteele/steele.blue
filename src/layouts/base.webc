@@ -19,8 +19,12 @@
         }
 
         h1,h2,h3,h4,h5,h6,pre,code {
-            font-family: 'Diffusion Web', sans-serif;
+            font-family: 'Diffusion Web', serif;
             color: var(--cyan-14);
+        }
+
+        p {
+            font-family: 'Metrophobic', sans-serif;
         }
 
         a, a:visited {
