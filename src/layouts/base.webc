@@ -1,8 +1,8 @@
----
+---js
+const description = 'A post from Matt Steele';
 ---
 <!doctype html>
 <html lang="en">
-<template webc:type="11ty" 11ty:type="njk">
     <style webc:bucket="critical">
         /* Base settings */
         *,:before,:after {
@@ -50,18 +50,22 @@
         <link rel="alternate" href="/atom.xml" title="Post Feed" type="application/atom+xml">
         <link rel="icon" href="/images/profile-avi.png">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-        <meta name="generator" content="{{ eleventy.generator }}">
-        <og-seo></og-seo>
         <title @text="title"></title>
+        <meta name="generator" :content="eleventy.generator">
+
+        <meta property="og:title" :content="$data.title" />
+        <meta property="og:url" :content="'https://steele.blue' + $data.page.url" />
+        <meta property="og:description" :content="description" />
+        <meta property="og:image" content="/images/profile-avi.png" />
+        <meta property="og:type" content="article" />
     </head>
     <body>
         <page-header></page-header>
-
-        <main>
-            {{ content | safe }}
+    
+        <main @html="content">
         </main>
-
+    
         <about-me></about-me>
     </body>
+    
     </html>
-</template>
