@@ -87,6 +87,7 @@
   --bg-accent-color: var(--cyan-1);
   --text-color: var(--dust-16);
   --text-accent-color: var(--dust-7);
+  --code-bg-color: var(--dust-3);
   --link-color: var(--cyan-12);
   --headline-color: var(--cyan-14);
 }

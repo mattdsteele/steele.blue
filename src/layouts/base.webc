@@ -28,7 +28,7 @@
         }
 
         pre.shiki {
-            max-width: 100vw;
+            max-width: 100%;
             overflow-y: scroll;
         }
         
@@ -49,6 +49,9 @@
         <script type="module" webc:keep src="/assets/lite-youtube.js" defer></script>
         <link rel="alternate" href="/atom.xml" title="Post Feed" type="application/atom+xml">
         <link rel="icon" href="/images/profile-avi.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="generator" content="{{ eleventy.generator }}">
+        <og-seo></og-seo>
         <title @text="title"></title>
     </head>
     <body>

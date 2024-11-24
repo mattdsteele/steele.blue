@@ -1,0 +1,8 @@
+<script webc:setup="">
+</script>
+
+<meta property="og:title" :content="$data.title" />
+<meta property="og:url" :content="'https://steele.blue' + $data.page.url" />
+<meta property="og:description" content="A post from Matt Steele" />
+<meta property="og:image" content="/images/profile-avi.png" />
+<meta property="og:type" content="article" />

@@ -23,7 +23,7 @@ layout: 'layouts/base.webc'
 	{{ last.content | safe }}
 
 	</section>
-	{% renderTemplate "webc" %}
+
 	<post-archive></post-archive>
-	{% endrenderTemplate %}
+
 </template>

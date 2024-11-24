@@ -11,6 +11,10 @@ p {
     margin-top: 24px;
     font-size: var(--text-size);
     line-height: 1.3;
+
+    code {
+        background-color: var(--code-bg-color);
+    }
 }
 
 p, li {

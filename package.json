@@ -1,7 +1,6 @@
 {
   "name": "matthew-steele",
-  "description": "The Gatsby powered blog steele.blue",
-  "version": "2.0.0",
+  "description": "https://steele.blue",
   "type": "module",
   "author": "Matthew Steele",
   "dependencies": {
