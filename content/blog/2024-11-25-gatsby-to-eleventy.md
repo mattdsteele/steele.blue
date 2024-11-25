@@ -56,6 +56,6 @@ This is in stark contract to my Gatsby blog; I had to do quite a bit of work to 
 The site is fast by default, and the [URIs remain Cool](https://www.w3.org/Provider/Style/URI).
 A few features are missing from the Gatsby era (namely, custom OpenGraph images), but I feel like I've got a solid foundation to iterate on.
 
-It feels good, like I'm working with the grain of the Web, rather than against it. Here's to the next six years (and beyond).
+It feels good, like I'm working with the grain of the Web, rather than against it. The codebase is at [https://github.com/mattdsteele/steele.blue](https://github.com/mattdsteele/steele.blue). Here's to the next six years (and beyond).
 
 <!-- Not even the first Matt Steele to have an 11ty based blog https://mattsteele.dev/ -->
