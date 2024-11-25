@@ -10,7 +10,7 @@ I try not to rebuild my site too frequently, as it's one of the classic blunders
 My site has been powered by Gatsby since Dustin Schau (former coworker and Gatsby emeritus) [ported it over](https://github.com/mattdsteele/steele.blue/pull/20) as an early Christmas gift in 2018.
 I'm not a React guy, but it was easy to work with, and I could see the appear of a framework built around collecting arbitrary sources, and unifying them into a single data structure queryable by GraphQL.
 
-Unfortunately, Gatsby is in [dire states these days](https://changelog.com/jsparty/325#transcript-43).
+Unfortunately, Gatsby isn't in the [healthiest state these days](https://changelog.com/jsparty/325#transcript-43).
 It wasn't able to achieve the liftoff that's expected from venture-funded frameworks. As it's fallen out of favor in the past few years, the OSS side of the framework has continued to languish since its acquisition by Netlify. Lately, I've spent more time fighting with dependencies than I do blogging, and it's felt more like a mill around my neck than a productive authoring tool.
 
 ![A list of PRs in GitHub referencing dependency updates](/content/images/11ty-gatsby-prs.png)
