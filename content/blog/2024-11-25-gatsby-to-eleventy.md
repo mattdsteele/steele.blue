@@ -44,7 +44,10 @@ I'm hoping WebC sees a life beyond Eleventy projects, because it feel like a uti
 ## This Bikeshed has Fresh Paint
 
 The site should mostly be functional, and the [URIs remain Cool](https://www.w3.org/Provider/Style/URI).
-A few features are missing from the Gatsby era (namely, custom OpenGraph images), and I've done little to optimize the site.
+A few features are missing from the Gatsby era (namely, custom OpenGraph images), and I've done little to optimize the site. Still, I'm dangerously close to the coveted Four Hundos:
+
+
+![Lighthouse score, with Performance at 99, all other metrics at 100](/content/images/11ty-lighthouse.png)
 
 But since there's not a ton of extra cruft on the page, Eleventy pages can be fast by default, just like the web.
 
@@ -52,4 +55,4 @@ I had to do quite a bit of work to make my Gatsby page perform like I wanted, in
 
 It feels good, like I'm working with the grain of the Web, rather than against it. Here's to the next six years (and beyond).
 
-Not even the first Matt Steele to have an 11ty based blog https://mattsteele.dev/
+<!-- Not even the first Matt Steele to have an 11ty based blog https://mattsteele.dev/ -->
