@@ -47,15 +47,15 @@ I'm hoping WebC sees a life beyond Eleventy projects, because it feel like a uti
 
 It's not all conceptual benefits, one immediate advantage I see are improved build times (production builds are 2-3x faster, and the dev server starts immediately, rather than after ~30 seconds).
 
-The site should mostly be functional, and the [URIs remain Cool](https://www.w3.org/Provider/Style/URI).
-A few features are missing from the Gatsby era (namely, custom OpenGraph images), and I've done little to optimize the site. Without much effort, I'm dangerously close to the coveted Four Hundos:
+I've done little to optimize the site. Yet without much effort, I'm awful close to the coveted Lighthouse Four Hundos:
 
 ![Lighthouse score, with Performance at 99, all other metrics at 100](/content/images/11ty-lighthouse.png)
 
-I had to do quite a bit of work to make my Gatsby page perform like I wanted, including applying a plugin to [delete all the client-side JavaScript](https://www.gatsbyjs.com/plugins/gatsby-plugin-no-javascript/) used to hydrate components that should have been static anyway.
+This is in stark contract to my Gatsby blog; I had to do quite a bit of work to make it perform like I wanted, including applying a plugin to [delete all the client-side JavaScript](https://www.gatsbyjs.com/plugins/gatsby-plugin-no-javascript/) used to hydrate components that should have been static anyway.
 
-It feels good, like I'm working with the grain of the Web, rather than against it.
+The site is fast by default, and the [URIs remain Cool](https://www.w3.org/Provider/Style/URI).
+A few features are missing from the Gatsby era (namely, custom OpenGraph images), but I feel like I've got a solid foundation to iterate on.
 
-Here's to the next six years (and beyond).
+It feels good, like I'm working with the grain of the Web, rather than against it. Here's to the next six years (and beyond).
 
 <!-- Not even the first Matt Steele to have an 11ty based blog https://mattsteele.dev/ -->
