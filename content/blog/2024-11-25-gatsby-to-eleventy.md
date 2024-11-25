@@ -43,18 +43,19 @@ But if you want to render components as "real" Custom Elements with [Declarative
 
 I'm hoping WebC sees a life beyond Eleventy projects, because it feel like a utilitarian tool designed for real problems. As it stands, this is probably the part of the codebase that's most tied to Eleventy, but if I have to rebuild the dozen-ish `.webc` files at some point, it shouldn't be too difficult to port to a 'vanilla' Custom Element, or whatever comes next.
 
-## This Bikeshed has Fresh Paint
+## Four Hundo Blaze It
+
+It's not all conceptual benefits, one immediate advantage I see are improved build times (production builds are 2-3x faster, and the dev server starts immediately, rather than after ~30 seconds).
 
 The site should mostly be functional, and the [URIs remain Cool](https://www.w3.org/Provider/Style/URI).
-A few features are missing from the Gatsby era (namely, custom OpenGraph images), and I've done little to optimize the site. Still, I'm dangerously close to the coveted Four Hundos:
-
+A few features are missing from the Gatsby era (namely, custom OpenGraph images), and I've done little to optimize the site. Without much effort, I'm dangerously close to the coveted Four Hundos:
 
 ![Lighthouse score, with Performance at 99, all other metrics at 100](/content/images/11ty-lighthouse.png)
 
-But since there's not a ton of extra cruft on the page, Eleventy pages can be fast by default, just like the web.
-
 I had to do quite a bit of work to make my Gatsby page perform like I wanted, including applying a plugin to [delete all the client-side JavaScript](https://www.gatsbyjs.com/plugins/gatsby-plugin-no-javascript/) used to hydrate components that should have been static anyway.
 
-It feels good, like I'm working with the grain of the Web, rather than against it. Here's to the next six years (and beyond).
+It feels good, like I'm working with the grain of the Web, rather than against it.
+
+Here's to the next six years (and beyond).
 
 <!-- Not even the first Matt Steele to have an 11ty based blog https://mattsteele.dev/ -->
