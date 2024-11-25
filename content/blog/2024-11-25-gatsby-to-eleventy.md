@@ -7,17 +7,19 @@ I try not to rebuild my site too frequently, as it's one of the classic blunders
 
 ## The (Not So Great) Gatsby
 
-My site has been powered by Gatsby since Dustin Schau (Gatsby employee and former coworker) [ported it over](https://github.com/mattdsteele/steele.blue/pull/20) as an early Christmas gift in 2018.
+My site has been powered by Gatsby since Dustin Schau (former coworker and Gatsby emeritus) [ported it over](https://github.com/mattdsteele/steele.blue/pull/20) as an early Christmas gift in 2018.
 I'm not a React guy, but it was easy to work with, and I could see the appear of a framework built around collecting arbitrary sources, and unifying them into a single data structure queryable by GraphQL.
 
 Unfortunately, Gatsby is in [dire states these days](https://changelog.com/jsparty/325#transcript-43).
 It wasn't able to achieve the liftoff that's expected from venture-funded frameworks. As it's fallen out of favor in the past few years, the OSS side of the framework has continued to languish since its acquisition by Netlify. Lately, I've spent more time fighting with dependencies than I do blogging, and it's felt more like a mill around my neck than a productive authoring tool.
 
+![A list of PRs in GitHub referencing dependency updates](/content/images/11ty-gatsby-prs.png)
+
 ## Turning it up to Eleventy
 
 I wanted to switch to something that's built for the long haul, and [Eleventy](https://11ty.dev) fits the charge.
 
-Created by Nebraskan (and former coworker) Zach Leatherman, it's a static site generator with a focus on simplicity, sustainability, and not getting in your way. It's heavily inspired by Jekyll, which was how my site was [built ten years ago](/a-fresh-coat-of-paint/), so it feels like we've come full circle.
+Created by Nebraskan (and former coworker) Zach Leatherman, it's a static site generator with a focus on simplicity, sustainability, and not getting in your way. It's heavily inspired by Jekyll, which was how my site was [built ten years ago](/a-fresh-coat-of-paint/), so it feels like I've come full circle.
 
 In addition to its familiarity as a tool, I appreciate what the Eleventy project prioritizes.
 Rather than a laundry list of features mean to check boxes, Zach advertises [how stable its API is](https://youtu.be/bPtQmsjXMuo?si=8k_fzWNl8s2OPKks) and how easy upgrades are, with major versions focused on removing dependencies and modernizing the codebase.
