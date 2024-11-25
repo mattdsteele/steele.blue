@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bringing ArnoldC to JavaScript
-subtitle: Or, How to Learn to Write a Compiler Through Silliness
+subtitle: 'Or, How to Learn to Write a Compiler Through Silliness'
 ---
 
 At [NebraskaJS][nejs] I introduced my dumbest project yet: a compiler which converts [ArnoldC][arnoldc] programs into JavaScript, with full support for [Source Maps](/source-maps).

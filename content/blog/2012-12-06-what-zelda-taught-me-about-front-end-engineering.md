@@ -9,7 +9,7 @@ status: publish
 type: post
 published: true
 meta:
-  _wpas_mess: What Zelda Taught Me About Front End Engineering http://wp.me/p7gnP-2L
+  _wpas_mess: 'What Zelda Taught Me About Front End Engineering http://wp.me/p7gnP-2L'
   _wpas_skip_39196: '1'
   _elasticsearch_indexed_on: '2012-12-06 22:46:31'
 ---

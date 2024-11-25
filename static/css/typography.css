@@ -1,0 +1,22 @@
+h1, h2, h3, h4, h5, h6, pre, code {
+    font-family: 'Diffusion Web', Georgia, serif;
+    color: var(--headline-color);
+}
+
+p {
+    margin-top: 24px;
+    font-size: var(--text-size);
+    line-height: 1.3;
+
+    code {
+        background-color: var(--code-bg-color);
+    }
+}
+
+p, li {
+    font-family: 'Metrophobic', Arial, sans-serif;
+}
+
+a, a:visited {
+    color: var(--link-color);
+}

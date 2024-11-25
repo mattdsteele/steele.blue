@@ -1,5 +1,6 @@
 ---
 title: I wired up my bike's GPS to order me pizza during a gravel race 🍕
+layout: post
 ---
 
 As harvest season begins here in the Midwest, I once again celebrate by grinding Nebraska gravel at the [Gravel Worlds Long Voyage](https://www.gravel-worlds.com/the-long-voyage) bike race.

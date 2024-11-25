@@ -1,0 +1,27 @@
+<script webc:setup>
+    const posts = this.$data.collections?.nonRssPosts;
+</script>
+<style>
+	.archive {
+		list-style-type: none;
+		padding-left: 0;
+
+		li {
+			font-size: var(--text-size);
+			padding-top: 12px;
+		}
+		.date {
+			color: var(--text-accent-color);
+		}
+	}
+</style>
+
+<template webc:type="11ty" 11ty:type="njk">
+	<ul class="archive">
+		{%- for entry in posts | reverse %}
+		<li><a href="{{ entry.url }}">{{ entry.data.title }}</a> - <span class="date">{{ entry.data.page.date | year
+				}}</span>
+		</li>
+		{%- endfor %}
+	</ul>
+</template>

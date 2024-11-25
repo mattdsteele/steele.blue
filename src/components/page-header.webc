@@ -1,0 +1,30 @@
+<style webc:scoped="">
+    header {
+        container-type: inline-size;
+        display: flex;
+        flex-direction: row;
+    }
+
+    p {
+        font-family: 'Diffusion Web', sans-serif;
+        font-size: 1.5em;
+        @container (min-width: 500px) {
+            font-size: 2em;
+        }
+    }
+    a {
+        flex-basis: 60px;
+        align-content: center;;
+    }
+    p {
+        text-align: right;
+        align-content: center;
+        flex-grow: 1;
+        margin: 0;
+    }
+</style>
+
+<header>
+    <a href="/"><img src="/src/img/profile-avi-transparent.png" alt="Profile avatar"></a>
+    <p>Matt Steele</p>
+</header>

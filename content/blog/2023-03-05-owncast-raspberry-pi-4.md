@@ -1,5 +1,6 @@
 ---
 title: Running Owncast with Hardware Acceleration on a Raspberry Pi 4
+layout: post
 ---
 
 Owncast is a self-hosted platform for streaming video, which I've been using for sharing all kinds of events, from [Zwift racing](/zwift-greenscreen) to [my wedding](/indieweb-wedding-livestream).

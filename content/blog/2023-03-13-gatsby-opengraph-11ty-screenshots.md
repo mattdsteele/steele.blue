@@ -1,5 +1,6 @@
 ---
 title: Generating Custom OpenGraph Cards with Gatsby and the 11ty Screenshot Service
+layout: post
 ---
 
 I made the sharable [OpenGraph images](https://www.opengraph.xyz/) on this site better by generating custom cards contextual to each post:

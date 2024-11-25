@@ -136,7 +136,7 @@ attributeChangedCallback(name, oldVal, newVal) {
 And then bind to the attribute in our template (note the use of `ng-attr` to prevent the element from seeing the raw `{{expression}}`):
 
 ```html
-<countdown-timer ng-attr-seconds="{{$ctrl.secondsLeft}}"></countdown-timer>
+<countdown-timer ng-attr-seconds="{% raw %}{{$ctrl.secondsLeft}}{% endraw %}"></countdown-timer>
 ```
 
 On the output side, we can bind to the event manually in our controller, and wrap it in `$scope.$apply()` to make sure a digest runs:

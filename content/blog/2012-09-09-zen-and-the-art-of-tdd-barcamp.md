@@ -10,7 +10,7 @@ type: post
 published: true
 meta:
   _wpas_skip_twitter: '1'
-  _wpas_mess: Zen and the Art of TDD http://wp.me/p7gnP-2v
+  _wpas_mess: 'Zen and the Art of TDD http://wp.me/p7gnP-2v'
   _wpas_skip_39196: '1'
   _elasticsearch_indexed_on: '2012-09-09 19:15:00'
 ---

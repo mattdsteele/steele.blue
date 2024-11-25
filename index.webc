@@ -1,0 +1,31 @@
+---
+layout: 'layouts/base.webc'
+---
+
+<script webc:setup>
+const title = 'Matt Steele'
+const last = collections.nonRssPosts[collections.nonRssPosts.length - 1];
+</script>
+
+<style webc:scoped="" webc:keep>
+	h1.title {
+		font-size: 48px;
+		text-align: center;
+		a {
+			text-decoration: none;
+			&:active, &:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+</style>
+
+<section>
+	<h1 class="title"><a :href="last.url" @text="last.data.title"></a></h1>
+	<template webc:type="11ty" 11ty:type="njk">
+		{% set lastPost = collections.nonRssPosts | last %}
+		{{ last.content | safe }}
+	 </template>
+</section>
+
+<post-archive></post-archive>

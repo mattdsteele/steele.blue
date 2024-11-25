@@ -9,7 +9,7 @@ type: post
 published: true
 meta:
   _publicize_pending: '1'
-  tagazine-media:
+  tagazine-media: >-
     a:7:{s:7:"primary";s:0:"";s:6:"images";a:0:{}s:6:"videos";a:0:{}s:11:"image_count";i:0;s:6:"author";s:7:"1801759";s:7:"blog_id";s:7:"1731277";s:9:"mod_stamp";s:19:"2013-06-19
     22:21:58";}
   _elasticsearch_indexed_on: '2013-06-19 21:46:31'

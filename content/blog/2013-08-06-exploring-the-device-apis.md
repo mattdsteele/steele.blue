@@ -1,8 +1,8 @@
 ---
 meta:
-  geo_public: "0"
-  _publicize_pending: "1"
-  _elasticsearch_indexed_on: 2013-08-07 03:32:39
+  geo_public: '0'
+  _publicize_pending: '1'
+  _elasticsearch_indexed_on: 2013-08-07T03:32:39.000Z
 layout: post
 published: true
 status: publish

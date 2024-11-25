@@ -60,6 +60,8 @@ typings/
 .cache/
 public
 
+*.Identifier
+
 # Mac files
 .DS_Store
 
@@ -69,3 +71,6 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+# 11ty
+_site

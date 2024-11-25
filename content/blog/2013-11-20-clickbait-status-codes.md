@@ -4,7 +4,7 @@ title: Clickbait HTTP Status Codes
 ---
 
 <blockquote class="twitter-tweet" lang="en"><p>502 Unbelievable Bad Gateways (with photos)</p>&mdash; Brian Essbe (@SortaBad) <a href="https://twitter.com/SortaBad/statuses/402918987161292800">November 19, 2013</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script webc:keep async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Nice. Here's more **clickbait HTTP Status Codes:**
 

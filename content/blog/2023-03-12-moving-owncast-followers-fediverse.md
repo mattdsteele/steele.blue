@@ -1,5 +1,6 @@
 ---
 title: Keeping your Fediverse followers when moving Owncast servers
+layout: post
 ---
 
 So you've got an Owncast server running, and it's [part of the Fediverse](https://owncast.online/docs/social/), so your Mastodon friends can be notified when you start a stream. Neat!

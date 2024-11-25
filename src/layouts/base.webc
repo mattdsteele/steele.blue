@@ -1,0 +1,75 @@
+---js
+// Ideally this would be pulled from the post, but it doesn't seem to work here :/
+const description = 'A post from Matt Steele';
+const title = $data?.title || 'Matt Steele'
+---
+
+<!doctype html>
+<html lang="en">
+    <style webc:bucket="critical">
+        /* Base settings */
+        *,:before,:after {
+            box-sizing: border-box;
+        }
+
+        picture, img {
+            max-inline-size: 100%;
+            block-size: auto;
+        }
+
+        html {
+            background-color: var(--bg-accent-color);
+        }
+
+        body {
+            padding: 0 8px;
+            max-width: 800px;
+            margin: auto;
+            background-color: var(--bg-color);
+
+            color: var(--text-color)
+        }
+
+        pre.shiki {
+            max-width: 100%;
+            overflow-y: scroll;
+        }
+        
+        /* Dark Mode overrides */
+        @media (prefers-color-scheme: dark) {
+            img {
+                filter: brightness(0.8) contrast(1.2);
+            }
+        }
+    </style>
+    <head>
+        <style @raw="getBundle('css', 'critical')" webc:keep></style>
+        <link rel="stylesheet" webc:keep :href="getBundleFileUrl('css')">
+        <link rel="stylesheet" webc:keep :href="'/css/variables.css'">
+        <link rel="stylesheet" webc:keep :href="'/css/typography.css'">
+        <link rel="stylesheet" webc:keep :href="'/css/webfont.css'">
+        <script type="module" webc:keep src="/assets/lite-vimeo-embed.js" defer></script>
+        <script type="module" webc:keep src="/assets/lite-youtube.js" defer></script>
+        <link rel="alternate" href="/feed" title="Post Feed" type="application/atom+xml">
+        <link rel="icon" href="/images/profile-avi.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <title @text="title"></title>
+        <meta name="description" :content="description" />
+        <meta name="generator" :content="eleventy.generator">
+
+        <meta property="og:title" :content="$data.title" />
+        <meta property="og:url" :content="'https://steele.blue' + $data.page.url" />
+        <meta property="og:description" :content="description" />
+        <meta property="og:image" content="/images/profile-avi.png" />
+        <meta property="og:type" content="article" />
+    </head>
+    <body>
+        <page-header></page-header>
+    
+        <main @html="content">
+        </main>
+    
+        <about-me></about-me>
+    </body>
+    
+    </html>
