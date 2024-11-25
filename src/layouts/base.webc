@@ -1,6 +1,9 @@
 ---js
+// Ideally this would be pulled from the post, but it doesn't seem to work here :/
 const description = 'A post from Matt Steele';
+const title = $data?.title || 'Matt Steele'
 ---
+
 <!doctype html>
 <html lang="en">
     <style webc:bucket="critical">
@@ -51,6 +54,7 @@ const description = 'A post from Matt Steele';
         <link rel="icon" href="/images/profile-avi.png">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
         <title @text="title"></title>
+        <meta name="description" :content="description" />
         <meta name="generator" :content="eleventy.generator">
 
         <meta property="og:title" :content="$data.title" />
