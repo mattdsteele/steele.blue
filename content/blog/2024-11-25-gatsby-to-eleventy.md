@@ -33,7 +33,7 @@ With the recent 3.0 release of Eleventy (now powered by ES Modules), it felt lik
 
 I didn't want to lose out on the component model when moving off Gatsby.
 I've struggled with the template-first model that Jekyll, Hugo, and other SSGs use when it's not driven by a framework.
-And while I [really like Web Components](/web-components-arent-weird-anymore/), it didn't feel like the right tool for a primarily static it didn't feel like the right tool for a primarily static site, without building my own server-side rendering framework along the way.
+And while I [really like Web Components](/web-components-arent-weird-anymore/), it didn't feel like the right tool for a primarily static site, without building my own server-side rendering framework along the way.
 
 [WebC](https://www.11ty.dev/docs/languages/webc/) is a new authoring format, loosely coupled with Eleventy, and hit the sweet spot. It's got a similar feel to Single File Component models popularized by Vue and Astro, but it outputs markup akin to Web Components.
 Using WebC, I was able to rebuild most of the Gatsby components, and not feel like I was spaghettifying my codebase.
