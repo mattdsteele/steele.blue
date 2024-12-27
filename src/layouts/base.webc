@@ -49,6 +49,7 @@ const title = $data?.title || 'Matt Steele'
         <link rel="stylesheet" webc:keep :href="'/css/typography.css'">
         <link rel="stylesheet" webc:keep :href="'/css/webfont.css'">
         <link rel="me" webc:keep href="https://carhenge.club/@mattdsteele">
+        <link rel="me" webc:keep href="https://github.com/mattdsteele">
         <script defer type="module" @raw="getBundle('js')" webc:keep></script>
         <link rel="alternate" href="/feed" title="Post Feed" type="application/atom+xml">
         <link rel="icon" href="/images/profile-avi.png">
