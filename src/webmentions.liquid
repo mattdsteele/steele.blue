@@ -1,0 +1,96 @@
+{% css %}
+.webmentions {
+    h2 {
+        margin-bottom: 4px;
+    }
+    .facepile {
+        --overlap: 8px;
+        margin-left: var(--overlap);
+    }
+
+    a.avi {
+        display: inline-block;
+        margin-left: calc(-1 * var(--overlap));
+
+        img {
+            border-radius: 100%;
+            border: 2px solid white;
+            &:hover {
+                position: relative;
+                scale: 1.2;
+                z-index: 2;
+            }
+        }
+    }
+    .wm-reply {
+        a.avi {
+            position: relative;
+            top: 16px;
+        }
+
+        .wm-reply-meta {
+            display: flex;
+            align-items: center;
+            padding: 4px;
+
+            .wm-reply-name {
+                font-weight: 700;
+            }
+            .wm-reply-date {
+                color: var(--cyan-11);
+            }
+            span {
+                margin-top: 0;
+                margin-left: 12px;
+            }
+        }
+        .wm-reply-text {
+            margin-top: -16px;
+            margin-left: 64px;
+        }
+        .wm-reply-author:not(:hover) {
+            text-decoration: none;
+        }
+    }
+}
+
+{% endcss %}
+
+{%- assign wms = webmentions | webmentionsForUrl: page.url -%}
+{%- assign imgSize="48" -%}
+
+<div class="webmentions">
+{% if wms['repost-of'] %}
+    {%- assign reactions = wms['repost-of'] -%}
+    <h2>{{reactions.length}} Reposts</h2>
+    <div class="facepile">
+        {% for avi in reactions %}
+            <a class="avi" href="{{ avi.author.url }}"><img alt="{{ avi.author.name }}" src="{{ avi.author.photo }}" eleventy:widths="{{ imgSize }}" loading="lazy" decoding="async"></a>
+        {% endfor %}
+    </div>
+{% endif %}
+
+{% if wms['like-of'] %}
+    {%- assign reactions = wms['like-of'] -%}
+    <h2>{{reactions.length}} Likes</h2>
+    <div class="facepile">
+        {% for avi in reactions %}
+            <a class="avi" href="{{ avi.author.url }}"><img alt="{{ avi.author.name }}" src="{{ avi.author.photo }}" eleventy:widths="{{ imgSize }}"></a>
+        {% endfor %}
+    </div>
+{% endif %}
+
+{% if wms['in-reply-to'] %}
+    {%- assign replies = wms['in-reply-to'] -%}
+    <h2>{{replies.length}} Replies</h2>
+    {% for avi in replies %}
+        <div class="wm-reply">
+            <div class="wm-reply-meta">
+                <a class="avi" href="{{ avi.url }}"><img alt="{{ avi.author.name }}" src="{{ avi.author.photo }}" eleventy:widths="{{ imgSize }}"></a>
+                <a class="wm-reply-author" href="{{ avi.url }}"><span class="wm-reply-name">{{ avi.author.name }}</span></a>
+                <a href="{{ avi.url }}"><span class="wm-reply-date">{{  avi.published | date:"%b %u, %Y" }}</span></a>
+            </div>
+            <p class="wm-reply-text">{{ avi.content.text }}</p>
+        </div>
+    {% endfor %}
+{% endif %}

@@ -26,6 +26,11 @@ const last = collections.nonRssPosts[collections.nonRssPosts.length - 1];
 		{% set lastPost = collections.nonRssPosts | last %}
 		{{ last.content | safe }}
 	 </template>
+	<template webc:type="11ty" 11ty:type="njk">
+		{% for child in webmentions %}
+		  <img src="{{child.author.photo}}" alt="Photo">
+		{% endfor %}
+	</template>
 </section>
 
 <post-archive></post-archive>

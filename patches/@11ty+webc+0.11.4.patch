@@ -1,0 +1,15 @@
+diff --git a/node_modules/@11ty/webc/webc.js b/node_modules/@11ty/webc/webc.js
+index 74d9062..dc1b7b0 100644
+--- a/node_modules/@11ty/webc/webc.js
++++ b/node_modules/@11ty/webc/webc.js
+@@ -222,7 +222,9 @@ class WebC {
+ 		let rawAst = this.getAST(content);
+ 
+ 		let ast = new AstSerializer(this.astOptions);
+-		ast.setComponentManager(this.globalComponentManager);
++		// https://github.com/11ty/webc/pull/176
++		// ast.setComponentManager(this.globalComponentManager);
++		ast.setComponentManager(new ComponentManager());
+ 		ast.setBundlerMode(this.bundlerMode);
+ 		ast.setMode(mode);
+ 		ast.setContent(content);

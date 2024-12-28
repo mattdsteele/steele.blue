@@ -3,17 +3,24 @@ h1, h2, h3, h4, h5, h6, pre, code {
     color: var(--headline-color);
 }
 
-p {
-    margin-top: 24px;
+p, span, li {
     font-size: var(--text-size);
-    line-height: 1.3;
 
-    code {
-        background-color: var(--code-bg-color);
+}
+
+main article {
+    p {
+        margin-top: 24px;
+        line-height: 1.3;
+    }
+
+    pre.shiki {
+        background-color: var(--code-bg-color) !important;
+        padding: 16px;
     }
 }
 
-p, li {
+p, span, li {
     font-family: 'Metrophobic', Arial, sans-serif;
 }
 
