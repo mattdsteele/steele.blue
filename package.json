@@ -13,6 +13,7 @@
   ],
   "license": "MIT",
   "scripts": {
+    "postinstall": "patch-package",
     "clean": "rm -rf _site",
     "serve": "eleventy --serve",
     "build": "eleventy"
@@ -26,6 +27,8 @@
     "@11ty/eleventy-plugin-rss": "^2.0.2",
     "@11ty/eleventy-plugin-webc": "^0.11.2",
     "flat-cache": "^6.1.0",
+    "lodash-es": "^4.17.21",
+    "patch-package": "^8.0.0",
     "shiki": "^1.22.0"
   }
 }

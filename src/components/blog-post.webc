@@ -1,6 +1,11 @@
----
-layout: 'layouts/base.webc'
----
+<script webc:setup>
+    const last = this.collections.nonRssPosts[collections.nonRssPosts.length - 1];
+    if (last) {
+        const { content, title, postDate, rssOnly } = last;
+    } else {
+        const { content, title, postDate, rssOnly } = this.$data;
+    }
+</script>
 
 <style webc:scoped="" webc:keep>
     h1 {
@@ -22,13 +27,9 @@ layout: 'layouts/base.webc'
     }
 </script>
 
-<section>
-
+<section class="blog">
     <h1 class="title" @text="title"></h1>
     <rss-club webc:if="rss_only"></rss-club>
     <h2 @text="postDate"></h2>
     <article @raw="content"></article>
-    <template webc:type="11ty" 11ty:type="liquid">
-        {% include "webmentions" %}
-    </template>
 </section>
