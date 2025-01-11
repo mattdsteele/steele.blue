@@ -16,5 +16,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           WEBMENTION_IO_API: ${{ secrets.WEBMENTION_IO_API }}
+      - run: npm ci
       - run: npm run build
       - run: npx webmention _site/atom.xml --limit 1 --debug
