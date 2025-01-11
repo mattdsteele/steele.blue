@@ -65,7 +65,7 @@
     <h2>{{reactions.length}} Reposts</h2>
     <div class="facepile">
         {% for avi in reactions %}
-            <a class="avi" href="{{ avi.author.url }}"><img alt="{{ avi.author.name }}" src="{{ avi.author.photo }}" eleventy:widths="{{ imgSize }}" loading="lazy" decoding="async"></a>
+            <a class="avi" href="{{ avi.author.url }}"><img alt="{{ avi.author.name }}" src="{{ avi.author.photo }}" width="{{ imgSize }}" loading="lazy" decoding="async"></a>
         {% endfor %}
     </div>
 {% endif %}
@@ -75,7 +75,7 @@
     <h2>{{reactions.length}} Likes</h2>
     <div class="facepile">
         {% for avi in reactions %}
-            <a class="avi" href="{{ avi.author.url }}"><img alt="{{ avi.author.name }}" src="{{ avi.author.photo }}" eleventy:widths="{{ imgSize }}"></a>
+            <a class="avi" href="{{ avi.author.url }}"><img alt="{{ avi.author.name }}" src="{{ avi.author.photo }}" width="{{ imgSize }}"></a>
         {% endfor %}
     </div>
 {% endif %}
@@ -86,7 +86,7 @@
     {% for avi in replies %}
         <div class="wm-reply">
             <div class="wm-reply-meta">
-                <a class="avi" href="{{ avi.url }}"><img alt="{{ avi.author.name }}" src="{{ avi.author.photo }}" eleventy:widths="{{ imgSize }}"></a>
+                <a class="avi" href="{{ avi.url }}"><img alt="{{ avi.author.name }}" src="{{ avi.author.photo }}" width="{{ imgSize }}"></a>
                 <a class="wm-reply-author" href="{{ avi.url }}"><span class="wm-reply-name">{{ avi.author.name }}</span></a>
                 <a href="{{ avi.url }}"><span class="wm-reply-date">{{  avi.published | date:"%b %u, %Y" }}</span></a>
             </div>
