@@ -8,14 +8,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Build
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: 22
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          WEBMENTION_IO_API: ${{ secrets.WEBMENTION_IO_API }}
       - run: npm ci
-      - run: npm run build
+      - shell: bash
+        env:
+          WEBMENTION_IO_API: ${{ secrets.WEBMENTION_IO_API }}
+        run: npm run build
       - run: npx webmention _site/atom.xml --limit 1 --debug
