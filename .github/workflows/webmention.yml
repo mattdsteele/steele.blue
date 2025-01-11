@@ -20,4 +20,4 @@ jobs:
         env:
           WEBMENTION_IO_API: ${{ secrets.WEBMENTION_IO_API }}
         run: npm run build
-      - run: npx webmention _site/atom.xml --limit 1 --debug
+      - run: npx webmention _site/atom.xml --limit 1 --send
