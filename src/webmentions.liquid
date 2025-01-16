@@ -62,7 +62,7 @@
 <div class="webmentions">
 {% if wms['repost-of'] %}
     {%- assign reactions = wms['repost-of'] -%}
-    <h2>{{reactions.length}} Reposts</h2>
+    <h2>{{reactions.length | pluralize: 'Repost'}}</h2>
     <div class="facepile">
         {% for avi in reactions %}
             <a class="avi" href="{{ avi.author.url }}"><img alt="{{ avi.author.name }}" src="{{ avi.author.photo }}" width="{{ imgSize }}" loading="lazy" decoding="async"></a>
@@ -72,7 +72,7 @@
 
 {% if wms['like-of'] %}
     {%- assign reactions = wms['like-of'] -%}
-    <h2>{{reactions.length}} Likes</h2>
+    <h2>{{reactions.length | pluralize: 'Like'}}</h2>
     <div class="facepile">
         {% for avi in reactions %}
             <a class="avi" href="{{ avi.author.url }}"><img alt="{{ avi.author.name }}" src="{{ avi.author.photo }}" width="{{ imgSize }}"></a>
@@ -82,7 +82,7 @@
 
 {% if wms['in-reply-to'] %}
     {%- assign replies = wms['in-reply-to'] -%}
-    <h2>{{replies.length}} Replies</h2>
+    <h2>{{replies.length | pluralize: 'Reply', 'Replies'}}</h2>
     {% for avi in replies %}
         <div class="wm-reply">
             <div class="wm-reply-meta">

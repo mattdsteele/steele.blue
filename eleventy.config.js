@@ -70,6 +70,12 @@ export default async function (eleventyConfig) {
   eleventyConfig.addFilter('year', function (value) {
     return value.getFullYear();
   });
+  eleventyConfig.addFilter('pluralize', function(num, singular, plural) {
+    if (num === 1) {
+      return `${num} ${singular}`;
+    }
+    return plural || `${singular}s`;
+  });
   eleventyConfig.addPlugin(webmentionPlugin);
   eleventyConfig.addBundle("css");
 }
