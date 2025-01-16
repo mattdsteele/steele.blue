@@ -29,9 +29,9 @@ This one's substantially smaller and doesn't actually get on the bike frequently
 I don't buy many products from [meme influencers](https://thrillpool.com/), but I make an exception for an especially good Simpsons reference.
 It makes me want to [conquer the Murderhorn](https://simpsonswiki.com/wiki/Powersauce), even when I fill it with apple cores and Chinese newspapers.
 
-## Postscript - Bottle Longeivity
+## Postscript - Bottle Longevity
 
-One endless conversation that I've never heard a satisfactory answer is bottle longeivity.
+One endless conversation that I've never heard a satisfactory answer is bottle longevity.
 Advice is all over the place, from "replace your bottles every season" to "use them until mold is visible and unremovable".
 
 I tend to be pragmatic; I'll give them a good cleaning with soap and a bottle brush, and they'll be good for years.
