@@ -27,6 +27,13 @@
             position: relative;
             top: 16px;
         }
+        .avi-placeholder {
+            position: relative;
+            top: 16px;
+            width: 48px;
+            height: 52px;
+            margin: 0 !important;
+        }
 
         .wm-reply-meta {
             display: flex;
@@ -88,6 +95,26 @@
     </div>
 {% endif %}
 
+{% if wms['mention-of'] %}
+    {%- assign reactions = wms['mention-of'] -%}
+    <h2>{{reactions.length | pluralize: 'Mention'}}</h2>
+
+    {% for mention in reactions %}
+        <div class="wm-reply">
+            <div class="wm-reply-meta">
+                {% if mention.author.photo != "" %}
+                    <a class="avi" href="{{ mention.url }}"><img alt="{{ mention.author.name }}" src="{{ mention.author.photo }}" width="{{ imgSize }}"></a>
+                {% else %}
+                    <span class="avi-placeholder"></span>
+                {% endif %}
+                <a class="wm-reply-author" href="{{ mention.url }}"><span class="wm-reply-name">{{ mention.author.name }}</span></a>
+                <a href="{{ mention.url }}"><span class="wm-reply-date">{{  mention.published | date:"%b %d, %Y" }}</span></a>
+            </div>
+            <p class="wm-reply-text">{{ mention.content.text }}</p>
+        </div>
+    {% endfor %}
+{% endif %}
+
 {% if wms['in-reply-to'] %}
     {%- assign replies = wms['in-reply-to'] -%}
     <h2>{{replies.length | pluralize: 'Reply', 'Replies'}}</h2>
@@ -96,7 +123,7 @@
             <div class="wm-reply-meta">
                 <a class="avi" href="{{ avi.url }}"><img alt="{{ avi.author.name }}" src="{{ avi.author.photo }}" width="{{ imgSize }}"></a>
                 <a class="wm-reply-author" href="{{ avi.url }}"><span class="wm-reply-name">{{ avi.author.name }}</span></a>
-                <a href="{{ avi.url }}"><span class="wm-reply-date">{{  avi.published | date:"%b %u, %Y" }}</span></a>
+                <a href="{{ avi.url }}"><span class="wm-reply-date">{{  avi.published | date:"%b %d, %Y" }}</span></a>
             </div>
             <p class="wm-reply-text">{{ avi.content.text }}</p>
         </div>
