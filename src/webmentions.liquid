@@ -104,6 +104,8 @@
             <div class="wm-reply-meta">
                 {% if mention.author.photo != "" %}
                     <a class="avi" href="{{ mention.url }}"><img alt="{{ mention.author.name }}" src="{{ mention.author.photo }}" width="{{ imgSize }}"></a>
+                {% elsif mention.photo[0] %}
+                    <a class="avi" href="{{ mention.url }}"><img alt="{{ mention.author.name }}" src="{{ mention.photo[0] }}" width="{{ imgSize }}"></a>
                 {% else %}
                     <span class="avi-placeholder"></span>
                 {% endif %}
