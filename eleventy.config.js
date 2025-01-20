@@ -74,7 +74,7 @@ export default async function (eleventyConfig) {
     if (num === 1) {
       return `${num} ${singular}`;
     }
-    return plural || `${singular}s`;
+    return `${num} ${plural || `${singular}s`}`;
   });
   eleventyConfig.addPlugin(webmentionPlugin);
   eleventyConfig.addBundle("css");

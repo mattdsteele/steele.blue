@@ -60,6 +60,14 @@
 {%- assign imgSize="48" -%}
 
 <div class="webmentions">
+
+<hr>
+
+<h2>Interactions</h2>
+
+
+<p>Interact with this page via <a href="/webmentions">Webmentions</a>.</p>
+
 {% if wms['repost-of'] %}
     {%- assign reactions = wms['repost-of'] -%}
     <h2>{{reactions.length | pluralize: 'Repost'}}</h2>
