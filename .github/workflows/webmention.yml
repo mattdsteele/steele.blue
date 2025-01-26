@@ -20,4 +20,12 @@ jobs:
         env:
           WEBMENTION_IO_API: ${{ secrets.WEBMENTION_IO_API }}
         run: npm run build
+      - name: Cloudflare Pages
+        uses: cloudflare/pages-action@1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: 'steele.blue'
+          directory: '_site'
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
       - run: npx webmention _site/atom.xml --debug --send
