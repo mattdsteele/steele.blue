@@ -50,7 +50,7 @@ const title = $data?.title || 'Matt Steele'
         <link rel="stylesheet" webc:keep :href="'/css/webfont.css'">
         <link rel="me" webc:keep href="https://carhenge.club/@mattdsteele">
         <link rel="me" webc:keep href="https://github.com/mattdsteele">
-        <link rel="webmention" webc:keep href="https://webmention.io/steele.blue/webmention" />
+        <link rel="webmention" webc:keep href="https://webmention.io/www.steele.blue/webmention" />
         <script defer type="module" @raw="getBundle('js')" webc:keep></script>
         <link rel="alternate" href="/feed" title="Post Feed" type="application/atom+xml">
         <link rel="icon" href="/images/profile-avi.png">
@@ -60,7 +60,7 @@ const title = $data?.title || 'Matt Steele'
         <meta name="generator" :content="eleventy.generator">
 
         <meta property="og:title" :content="$data.title" />
-        <meta property="og:url" :content="'https://steele.blue' + $data.page.url" />
+        <meta property="og:url" :content="'https://www.steele.blue' + $data.page.url" />
         <meta property="og:description" :content="description" />
         <meta property="og:image" content="/images/profile-avi.png" />
         <meta property="og:type" content="article" />

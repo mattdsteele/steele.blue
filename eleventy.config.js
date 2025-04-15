@@ -57,7 +57,7 @@ export default async function (eleventyConfig) {
       language: 'en',
       title: 'Matt Steele',
       subtitle: 'The personal blog of Matt Steele',
-      base: 'https://steele.blue',
+      base: 'https://www.steele.blue',
       author: {
         name: 'Matt Steele',
         email: 'matt@steele.blue'
