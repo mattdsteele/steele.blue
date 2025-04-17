@@ -1,0 +1,931 @@
+{
+  "type": "feed",
+  "name": "Webmentions",
+  "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Open Mentions",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/1b14e0eaa7fee3448e58eb8d6a7d6cb59e481eb92622512953023b97ab86e64a.png",
+        "url": "https://indieweb.social/@OpenMentions"
+      },
+      "url": "https://carhenge.club/@mattdsteele/113858614133522427#reblogged-by-113796137878101488",
+      "published": null,
+      "wm-received": "2025-01-26T19:17:03Z",
+      "wm-id": 1880368,
+      "wm-source": "https://brid.gy/repost/mastodon/@mattdsteele@carhenge.club/113858614133522427/113796137878101488",
+      "wm-target": "https://steele.blue/webmentions/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://steele.blue/webmentions/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Open Mentions",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/1b14e0eaa7fee3448e58eb8d6a7d6cb59e481eb92622512953023b97ab86e64a.png",
+        "url": "https://indieweb.social/@OpenMentions"
+      },
+      "url": "https://carhenge.club/@mattdsteele/113858614133522427#favorited-by-113796137878101488",
+      "published": null,
+      "wm-received": "2025-01-26T19:17:03Z",
+      "wm-id": 1880367,
+      "wm-source": "https://brid.gy/like/mastodon/@mattdsteele@carhenge.club/113858614133522427/113796137878101488",
+      "wm-target": "https://steele.blue/webmentions/",
+      "wm-protocol": "webmention",
+      "like-of": "https://steele.blue/webmentions/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Roy Lindauer",
+        "photo": "https://avatars.webmention.io/imageproxy.roylindauer.com/e34ce87b22f495730293ee9a9b8efbde615777badef227984c0ed53a6e42c5e6.jpg",
+        "url": "https://roylindauer.com/"
+      },
+      "url": "https://roylindauer.com/2025/01/24/hey-webmentions-seem-to-be-working.html",
+      "published": "2025-01-24T00:00:00",
+      "wm-received": "2025-01-26T05:19:12Z",
+      "wm-id": 1879951,
+      "wm-source": "https://roylindauer.com/2025/01/24/hey-webmentions-seem-to-be-working.html",
+      "wm-target": "https://steele.blue/webmentions/",
+      "wm-protocol": "webmention",
+      "name": "Hey Webmentions Seem to be Working",
+      "content": {
+        "html": "<p>Learning all about the indieweb and webmentions. They are pretty cool. Kinda like pingbacks but better (way better).</p> <p>Thanks to <a href=\"https://steele.blue/webmentions/\">Matt Steele’s Post about Webmentions</a> I got this working. At least, displaying webmentions. Posting them is another matter, for another time. </p> <p>Now to get someone to webmention this post :D</p>",
+        "text": "Learning all about the indieweb and webmentions. They are pretty cool. Kinda like pingbacks but better (way better). Thanks to Matt Steele’s Post about Webmentions I got this working. At least, displaying webmentions. Posting them is another matter, for another time.  Now to get someone to webmention this post :D"
+      },
+      "mention-of": "https://steele.blue/webmentions/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Fundor333",
+        "photo": "",
+        "url": "https://fundor333.com/"
+      },
+      "url": "https://fundor333.com/micro/2025/10/and-another-blog-is-powered-by-webmention/",
+      "published": "2025-01-20T20:07:12+01:00",
+      "wm-received": "2025-01-20T19:13:51Z",
+      "wm-id": 1877790,
+      "wm-source": "https://fundor333.com/micro/2025/10/and-another-blog-is-powered-by-webmention/",
+      "wm-target": "https://steele.blue/webmentions/",
+      "wm-protocol": "webmention",
+      "name": "And Another Blog Is Powered by Webmention!",
+      "photo": [
+        "https://fundor333.com/img/logo.png"
+      ],
+      "content": {
+        "html": "<p><a href=\"https://steele.blue/webmentions/\" class=\"u-in-reply\"><i></i>In replay of https://steele.blue/webmentions/</a></p><p>Another blog using Webmentions, creating and indipendent network between sites/blogs without the needs of social networks</p>",
+        "text": "In replay of https://steele.blue/webmentions/\n\nAnother blog using Webmentions, creating and indipendent network between sites/blogs without the needs of social networks"
+      },
+      "mention-of": "https://steele.blue/webmentions/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://fundor333.com/micro/2025/10/and-another-blog-is-powered-by-webmention/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dale Trexel",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/38a1e60e40626da325e0df21d2c19847820073ad131450dd48d4b609b2266c12.jpg",
+        "url": "https://techhub.social/@daletrexel"
+      },
+      "url": "https://carhenge.club/@mattdsteele/113858614133522427#favorited-by-113861381025565103",
+      "published": null,
+      "wm-received": "2025-01-20T15:43:56Z",
+      "wm-id": 1877730,
+      "wm-source": "https://brid.gy/like/mastodon/@mattdsteele@carhenge.club/113858614133522427/113861381025565103",
+      "wm-target": "https://steele.blue/webmentions/",
+      "wm-protocol": "webmention",
+      "like-of": "https://steele.blue/webmentions/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dylan </closingtags.com>",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/8149e5a454c4a5d372c5667bb614f86264ba2d2b5bc9e1150308a022903045df.jpg",
+        "url": "https://mastodon.social/@closingtags"
+      },
+      "url": "https://carhenge.club/@mattdsteele/113858614133522427#reblogged-by-109718804763201595",
+      "published": null,
+      "wm-received": "2025-01-20T13:01:25Z",
+      "wm-id": 1877685,
+      "wm-source": "https://brid.gy/repost/mastodon/@mattdsteele@carhenge.club/113858614133522427/109718804763201595",
+      "wm-target": "https://steele.blue/webmentions/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://steele.blue/webmentions/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jay Hannah",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/d9eedc95a87abf5e0996bfe9eb5af9f22899fe591f5c0a42de5856f37b5511bc.png",
+        "url": "https://flyovercountry.social/@deafferret"
+      },
+      "url": "https://carhenge.club/@mattdsteele/113858614133522427#reblogged-by-113488115840717122",
+      "published": null,
+      "wm-received": "2025-01-20T11:34:36Z",
+      "wm-id": 1877659,
+      "wm-source": "https://brid.gy/repost/mastodon/@mattdsteele@carhenge.club/113858614133522427/113488115840717122",
+      "wm-target": "https://steele.blue/webmentions/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://steele.blue/webmentions/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jay Hannah",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/d9eedc95a87abf5e0996bfe9eb5af9f22899fe591f5c0a42de5856f37b5511bc.png",
+        "url": "https://flyovercountry.social/@deafferret"
+      },
+      "url": "https://carhenge.club/@mattdsteele/113858614133522427#favorited-by-113488115840717122",
+      "published": null,
+      "wm-received": "2025-01-20T11:34:35Z",
+      "wm-id": 1877658,
+      "wm-source": "https://brid.gy/like/mastodon/@mattdsteele@carhenge.club/113858614133522427/113488115840717122",
+      "wm-target": "https://steele.blue/webmentions/",
+      "wm-protocol": "webmention",
+      "like-of": "https://steele.blue/webmentions/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jay Hannah",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/d9eedc95a87abf5e0996bfe9eb5af9f22899fe591f5c0a42de5856f37b5511bc.png",
+        "url": "https://flyovercountry.social/@deafferret"
+      },
+      "url": "https://flyovercountry.social/@deafferret/113860445144501777",
+      "published": "2025-01-20T11:28:35+00:00",
+      "wm-received": "2025-01-20T11:34:34Z",
+      "wm-id": 1877657,
+      "wm-source": "https://brid.gy/comment/mastodon/@mattdsteele@carhenge.club/113858614133522427/113860445165618952",
+      "wm-target": "https://steele.blue/webmentions/",
+      "wm-protocol": "webmention",
+      "content": {
+        "html": "<p><span class=\"h-card\"><a href=\"https://carhenge.club/@mattdsteele\" class=\"u-url\">@<span>mattdsteele</span></a></span> oooo! Thanks for writing that up!</p>",
+        "text": "@mattdsteele oooo! Thanks for writing that up!"
+      },
+      "in-reply-to": "https://steele.blue/webmentions/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jeff Sheets",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/c3caa58880eb4141f5b1de744941dd3f93bce2c19a768deea09c940f8cfed641.png",
+        "url": "https://hachyderm.io/@jeffsheets"
+      },
+      "url": "https://carhenge.club/@mattdsteele/113858614133522427#favorited-by-109595227733877457",
+      "published": null,
+      "wm-received": "2025-01-20T06:21:24Z",
+      "wm-id": 1877602,
+      "wm-source": "https://brid.gy/like/mastodon/@mattdsteele@carhenge.club/113858614133522427/109595227733877457",
+      "wm-target": "https://steele.blue/webmentions/",
+      "wm-protocol": "webmention",
+      "like-of": "https://steele.blue/webmentions/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Bob Monsour",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/f6918dc70cb53fbeca72ca3309e9df57fab8b2df97ed318c1d0a45b18ae96f35.png",
+        "url": "https://indieweb.social/@bobmonsour"
+      },
+      "url": "https://indieweb.social/@bobmonsour/113858694173959970",
+      "published": "2025-01-20T04:03:17+00:00",
+      "wm-received": "2025-01-20T04:15:51Z",
+      "wm-id": 1877580,
+      "wm-source": "https://brid.gy/comment/mastodon/@mattdsteele@carhenge.club/113858614133522427/113858694231634182",
+      "wm-target": "https://steele.blue/webmentions/",
+      "wm-protocol": "webmention",
+      "content": {
+        "html": "<p><span class=\"h-card\"><a href=\"https://carhenge.club/@mattdsteele\" class=\"u-url\">@<span>mattdsteele</span></a></span> Nicely done, Matt!</p>",
+        "text": "@mattdsteele Nicely done, Matt!"
+      },
+      "in-reply-to": "https://steele.blue/webmentions/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "benji",
+        "photo": "https://avatars.webmention.io/benji.dog/98f50ccee2f72b224906440e0a78cc1fa5ea016ae65e5fa0d42ff5000ad29d24.jpg",
+        "url": "https://benji.dog"
+      },
+      "url": "https://www.benji.dog/likes/1736807165-my-favorite-water-bottles/",
+      "published": "2025-01-13T22:26:04+00:00",
+      "wm-received": "2025-01-13T22:27:03Z",
+      "wm-id": 1875265,
+      "wm-source": "https://www.benji.dog/likes/1736807165-my-favorite-water-bottles/",
+      "wm-target": "https://steele.blue/my-favorite-water-bottles/",
+      "wm-protocol": "webmention",
+      "syndication": [
+        "https://fed.brid.gy/"
+      ],
+      "summary": {
+        "content-type": "text/plain",
+        "value": "Liked https://steele.blue/my-favorite-water-bottles/"
+      },
+      "like-of": "https://steele.blue/my-favorite-water-bottles/",
+      "wm-property": "like-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://benji.dog/likes/1736807165-my-favorite-water-bottles/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Zach Leatherman :11ty:",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png",
+        "url": "https://fediverse.zachleat.com/@zachleat"
+      },
+      "url": "https://carhenge.club/@mattdsteele/113545129428029254#reblogged-by-760",
+      "published": null,
+      "wm-received": "2024-12-27T11:30:04Z",
+      "wm-id": 1869965,
+      "wm-source": "https://brid.gy/repost/mastodon/@mattdsteele@carhenge.club/113545129428029254/760",
+      "wm-target": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Eleventy ???? v3.0.0",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/8e11fc7c24ecef298727405f9dd171e91253a662cb92307f75997fdc4d2ba139.png",
+        "url": "https://fosstodon.org/@eleventy"
+      },
+      "url": "https://carhenge.club/@mattdsteele/113545129428029254#reblogged-by-12782",
+      "published": null,
+      "wm-received": "2024-12-27T11:30:04Z",
+      "wm-id": 1869964,
+      "wm-source": "https://brid.gy/repost/mastodon/@mattdsteele@carhenge.club/113545129428029254/12782",
+      "wm-target": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Wilko Hardenberg",
+        "photo": "https://avatars.webmention.io/carhenge.club/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://hcommons.social/@wilko"
+      },
+      "url": "https://carhenge.club/@mattdsteele/113545129428029254#reblogged-by-18893",
+      "published": null,
+      "wm-received": "2024-12-27T11:30:03Z",
+      "wm-id": 1869963,
+      "wm-source": "https://brid.gy/repost/mastodon/@mattdsteele@carhenge.club/113545129428029254/18893",
+      "wm-target": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jay Hannah",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/d9eedc95a87abf5e0996bfe9eb5af9f22899fe591f5c0a42de5856f37b5511bc.png",
+        "url": "https://flyovercountry.social/@deafferret"
+      },
+      "url": "https://carhenge.club/@mattdsteele/113545129428029254#reblogged-by-113488115840717122",
+      "published": null,
+      "wm-received": "2024-12-27T11:30:02Z",
+      "wm-id": 1869962,
+      "wm-source": "https://brid.gy/repost/mastodon/@mattdsteele@carhenge.club/113545129428029254/113488115840717122",
+      "wm-target": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dylan </closingtags.com>",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/8149e5a454c4a5d372c5667bb614f86264ba2d2b5bc9e1150308a022903045df.jpg",
+        "url": "https://mastodon.social/@closingtags"
+      },
+      "url": "https://carhenge.club/@mattdsteele/113545129428029254#reblogged-by-109718804763201595",
+      "published": null,
+      "wm-received": "2024-12-27T11:30:01Z",
+      "wm-id": 1869961,
+      "wm-source": "https://brid.gy/repost/mastodon/@mattdsteele@carhenge.club/113545129428029254/109718804763201595",
+      "wm-target": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "John Skiles Skinner",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/9562abd55decc632874b98dc2fbbf1ab885e917c8b6f7b2f7cc17305fa42df19.png",
+        "url": "https://carhenge.club/@skiles"
+      },
+      "url": "https://carhenge.club/@mattdsteele/113545129428029254#reblogged-by-2",
+      "published": null,
+      "wm-received": "2024-12-27T11:30:00Z",
+      "wm-id": 1869960,
+      "wm-source": "https://brid.gy/repost/mastodon/@mattdsteele@carhenge.club/113545129428029254/2",
+      "wm-target": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Bob Monsour",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/f6918dc70cb53fbeca72ca3309e9df57fab8b2df97ed318c1d0a45b18ae96f35.png",
+        "url": "https://indieweb.social/@bobmonsour"
+      },
+      "url": "https://carhenge.club/@mattdsteele/113545129428029254#reblogged-by-109408299827746206",
+      "published": null,
+      "wm-received": "2024-12-27T11:30:00Z",
+      "wm-id": 1869959,
+      "wm-source": "https://brid.gy/repost/mastodon/@mattdsteele@carhenge.club/113545129428029254/109408299827746206",
+      "wm-target": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Eleventy ???? v3.0.0",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/8e11fc7c24ecef298727405f9dd171e91253a662cb92307f75997fdc4d2ba139.png",
+        "url": "https://fosstodon.org/@eleventy"
+      },
+      "url": "https://carhenge.club/@mattdsteele/113545129428029254#favorited-by-12782",
+      "published": null,
+      "wm-received": "2024-12-27T11:29:59Z",
+      "wm-id": 1869958,
+      "wm-source": "https://brid.gy/like/mastodon/@mattdsteele@carhenge.club/113545129428029254/12782",
+      "wm-target": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-protocol": "webmention",
+      "like-of": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Zach Leatherman :11ty:",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png",
+        "url": "https://fediverse.zachleat.com/@zachleat"
+      },
+      "url": "https://carhenge.club/@mattdsteele/113545129428029254#favorited-by-760",
+      "published": null,
+      "wm-received": "2024-12-27T11:29:58Z",
+      "wm-id": 1869957,
+      "wm-source": "https://brid.gy/like/mastodon/@mattdsteele@carhenge.club/113545129428029254/760",
+      "wm-target": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-protocol": "webmention",
+      "like-of": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "keith kurson",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/395123e8edc39f1309469c18841e37bb24c6889350b5b6dfb8a19ab985b04815.jpg",
+        "url": "https://cute.is/@keith"
+      },
+      "url": "https://carhenge.club/@mattdsteele/113545129428029254#favorited-by-109746038348171255",
+      "published": null,
+      "wm-received": "2024-12-27T11:29:58Z",
+      "wm-id": 1869956,
+      "wm-source": "https://brid.gy/like/mastodon/@mattdsteele@carhenge.club/113545129428029254/109746038348171255",
+      "wm-target": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-protocol": "webmention",
+      "like-of": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Eric McCarthy",
+        "photo": "https://avatars.webmention.io/carhenge.club/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://mastodon.limulus.net/@eric"
+      },
+      "url": "https://carhenge.club/@mattdsteele/113545129428029254#favorited-by-110029364878263480",
+      "published": null,
+      "wm-received": "2024-12-27T11:29:56Z",
+      "wm-id": 1869955,
+      "wm-source": "https://brid.gy/like/mastodon/@mattdsteele@carhenge.club/113545129428029254/110029364878263480",
+      "wm-target": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-protocol": "webmention",
+      "like-of": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Connor Bär",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/735eb18cce93938ac77b58fbca6bb9941316c1e75d2e4435a6444fc5f70aa554.jpg",
+        "url": "https://mastodon.social/@connorbaer"
+      },
+      "url": "https://carhenge.club/@mattdsteele/113545129428029254#favorited-by-112025248156218624",
+      "published": null,
+      "wm-received": "2024-12-27T11:29:56Z",
+      "wm-id": 1869954,
+      "wm-source": "https://brid.gy/like/mastodon/@mattdsteele@carhenge.club/113545129428029254/112025248156218624",
+      "wm-target": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-protocol": "webmention",
+      "like-of": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sammie",
+        "photo": "https://avatars.webmention.io/carhenge.club/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://aus.social/@sammie"
+      },
+      "url": "https://carhenge.club/@mattdsteele/113545129428029254#favorited-by-110809572991719665",
+      "published": null,
+      "wm-received": "2024-12-27T11:29:55Z",
+      "wm-id": 1869953,
+      "wm-source": "https://brid.gy/like/mastodon/@mattdsteele@carhenge.club/113545129428029254/110809572991719665",
+      "wm-target": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-protocol": "webmention",
+      "like-of": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "ayidSudirman",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/15fb69fe4e31bc38f50dfa6db33ad6ce9d2f8aa1b1bd441ac794e7a81d1dd0bc.png",
+        "url": "https://mastodon.social/@a10n"
+      },
+      "url": "https://carhenge.club/@mattdsteele/113545129428029254#favorited-by-113545482888658418",
+      "published": null,
+      "wm-received": "2024-12-27T11:29:55Z",
+      "wm-id": 1869952,
+      "wm-source": "https://brid.gy/like/mastodon/@mattdsteele@carhenge.club/113545129428029254/113545482888658418",
+      "wm-target": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-protocol": "webmention",
+      "like-of": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "LorenAmelang",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/3c5ccb8d830a2b9c87ccdbc2f19d0ff3d33384cb792ac0d3b5ebab2298b4e081.jpg",
+        "url": "https://social.vivaldi.net/@LorenAmelang"
+      },
+      "url": "https://carhenge.club/@mattdsteele/113545129428029254#favorited-by-109564439005298049",
+      "published": null,
+      "wm-received": "2024-12-27T11:29:54Z",
+      "wm-id": 1869951,
+      "wm-source": "https://brid.gy/like/mastodon/@mattdsteele@carhenge.club/113545129428029254/109564439005298049",
+      "wm-target": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-protocol": "webmention",
+      "like-of": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Daniel",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/fd388896dd710254541d2ab291f374e379aa5e76b79e047c59f98f830790827e.jpg",
+        "url": "https://mastodon.social/@danielinoa"
+      },
+      "url": "https://carhenge.club/@mattdsteele/113545129428029254#favorited-by-110494388709494222",
+      "published": null,
+      "wm-received": "2024-12-27T11:29:53Z",
+      "wm-id": 1869950,
+      "wm-source": "https://brid.gy/like/mastodon/@mattdsteele@carhenge.club/113545129428029254/110494388709494222",
+      "wm-target": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-protocol": "webmention",
+      "like-of": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "jameslutley",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/cb7b69ef3ffc1ba7db92ca181768cf400dd15c57f7ffc3e72fac6d2731520f65.jpg",
+        "url": "https://mastodon.social/@jameslutley"
+      },
+      "url": "https://carhenge.club/@mattdsteele/113545129428029254#favorited-by-113549336375319375",
+      "published": null,
+      "wm-received": "2024-12-27T11:29:52Z",
+      "wm-id": 1869949,
+      "wm-source": "https://brid.gy/like/mastodon/@mattdsteele@carhenge.club/113545129428029254/113549336375319375",
+      "wm-target": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-protocol": "webmention",
+      "like-of": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jay Hannah",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/d9eedc95a87abf5e0996bfe9eb5af9f22899fe591f5c0a42de5856f37b5511bc.png",
+        "url": "https://flyovercountry.social/@deafferret"
+      },
+      "url": "https://carhenge.club/@mattdsteele/113545129428029254#favorited-by-113488115840717122",
+      "published": null,
+      "wm-received": "2024-12-27T11:29:52Z",
+      "wm-id": 1869948,
+      "wm-source": "https://brid.gy/like/mastodon/@mattdsteele@carhenge.club/113545129428029254/113488115840717122",
+      "wm-target": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-protocol": "webmention",
+      "like-of": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Timo Tijhof",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/912397a74d20cd73cdfe4bf9b1f1f67925c77840d5c6d466d465611414af1865.jpg",
+        "url": "https://fosstodon.org/@krinkle"
+      },
+      "url": "https://carhenge.club/@mattdsteele/113545129428029254#favorited-by-502",
+      "published": null,
+      "wm-received": "2024-12-27T11:29:51Z",
+      "wm-id": 1869947,
+      "wm-source": "https://brid.gy/like/mastodon/@mattdsteele@carhenge.club/113545129428029254/502",
+      "wm-target": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-protocol": "webmention",
+      "like-of": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "That HTML Blog & The Spicy Web",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/e46df1b2a7513a13a861d85bde623e37d2d9e029d1067e0505685fab9cda0ec4.png",
+        "url": "https://intuitivefuture.com/@vanillaweb"
+      },
+      "url": "https://carhenge.club/@mattdsteele/113545129428029254#favorited-by-113573064738131466",
+      "published": null,
+      "wm-received": "2024-12-27T11:29:51Z",
+      "wm-id": 1869946,
+      "wm-source": "https://brid.gy/like/mastodon/@mattdsteele@carhenge.club/113545129428029254/113573064738131466",
+      "wm-target": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-protocol": "webmention",
+      "like-of": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "thudfactor",
+        "photo": "https://s3-us-east-2.amazonaws.com/carhengeclub/cache/accounts/avatars/110/952/092/227/075/095/original/42376ee7e13f6cdf.webp",
+        "url": "https://hachyderm.io/@thudfactor"
+      },
+      "url": "https://carhenge.club/@mattdsteele/113545129428029254#favorited-by-110952092227075095",
+      "published": null,
+      "wm-received": "2024-12-27T11:29:50Z",
+      "wm-id": 1869945,
+      "wm-source": "https://brid.gy/like/mastodon/@mattdsteele@carhenge.club/113545129428029254/110952092227075095",
+      "wm-target": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-protocol": "webmention",
+      "like-of": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Adam DJ Brett",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/20ac92590b9b4406f6e127bd4d870b8a3f0108ac86c5cc9e8ac4c8cca0762376.jpg",
+        "url": "https://hcommons.social/@adjb"
+      },
+      "url": "https://carhenge.club/@mattdsteele/113545129428029254#favorited-by-110002585724479793",
+      "published": null,
+      "wm-received": "2024-12-27T11:29:49Z",
+      "wm-id": 1869944,
+      "wm-source": "https://brid.gy/like/mastodon/@mattdsteele@carhenge.club/113545129428029254/110002585724479793",
+      "wm-target": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-protocol": "webmention",
+      "like-of": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Reed",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/1055159ff1f195bc5c2d4a6984f553bb157127c4a21b31f83631bdfc427d758f.png",
+        "url": "https://higheredweb.social/@reedpiernock"
+      },
+      "url": "https://carhenge.club/@mattdsteele/113545129428029254#favorited-by-109569784022121188",
+      "published": null,
+      "wm-received": "2024-12-27T11:29:49Z",
+      "wm-id": 1869943,
+      "wm-source": "https://brid.gy/like/mastodon/@mattdsteele@carhenge.club/113545129428029254/109569784022121188",
+      "wm-target": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-protocol": "webmention",
+      "like-of": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Matt Steele",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/ca0344d75c82348fa7b70ccc548c674fceedd2d85590e9e6938b13554374ca11.png",
+        "url": "https://carhenge.club/@mattdsteele"
+      },
+      "url": "https://carhenge.club/@mattdsteele/113545129428029254#favorited-by-22282",
+      "published": null,
+      "wm-received": "2024-12-27T11:29:47Z",
+      "wm-id": 1869942,
+      "wm-source": "https://brid.gy/like/mastodon/@mattdsteele@carhenge.club/113545129428029254/22282",
+      "wm-target": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-protocol": "webmention",
+      "like-of": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Bob Monsour",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/f6918dc70cb53fbeca72ca3309e9df57fab8b2df97ed318c1d0a45b18ae96f35.png",
+        "url": "https://indieweb.social/@bobmonsour"
+      },
+      "url": "https://indieweb.social/@bobmonsour/113646564314411901",
+      "published": "2024-12-13T16:55:52+00:00",
+      "wm-received": "2024-12-27T11:29:47Z",
+      "wm-id": 1869941,
+      "wm-source": "https://brid.gy/comment/mastodon/@mattdsteele@carhenge.club/113545129428029254/113646564380334541",
+      "wm-target": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-protocol": "webmention",
+      "content": {
+        "html": "<p><span class=\"h-card\"><a href=\"https://carhenge.club/@mattdsteele\" class=\"u-url\">@<span>mattdsteele</span></a></span> <span class=\"h-card\"><a href=\"https://fosstodon.org/@eleventy\" class=\"u-url\">@<span>eleventy</span></a></span> Hi Matt, just came across your <a href=\"https://indieweb.social/tags/11ty\">#<span>11ty</span></a> migration article. I've added it and the one where you used the 11ty screenshot service to the 11ty Bundle site. Your name in lights: <a href=\"https://11tybundle.dev/authors/matt-steele/\"><span>https://</span><span>11tybundle.dev/authors/matt-st</span><span>eele/</span></a></p>\n<a class=\"p-category\" href=\"https://carhenge.club/tags/11ty\">11ty</a>\n<a href=\"https://11tybundle.dev/authors/matt-steele/\">2 posts by Matt Steele</a>",
+        "text": "@mattdsteele @eleventy Hi Matt, just came across your #11ty migration article. I've added it and the one where you used the 11ty screenshot service to the 11ty Bundle site. Your name in lights: https://11tybundle.dev/authors/matt-steele/\n11ty\n2 posts by Matt Steele"
+      },
+      "in-reply-to": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Matt Steele",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/ca0344d75c82348fa7b70ccc548c674fceedd2d85590e9e6938b13554374ca11.png",
+        "url": "https://carhenge.club/@mattdsteele"
+      },
+      "url": "https://carhenge.club/@mattdsteele/113557188764274835",
+      "published": "2024-11-27T22:06:29+00:00",
+      "wm-received": "2024-12-27T11:29:46Z",
+      "wm-id": 1869940,
+      "wm-source": "https://brid.gy/comment/mastodon/@mattdsteele@carhenge.club/113545129428029254/113557188764274835",
+      "wm-target": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-protocol": "webmention",
+      "content": {
+        "html": "<p><span class=\"h-card\"><a href=\"https://dementedandsadbut.social/@genehack\" class=\"u-url\">@<span>genehack</span></a></span> This is how Josh Fights get started</p>",
+        "text": "@genehack This is how Josh Fights get started"
+      },
+      "in-reply-to": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "genehack",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/e6ea4c56eb3aba5e76a9754ccb11998309ddf449fd9d8a80b8f7d56e41700e52.jpg",
+        "url": "https://dementedandsadbut.social/@genehack"
+      },
+      "url": "https://dementedandsadbut.social/@genehack/113556835594451492",
+      "published": "2024-11-27T20:36:40+00:00",
+      "wm-received": "2024-12-27T11:29:45Z",
+      "wm-id": 1869939,
+      "wm-source": "https://brid.gy/comment/mastodon/@mattdsteele@carhenge.club/113545129428029254/113556835633000540",
+      "wm-target": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-protocol": "webmention",
+      "content": {
+        "html": "<p><span class=\"h-card\"><a href=\"https://carhenge.club/@mattdsteele\" class=\"u-url\">@<span>mattdsteele</span></a></span> so is that gonna be a ???? Steele cage match?</p>",
+        "text": "@mattdsteele so is that gonna be a ???? Steele cage match?"
+      },
+      "in-reply-to": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jay Hannah",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/d9eedc95a87abf5e0996bfe9eb5af9f22899fe591f5c0a42de5856f37b5511bc.png",
+        "url": "https://flyovercountry.social/@deafferret"
+      },
+      "url": "https://flyovercountry.social/@deafferret/113555613286376014",
+      "published": "2024-11-27T15:25:50+00:00",
+      "wm-received": "2024-12-27T11:29:44Z",
+      "wm-id": 1869938,
+      "wm-source": "https://brid.gy/comment/mastodon/@mattdsteele@carhenge.club/113545129428029254/113555613316472060",
+      "wm-target": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-protocol": "webmention",
+      "content": {
+        "html": "<p><span class=\"h-card\"><a href=\"https://carhenge.club/@mattdsteele\" class=\"u-url\">@<span>mattdsteele</span></a></span> L O L ❤️</p>",
+        "text": "@mattdsteele L O L ❤️"
+      },
+      "in-reply-to": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Matt Steele",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/ca0344d75c82348fa7b70ccc548c674fceedd2d85590e9e6938b13554374ca11.png",
+        "url": "https://carhenge.club/@mattdsteele"
+      },
+      "url": "https://carhenge.club/@mattdsteele/113555379911283171",
+      "published": "2024-11-27T14:26:28+00:00",
+      "wm-received": "2024-12-27T11:29:44Z",
+      "wm-id": 1869937,
+      "wm-source": "https://brid.gy/comment/mastodon/@mattdsteele@carhenge.club/113545129428029254/113555379911283171",
+      "wm-target": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-protocol": "webmention",
+      "content": {
+        "html": "<p><span class=\"h-card\"><a href=\"https://flyovercountry.social/@deafferret\" class=\"u-url\">@<span>deafferret</span></a></span> The only social I see he's on is LinkedIn, and I am not enough of a thought leader to be allowed to post there ????</p>",
+        "text": "@deafferret The only social I see he's on is LinkedIn, and I am not enough of a thought leader to be allowed to post there ????"
+      },
+      "in-reply-to": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jay Hannah",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/d9eedc95a87abf5e0996bfe9eb5af9f22899fe591f5c0a42de5856f37b5511bc.png",
+        "url": "https://flyovercountry.social/@deafferret"
+      },
+      "url": "https://flyovercountry.social/@deafferret/113555180252776993",
+      "published": "2024-11-27T13:35:42+00:00",
+      "wm-received": "2024-12-27T11:29:42Z",
+      "wm-id": 1869936,
+      "wm-source": "https://brid.gy/comment/mastodon/@mattdsteele@carhenge.club/113545129428029254/113555180293648104",
+      "wm-target": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-protocol": "webmention",
+      "content": {
+        "html": "<p><span class=\"h-card\"><a href=\"https://carhenge.club/@mattdsteele\" class=\"u-url\">@<span>mattdsteele</span></a></span> oooo please tell me I can follow that Matt on Mastodon. ????</p>",
+        "text": "@mattdsteele oooo please tell me I can follow that Matt on Mastodon. ????"
+      },
+      "in-reply-to": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jay Hannah",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/d9eedc95a87abf5e0996bfe9eb5af9f22899fe591f5c0a42de5856f37b5511bc.png",
+        "url": "https://flyovercountry.social/@deafferret"
+      },
+      "url": "https://flyovercountry.social/@deafferret/113555176084645395",
+      "published": "2024-11-27T13:34:38+00:00",
+      "wm-received": "2024-12-27T11:29:42Z",
+      "wm-id": 1869935,
+      "wm-source": "https://brid.gy/comment/mastodon/@mattdsteele@carhenge.club/113545129428029254/113555176145380904",
+      "wm-target": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-protocol": "webmention",
+      "content": {
+        "html": "<p><span class=\"h-card\"><a href=\"https://carhenge.club/@mattdsteele\" class=\"u-url\">@<span>mattdsteele</span></a></span> there can be only one! <a href=\"https://youtu.be/sqcLjcSloXs?si=YdTxEF8ZjuTxDM7u\"><span>https://</span><span>youtu.be/sqcLjcSloXs?si=YdTxEF</span><span>8ZjuTxDM7u</span></a></p>\n<a href=\"https://www.youtube.com/undefined\">- YouTube</a>",
+        "text": "@mattdsteele there can be only one! https://youtu.be/sqcLjcSloXs?si=YdTxEF8ZjuTxDM7u\n- YouTube"
+      },
+      "in-reply-to": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Matt Steele",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/ca0344d75c82348fa7b70ccc548c674fceedd2d85590e9e6938b13554374ca11.png",
+        "url": "https://carhenge.club/@mattdsteele"
+      },
+      "url": "https://carhenge.club/@mattdsteele/113547283023321983",
+      "published": "2024-11-26T04:07:20+00:00",
+      "wm-received": "2024-12-27T11:29:39Z",
+      "wm-id": 1869934,
+      "wm-source": "https://brid.gy/comment/mastodon/@mattdsteele@carhenge.club/113545129428029254/113547283023321983",
+      "wm-target": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-protocol": "webmention",
+      "content": {
+        "html": "<p>Just  learned there is another Matt Steele who also has an 11ty-powered website and lives one state over, so now we have to duel like in Hackers</p>",
+        "text": "Just  learned there is another Matt Steele who also has an 11ty-powered website and lives one state over, so now we have to duel like in Hackers"
+      },
+      "in-reply-to": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Matt Steele",
+        "photo": "https://avatars.webmention.io/s3-us-east-2.amazonaws.com/ca0344d75c82348fa7b70ccc548c674fceedd2d85590e9e6938b13554374ca11.png",
+        "url": "https://carhenge.club/@mattdsteele"
+      },
+      "url": "https://carhenge.club/@mattdsteele/113545156639594663",
+      "published": "2024-11-25T19:06:34+00:00",
+      "wm-received": "2024-12-27T11:29:39Z",
+      "wm-id": 1869933,
+      "wm-source": "https://brid.gy/comment/mastodon/@mattdsteele@carhenge.club/113545129428029254/113545156639594663",
+      "wm-target": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-protocol": "webmention",
+      "content": {
+        "html": "<p>One element of the rebuild I’m really excited about: most of the markup was built in WebC, letting me “think in components”, but with zero JS runtime, and not tied to a framework.</p><p>Really gives the lie to the claim that you can’t have good DevEx without adding in a bulky framework</p>",
+        "text": "One element of the rebuild I’m really excited about: most of the markup was built in WebC, letting me “think in components”, but with zero JS runtime, and not tied to a framework.\n\nReally gives the lie to the claim that you can’t have good DevEx without adding in a bulky framework"
+      },
+      "in-reply-to": "https://steele.blue/gatsby-to-eleventy/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    }
+  ]
+}
