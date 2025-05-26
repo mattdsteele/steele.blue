@@ -30,6 +30,6 @@
     "flat-cache": "^6.1.0",
     "lodash-es": "^4.17.21",
     "patch-package": "^8.0.0",
-    "shiki": "^v2"
+    "shiki": "^3"
   }
 }
