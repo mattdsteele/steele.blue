@@ -6,6 +6,7 @@
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@justinribeiro/lite-youtube": "^1.6.0",
+    "asciinema-player": "^3.10.0",
     "lite-vimeo-embed": "^0.3.0"
   },
   "keywords": [

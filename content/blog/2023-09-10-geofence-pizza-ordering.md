@@ -6,7 +6,7 @@ layout: post
 As harvest season begins here in the Midwest, I once again celebrate by grinding Nebraska gravel at the [Gravel Worlds Long Voyage](https://www.gravel-worlds.com/the-long-voyage) bike race.
 As in previous years ([2021](/gravel-worlds)) ([2022](/serverless-bike-gps)), I spent more time writing code for a marginally-useful project than I did training. But hey, I finished!
 
-![Matt riding on Gravel Worlds](../images/2023-long-voyage/matt-gw.jpg)
+![Matt riding on Gravel Worlds](/content/images/2023-long-voyage/matt-gw.jpg)
 
 ## Fueled by Pizza
 
@@ -14,7 +14,7 @@ My goal this year involved optimizing my food choices during the race: pizza fro
 These convenience stores are S-Tier options when out in the middle of nowhere.
 In addition to snacks and drinks, most Casey's have a kitchen, and have pretty decent grab 'n go slices of pizza.
 
-![A sample of the pizza on offer at a Casey's](../images/2023-long-voyage/self-serve-pizza.jpg)
+![A sample of the pizza on offer at a Casey's](/content/images/2023-long-voyage/self-serve-pizza.jpg)
 
 My problem: last year, there were so many faster riders ahead of me, that **all the pizza was taken by the time I made it to the stops.** This is an outrage!
 
@@ -25,7 +25,7 @@ More precisely, I could write a script that ordered a pizza for me, GPS-triggere
 
 ## Casey's Pizza API When
 
-![Architecture diagram](../images/2023-long-voyage/pizza-diagram.png)
+![Architecture diagram](/content/images/2023-long-voyage/pizza-diagram.png)
 
 The overall design: I setup a geofence within the AWS Location service, which was monitoring my GPS tracker.
 When my tracker exited the geofence, it would trigger a Lambda function that calculates an ETA for my next stop, and orders the pizza.
@@ -43,7 +43,7 @@ To keep track of the status, I also setup a push notification to be delivered to
 
 I had the triggering geofence configured around mile 180 of the race, with the pizza setup to be delivered at mile 200.
 
-![A push notification indicating pizza was delivered](../images/2023-long-voyage/pizza-watch.jpg)
+![A push notification indicating pizza was delivered](/content/images/2023-long-voyage/pizza-watch.jpg)
 
 As I left the geofence, I got a push notification on my watch saying that the pizza had been successfully ordered.
 
@@ -52,7 +52,7 @@ But when I made it to the stop, **there was nothing at the counter, and they had
 
 There were a few pre-made slices available, so I picked those up. They left a bitter taste in my mouth, not just because they weren't especially fresh. Through the rest of the 300-mile race, all I could think about was what might have went wrong with my function.
 
-![A pair of dirty legs, eating slices of pre-made pizza](../images/2023-long-voyage/pizza-slices.jpg)
+![A pair of dirty legs, eating slices of pre-made pizza](/content/images/2023-long-voyage/pizza-slices.jpg)
 
 After finishing the race, I made it to a computer and quickly checked the logs to see what had gone wrong. But to my chagrin, there was nothing in the logs indicating what caused the failure; it was just a silent success. I had nothing to go on to try and debug.
 

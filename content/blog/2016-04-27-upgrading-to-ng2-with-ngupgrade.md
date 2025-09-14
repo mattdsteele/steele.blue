@@ -3,7 +3,7 @@ layout: post
 title: Upgrading to Angular 2 using ngUpgrade
 ---
 
-![Me, Presenting](../images/ng-upgrade.jpg)
+![Me, Presenting](/content/images/ng-upgrade.jpg)
 
 I spoke at [ng-nebraska](https://web.archive.org/web/20160501021547/http://www.ng-nebraska.com:80/) on how the ngUpgrade module can help bridge the gap between Angulars 1 and 2.
 

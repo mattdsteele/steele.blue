@@ -22,7 +22,7 @@ This weekend I took part in Hack Omaha - the city's first hackathon with a focus
 	<li><strong>Sinatra rocks</strong>. My day job consists of writing Web Services, with a capital W and S. The process is often heavyweight, cumbersome, and requires numerous approval and manual configuration steps. It was beyond refreshing to just write a <code>get /matchup</code> method, paste in some JSON, and have a working service. Prototyping service design before you've even gotten a dataset gives you lots of flexibility to change your design on the fly.</li>
 </ul>
 
-![Food Fight 1](../images/foodfight1.jpg)
+![Food Fight 1](/content/images/foodfight1.jpg)
 
 <ul>
 	<li><strong>Heroku is great, except when it isn't</strong>. We ran the app's service layer on a shared (read: free) Heroku instance and a shared Postgres database. This was my first experience hosting apps on Heroku, so I relied on Steve's expertise. Pushing changes was simple as pie, but we ran into numerous issues getting Rake migrations to function correctly. We ended up creating databases on my machine, and using Heroku's backup/restore feature to load up production. It's not pretty but it got the job done.</li>
@@ -30,7 +30,7 @@ This weekend I took part in Hack Omaha - the city's first hackathon with a focus
 	<li><strong>ORM flexibility is helpful</strong>. Since you have no idea what tech stack you'll be working with, you don't want to require teammates to have a particular database already installed. For example, Steve didn't have Postgres installed on his MacBook, but we just configured a SQLite instance on his box, set up his ActiveRecord configuration to connect to it and he was off and running.</li>
 </ul>
 
-![Food Fight 2](../images/foodfight2.jpg)
+![Food Fight 2](/content/images/foodfight2.jpg)
 
 <ul>
 	<li><strong>Don't let your VCS hold you back.</strong> We decided to use <a href="https://github.com/organizations/HackOmahaFoodInspectors/">GitHub</a> to host the source, but only half the team had any git experience. Rather than try to learn a crash-course on git, they used a shared Dropbox folder as the repository location.</li>
@@ -39,7 +39,7 @@ This weekend I took part in Hack Omaha - the city's first hackathon with a focus
 	<li><strong>Keep projects small and focused</strong>. We were essentially finished with our app by 6pm on Saturday. After that, we spent the rest of the time play testing, tweaking the design, and adding features like analytics, win/loss counting, etc. But having a small, achievable project meant we weren't scrambling to get basic functionality working at the last minute.</li>
 </ul>
 
-![Food Fight 3](../images/foodfight3.jpg)
+![Food Fight 3](/content/images/foodfight3.jpg)
 
   <ul>
   	<li><strong>I don't know Ruby very well</strong>. I kept running into syntax issues, like trying to return early out of a block (which isn't allowed). I also spent a ton of time learning the methods on Enumerable, and figuring out how attributes in ActiveRecord models function. You only have to look at the number of <code>Hash.new</code> and <code>Array.new</code> in the codebase to see that we're still noobs at this.</li>

@@ -31,7 +31,7 @@ A few others have gone down this route, by wiring up a spare fob to a microcontr
 
 ## Hardware
 
-![Pinout of the board](../images/car-lock/board-1.jpg)
+![Pinout of the board](/content/images/car-lock/board-1.jpg)
 
 **Spare Car Fob** - I picked up a cheap aftermarket fob on AliExpress, though it took a bit of time confirming compatibility.
 I ordered this one for the 2023 Bolt: https://www.aliexpress.us/item/3256804168747183.html
@@ -54,7 +54,7 @@ Once I exposed the bare pads on the fob, there was a bit of trial and error to f
 
 ## Software
 
-![Finished product](../images/car-lock/finished-1.jpg)
+![Finished product](/content/images/car-lock/finished-1.jpg)
 
 **Home Assistant** - I already had an instance running on a Raspberry Pi, so this was easy.
 
@@ -89,7 +89,7 @@ I then created a Dashboard in Home Assistant so I had easy access to the buttons
 
 ## A few things I learned
 
-![Finished product](../images/car-lock/finished-2.jpg)
+![Finished product](/content/images/car-lock/finished-2.jpg)
 
 * While testing the fob buttons, I discovered the “start vehicle” and “trigger alarm” buttons were reversed from how they were labeled. As did all my neighbors!
 * Soldering on a surface-mount board is hard! I ended up bricking my first fob because I got a little solder on some adjoining transistors, which short-circuited the entire device and rendered it useless. I suppose this gets better with practice, but when you treat hardware projects [with the same rigor as a Geocities website](/hardware-is-the-new-geocities/), it's not something you improve at quickly.

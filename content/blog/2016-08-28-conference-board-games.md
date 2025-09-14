@@ -76,7 +76,7 @@ Since you'll likely be consolidating a collection worth hundreds or thousands of
 
 ## Games Ambassadors
 
-![Geekway To The West](../images/players-wanted.jpg)
+![Geekway To The West](/content/images/players-wanted.jpg)
 
 [Geekway To The West](https://www.facebook.com/GeekwaytotheWest/photos/a.10151887467747320.1073741827.51610637319/10153302091137320/?type=3&theater)
 

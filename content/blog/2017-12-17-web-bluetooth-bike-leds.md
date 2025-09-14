@@ -3,7 +3,7 @@ layout: post
 title: Light Up Your Bike with Web Bluetooth and StencilJS
 ---
 
-![Bike DeLights testing](../images/bdl-bt-1.jpg)
+![Bike DeLights testing](/content/images/bdl-bt-1.jpg)
 
 Every year the Omaha cycling community puts on the Bike De'Lights ride: an opportunity to illuminates your bike and tour the city's Christmas lights. And every year I try to find a new way to drive a five meter RGB light strip.
 
@@ -49,7 +49,7 @@ Code is available [here](https://github.com/mattdsteele/web-bluetooth-bike-leds/
 
 ## Results
 
-![I'm behind the cooler setup](../images/bdl-bt-2.jpg)
+![I'm behind the cooler setup](/content/images/bdl-bt-2.jpg)
 
 Overall the project went really well! Unlike previous lighting systems, no soldering was required, and I didn't run into any technical glitches during the ride. These two are likely related.
 

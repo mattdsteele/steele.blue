@@ -47,13 +47,13 @@ In total this project uses less than \$20 of consumable parts.
 Everything fit in my bike's saddle bag; this worked really well due to the super-tiny Pi Zero.
 I placed the Pi and the circuit board in a makeshift enclosure I made from a to-go container, and held it down using electrical tape.
 
-![Container](../images/bdl2.jpg)
+![Container](/content/images/bdl2.jpg)
 
 ### Schematic
 
 The circuit to power the LEDs is pretty straightforward:
 
-![Schematic](../images/raspberry-pi-schematic.svg)
+![Schematic](/content/images/raspberry-pi-schematic.svg)
 
 The Pi sends PWM signals to the red/green/blue input wires, and the 12V of batteries goes to the LED light strip.
 

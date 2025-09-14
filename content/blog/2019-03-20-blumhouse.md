@@ -5,7 +5,7 @@ title: Why I Built Blumhouse to Purge My Twitter History
 
 Or: why would I delete gold like this?
 
-![bad tweets](../images/bad-tweets.png)
+![bad tweets](/content/images/bad-tweets.png)
 
 I've been on Twitter for eleven years and in that time amassed a trail of thousands of tweets. I couldn't tell you what 99% of them are about, because Twitter is meant to be ephemeral.
 Unless you're [Milkshake Duck](https://web.archive.org/web/20190704195024/https://twitter.com/pixelatedboat/status/741904787361300481).
@@ -14,7 +14,7 @@ Every week or two someone's old Twitter history gets weaponized against them. So
 
 But more often it's the latest form of [oppo research](https://www.washingtonpost.com/news/the-intersect/wp/2018/07/30/theres-no-good-reason-to-keep-old-tweets-online-heres-how-to-delete-them/?utm_term=.6da146165ecb); wherein trolls like Mike Cernovich dig up old tweets, and use them in bad faith to smear their ideological opponents. Trevor Noah, Sarah Jeong, Patton Oswalt - all fell victim to this in the last year.
 
-![old tweets](../images/old-tweets.png)
+![old tweets](/content/images/old-tweets.png)
 
 So yeah, I want Twitter to behave more like Snapchat or Instagram Stories.
 

@@ -13,7 +13,7 @@ Normally this requires a phone call, but if they provided you a Greenwave C4000X
 Simply log in to the C4000XG's web UI, and go to Advanced Setup -> WAN Settings, with your DevTools open.
 Look for the XHR request `/cgi/cgi_get?Object=Device.PPP.Interface`, and root around the JSON to find the credentials:
 
-![clink credentials](../images/clink-router.png)
+![clink credentials](/content/images/clink-router.png)
 
 Or, just paste this into your console:
 

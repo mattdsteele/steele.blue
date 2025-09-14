@@ -3,7 +3,7 @@ layout: post
 title: Reacting to Heart Rate and Bike Sensors With RxJS
 ---
 
-![Observables](../images/rxjs-observable.png)
+![Observables](/content/images/rxjs-observable.png)
 
 Recently I [hooked up a Raspberry Pi to my bike][bikepost] and made an LED light strip synchronize with my heart rate and pedal speed.
 I got some great feedback on the project, including "overly complex", "Rube Goldberg wannabe", and "you need another hobby".

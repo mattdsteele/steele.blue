@@ -3,7 +3,7 @@ layout: post
 title: Responsive Images using <picture> and srcset/sizes
 ---
 
-![Me, Presenting](../images/responsive-images-preso.jpg)
+![Me, Presenting](/content/images/responsive-images-preso.jpg)
 
 I spoke at [Omaha Coffee & Code](https://www.meetup.com/coffeeandcode/) about the work the [Responsive Images Community Group][respimg] has been up to lately:
 

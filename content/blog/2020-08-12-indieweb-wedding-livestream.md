@@ -11,7 +11,7 @@ And you can do so without giving up control of your content, or acceding to the 
 
 I'll writeup the technical recipe we used in a later post, but thought the desire to host a livestreaming server was worth writing about separately.
 
-![Watching the livestream](../images/wedding-livestream.jpg)
+![Watching the livestream](/content/images/wedding-livestream.jpg)
 _Photo credit: Ben Turner_
 
 ## Twitch meets Indieweb

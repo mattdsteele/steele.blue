@@ -16,7 +16,7 @@ But with some LEDs and retroreflective fabric, you can make a well-functioning g
 
 Most green screens use, well, green fabric. But this approach uses a different strategy: putting a ring of green LEDs around a camera and pointing it at [retroreflective fabric][fabric], so the green light shines directly back at the source.
 
-![green4](../images/green4.jpg)
+![green4](/content/images/green4.jpg)
 
 For the most part, I followed [this guide on Brainy Bits](https://www.brainy-bits.com/post/making-a-green-screen-that-doesn-t-require-any-lighting).
 
@@ -33,7 +33,7 @@ I presume you have a webcam already.
 
 ## Building it
 
-![green1](../images/green1.jpg)
+![green1](/content/images/green1.jpg)
 
 If you're using an Arduino to drive the LEDs, you should be able to hook up 5V, ground, and a data pin to the LED rings. A simple app using [Adafruit's library](https://github.com/adafruit/Adafruit_NeoPixel):
 
@@ -61,12 +61,12 @@ void loop() {
 
 Place the ring around your webcam; I used some Velcro stickers so I can easily remove it.
 
-![green2](../images/green2.jpg)
+![green2](/content/images/green2.jpg)
 
 Hang up the fabric; it should be far enough away from your bike that it won't get in the way while you're riding, but close enough that you don't need to buy a ton of it.
 I ended up cutting the fabric to make two 3'x6' banners, and hanging on the ceiling with neodymium magnets.
 
-![green3](../images/green3.jpg)
+![green3](/content/images/green3.jpg)
 
 ## Chroma Key in OBS
 
@@ -74,7 +74,7 @@ Power the LEDs to a pure green. You can probaby run it at a low power; if you go
 
 This can be set in OBS as a Filter on your webcam Source. You can play with the properties, but I was able to get by with the default values.
 
-![chroma-key](../images/chroma-key.png)
+![chroma-key](/content/images/chroma-key.png)
 
 Then setup your stream layout. A decent placement is in the bottom left of the screen, Zwift doesn't put anything useful in there.
 

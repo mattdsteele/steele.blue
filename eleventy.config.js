@@ -6,6 +6,7 @@ import { inspect } from 'node:util';
 
 import webmentionPlugin from './src/webmention-plugin.js';
 import shikiHighlightingPlugin from './src/shiki-highlighting-plugin.js';
+import asciinemaPlugin from './src/plugins/11ty-asciinema-plugin.js';
 
 export default async function (eleventyConfig) {
   eleventyConfig.setIncludesDirectory('src');
@@ -29,6 +30,7 @@ export default async function (eleventyConfig) {
   });
 
   eleventyConfig.addPlugin(EleventyRenderPlugin);
+  eleventyConfig.addPlugin(asciinemaPlugin);
   eleventyConfig.addPlugin(webcPlugin, {
     components: 'src/components/**/*.webc',
   });

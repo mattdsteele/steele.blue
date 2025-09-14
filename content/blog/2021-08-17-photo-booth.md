@@ -7,32 +7,32 @@ title: 'Making a Raspberry Pi Photo Booth with Pibooth, NeoPixels, and Giant But
 
 I put a homemade photo booth together for a wedding reception we postponed for a year, on account of, *gestures everywhere*:
 
-![photo booth](../images/photo-booth/IMG_0360.jpg)
+![photo booth](/content/images/photo-booth/IMG_0360.jpg)
 
 It was a fun project that let me play with new hardware and software. Here's a few photos of the project, and some of the things I learned.
 
-![photo booth](../images/photo-booth/IMG_0311.jpg)
+![photo booth](/content/images/photo-booth/IMG_0311.jpg)
 
 The guts of the project were driven by a Raspberry Pi 4 running [pibooth](pibooth). It's a great project that works well out of the box, and has a plugin system if you want to anything.
 
-![photo booth](../images/photo-booth/IMG_0351.jpg)
+![photo booth](/content/images/photo-booth/IMG_0351.jpg)
 
 The Pi, wiring, and breadboard and wiring went into a small box, along with a few buttons. The big button started captures, and the small one printed the last photo.
 
-![photo booth](../images/photo-booth/IMG_0315.jpg)
+![photo booth](/content/images/photo-booth/IMG_0315.jpg)
 
 I tried various means of connecting up the buttons; speaker wire worked surprisingly well! But in the end a few small alligator clips and jumper wires were sufficient.
 
-![photo booth](../images/photo-booth/IMG_0357.jpg)
+![photo booth](/content/images/photo-booth/IMG_0357.jpg)
 
 We setup a couple backdrops and had a modeling light to provide standard illumination.
 I would have loved to use a greenscreen along with an OBS virtual camera, but the Pi wasn't powerful enough to perform chroma keying in real-time.
 
-![photo booth](../images/photo-booth/IMG_0352.jpg)
+![photo booth](/content/images/photo-booth/IMG_0352.jpg)
 
 Photos were taken using a webcam. Originally I was hoping to use a higher-quality mirrorless camera, but [gphoto2 has issues with Sony cameras](https://github.com/pibooth/pibooth/issues/184).
 
-![photo booth](../images/photo-booth/IMG_0350.jpg)
+![photo booth](/content/images/photo-booth/IMG_0350.jpg)
 
 Printing was done using a small Canon printer, which we had on a stand below the image. I had never used a dye-sublimation printer before, but I was really impressed with it!
 The guests were really excited to see [each color get applied sequentially](https://www.youtube.com/watch?v=DA2yJe3o8s0), and took home a postcard-sized souvenier from the night.
@@ -65,7 +65,7 @@ You can see the configuration and other customizations here: https://github.com/
 The primary mod I built was a custom plugin which provided support for the ring light, using Adafruit's [neopixel Python library](https://learn.adafruit.com/neopixels-on-raspberry-pi/python-usage).
 It setup an "attract mode" with a rainbow cycle, as well as a countdown timer and a virtual "flash" while capturing images.
 
-![rainbow](../images/photo-booth/rainbow.gif)
+![rainbow](/content/images/photo-booth/rainbow.gif)
 
 I learned a bit about Python multithreading along the way too!
 
@@ -83,6 +83,6 @@ def state_preview_enter(app):
 
 Along with our [wedding livestreamed with Owncast](/indieweb-wedding-livestream), I had a great time geeking out with my wife. Way more fun than stressing out about caterers and dress fittings.
 
-![pibooth](../images/photo-booth/pibooth.jpg)
+![pibooth](/content/images/photo-booth/pibooth.jpg)
 
 [pibooth]: https://github.com/pibooth/pibooth

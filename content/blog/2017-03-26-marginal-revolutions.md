@@ -39,7 +39,7 @@ It's a massive, big-bang solution to public transit woes, which is odd, given th
 
 Similarly, the city has let its road infrastructure crumble so much over the years that [it's converting some roads back to gravel][nytomaha], and declaring them "unmaintained".
 
-![Potholes](../images/potholes.jpg)
+![Potholes](/content/images/potholes.jpg)
 
 ---
 

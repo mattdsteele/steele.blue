@@ -7,7 +7,7 @@ I've been preparing for a [303-mile endurance gravel bike race](https://www.grav
 
 By adjusting the sliders for my day and evening paces, the app estimates when I'll be able to take breaks, reach hazards, etc.
 
-![Long Voyage Screenshot](../images/long-voyage-screenshot.png)
+![Long Voyage Screenshot](/content/images/long-voyage-screenshot.png)
 
 It's been a while since I built something on the front-end that did lots of date manipulation, but I thought this would be a nice time to try out the Temporal API, which is [now in Stage 3](https://tc39.es/proposal-temporal/docs/) and has a [nice polyfill available](https://www.npmjs.com/package/@js-temporal/polyfill).
 

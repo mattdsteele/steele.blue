@@ -4,7 +4,9 @@ h1, h2, h3, h4, h5, h6, pre, code {
 }
 
 p, span, li {
-    font-size: var(--text-size);
+    &:not(pre *) {
+        font-size: var(--text-size);
+    }
 
 }
 
@@ -21,7 +23,9 @@ main article {
 }
 
 p, span, li {
-    font-family: 'Metrophobic', Arial, sans-serif;
+    &:not(pre *) {
+        font-family: 'Metrophobic', Arial, sans-serif;
+    }
 }
 
 a, a:visited {

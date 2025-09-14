@@ -7,7 +7,7 @@ I recently participated in the Gravel Worlds [Long Voyage](https://www.gravel-wo
 
 This year, I felt better prepared, rode smarter, and actually finished! My intent was to simply complete the race within the time limit, with a stretch goal of finishing before sundown. I ended up making it with about an hour of sunlight to go, and I couldn't be happier.
 
-![gw-finish](../images/bike-gps/gw-finish.jpg)
+![gw-finish](/content/images/bike-gps/gw-finish.jpg)
 
 I credit some of my success this year to spending more time riding through the year, both on longer gravel base rides, and structured intervals on the trainer. But I still had enough time to build another dubiously useful website!
 
@@ -16,7 +16,7 @@ That's what I want to share today; a site that captures data from a GPS tracker,
 I built out the site using AWS serverless architecture (Location Services, Lambda, and others).
 The code is available at https://github.com/mattdsteele/spot-tracker-tracker, and you can see the page for my ride [here](https://track.steele.blue/?course=gw-2022).
 
-![map-overall](../images/bike-gps/map-overall.png)
+![map-overall](/content/images/bike-gps/map-overall.png)
 
 ## Capturing GPS Pings
 
@@ -33,7 +33,7 @@ Once the pings were stored as an asset in AWS Location, they remain for 30 days.
 
 ## Geofencing
 
-![geofences](../images/bike-gps/map-geofence.png)
+![geofences](/content/images/bike-gps/map-geofence.png)
 
 AWS Location also supports [geofences](https://docs.aws.amazon.com/location/latest/developerguide/geofence-tracker-concepts.html). For each GPS ping that arrives, it can be evaluated against a set of predefined geofences. These are emitted via EventBridge, and you can react to them with Lambda functions as well.
 
@@ -78,7 +78,7 @@ The UI it built via GitHub Actions on each push, and deployed to Netlify. I also
 
 ## Cost
 
-![architecture](../images/bike-gps/location-diagram.png)
+![architecture](/content/images/bike-gps/location-diagram.png)
 
 Since none of the resources I'm using are persistent, the app is stupid cheap to run. My current AWS bill is about 77 cents per month. Location Services cost 15 cents, S3 storage is another 7 pennies. I'm no longer on the AWS free tier, but at these prices I might as well be.
 

@@ -3,7 +3,7 @@ layout: post
 title: JavaScript Gardening with the Particle Photon
 ---
 
-![Soil Sensors](../images/soil-2.jpg)
+![Soil Sensors](/content/images/soil-2.jpg)
 
 The last few years I've been trying my hand at starting a vegetable garden from seed. Previous years have left a lot to be desired; normally I end forgetting to water my anemic-looking seedlings, feeling sad, and harvesting a single ear of corn at the end of the season. 🌽
 
@@ -17,7 +17,7 @@ I also picked up a few [DHT11 thermometer/humidity sensors](http://a.co/ePXTcah)
 
 ## Raspberry Pi and Photon Farming
 
-![Soil Sensors](../images/soil-3.jpg)
+![Soil Sensors](/content/images/soil-3.jpg)
 
 The microcontroller world has advanced quite a bit since I last checked! In 2014 I used the [Johnny-Five](https://web.archive.org/web/20180319101150/http://johnny-five.io:80/) library to get sensor data into a Node app, but it required running Node on a "full" computer, then connecting to a USB-tethered Arduino. Tethering, _ugh_.
 
@@ -31,7 +31,7 @@ I can't tell you how satisfying it is to remotely flash new code to an Arduino w
 
 ## At least I'm sprouting a dataset
 
-![Soil Sensors](../images/soil-4.png)
+![Soil Sensors](/content/images/soil-4.png)
 
 To handle the sensor data, I pulled in RxJS, which [I've done before](https://steele.blue/reactive-programming-bike-sensors/) and find to be a super-solid approach. This let me take the Particle-provided EventEmitter, convert it to an reactive stream, and create a new stream out of the last 5 readings, averaged:
 
@@ -65,7 +65,7 @@ This went straight into an InfluxDB instance, and mapped using Grafana. The whol
 
 ## Seems like a lot of work
 
-![Soil Sensors](../images/soil-1.jpg)
+![Soil Sensors](/content/images/soil-1.jpg)
 
 It was a fun side project, but since I can now check on the sensor levels at all hours, I'm probably not reducing the number of mental cycles I'm thinking about the seedlings. And in the time it took me to build and test the hardware, I probably could have tilled my yard or done something more directly beneficial to my garden.
 

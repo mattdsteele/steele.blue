@@ -51,6 +51,7 @@ const title = $data?.title || 'Matt Steele'
         <link rel="me" webc:keep href="https://carhenge.club/@mattdsteele">
         <link rel="me" webc:keep href="https://github.com/mattdsteele">
         <link rel="webmention" webc:keep href="https://webmention.io/www.steele.blue/webmention" />
+        <script defer webc:keep src="https://unpkg.com/asciinema-player@3.10.0/dist/bundle/asciinema-player.min.js"></script>
         <script defer type="module" @raw="getBundle('js')" webc:keep></script>
         <link rel="alternate" href="/feed" title="Post Feed" type="application/atom+xml">
         <link rel="icon" href="/images/profile-avi.png">
@@ -64,6 +65,8 @@ const title = $data?.title || 'Matt Steele'
         <meta property="og:description" :content="description" />
         <meta property="og:image" content="/images/profile-avi.png" />
         <meta property="og:type" content="article" />
+
+        <link webc:keep rel="stylesheet" href="https://unpkg.com/asciinema-player@3.10.0/dist/bundle/asciinema-player.css" />
     </head>
     <body>
         <page-header></page-header>

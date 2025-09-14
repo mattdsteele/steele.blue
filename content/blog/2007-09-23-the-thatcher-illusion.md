@@ -14,11 +14,11 @@ meta:
 
 Want to see something cool?
 
-![Thatcher Illusion](../images/thatcherillusion.JPG)
+![Thatcher Illusion](/content/images/thatcherillusion.JPG)
 
 Aside from upside down, pretty normal, right? Compare it to these:
 
-![Thatcher Illusion](../images/thatcherillusion2.JPG)
+![Thatcher Illusion](/content/images/thatcherillusion2.JPG)
 
 What the heck happened here, and why does the left photo look like something you'd find on the pages of Fark? Consider this: the two pairs of photos are <strong>exactly the same</strong>, except rotated 180 degrees.
 

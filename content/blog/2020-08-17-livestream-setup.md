@@ -10,7 +10,7 @@ Neat! Here's the recipe I used for my wedding.
 
 This is a single-camera setup, streaming through [OBS][obs] to your server and a Zoom room.
 
-![owncast-2](../images/owncast-2.jpg)
+![owncast-2](/content/images/owncast-2.jpg)
 _Photo credit: Justin Duster_
 
 ## Hardware
@@ -35,7 +35,7 @@ Our first attempt at broadcasting was on my i5 laptop, and it began dropping fra
 
 ## Streaming pipeline
 
-![owncast flowchart](../images/owncast-3.png)
+![owncast flowchart](/content/images/owncast-3.png)
 
 Owncast supports serving video files directly from the server, but we ran into constraints both on bandwidth and CPU utilization.
 A better approach is to configure Owncast to upload files to an S3-compatible storage and serve them via HTTP.
@@ -60,7 +60,7 @@ If you have the bandwidth, it's better to upload via OBS and also have Zoom runn
 
 ## Running the stream
 
-![Not what you want to see 10 minutes before your wedding](../images/owncast-1.jpg)
+![Not what you want to see 10 minutes before your wedding](/content/images/owncast-1.jpg)
 
 We put together a Google doc with the playbook:
 

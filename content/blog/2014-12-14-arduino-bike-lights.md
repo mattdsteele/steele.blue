@@ -18,7 +18,7 @@ LED light strips are great: they're cheap (about \$10), super bright, and can be
 
 I picked up the [E-Goal 3528 RGB LED strip](https://www.amazon.com/gp/product/B00JX6SUWM/) off Amazon. It included a remote control to adjust the lights.
 
-![The Remote](../images/bdl-remote.jpg)
+![The Remote](/content/images/bdl-remote.jpg)
 
 (The colors are a misnomer - the "purple" option simply turns the red and blue LEDs on at the same time.)
 
@@ -30,7 +30,7 @@ Infrared remotes are finicky. They send pulses of IR light at specific frequenci
 
 It doesn't take much to build a homemade IR blaster - first you need to decode the signal from the original remote, then replay it using an infrared LED (available at your local Radio Shack, if it hasn't shut down yet).
 
-![LED Strip](../images/bdl-3.jpg)
+![LED Strip](/content/images/bdl-3.jpg)
 
 ## Debugging the remote
 
@@ -82,7 +82,7 @@ Next was configuring the Arduino to send the IR codes. As a JavaScript guy, I ha
 
 The circuit was pretty straightforward, just a single infrared LED and a resistor:
 
-![Schematic](../images/bdl-schematic.jpg)
+![Schematic](/content/images/bdl-schematic.jpg)
 
 I looked into sending the pulses using "pure" Arduino code, but found the [IRRemote](https://github.com/shirriff/Arduino-IRremote) library which abstracted lots of it for me.
 
@@ -90,7 +90,7 @@ IRRemote even included configurations for several popular code formats (Sony, NE
 
 Another caveat: I had hoped to use an [Arduino Leonardo clone](https://flic.kr/p/q3kZfw), but the IRremote library [has a bug](https://github.com/shirriff/Arduino-IRremote/pull/42) with that model, so I switched to the Uno, which worked fine.
 
-![Arduino](../images/bdl-arduino.jpg)
+![Arduino](/content/images/bdl-arduino.jpg)
 
 ## Monday Night RAW
 
@@ -131,7 +131,7 @@ irsend.sendRaw(on, 67, 38); //command, array length, khz
 
 After a bit of testing, it all worked! I whipped up a small program to go through a program of Christmas-y (red & green) light series, and sequenced through them after a random delay (from one to twenty seconds).
 
-![LED Strip](../images/bdl-1.jpg)
+![LED Strip](/content/images/bdl-1.jpg)
 
 ## Scope Creep
 
