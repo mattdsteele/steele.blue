@@ -1,0 +1,138 @@
+{{ css }}
+.webmentions {
+    h2 {
+        margin-bottom: 4px;
+    }
+    .facepile {
+        --overlap: 8px;
+        margin-left: var(--overlap);
+    }
+
+    a.avi {
+        display: inline-block;
+        margin-left: calc(-1 * var(--overlap));
+
+        img {
+            border-radius: 100%;
+            border: 2px solid white;
+            &:hover {
+                position: relative;
+                scale: 1.2;
+                z-index: 2;
+            }
+        }
+    }
+    .wm-reply {
+        a.avi {
+            position: relative;
+            top: 16px;
+        }
+        .avi-placeholder {
+            position: relative;
+            top: 16px;
+            width: 48px;
+            height: 52px;
+            margin: 0 !important;
+        }
+
+        .wm-reply-meta {
+            display: flex;
+            align-items: center;
+            padding: 4px;
+
+            .wm-reply-name {
+                font-weight: 700;
+            }
+            .wm-reply-date {
+                color: var(--cyan-11);
+            }
+            span {
+                margin-top: 0;
+                margin-left: 12px;
+            }
+        }
+        .wm-reply-text {
+            margin-top: -16px;
+            margin-left: 64px;
+        }
+        .wm-reply-author:not(:hover) {
+            text-decoration: none;
+        }
+    }
+}
+
+{{ /css }}
+
+{{ set wms = webmentions |> webmentionsForUrl(page.url) }}
+{{ set imgSize="48" }}
+
+<div class="webmentions">
+
+<hr>
+
+<h2>Interactions</h2>
+
+
+<p>Interact with this page via <a href="/webmentions">Webmentions</a>.</p>
+
+{{for key, value of wms}}
+
+    {{ if key === 'repost-of' }}
+        {{ set reactions = value }}
+        <h2>{{reactions.length |> pluralize('Repost')}}</h2>
+        <div class="facepile">
+            {{ for avi of reactions }}
+                <a class="avi" href="{{ avi.author.url }}"><img alt="{{ avi.author.name }}" src="{{ avi.author.photo }}" width="{{ imgSize }}" loading="lazy" decoding="async"></a>
+            {{ /for }}
+        </div>
+    {{ /if }}
+
+    {{ if key === 'like-of' }}
+        {{ set reactions = value }}
+        <h2>{{reactions.length |> pluralize('Like')}}</h2>
+        <div class="facepile">
+            {{ for avi of reactions }}
+                <a class="avi" href="{{ avi.author.url }}"><img alt="{{ avi.author.name }}" src="{{ avi.author.photo }}" width="{{ imgSize }}"></a>
+            {{ /for }}
+        </div>
+    {{ /if }}
+
+    {{ if key === 'mention-of' }}
+        {{ set reactions = value }}
+        <h2>{{reactions.length |> pluralize('Mention')}}</h2>
+
+        {{ for mention of reactions }}
+            <div class="wm-reply">
+                <div class="wm-reply-meta">
+                    {{ if mention.author.photo !== "" }}
+                        <a class="avi" href="{{ mention.url }}"><img alt="{{ mention.author.name }}" src="{{ mention.author.photo }}" width="{{ imgSize }}"></a>
+                    {{ else if mention.photo[0] }}
+                        <a class="avi" href="{{ mention.url }}"><img alt="{{ mention.author.name }}" src="{{ mention.photo[0] }}" width="{{ imgSize }}"></a>
+                    {{ else }}
+                        <span class="avi-placeholder"></span>
+                    {{ /if }}
+                    <a class="wm-reply-author" href="{{ mention.url }}"><span class="wm-reply-name">{{ mention.author.name }}</span></a>
+                    <a href="{{ mention.url }}"><span class="wm-reply-date">{{  mention.published |> date("%b %d, %Y") }}</span></a>
+                </div>
+                <p class="wm-reply-text">{{ mention.content.text }}</p>
+            </div>
+        {{ /for }}
+    {{ /if }}
+
+    {{ if key === 'in-reply-to' }}
+        {{ set replies = value }}
+        <h2>{{replies.length |> pluralize('Reply', 'Replies')}}</h2>
+        {{ for avi of replies }}
+            <div class="wm-reply">
+                <div class="wm-reply-meta">
+                    <a class="avi" href="{{ avi.url }}"><img alt="{{ avi.author.name }}" src="{{ avi.author.photo }}" width="{{ imgSize }}"></a>
+                    <a class="wm-reply-author" href="{{ avi.url }}"><span class="wm-reply-name">{{ avi.author.name }}</span></a>
+                    <a href="{{ avi.url }}"><span class="wm-reply-date">{{  avi.published |> date("%b %d, %Y") }}</span></a>
+                </div>
+                <p class="wm-reply-text">{{ avi.content.text |> escape }}</p>
+            </div>
+        {{ /for }}
+    {{ /if }}
+
+{{/for}}
+

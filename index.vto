@@ -1,0 +1,26 @@
+{{ set title = 'Matt Steele' }}
+{{ set description = 'The personal blog of Matt Steele' }}
+{{ set last = collections.nonRssPosts[collections.nonRssPosts.length - 1] }}
+
+{{layout "layouts/base.vto" }}
+<style webc:scoped="" webc:keep>
+	h1.title {
+		font-size: 48px;
+		text-align: center;
+		a {
+			text-decoration: none;
+			&:active, &:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+</style>
+
+<section>
+	<h1 class="title"><a href="{{last.url}}">{{last.data.title}}</a></h1>
+	{{ last.content }}
+</section>
+
+{{ include 'components/post-archive.vto' }}
+
+{{ /layout }}

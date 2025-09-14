@@ -1,7 +1,4 @@
----
-layout: 'layouts/base.webc'
----
-
+{{ layout "layouts/base.vto" }}
 <style webc:scoped="" webc:keep>
     h1 {
         &.title {
@@ -11,7 +8,7 @@ layout: 'layouts/base.webc'
     }
 </style>
 
-<script>
+<script type="module" defer>
     const hasLiteVimeo = document.querySelectorAll('lite-vimeo');
     if (hasLiteVimeo.length) {
         import('/assets/lite-vimeo-embed.js');
@@ -23,12 +20,15 @@ layout: 'layouts/base.webc'
 </script>
 
 <section>
+    <h1 class="title">{{title}}</h1>
+    {{if rssOnly}}
+        {{ventoRender 'webc'}}
+        <rss-club webc:if="rss_only"></rss-club>
+        {{/ventoRender}}
+    {{/if}}
+    <h2>{{postDate}}</h2>
+    <article>{{content}}</article>
 
-    <h1 class="title" @text="title"></h1>
-    <rss-club webc:if="rss_only"></rss-club>
-    <h2 @text="postDate"></h2>
-    <article @raw="content"></article>
-    <template webc:type="11ty" 11ty:type="liquid">
-        {% include "webmentions" %}
-    </template>
+    {{ include "webmentions.vto" }}
 </section>
+{{ /layout }}

@@ -14,7 +14,7 @@
     }
     a {
         flex-basis: 60px;
-        align-content: center;;
+        align-content: center;
     }
     p {
         text-align: right;

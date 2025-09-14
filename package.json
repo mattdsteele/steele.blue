@@ -26,8 +26,9 @@
   "devDependencies": {
     "@11ty/eleventy-img": "^6.0.0",
     "@11ty/eleventy-plugin-rss": "^2.0.2",
-    "@11ty/eleventy-plugin-webc": "^0.11.2",
+    "@11ty/eleventy-plugin-webc": "^0.12.0-beta.7",
     "@remy/webmention": "^1.5.0",
+    "eleventy-plugin-vento": "^5.0.0",
     "flat-cache": "^6.1.0",
     "lodash-es": "^4.17.21",
     "patch-package": "^8.0.0",

@@ -1,6 +1,6 @@
 ---js
 // Ideally this would be pulled from the post, but it doesn't seem to work here :/
-const description = 'A post from Matt Steele';
+const description = 'A post from Matt Steele???';
 const title = $data?.title || 'Matt Steele'
 ---
 
