@@ -114,7 +114,7 @@ You can see the full implementation on [GitHub](https://github.com/mattdsteele/r
 
 This was my first experience using RxJS and Reactive Programming, and it shows.
 I didn't write any automated tests to verify the behavior, but I think it would have been simple to do.
-You can even mock out (and speed up) the passage of time using a [Virtual Time Scheduler](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/schedulers/virtualtimescheduler.md).
+You can even mock out (and speed up) the passage of time using a [Virtual Time Scheduler](https://web.archive.org/web/20210507083052/https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/schedulers/virtualtimescheduler.md).
 
 I also coded up some pretty [terrible error handling code](https://github.com/mattdsteele/raspberry-pi-bike-leds/blob/master/src/boot.js#L70-L81) to switch the lights to 'idle' mode after 5 seconds without sensor data.
 After thinking about it for a bit, I'm pretty sure I could have used a standard [debounce operator](https://reactivex.io/documentation/operators/debounce.html) rather than the recursive monstrosity I created.
