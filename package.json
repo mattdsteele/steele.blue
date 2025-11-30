@@ -16,6 +16,7 @@
   "scripts": {
     "postinstall": "patch-package",
     "clean": "rm -rf _site",
+    "start": "npm run serve",
     "serve": "eleventy --serve",
     "build": "eleventy"
   },
