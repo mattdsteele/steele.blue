@@ -12,6 +12,11 @@
             block-size: auto;
         }
 
+        section.post p > img {
+            display: block;
+            margin: auto;
+        }
+
         html {
             background-color: var(--bg-accent-color);
         }
@@ -64,6 +69,17 @@
     <meta property="og:type" content="article" />
 
     <link rel="stylesheet" href="https://unpkg.com/asciinema-player@3.10.0/dist/bundle/asciinema-player.css" />
+
+    <script type="module" defer>
+        const hasLiteVimeo = document.querySelectorAll('lite-vimeo');
+        if (hasLiteVimeo.length) {
+            import('/assets/lite-vimeo-embed.js');
+        }
+        const hasLiteYt = document.querySelectorAll('lite-youtube');
+        if (hasLiteYt.length) {
+            import('/assets/lite-youtube.js');
+        }
+    </script>
 </head>
 <body>
 {{ventoRender 'webc'}}
