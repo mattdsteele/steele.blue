@@ -18,7 +18,7 @@ It turns out that Reactive Programming techniques are perfect for a use case lik
 
 If you're new to the concept of reactive programming, check out these guides:
 
-- [RxMarbles](https://rxmarbles.com/) - you could just play around on this site and learn most of what you need
+- [RxMarbles](https://web.archive.org/web/20151231053709/http://rxmarbles.com:80/) - you could just play around on this site and learn most of what you need
 - [Introduction to Reactive Programming](https://web.archive.org/web/20160304013439/https://egghead.io/series/introduction-to-reactive-programming) course on egghead.io
 
 ## Creating the streams
@@ -105,7 +105,7 @@ Getting data from the heart rate monitor was similar but required a few addition
 I used these Reactive functions:
 
 - [`distinctUntilChanged`](https://rxmarbles.com/#distinctUntilChanged) to only emit when my HR changed
-- [`debounce`](https://rxmarbles.com/#debounce) as 250ms was too rapid for my use
+- [`debounce`](https://web.archive.org/web/20151231053709/http://rxmarbles.com:80/) as 250ms was too rapid for my use
 - [`flatMap` and `flatMapLatest`](https://reactivex.io/documentation/operators/flatmap.html) to convert the event data (beats per minute) into a stream of "heartbeat" events
 
 You can see the full implementation on [GitHub](https://github.com/mattdsteele/raspberry-pi-bike-leds/blob/master/src/boot.js#L33-L35).
