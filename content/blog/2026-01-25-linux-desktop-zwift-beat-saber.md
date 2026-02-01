@@ -19,7 +19,7 @@ I don't think it's any surprise this corresponds with Microsoft's headfirst embr
 
 !["My body is a machine" meme making fun of Microsoft](/content/images/linux-desktop/linux-desktop-meme-2.jpg)
 
-At the same time, desktop Linux has been steadily improving and growing more reliable. Some of this has to be spillover from investment in downstream OSes like ChromeOS, Android, and Steam OS, all based to some degree or other on Linux. Core peripherals like Bluetooth work across all my devices I've tried it on, on machines both [designed to run Linux](https://frame.work/linux) and on PCs with random hardware I didn't even check compatibility with before installing.
+At the same time, desktop Linux has been steadily improving and growing more reliable. Some of this has to be spillover from investment in downstream OSes like ChromeOS, Android, and Steam OS, all based to some degree or other on Linux. Core peripherals like Bluetooth work across all my devices I've tried it on, on machines both [designed to run Linux](https://web.archive.org/web/20260112050540/https://frame.work/linux) and on PCs with random hardware I didn't even check compatibility with before installing.
 
 ## My Distro
 
@@ -47,7 +47,7 @@ This has been almost completely fixed with Kim Eik's [netbrain/zwift repo](https
 
 Not everything works yet. In particular, Bluetooth (needed to interact with the trainer, heart rate monitor, etc) isn't available, though [there's ongoing development](https://github.com/netbrain/zwift/issues/188) that I'm hopeful for.
 
-In the meantime, I'm setting things up using alternate means. My trainer [supports Wi-Fi connections](https://support.wahoofitness.com/hc/en-us/articles/9211851310738-Using-Wi-Fi-with-a-KICKR-trainer-BIKE-or-RUN), so no Bluetooth is needed for power, cadence, and resistance. I even set up the trainer on an isolated VLAN (as it's essentially an expensive IoT device I don't have full control over), and Podman was able to discover it after setting `networking=host`.
+In the meantime, I'm setting things up using alternate means. My trainer [supports Wi-Fi connections](https://web.archive.org/web/20250915163905/https://support.wahoofitness.com/hc/en-us/articles/9211851310738-Using-Wi-Fi-with-a-KICKR-trainer-BIKE-or-RUN), so no Bluetooth is needed for power, cadence, and resistance. I even set up the trainer on an isolated VLAN (as it's essentially an expensive IoT device I don't have full control over), and Podman was able to discover it after setting `networking=host`.
 
 Other peripherals (controllers, HR monitors) still require Bluetooth, so I've just got an old Android device running [Zwift Companion](https://www.zwift.com/companion) sitting on my trainer desk. Honestly this is the most "non-native" part of my entire setup, but I'm still using supported tools (and was having to use the Companion even on Windows after an update broke BLE connections).
 
