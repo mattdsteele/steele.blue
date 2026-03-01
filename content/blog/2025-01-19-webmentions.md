@@ -91,7 +91,7 @@ I can optimize for certain aspects (like zero-runtime JavaScript) when they trad
 I found these sites valuable:
 
 * Keith Grant's [Adding webmentions to a static site](https://keithjgrant.com/posts/2019/02/adding-webmention-support-to-a-static-site/)
-* Bob Monsour's [Adding webmentions to my site](https://bobmonsour.com/blog/adding-webmentions-to-my-site/)
+* Bob Monsour's [Adding webmentions to my site](https://web.archive.org/web/20250117233922/https://bobmonsour.com/blog/adding-webmentions-to-my-site/)
 * Robb Knight's [Adding Webmentions to your Site](https://rknight.me/blog/adding-webmentions-to-your-site/)
 * Paul Kinlan's [Using Web Mentions in a static site](https://paul.kinlan.me/using-web-mentions-in-a-static-sitehugo/)
 * Max Böck's [Using Webmentions in Eleventy](https://mxb.dev/blog/using-webmentions-on-static-sites/)
