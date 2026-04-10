@@ -12,7 +12,7 @@ This does not happen on any predictable schedule, as per the whims of a cat. But
 
 So, I wired some cheap IoT devices together to notify us when she hops into the ceiling.
 
-<video controls muted="true">
+<video controls preload="none" muted="true" poster="/images/cat-light-sidebyside-snap.png">
   <source src='/videos/cat-light-sidebyside.mp4' type="video/mp4" />
 </video>
 
