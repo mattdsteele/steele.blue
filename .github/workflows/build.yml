@@ -14,7 +14,7 @@ jobs:
       - name: Build
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 24
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: npm ci
@@ -23,11 +23,10 @@ jobs:
           WEBMENTION_IO_API: ${{ secrets.WEBMENTION_IO_API }}
         run: npm run build
       - name: Cloudflare Pages
-        uses: cloudflare/pages-action@1
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: 'steele-blue'
-          directory: '_site'
+          command: pages deploy _site --project-name=steele-blue
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
       - run: npx webmention _site/atom.xml --debug --send
