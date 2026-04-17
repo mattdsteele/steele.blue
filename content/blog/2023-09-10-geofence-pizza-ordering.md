@@ -10,7 +10,7 @@ As in previous years ([2021](/gravel-worlds)) ([2022](/serverless-bike-gps)), I 
 
 ## Fueled by Pizza
 
-My goal this year involved optimizing my food choices during the race: pizza from [Casey's General Store](https://www.caseys.com/).
+My goal this year involved optimizing my food choices during the race: pizza from [Casey's General Store](https://web.archive.org/web/20230909185030/https://www.caseys.com/).
 These convenience stores are S-Tier options when out in the middle of nowhere.
 In addition to snacks and drinks, most Casey's have a kitchen, and have pretty decent grab 'n go slices of pizza.
 

@@ -11,7 +11,7 @@ For posterity, here's what worked for me.
 
 The two primary ways I've seen Playwright and Puppeteer implemented are:
 
-1. Using the default Node runtime, with the Chromium browser installed as a separate layer. This is the approach taken by the [chromium-lambda](https://www.npmjs.com/package/@sparticuz/chromium) npm package.
+1. Using the default Node runtime, with the Chromium browser installed as a separate layer. This is the approach taken by the [chromium-lambda](https://web.archive.org/web/20230915084229/https://www.npmjs.com/package/@sparticuz/chromium) npm package.
 2. Using a Lambda Docker runtime, building off a Microsoft-provided base layer with Chromium pre-installed.
 
 I was never able to make the Node runtime work, but did have success with the Docker runtime, so I'd recommend using that architecture.
