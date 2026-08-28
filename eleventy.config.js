@@ -6,8 +6,9 @@ import { inspect } from 'node:util';
 import { VentoPlugin } from 'eleventy-plugin-vento';
 
 import webmentionPlugin from './src/webmention-plugin.js';
-import shikiHighlightingPlugin from './src/shiki-highlighting-plugin.js';
 import asciinemaPlugin from './src/plugins/11ty-asciinema-plugin.js';
+import videoEmbedPlugin from './src/plugins/11ty-video-embed-plugin.js';
+import microlighterPlugin from './src/plugins/11ty-plugin-microlighter.js';
 
 export default async function (eleventyConfig) {
   eleventyConfig.setIncludesDirectory('src');
@@ -46,6 +47,7 @@ export default async function (eleventyConfig) {
   );
 
   eleventyConfig.addPlugin(asciinemaPlugin);
+  eleventyConfig.addPlugin(videoEmbedPlugin);
   eleventyConfig.addPlugin(webcPlugin, {
     components: 'src/components/**/*.webc',
   });
@@ -63,8 +65,6 @@ export default async function (eleventyConfig) {
     },
   });
 
-  eleventyConfig.addPlugin(shikiHighlightingPlugin);
-
 
   eleventyConfig.addFilter('date', (str, format) => {
     // currently only returns format = '%b %d, %Y'
@@ -74,6 +74,7 @@ export default async function (eleventyConfig) {
       year: 'numeric',
     });
   });
+  eleventyConfig.addPlugin(microlighterPlugin, { theme: 'monokai' });
   eleventyConfig.addPlugin(feedPlugin, {
     type: 'atom',
     outputPath: '/atom.xml',

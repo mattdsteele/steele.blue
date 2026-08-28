@@ -29,10 +29,10 @@
     "@11ty/eleventy-plugin-rss": "^3.0.0",
     "@11ty/eleventy-plugin-webc": "^0.12.0-beta.7",
     "@remy/webmention": "^1.5.0",
-    "eleventy-plugin-vento": "^5.0.0",
+    "eleventy-plugin-vento": "^6.0.0",
     "flat-cache": "^6.1.0",
     "lodash-es": "^4.17.23",
-    "patch-package": "^8.0.0",
-    "shiki": "^4"
+    "microlighter": "^2.1.0",
+    "patch-package": "^8.0.0"
   }
 }
