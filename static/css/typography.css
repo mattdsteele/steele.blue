@@ -16,9 +16,9 @@ main article {
         line-height: 1.3;
     }
 
-    pre.shiki {
-        background-color: var(--code-bg-color) !important;
+    pre:has(code) {
         padding: 16px;
+        overflow-x: scroll;
     }
 }
 
