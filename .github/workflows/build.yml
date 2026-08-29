@@ -4,8 +4,7 @@ on:
     - cron: "0 0 * * *"
   workflow_dispatch:
   push:
-    branches:
-      - main
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -25,6 +24,7 @@ jobs:
           WEBMENTION_IO_API: ${{ secrets.WEBMENTION_IO_API }}
         run: npm run build
       - name: Cloudflare Pages
+        id: deploy
         uses: cloudflare/wrangler-action@v4
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -32,3 +32,8 @@ jobs:
           command: pages deploy _site --project-name=steele-blue
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
       - run: npx webmention _site/atom.xml --debug --send
+
+      - name: print deployment-url
+        env:
+          DEPLOYMENT_URL: ${{ steps.deploy.outputs.deployment-url }}
+        run: echo $DEPLOYMENT_URL
